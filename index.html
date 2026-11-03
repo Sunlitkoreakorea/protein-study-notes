@@ -171,6 +171,44 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
 .svg-line{stroke:var(--svg-line);fill:none;stroke-width:1.6}
 .svg-a{fill:var(--svg-a)}.svg-b{fill:var(--svg-b)}.svg-c{fill:var(--svg-c)}.svg-d{fill:var(--svg-d)}.svg-e{fill:var(--svg-e)}
 .svg-bg{fill:var(--bg)}
+.sf-n{fill:var(--card);stroke:var(--svg-line);stroke-width:1.4}
+.sf-a{fill:var(--brand-soft);stroke:var(--svg-b);stroke-width:1.6}
+.sf-c{fill:var(--warn-soft);stroke:var(--svg-c);stroke-width:1.6}
+.sf-d{fill:var(--bad-soft);stroke:var(--svg-d);stroke-width:1.6}
+.sf-e{fill:var(--info-soft);stroke:var(--svg-e);stroke-width:1.4}
+.fig.overview{background:var(--card);border:1px solid var(--line);margin:0 0 44px;padding:22px 22px 14px}
+.ov{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;text-align:left}
+.ov-h{margin:0 0 12px;font-weight:760;font-size:15.5px;letter-spacing:-.025em}
+.ov-h small{display:block;font-weight:500;color:var(--muted);font-size:12.8px;letter-spacing:0;margin-top:1px}
+.ov-r{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:8px 10px;margin:0 0 8px}
+.ov-l{flex:0 0 122px;font-size:12.8px;font-weight:650;color:var(--muted)}
+.ov-s .ov-l{flex-basis:100%}
+.ov a{display:inline-flex;align-items:center;gap:7px;padding:4px 11px 4px 5px;border-radius:9px;background:var(--brand-soft);color:var(--brand-ink);font-size:13.6px;font-weight:620;line-height:1.5;transition:background .15s}
+.ov a:hover{background:color-mix(in srgb,var(--brand) 22%,var(--brand-soft))}
+.ov a b{display:grid;place-items:center;min-width:20px;height:20px;padding:0 4px;border-radius:6px;background:var(--brand);color:#fff;font-size:11px;font-weight:750;font-variant-numeric:tabular-nums}
+.ov-note{font-size:12.8px;color:var(--muted)}
+.ov-ar{position:relative;height:30px;margin:-4px 0 4px;padding-left:30px;display:flex;align-items:center;font-size:12.5px;color:var(--muted)}
+.ov-ar::before{content:"";position:absolute;left:19px;top:2px;width:2px;height:19px;background:var(--svg-line)}
+.ov-ar::after{content:"";position:absolute;left:15px;top:20px;border:5px solid transparent;border-top:7px solid var(--svg-line);border-bottom:0}
+.fig-scroll{overflow-x:auto;scrollbar-width:thin}
+
+details.slides{margin:0 34px 28px;border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+details.slides>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:9px;padding:12px 16px;font-weight:650;font-size:15px}
+details.slides>summary::-webkit-details-marker{display:none}
+details.slides>summary .i{color:var(--brand);transition:transform .25s cubic-bezier(.16,1,.3,1)}
+details.slides[open]>summary .i.chev{transform:rotate(90deg)}
+details.slides>summary small{margin-left:auto;font-weight:500;color:var(--muted);font-size:12.5px}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;padding:2px 14px 14px}
+.sthumb{position:relative;display:block;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;cursor:zoom-in;transition:border-color .15s,transform .2s cubic-bezier(.16,1,.3,1)}
+.sthumb:hover{border-color:var(--brand);transform:translateY(-1px)}
+.sthumb img{display:block;width:100%;height:auto}
+.sthumb span{position:absolute;left:6px;bottom:6px;font-size:11px;font-weight:700;background:rgba(0,0,0,.62);color:#fff;border-radius:6px;padding:1px 7px}
+dialog.lb{padding:0;border:0;background:transparent;max-width:96vw;max-height:96vh;overflow:visible}
+dialog.lb::backdrop{background:rgba(8,12,10,.84)}
+dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:auto;border-radius:10px;background:#fff;margin:0 auto}
+.lb-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin-top:12px;color:#fff;font-size:13.5px}
+.lb-bar button{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:10px;padding:6px 13px;cursor:pointer;font-size:13px}
+.lb-bar button:hover{background:rgba(255,255,255,.2)}
 
 /* ---------- quiz ---------- */
 .quiz{border-top:1px solid var(--line);background:var(--quiz-bg);padding:28px 34px 30px}
@@ -256,6 +294,14 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
   .fig{margin:18px -6px;padding:14px 6px 10px}
   .sum{padding:24px 18px}
   .quiz-f .next{margin-left:0}
+  details.slides{margin:0 18px 20px}
+  .sgrid{grid-template-columns:1fr 1fr;padding:2px 10px 10px;gap:8px}
+  .fig.overview{padding:16px 12px 10px}
+  .ov{grid-template-columns:1fr;gap:14px}
+}
+@media (max-width:640px){
+  .fig-scroll svg{min-width:var(--minw)}
+  .fig-scroll+figcaption::before{content:"좌우로 밀어 보기 · ";color:var(--brand);font-weight:650}
 }
 @media print{.side,.topbar,.quiz,.scope{display:none}.layout{display:block}.unit{box-shadow:none;break-inside:avoid-page}}
 </style>
@@ -330,6 +376,28 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
   </div>
 </details>
 
+
+<figure class="fig overview"><!--fig:overview-->
+  <div class="ov">
+    <div>
+      <p class="ov-h">단백질 기능 조절<small>이미 만들어진 단백질을 어떤 방식으로 켜고 끄는가</small></p>
+      <div class="ov-r"><span class="ov-l">비공유 결합 조절</span><a href="#u2"><b>2</b>다른자리 입체성</a><a href="#u3"><b>3</b>되먹임 억제</a></div>
+      <div class="ov-r"><span class="ov-l">공유결합 변형</span><a href="#u4"><b>4</b>인산화</a></div>
+      <div class="ov-r"><span class="ov-l">NTP 가수분해 이용</span><a href="#u5"><b>5</b>GTP 스위치</a><a href="#u5"><b>5</b>ATP 비가역성</a></div>
+      <div class="ov-r"><span class="ov-l">위치·모임 조절</span><a href="#u6"><b>6</b>기구·지역화</a><a href="#u7"><b>7</b>응축체(인)</a></div>
+      <div class="ov-r"><span class="ov-l">특이적 결합 단백질</span><a href="#u1"><b>1</b>항체</a><span class="ov-note">친화 관·검출 표지로 연구 도구가 됨</span></div>
+    </div>
+    <div>
+      <p class="ov-h">단백질 연구 방법<small>분리 → 정체 확인 → 구조</small></p>
+      <div class="ov-r ov-s"><span class="ov-l">분리·정제</span><a href="#u8"><b>8</b>관 크로마토그래피</a><a href="#u9"><b>9</b>젤 전기영동</a></div>
+      <div class="ov-ar">누구인가?</div>
+      <div class="ov-r ov-s"><span class="ov-l">동정</span><a href="#u10"><b>10</b>질량분석(MS)</a></div>
+      <div class="ov-ar">어떻게 생겼나?</div>
+      <div class="ov-r ov-s"><span class="ov-l">구조 결정</span><a href="#u11"><b>11</b>X선 결정학</a><a href="#u11"><b>11</b>Cryo‑EM</a></div>
+    </div>
+  </div>
+  <figcaption>한눈에 보는 4차시. 이름을 누르면 해당 소단원으로 이동합니다.</figcaption>
+</figure>
 <!-- ================= U1 항체 ================= -->
 <section class="unit" id="u1">
   <header class="unit-head"><span class="no">1</span><div>
@@ -342,6 +410,24 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
       <li><b class="k">Y자 모양</b>: 동일한 <b>중사슬 2개 + 경사슬 2개</b> → 양 끝에 동일한 <b>항원결합부위 2개</b>.</li>
       <li>항원결합부위가 항원과 <b class="k">입체적으로 상보적인 모양</b>이라 특정 항원에만 결합한다(특이성). 수백만 가지 서로 다른 항체가 만들어질 수 있다.</li>
     </ul>
+<figure class="fig"><!--fig:u1a-->
+  <svg viewBox="0 0 320 240" style="max-width:360px" role="img" aria-label="Y자 항체: 중사슬 2개가 줄기와 안쪽 팔을, 경사슬 2개가 바깥쪽 팔을 이루고, 두 팔 끝의 항원결합부위에 항원이 붙는다">
+    <polyline points="150,226 150,140 106,82" fill="none" stroke="var(--svg-b)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="166,226 166,140 210,82" fill="none" stroke="var(--svg-b)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="128" y1="134" x2="95" y2="90.5" stroke="var(--svg-a)" stroke-width="12" stroke-linecap="round"/>
+    <line x1="188" y1="134" x2="221" y2="90.5" stroke="var(--svg-a)" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="96" cy="66" r="11" class="svg-c"/>
+    <circle cx="220" cy="66" r="11" class="svg-c"/>
+    <text x="96" y="44" text-anchor="middle" class="svg-s">항원</text>
+    <line x1="232" y1="104" x2="216" y2="88" class="svg-line"/>
+    <text x="236" y="112" class="svg-s">항원결합부위</text>
+    <line x1="84" y1="122" x2="104" y2="113" class="svg-line"/>
+    <text x="80" y="128" text-anchor="end" class="svg-s">경사슬 2개</text>
+    <text x="178" y="206" class="svg-s">중사슬 2개</text>
+    <text x="178" y="160" class="svg-s">경첩</text>
+  </svg>
+  <figcaption>항체의 구조. 두 팔 끝의 항원결합부위가 항원과 입체적으로 꼭 맞을 때만 결합한다(특이성).</figcaption>
+</figure>
     <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>항체는 깊게 들어가지 않습니다. "항원결합부위가 있고, 특이적으로·입체적으로 결합한다" 정도면 충분하다고 했어요.</div>
 
     <h4>몸속에서 항체가 하는 일</h4>
@@ -362,11 +448,25 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
         <tr><th>② 분자 꼬리표<br>(생화학적 검출)</th><td>전기영동한 단백질에 항원 특이적 <b>1차 항체</b> → 1차 항체에 결합하는 표지된 <b>2차 항체</b></td><td>원하는 밴드만 표시 → 잘라 후속 실험</td></tr>
       </tbody>
     </table></div>
-    <div class="flow">
-      <div class="st"><b>항원</b>검출하고 싶은 단백질</div><span class="ar">←</span>
-      <div class="st"><b>1차 항체</b>항원에 특이적으로 결합</div><span class="ar">←</span>
-      <div class="st"><b>2차 항체 (여러 개)</b>1차 항체를 인식 · 표지 부착</div>
-    </div>
+<figure class="fig"><!--fig:u1b-->
+  <svg viewBox="0 0 340 230" style="max-width:420px" role="img" aria-label="막 위의 항원 X에 1차 항체가 붙고, 1차 항체의 줄기에 표지가 달린 2차 항체 세 개가 붙어 신호가 커진다">
+    <defs><g id="yab-u1"><path d="M0 0V-16M0-16L-9-28M0-16L9-28" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></g></defs>
+    <line x1="40" y1="206" x2="300" y2="206" class="svg-line" stroke-width="2"/>
+    <text x="44" y="224" class="svg-s">막 · 젤</text>
+    <rect x="158" y="190" width="24" height="16" rx="4" class="svg-c"/>
+    <use href="#yab-u1" transform="translate(170,160) rotate(180)" style="color:var(--svg-b)"/>
+    <use href="#yab-u1" transform="translate(140,168) rotate(90)" style="color:var(--svg-e)"/>
+    <use href="#yab-u1" transform="translate(200,168) rotate(-90)" style="color:var(--svg-e)"/>
+    <use href="#yab-u1" transform="translate(170,124) rotate(180)" style="color:var(--svg-e)"/>
+    <use href="#i-star" x="120" y="158" width="20" height="20" class="svg-d"/>
+    <use href="#i-star" x="200" y="158" width="20" height="20" class="svg-d"/>
+    <use href="#i-star" x="160" y="102" width="20" height="20" class="svg-d"/>
+    <text x="154" y="203" text-anchor="end" class="svg-s">항원 X</text>
+    <text x="188" y="194" class="svg-s" style="fill:var(--svg-b);font-weight:700">1차 항체</text>
+    <text x="226" y="132" class="svg-s" style="fill:var(--svg-e);font-weight:700">2차 항체 + 표지</text>
+  </svg>
+  <figcaption>1차 항체는 항원 X에, 2차 항체는 1차 항체의 줄기에 붙는다. 1차 항체 하나에 표지 달린 2차 항체가 여러 개 붙으니 신호가 증폭된다.</figcaption>
+</figure>
     <div class="co core"><b>왜 2차 항체를 쓰나?</b>2차 항체는 <b>1차 항체에 결합</b>하므로 항원에 특이적일 필요가 없고, 1차 항체 하나에 2차 항체 여러 개가 붙어 <b>신호가 증폭</b>된다. 1차 항체는 조금만 써도 된다.</div>
   </div>
   <div class="quiz" data-quiz="u1"></div>
@@ -527,6 +627,28 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
       <div class="st"><b>4</b><em class="mk">단백질–리간드 결합 변화</em></div><span class="ar">→</span>
       <div class="st"><b>5</b><em class="mk">단백질 활성 변화</em></div>
     </div>
+<figure class="fig"><!--fig:u4-->
+  <svg viewBox="0 0 600 236" role="img" aria-label="kinase가 ATP의 인산기를 붙이면 인산기가 양전하 곁사슬을 끌어당겨 구조가 바뀌고, phosphatase가 인산기를 떼면 원래 구조로 돌아온다">
+    <defs><marker id="mk-u4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker></defs>
+    <rect x="55" y="78" width="150" height="74" rx="22" class="sf-n"/>
+    <text x="130" y="108" text-anchor="middle" class="svg-t">탈인산화 상태</text>
+    <circle cx="88" cy="132" r="9" class="sf-e"/><text x="88" y="136.5" text-anchor="middle" class="svg-t" style="font-size:12px">+</text>
+    <rect x="395" y="78" width="150" height="74" rx="37" class="sf-a"/>
+    <text x="470" y="108" text-anchor="middle" class="svg-t">인산화 상태</text>
+    <circle cx="505" cy="130" r="9" class="sf-e"/><text x="505" y="134.5" text-anchor="middle" class="svg-t" style="font-size:12px">+</text>
+    <line x1="537" y1="89" x2="512" y2="122" stroke="var(--svg-d)" stroke-width="1.6" stroke-dasharray="3 3"/>
+    <circle cx="545" cy="80" r="13" class="svg-d"/><text x="545" y="84.5" text-anchor="middle" class="svg-t" style="fill:#fff;font-size:12px">P</text>
+    <path d="M205 90 C 255 40, 345 40, 395 90" class="svg-line" marker-end="url(#mk-u4)"/>
+    <text x="300" y="22" text-anchor="middle" class="svg-t">kinase (인산화효소)</text>
+    <text x="300" y="39" text-anchor="middle" class="svg-s">ATP → ADP</text>
+    <path d="M395 140 C 345 200, 255 200, 205 140" class="svg-line" marker-end="url(#mk-u4)"/>
+    <text x="300" y="212" text-anchor="middle" class="svg-t">phosphatase (탈인산화효소)</text>
+    <text x="300" y="229" text-anchor="middle" class="svg-s">Pᵢ 방출</text>
+    <text x="300" y="108" text-anchor="middle" class="svg-s">인산기(−)가 양전하 곁사슬을</text>
+    <text x="300" y="126" text-anchor="middle" class="svg-s">끌어당겨 구조가 바뀜</text>
+  </svg>
+  <figcaption>인산화 순환. 어느 쪽이 ON인지는 단백질마다 다르다 — 인산화로 켜지는 단백질도, 꺼지는 단백질도 있다.</figcaption>
+</figure>
     <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>인산화 = 켜짐(ON)이 아니다! 인산화되면 켜지는 단백질도, 꺼지는 단백질도 있다. 어느 쪽이 대사를 켤지는 정해져 있지 않다.</div>
     <h4>헷갈리기 쉬운 '인산화' 비교</h4>
     <div class="tbl"><table>
@@ -556,12 +678,26 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
       <li>활성화된 GTP-결합 단백질은 다른 단백질과 결합해 그 활성을 조절한다.</li>
       <li><em class="mk">세포 내 신호전달 경로에서 주요 기능</em> (다음 단원 세포 신호전달, GPCR 등에서 다시 등장).</li>
     </ul>
-    <div class="flow">
-      <div class="st"><b>OFF</b>GDP 결합 상태</div><span class="ar">→</span>
-      <div class="st"><b>신호</b>GDP 해리 · GTP로 교체</div><span class="ar">→</span>
-      <div class="st"><b>ON</b>GTP 결합 → 다른 단백질 조절</div><span class="ar">→</span>
-      <div class="st"><b>스스로 끔</b>GTP 가수분해 · 인산기 방출</div><span class="ar">↺</span>
-    </div>
+<figure class="fig"><!--fig:u5a-->
+  <svg viewBox="0 0 600 240" role="img" aria-label="GTP 결합 단백질 순환: 신호가 GDP를 GTP로 바꾸면 ON이 되어 표적 단백질을 조절하고, 스스로 GTP를 가수분해하면 OFF로 돌아온다">
+    <defs><marker id="mk-u5a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker></defs>
+    <rect x="60" y="86" width="140" height="64" rx="16" class="sf-n"/>
+    <text x="130" y="113" text-anchor="middle" class="svg-t">OFF</text>
+    <text x="130" y="133" text-anchor="middle" class="svg-s">GDP 결합</text>
+    <rect x="400" y="86" width="140" height="64" rx="16" class="sf-a"/>
+    <text x="470" y="113" text-anchor="middle" class="svg-t">ON</text>
+    <text x="470" y="133" text-anchor="middle" class="svg-s">GTP 결합</text>
+    <path d="M200 98 C 250 44, 350 44, 400 98" class="svg-line" marker-end="url(#mk-u5a)"/>
+    <text x="300" y="22" text-anchor="middle" class="svg-t">신호가 교체를 촉진</text>
+    <text x="300" y="39" text-anchor="middle" class="svg-s">GDP 빠지고 GTP 결합</text>
+    <path d="M400 140 C 350 198, 250 198, 200 140" class="svg-line" marker-end="url(#mk-u5a)"/>
+    <text x="300" y="214" text-anchor="middle" class="svg-t">스스로 GTP 가수분해</text>
+    <text x="300" y="231" text-anchor="middle" class="svg-s">Pᵢ 방출 → 재빨리 OFF</text>
+    <line x1="470" y1="152" x2="470" y2="174" class="svg-line" marker-end="url(#mk-u5a)"/>
+    <text x="470" y="192" text-anchor="middle" class="svg-s">표적 단백질 조절</text>
+  </svg>
+  <figcaption>GTP를 쥐고 있는 동안만 ON. 켜는 것은 신호(GDP → GTP 교체), 끄는 것은 단백질 자신(GTP 가수분해)이다.</figcaption>
+</figure>
     <div class="tbl"><table>
       <thead><tr><th></th><th>인산화 스위치</th><th>GTP-결합 단백질 스위치</th></tr></thead>
       <tbody>
@@ -578,6 +714,34 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
       <li><b class="k">단백질 이동의 비가역성</b>: 구조 변화가 한 방향 → 전체 이동 주기가 한 방향.</li>
       <li><b class="k">구조 변화 + ATP 가수분해 → 비가역성 추진</b>: ATP 결합으로 구조 변화가 일어나고, 가수분해 과정의 비가역적 단계 → ADP·Pᵢ 방출로 한 걸음 전진.</li>
     </ul>
+<figure class="fig"><!--fig:u5b-->
+  <svg viewBox="0 0 640 214" role="img" aria-label="모터 단백질 주기: ATP 결합 단계는 앞뒤로 오갈 수 있지만 가수분해 단계는 되돌아갈 수 없어, 주기 전체가 한 방향으로 돌며 필라멘트 위를 한 방향으로 이동한다">
+    <defs><marker id="mk-u5b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker></defs>
+    <rect x="24" y="34" width="160" height="62" rx="14" class="sf-n"/>
+    <text x="104" y="60" text-anchor="middle" class="svg-t">① ATP 결합</text>
+    <text x="104" y="80" text-anchor="middle" class="svg-s">구조 변화 시작</text>
+    <rect x="240" y="34" width="160" height="62" rx="14" class="sf-c"/>
+    <text x="320" y="60" text-anchor="middle" class="svg-t">② ATP 가수분해</text>
+    <text x="320" y="80" text-anchor="middle" class="svg-s">에너지가 빠져나감</text>
+    <rect x="456" y="34" width="160" height="62" rx="14" class="sf-a"/>
+    <text x="536" y="60" text-anchor="middle" class="svg-t">③ ADP·Pᵢ 방출</text>
+    <text x="536" y="80" text-anchor="middle" class="svg-s">한 걸음 앞으로</text>
+    <line x1="186" y1="56" x2="236" y2="56" class="svg-line" marker-end="url(#mk-u5b)"/>
+    <line x1="236" y1="76" x2="190" y2="76" class="svg-line" marker-end="url(#mk-u5b)"/>
+    <text x="212" y="48" text-anchor="middle" class="svg-s">가역</text>
+    <line x1="402" y1="56" x2="452" y2="56" class="svg-line" marker-end="url(#mk-u5b)"/>
+    <text x="428" y="48" text-anchor="middle" class="svg-s" style="fill:var(--svg-d);font-weight:700">비가역</text>
+    <line x1="452" y1="76" x2="406" y2="76" class="svg-line" stroke-dasharray="3 3" opacity=".6"/>
+    <path d="M422 70 l12 12 M434 70 l-12 12" stroke="var(--svg-d)" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M536 96 C 536 146, 104 146, 104 100" class="svg-line" marker-end="url(#mk-u5b)"/>
+    <text x="320" y="124" text-anchor="middle" class="svg-s">같은 방향으로 다음 주기</text>
+    <line x1="24" y1="172" x2="612" y2="172" stroke="var(--svg-a)" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="612,162 632,172 612,182" class="svg-a"/>
+    <circle cx="300" cy="158" r="9" class="svg-b"/><circle cx="326" cy="158" r="9" class="svg-b"/>
+    <text x="320" y="202" text-anchor="middle" class="svg-s">세포골격 필라멘트 위를 한 방향으로 이동</text>
+  </svg>
+  <figcaption>ATP 결합만으로는 구조가 앞뒤로 오갈 수 있지만, 가수분해 단계에서 큰 에너지가 빠져나가 되돌아갈 수 없다 → 주기 전체가 한 방향으로 돈다.</figcaption>
+</figure>
     <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>단백질은 "눈이 없다". 목적지를 보고 갈 수 없으니, 한 번 밀어줄 때 큰 에너지를 빼 버려 <b>뒤로 되돌아갈 수 없게</b> 만들어야 한 방향으로 간다. 1차시에 강조한 핵심 개념 중 <b>방향성</b>과 <b>입체 구조 변화</b>가 바로 이것.</div>
     <div class="co warn"><b><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>심화 — 시험 범위 아님 (비가역성 이해용 예시)</b>
       <p>DNA 중합: 사슬 끝 3′-OH가 dNTP의 인산기를 친핵성 공격 → 피로인산(PPᵢ)이 떨어지며 약 7.3 kcal, 이어 PPᵢ가 가수분해되며 약 4 kcal 방출 → 합쳐 <b>11 kcal 이상</b>이 빠져나감. 거꾸로 분해하려면 그만큼을 다시 넣어야 하므로 사실상 일어나지 않음 → <b>5′→3′ 일방향 중합</b>.</p>
@@ -600,6 +764,32 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
       <li><b class="k">다효소 복합체</b>: 경로의 여러 단계에 필요한 한 팀의 효소가 모인 복합체. <b>첫 효소의 생성물이 인접 효소의 기질</b>이 되는 식으로 마지막 생성물이 나올 때까지 이어져 일련의 반응을 쉽게 만든다. (예: 미토콘드리아 내막의 전자전달계 복합체 I~IV)</li>
       <li><b class="k">세포 내 고정 위치</b>: ① 특정 막의 구조적 요소로 작용하거나, ② 고유한 내부 화학 환경을 가진, 막으로 둘러싸인 소기관 내부 용액에 존재.</li>
     </ul>
+<figure class="fig"><!--fig:u6-->
+  <svg viewBox="0 0 640 224" role="img" aria-label="효소가 흩어져 있으면 중간물질 B, C가 확산되다 일부 흩어지지만, 다효소 복합체에서는 생성물이 곧바로 이웃 효소로 넘어간다">
+    <defs><marker id="mk-u6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker></defs>
+    <text x="150" y="22" text-anchor="middle" class="svg-t">효소가 흩어져 있으면</text>
+    <circle cx="70" cy="92" r="24" class="sf-n"/><text x="70" y="96" text-anchor="middle" class="svg-s">효소1</text>
+    <circle cx="236" cy="84" r="24" class="sf-n"/><text x="236" y="88" text-anchor="middle" class="svg-s">효소2</text>
+    <circle cx="168" cy="172" r="24" class="sf-n"/><text x="168" y="176" text-anchor="middle" class="svg-s">효소3</text>
+    <line x1="16" y1="92" x2="44" y2="92" class="svg-line" marker-end="url(#mk-u6)"/><text x="24" y="84" class="svg-s">A</text>
+    <path d="M94 88 C 140 40, 180 128, 210 90" class="svg-line" stroke-dasharray="4 4" marker-end="url(#mk-u6)"/><text x="132" y="60" class="svg-s">B</text>
+    <path d="M60 116 C 56 134, 48 146, 40 158" class="svg-line" stroke-dasharray="4 4"/><circle cx="38" cy="162" r="4" class="svg-c"/><text x="48" y="180" class="svg-s">B 흩어짐</text>
+    <path d="M238 108 C 242 140, 222 160, 196 168" class="svg-line" stroke-dasharray="4 4" marker-end="url(#mk-u6)"/><text x="240" y="150" class="svg-s">C</text>
+    <line x1="168" y1="196" x2="168" y2="214" class="svg-line" marker-end="url(#mk-u6)"/><text x="178" y="212" class="svg-s">D</text>
+    <text x="480" y="22" text-anchor="middle" class="svg-t">다효소 복합체</text>
+    <rect x="348" y="66" width="264" height="84" rx="42" fill="none" stroke="var(--svg-line)" stroke-dasharray="5 4"/>
+    <circle cx="398" cy="108" r="28" class="sf-a"/><text x="398" y="112" text-anchor="middle" class="svg-s">효소1</text>
+    <circle cx="480" cy="108" r="28" class="sf-a"/><text x="480" y="112" text-anchor="middle" class="svg-s">효소2</text>
+    <circle cx="562" cy="108" r="28" class="sf-a"/><text x="562" y="112" text-anchor="middle" class="svg-s">효소3</text>
+    <line x1="314" y1="108" x2="368" y2="108" class="svg-line" marker-end="url(#mk-u6)"/><text x="328" y="98" class="svg-s">A</text>
+    <line x1="426" y1="108" x2="450" y2="108" class="svg-line" marker-end="url(#mk-u6)"/><text x="439" y="96" text-anchor="middle" class="svg-s">B</text>
+    <line x1="508" y1="108" x2="532" y2="108" class="svg-line" marker-end="url(#mk-u6)"/><text x="521" y="96" text-anchor="middle" class="svg-s">C</text>
+    <line x1="590" y1="108" x2="632" y2="108" class="svg-line" marker-end="url(#mk-u6)"/><text x="612" y="98" class="svg-s">D</text>
+    <text x="480" y="178" text-anchor="middle" class="svg-s">생성물이 곧바로 이웃 효소의 기질로</text>
+    <text x="480" y="196" text-anchor="middle" class="svg-s">중간물질이 흩어지지 않는다</text>
+  </svg>
+  <figcaption>같은 경로 A → B → C → D. 효소가 흩어져 있으면 중간물질이 확산되며 시간이 걸리고 일부는 흩어지지만, 다효소 복합체는 생성물을 바로 다음 효소로 넘긴다.</figcaption>
+</figure>
     <h4>단백질 기구 (protein machine)</h4>
     <ul>
       <li><em class="mk">고도로 조절되고 연계된 다수의 단백질 집합</em>에 의해 촉매가 일어난다.</li>
@@ -850,6 +1040,35 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
       <div class="st"><b>3 질량 분리</b>전기장·자기장으로 m/z 비에 따라 분리</div><span class="ar">→</span>
       <div class="st"><b>4 검출·스펙트럼</b>이온 신호 강도를 질량 스펙트럼으로 기록</div>
     </div>
+<figure class="fig"><!--fig:u10-->
+  <svg viewBox="0 0 680 236" role="img" aria-label="질량분석기: 이온화된 시료가 자기장에서 질량 대 전하비에 따라 다르게 휘어 검출기의 다른 위치에 닿고, 이온별 세기가 질량 스펙트럼의 피크가 된다">
+    <rect x="16" y="88" width="80" height="54" rx="10" class="sf-n"/>
+    <text x="56" y="110" text-anchor="middle" class="svg-t" style="font-size:12px">① 주입</text>
+    <text x="56" y="128" text-anchor="middle" class="svg-t" style="font-size:12px">② 이온화</text>
+    <line x1="96" y1="115" x2="124" y2="115" class="svg-line"/>
+    <rect x="124" y="60" width="120" height="140" rx="10" class="sf-e"/>
+    <text x="184" y="80" text-anchor="middle" class="svg-t" style="font-size:12px">③ 질량 분리</text>
+    <text x="184" y="192" text-anchor="middle" class="svg-s">전기장·자기장</text>
+    <path d="M124 115 C 200 115, 250 120, 290 126" fill="none" stroke="var(--svg-e)" stroke-width="2.4"/>
+    <path d="M124 115 C 190 115, 240 135, 290 150" fill="none" stroke="var(--svg-b)" stroke-width="2.4"/>
+    <path d="M124 115 C 175 115, 225 155, 290 178" fill="none" stroke="var(--svg-d)" stroke-width="2.4"/>
+    <rect x="290" y="100" width="8" height="96" rx="2" style="fill:var(--svg-line)"/>
+    <text x="294" y="92" text-anchor="middle" class="svg-t" style="font-size:12px">④ 검출</text>
+    <text x="306" y="130" class="svg-s">m/z 큼</text>
+    <text x="306" y="154" class="svg-s">중간</text>
+    <text x="306" y="182" class="svg-s">m/z 작음</text>
+    <text x="527" y="28" text-anchor="middle" class="svg-t">질량 스펙트럼</text>
+    <line x1="390" y1="196" x2="664" y2="196" class="svg-line"/>
+    <line x1="390" y1="196" x2="390" y2="44" class="svg-line"/>
+    <g stroke="var(--svg-b)" stroke-width="3" stroke-linecap="round">
+      <line x1="414" y1="196" x2="414" y2="150"/><line x1="446" y1="196" x2="446" y2="76"/><line x1="482" y1="196" x2="482" y2="160"/>
+      <line x1="520" y1="196" x2="520" y2="104"/><line x1="566" y1="196" x2="566" y2="128"/><line x1="606" y1="196" x2="606" y2="60"/><line x1="640" y1="196" x2="640" y2="170"/>
+    </g>
+    <text x="527" y="222" text-anchor="middle" class="svg-t" style="font-size:12px">m/z (질량 ÷ 전하)</text>
+    <text x="372" y="120" text-anchor="middle" class="svg-t" style="font-size:12px" transform="rotate(-90 372 120)">신호 세기</text>
+  </svg>
+  <figcaption>m/z가 다르면 휘는 정도가 달라 검출기의 다른 곳에 닿는다(단순화한 그림 — 물리 원리는 범위 밖). 피크 패턴을 유전자 서열에서 예측한 펩타이드 질량과 대조해 단백질을 확인한다.</figcaption>
+</figure>
     <div class="co core"><b>m/z — 질량이 아니라 "질량 ÷ 전하"</b>같은 분자라도 전하가 2배가 되면 m/z는 절반 위치에 나타난다. 스펙트럼의 뾰족한 피크 하나하나가 특정 m/z의 이온이 얼마나 많은지를 보여 준다.</div>
     <h4>2D-PAGE에서 MS까지: 단백질 동정의 흐름</h4>
     <div class="flow">
@@ -890,9 +1109,63 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
       <li>왜 천천히 얼리면 안 되나? 물은 얼면서 부피가 커지고, 얼음 결정이 주변 구조를 찢어 놓는다 (냉동식품을 녹였다 다시 얼리면 안 되는 이유와 같음).</li>
       <li>얼음 속 수많은 입자가 제각기 다른 방향으로 놓여 있음 → 전자빔으로 찍은 여러 방향의 2차원 영상을 분류·정렬·중첩 → 3차원 구조. (강의 비유: 코끼리를 여러 방향에서 더듬는 사람들의 묘사를 합치기)</li>
     </ul>
-    <div class="flow">
-      <div class="st"><b>1</b>시료 준비</div><span class="ar">→</span><div class="st"><b>2</b>그리드 위 급속 냉동</div><span class="ar">→</span><div class="st"><b>3</b>Cryo-EM 촬영</div><span class="ar">→</span><div class="st"><b>4</b>데이터 수집·전처리</div><span class="ar">→</span><div class="st"><b>5</b>3D 지도 재구성</div><span class="ar">→</span><div class="st"><b>6</b>원자 모델 → 구조 분석</div>
-    </div>
+<figure class="fig"><!--fig:u11a-->
+  <svg viewBox="0 0 620 210" role="img" aria-label="천천히 얼리면 얼음 결정이 자라 단백질을 찌르고 손상시키지만, 유리화 동결은 결정 없이 굳어 단백질이 원래 모양으로 고정된다">
+    <text x="158" y="26" text-anchor="middle" class="svg-t">천천히 얼리면</text>
+    <rect x="16" y="40" width="284" height="128" rx="14" fill="none" stroke="var(--line)"/>
+    <g class="sf-e">
+      <polygon points="70,72 61,87.6 43,87.6 34,72 43,56.4 61,56.4"/>
+      <polygon points="74,140 65,155.6 47,155.6 38,140 47,124.4 65,124.4"/>
+      <polygon points="136,148 127,163.6 109,163.6 100,148 109,132.4 127,132.4"/>
+      <polygon points="280,72 271,87.6 253,87.6 244,72 253,56.4 271,56.4"/>
+      <polygon points="272,140 263,155.6 245,155.6 236,140 245,124.4 263,124.4"/>
+    </g>
+    <g class="svg-b"><circle cx="146" cy="94" r="22"/><circle cx="172" cy="98" r="20"/><circle cx="158" cy="116" r="18"/></g>
+    <polyline points="150,80 160,98 151,110 163,128" fill="none" stroke="var(--bg)" stroke-width="2.6" stroke-linejoin="round"/>
+    <g stroke="var(--svg-d)" stroke-width="2.6" stroke-linecap="round">
+      <line x1="244" y1="76" x2="192" y2="93"/><line x1="70" y1="80" x2="124" y2="92"/><line x1="126" y1="134" x2="144" y2="124"/>
+    </g>
+    <text x="158" y="192" text-anchor="middle" class="svg-s">얼음 결정이 자라며 단백질 구조를 손상</text>
+    <text x="462" y="26" text-anchor="middle" class="svg-t">유리화 동결 (순간 냉동)</text>
+    <rect x="320" y="40" width="284" height="128" rx="14" class="sf-e"/>
+    <g style="fill:var(--svg-line)" opacity=".5">
+      <circle cx="340" cy="60" r="1.8"/><circle cx="372" cy="52" r="1.8"/><circle cx="410" cy="64" r="1.8"/><circle cx="520" cy="58" r="1.8"/><circle cx="560" cy="70" r="1.8"/>
+      <circle cx="590" cy="52" r="1.8"/><circle cx="352" cy="96" r="1.8"/><circle cx="388" cy="110" r="1.8"/><circle cx="346" cy="140" r="1.8"/><circle cx="398" cy="150" r="1.8"/>
+      <circle cx="430" cy="156" r="1.8"/><circle cx="470" cy="152" r="1.8"/><circle cx="512" cy="146" r="1.8"/><circle cx="548" cy="120" r="1.8"/><circle cx="584" cy="140" r="1.8"/>
+      <circle cx="536" cy="92" r="1.8"/><circle cx="574" cy="100" r="1.8"/><circle cx="366" cy="128" r="1.8"/><circle cx="420" cy="52" r="1.8"/><circle cx="500" cy="62" r="1.8"/>
+    </g>
+    <g class="svg-b"><circle cx="450" cy="94" r="22"/><circle cx="476" cy="98" r="20"/><circle cx="462" cy="116" r="18"/></g>
+    <text x="462" y="192" text-anchor="middle" class="svg-s">결정 없이 굳어 원래 구조 그대로 고정</text>
+  </svg>
+  <figcaption>물은 얼면서 부피가 커지고, 천천히 얼리면 자라나는 얼음 결정이 단백질을 망가뜨린다. −160 ℃ 미만에서 순간적으로 얼리면 결정이 생길 틈이 없다.</figcaption>
+</figure>
+<figure class="fig"><!--fig:u11b-->
+  <svg viewBox="0 0 680 220" role="img" aria-label="X선 결정학은 결정 만들기 단계가 병목이고 정적 구조를 얻는다. Cryo-EM은 급속 냉동 뒤 여러 방향의 2차원 사진 수천 장을 분류·평균해 3차원으로 재구성한다">
+    <defs><marker id="mk-u11" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker></defs>
+    <text x="20" y="83" class="svg-t">X선 결정학</text>
+    <rect x="120" y="58" width="118" height="40" rx="10" class="sf-n"/><text x="179" y="83" text-anchor="middle" class="svg-t" style="font-size:12px">정제된 단백질</text>
+    <rect x="260" y="58" width="118" height="40" rx="10" class="sf-d"/><text x="319" y="83" text-anchor="middle" class="svg-t" style="font-size:12px">결정 만들기</text>
+    <rect x="400" y="58" width="118" height="40" rx="10" class="sf-n"/><text x="459" y="83" text-anchor="middle" class="svg-t" style="font-size:12px">X선 회절 무늬</text>
+    <rect x="540" y="58" width="118" height="40" rx="10" class="sf-a"/><text x="599" y="83" text-anchor="middle" class="svg-t" style="font-size:12px">원자 모델</text>
+    <line x1="238" y1="78" x2="258" y2="78" class="svg-line" marker-end="url(#mk-u11)"/>
+    <line x1="378" y1="78" x2="398" y2="78" class="svg-line" marker-end="url(#mk-u11)"/>
+    <line x1="518" y1="78" x2="538" y2="78" class="svg-line" marker-end="url(#mk-u11)"/>
+    <text x="319" y="118" text-anchor="middle" class="svg-s" style="fill:var(--svg-d);font-weight:700">병목: 결정화에 수년</text>
+    <text x="599" y="118" text-anchor="middle" class="svg-s">정적 구조</text>
+    <text x="20" y="169" class="svg-t">Cryo‑EM</text>
+    <rect x="120" y="144" width="118" height="40" rx="10" class="sf-n"/><text x="179" y="169" text-anchor="middle" class="svg-t" style="font-size:12px">정제된 단백질</text>
+    <rect x="260" y="144" width="118" height="40" rx="10" class="sf-e"/><text x="319" y="169" text-anchor="middle" class="svg-t" style="font-size:12px">급속 냉동</text>
+    <rect x="400" y="144" width="118" height="40" rx="10" class="sf-n"/><text x="459" y="169" text-anchor="middle" class="svg-t" style="font-size:12px">2D 사진 수천 장</text>
+    <rect x="540" y="144" width="118" height="40" rx="10" class="sf-a"/><text x="599" y="169" text-anchor="middle" class="svg-t" style="font-size:12px">3D 재구성</text>
+    <line x1="238" y1="164" x2="258" y2="164" class="svg-line" marker-end="url(#mk-u11)"/>
+    <line x1="378" y1="164" x2="398" y2="164" class="svg-line" marker-end="url(#mk-u11)"/>
+    <line x1="518" y1="164" x2="538" y2="164" class="svg-line" marker-end="url(#mk-u11)"/>
+    <text x="319" y="204" text-anchor="middle" class="svg-s">결정 없이 −160 ℃ 미만</text>
+    <text x="459" y="204" text-anchor="middle" class="svg-s">여러 방향 → 분류·평균</text>
+    <text x="599" y="204" text-anchor="middle" class="svg-s">막단백질·복합체 가능</text>
+  </svg>
+  <figcaption>두 방법의 차이는 둘째 단계에 있다. X선 결정학은 결정을 만들어야 하고, Cryo-EM은 얼리기만 하면 된다. 대신 Cryo-EM은 소형 단백질이 어렵고 장비가 매우 비싸다.</figcaption>
+</figure>
     <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>자료 표기 주의</b>슬라이드에 실린 교재 번역문에는 "−180 ℃의 <b>에탄올</b>을 투여"라고 적혀 있고 강의에서도 그렇게 말했지만, 에탄올은 약 −114 ℃에서 얼기 때문에 −180 ℃에서 액체일 수 없습니다. 실제 냉매는 <b>액체 에탄(ethane)</b>입니다. 시험에서 냉매 이름을 직접 묻는다면 수업 표기를 따르되, 핵심은 "순간 냉각 → 얼음 결정 없음"이라는 원리입니다.</div>
     <h4>X선 결정학 vs Cryo-EM <span style="font-weight:400;font-size:13px;color:var(--muted)">(슬라이드 39)</span></h4>
     <div class="tbl"><table>
@@ -938,6 +1211,7 @@ tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,tran
 </div><!-- /wrap -->
 </main>
 </div><!-- /layout -->
+<dialog class="lb" id="lb" aria-label="슬라이드 크게 보기"><img alt=""><div class="lb-bar"><button type="button" data-lb="-1">이전</button><span id="lbCap"></span><button type="button" data-lb="1">다음</button><button type="button" data-lb="x">닫기</button></div></dialog>
 
 <script>
 const UNITS = [
@@ -1415,6 +1689,44 @@ navBtn.addEventListener('click', () => setNav(!document.body.classList.contains(
 document.getElementById('scrim').addEventListener('click', () => setNav(false));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') setNav(false); });
 links.forEach(a => a.addEventListener('click', () => setNav(false)));
+
+/* ---------- wide diagrams keep a readable size on phones (swipe sideways) ---------- */
+document.querySelectorAll('.fig svg[viewBox]').forEach(svg => {
+  const w = svg.viewBox.baseVal.width;
+  if (w < 500) return;
+  const box = document.createElement('div');
+  box.className = 'fig-scroll';
+  svg.style.setProperty('--minw', Math.round(w * 0.9) + 'px');
+  svg.before(box);
+  box.appendChild(svg);
+});
+
+/* ---------- slide lightbox (local build only has thumbnails) ---------- */
+const lb = document.getElementById('lb');
+if (document.querySelector('.sthumb')) {
+  const lbImg = lb.querySelector('img'), lbCap = document.getElementById('lbCap');
+  let list = [], idx = 0;
+  const show = () => { lbImg.src = list[idx].src; lbImg.alt = list[idx].alt; lbCap.textContent = list[idx].alt + ' · ' + (idx + 1) + '/' + list.length; };
+  const step = d => { idx = (idx + d + list.length) % list.length; show(); };
+  document.addEventListener('click', e => {
+    const t = e.target.closest('.sthumb');
+    if (!t) return;
+    list = [...t.closest('.sgrid').querySelectorAll('img')];
+    idx = list.indexOf(t.querySelector('img'));
+    show(); lb.showModal();
+  });
+  lb.addEventListener('click', e => {
+    const b = e.target.closest('[data-lb]');
+    if (b) { b.dataset.lb === 'x' ? lb.close() : step(+b.dataset.lb); return; }
+    if (e.target === lb) lb.close();
+  });
+  lb.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') step(1);
+    if (e.key === 'ArrowLeft') step(-1);
+  });
+} else {
+  lb.remove();
+}
 
 const root = document.documentElement, themeBtn = document.getElementById('themeBtn');
 const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
