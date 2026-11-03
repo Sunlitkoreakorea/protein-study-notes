@@ -19,6 +19,7 @@
   --note:#6b3fa0; --note-soft:#f2eafa; --note-line:#dac8ee;
   --ok:#17703a; --ok-soft:#e2f4e8; --bad:#b3261e; --bad-soft:#fbe7e5;
   --quiz-bg:#f7f9f4;
+  --gold:#b07c08; --gold-soft:#fcf3dc;
   --svg-a:#a8d6c3; --svg-b:#5fa98a; --svg-c:#e9b44c; --svg-d:#d9695f; --svg-e:#6d9bd1; --svg-line:#6c7b72;
   --shadow:0 1px 2px rgba(20,40,30,.05),0 20px 44px -26px rgba(20,40,30,.22);
   --sel:rgba(29,122,90,.2);
@@ -36,6 +37,7 @@
     --note:#cbabf0; --note-soft:#251b36; --note-line:#44335f;
     --ok:#72dd99; --ok-soft:#13301f; --bad:#ff968c; --bad-soft:#3a1d1a;
     --quiz-bg:#131a17;
+    --gold:#f2c14e; --gold-soft:#2f2710;
     --svg-a:#2f6b57; --svg-b:#52c79c; --svg-c:#d2a13c; --svg-d:#e0786d; --svg-e:#6aa0dc; --svg-line:#8fa398;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 20px 44px -26px rgba(0,0,0,.7);
     --sel:rgba(82,199,156,.28);
@@ -50,6 +52,7 @@
   --note:#cbabf0; --note-soft:#251b36; --note-line:#44335f;
   --ok:#72dd99; --ok-soft:#13301f; --bad:#ff968c; --bad-soft:#3a1d1a;
   --quiz-bg:#131a17;
+  --gold:#f2c14e; --gold-soft:#2f2710;
   --svg-a:#2f6b57; --svg-b:#52c79c; --svg-c:#d2a13c; --svg-d:#e0786d; --svg-e:#6aa0dc; --svg-line:#8fa398;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 20px 44px -26px rgba(0,0,0,.7);
   --sel:rgba(82,199,156,.28);
@@ -102,7 +105,9 @@ main{padding:44px 40px 140px;min-width:0}
 .hero .intro{margin:0;color:var(--ink);opacity:.86;max-width:60ch;font-size:16.5px}
 .legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:550;padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--muted)}
-.chip.star{color:var(--star);background:var(--star-soft);border-color:transparent}
+.chip.gold{color:var(--ink);background:var(--gold-soft);border-color:transparent}
+.chip.gold .i{color:var(--gold)}
+.chip.red{color:var(--star);background:var(--star-soft);border-color:transparent}
 .chip.warn{color:var(--warn);background:var(--warn-soft);border-color:var(--warn-line)}
 .chip.note{color:var(--note);background:var(--note-soft);border-color:var(--note-line)}
 .chip.info{color:var(--info);background:var(--info-soft);border-color:var(--info-line)}
@@ -132,7 +137,6 @@ details.scope li::marker{color:var(--brand)}
 .body li{margin:6px 0}
 .body li::marker{color:var(--brand)}
 .mk{font-style:normal;background:linear-gradient(transparent 60%,var(--star-soft) 60%);box-shadow:inset 0 -2px 0 var(--star);padding:0 1px}
-.mk::after{content:"";display:inline-block;width:.6em;height:.6em;margin-left:2px;vertical-align:.5em;background:var(--star);-webkit-mask:var(--m-star) center/contain no-repeat;mask:var(--m-star) center/contain no-repeat}
 b.k{color:var(--brand-ink);font-weight:720}
 code{font:.92em ui-monospace,Menlo,Consolas,monospace;background:var(--brand-soft);padding:1px 6px;border-radius:6px}
 
@@ -221,7 +225,7 @@ dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:aut
 .q{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px 20px;margin:14px 0;transition:border-color .3s}
 .q.is-ok{border-color:color-mix(in srgb,var(--ok) 40%,var(--line))}
 .q.is-no{border-color:color-mix(in srgb,var(--bad) 40%,var(--line))}
-.q .qn{font-size:12.5px;font-weight:800;color:var(--brand);margin-bottom:4px;font-variant-numeric:tabular-nums}
+.q .qn{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:-6px -8px 2px 0;font-size:12.5px;font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums}
 .q .qt{font-weight:620;line-height:1.72;font-size:16.2px}
 .q .qt ul{font-weight:450;margin:10px 0 2px;padding:10px 14px;list-style:none;background:var(--bg);border-radius:12px;font-size:15.4px}
 .q .qt li{margin:3px 0}
@@ -272,6 +276,40 @@ dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:aut
 .wrongs a:hover{background:var(--bg)}
 .wrongs a b{flex:none;color:var(--bad);font-size:12.5px;min-width:76px;font-variant-numeric:tabular-nums}
 
+/* ---------- personal star system ---------- */
+.stars{display:inline-flex;align-items:center}
+.sb{display:grid;place-items:center;width:28px;height:28px;padding:0;border:0;background:none;border-radius:8px;cursor:pointer;color:var(--muted);opacity:.5;transition:opacity .15s,color .15s,transform .18s cubic-bezier(.16,1,.3,1)}
+.sb .i{width:18px;height:18px;stroke-width:1.7}
+.sb:hover{opacity:1;color:var(--gold);transform:scale(1.14)}
+.sb.on{opacity:1;color:var(--gold)}
+.sb.on .i{fill:currentColor}
+.u-stars{margin-left:auto;flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:1px;padding-top:2px}
+.u-stars>span:first-child{font-size:11.5px;font-weight:650;color:var(--muted);padding-right:6px}
+.unit-head>div:not(.u-stars){flex:1;min-width:0}
+.starbox{margin:0 0 14px;padding:12px 14px;border:1px solid var(--line);background:var(--card);border-radius:14px}
+.starbox .row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;color:var(--muted)}
+.starbox .row b{color:var(--ink);font-variant-numeric:tabular-nums}
+.star-toggle{width:100%;justify-content:center;margin-top:9px}
+.star-toggle .i{color:var(--gold)}
+.star-toggle[aria-pressed="true"]{background:var(--gold-soft);border-color:var(--gold)}
+.star-toggle:disabled{opacity:.5;cursor:not-allowed}
+.star-toggle:disabled:hover{border-color:var(--line);color:var(--ink)}
+.toc .stv{flex:none;display:inline-flex;color:var(--gold)}
+.toc .stv .i{width:11px;height:11px}
+.star-bar{position:sticky;top:14px;z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:11px 14px;margin:0 0 26px;border-radius:14px;background:var(--gold-soft);border:1px solid var(--gold);box-shadow:var(--shadow);font-weight:650;font-size:14.5px}
+.star-bar[hidden]{display:none}
+.star-bar>.i{color:var(--gold)}
+.star-bar #starRetry{margin-left:auto}
+.star-bar .btn:disabled{opacity:.5;cursor:not-allowed}
+body.star-only .hero,body.star-only details.scope,body.star-only .fig.overview{display:none}
+body.star-only .unit:not(.has-star){display:none}
+body.star-only .unit:not(.u-star)>.body,body.star-only .unit:not(.u-star)>details.slides{display:none}
+body.star-only .unit:not(.u-star) .q:not(.q-star){display:none}
+.starlist h4 .i{color:var(--gold)}
+.starlist a b{color:var(--ink)}
+.starlist .lvs{display:inline-flex;color:var(--gold);margin-right:6px;vertical-align:-1px}
+.starlist .lvs .i{width:11px;height:11px}
+
 /* ---------- responsive ---------- */
 @media (max-width:980px){
   html{scroll-padding-top:72px}
@@ -298,12 +336,15 @@ dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:aut
   .sgrid{grid-template-columns:1fr 1fr;padding:2px 10px 10px;gap:8px}
   .fig.overview{padding:16px 12px 10px}
   .ov{grid-template-columns:1fr;gap:14px}
+  .unit-head{flex-wrap:wrap}
+  .u-stars{order:3;flex-basis:100%;flex-direction:row;align-items:center;gap:4px;padding:0 0 0 51px;margin-top:-6px}
+  .star-bar{position:static}
 }
 @media (max-width:640px){
   .fig-scroll svg{min-width:var(--minw)}
   .fig-scroll+figcaption::before{content:"좌우로 밀어 보기 · ";color:var(--brand);font-weight:650}
 }
-@media print{.side,.topbar,.quiz,.scope{display:none}.layout{display:block}.unit{box-shadow:none;break-inside:avoid-page}}
+@media print{.side,.topbar,.quiz,.scope,.u-stars,.star-bar{display:none}.layout{display:block}.unit{box-shadow:none;break-inside:avoid-page}}
 </style>
 </head>
 <body>
@@ -328,6 +369,7 @@ dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:aut
   <p class="course">세포생물학의 이해 · 4차시 ③</p>
   <h1>단백질의 기능 조절과 연구방법</h1>
   <div class="progress"><div class="row"><span>퀴즈 진행</span><span><b id="pDone">0</b> / <b id="pTotal">0</b>문항</span></div><div class="bar"><i id="pBar"></i></div><div class="row" style="margin-top:7px"><span>맞힌 문항</span><span><b id="pOk">0</b>문항</span></div></div>
+  <div class="starbox"><div class="row"><span>내 별표</span><span>문제 <b id="sQ">0</b> · 소단원 <b id="sU">0</b></span></div><button type="button" class="icon-btn star-toggle" id="starOnly" aria-pressed="false" disabled><svg class="i"><use href="#i-star"/></svg><span>별표만 보기</span></button></div>
   <nav class="toc" id="toc" aria-label="소단원 목차">
     <p class="grp">A · 기능의 마무리</p>
     <a href="#u1" data-u="u1"><span class="n">1</span><span class="t">항체</span><span class="sc" data-sc="u1"></span></a>
@@ -350,13 +392,15 @@ dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:aut
 </aside>
 <main>
 <div class="wrap">
+<div class="star-bar" id="starBar" hidden><svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg><span id="starBarTxt"></span><button type="button" class="btn" id="starRetry">별표 문제 답 지우고 다시 풀기</button><button type="button" class="btn" id="starExit">전체 보기</button></div>
 
 <section class="hero">
   <h2>단백질의 기능 조절과 연구방법</h2>
   <p class="meta"><span>세포생물학의 이해</span><span>CH4 단백질의 구조와 기능</span><span>4차시 ③</span></p>
-  <p class="intro">수업 PDF, 빨간 표시 필기본, 강의 녹취록을 합쳐 11개 소단원으로 정리했습니다. 소단원마다 끝에 난이도 상 확인 퀴즈가 있고, 푼 결과는 이 브라우저에 저장됩니다.</p>
+  <p class="intro">수업 PDF, 빨간 표시 필기본, 강의 녹취록을 합쳐 11개 소단원으로 정리했습니다. 소단원마다 끝에 난이도 상 확인 퀴즈가 있고, 푼 결과는 이 브라우저에 저장됩니다. 소단원 제목과 문제 옆의 별을 눌러 중요도(1~3개)를 매기면, 왼쪽 <b>별표만 보기</b>로 그것만 모아 복습할 수 있습니다.</p>
   <div class="legend">
-    <span class="chip star"><svg class="i fill"><use href="#i-star"/></svg>필기본 빨간 표시</span>
+    <span class="chip red"><svg class="i"><use href="#i-pencil"/></svg>빨간 밑줄 = 필기본 표시</span>
+    <span class="chip gold"><svg class="i fill"><use href="#i-star"/></svg>내 별표 1~3개</span>
     <span class="chip info"><svg class="i"><use href="#i-chat"/></svg>강의 중 강조</span>
     <span class="chip warn"><svg class="i"><use href="#i-alert"/></svg>심화 · 시험 범위 밖</span>
     <span class="chip note"><svg class="i"><use href="#i-search"/></svg>자료 표기 주의</span>
@@ -1199,6 +1243,10 @@ dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:aut
   <div class="big" id="sumBig">–</div>
   <p id="sumSub" style="margin:0 0 14px;color:var(--muted)"></p>
   <div id="sumRows"></div>
+  <div class="wrongs starlist">
+    <h4><svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg>별표 모아보기</h4>
+    <div id="starList"></div>
+  </div>
   <div class="wrongs">
     <h4><svg class="i" aria-hidden="true"><use href="#i-flag"/></svg>오답 노트</h4>
     <div id="wrongList"><p>아직 틀린 문제가 없습니다.</p></div>
@@ -1560,6 +1608,18 @@ const KEY = 'cellbio-ch4-3-quiz-v1';
 let state = {};
 try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { state = {}; }
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+
+/* ---------- personal star system: rate units & questions 1–3 ---------- */
+const STAR_KEY = 'cellbio-ch4-3-stars-v1';
+let stars = {};
+try { stars = JSON.parse(localStorage.getItem(STAR_KEY)) || {}; } catch (e) { stars = {}; }
+const saveStars = () => { try { localStorage.setItem(STAR_KEY, JSON.stringify(stars)); } catch (e) {} };
+const STAR_SVG = '<svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg>';
+const starCtl = (key, label) =>
+  '<span class="stars" data-key="' + key + '" role="group" aria-label="' + label + ' 별표">' +
+  [1, 2, 3].map(v => '<button type="button" class="sb" data-v="' + v + '" title="별 ' + v + '개" aria-label="' + label + ' 별 ' + v + '개">' +
+    '<svg class="i" aria-hidden="true"><use href="#i-star"/></svg></button>').join('') +
+  '</span>';
 const MARK = ['①', '②', '③', '④', '⑤'];
 const TOTAL = UNITS.reduce((n, u) => n + QUIZ[u.id].length, 0);
 
@@ -1582,7 +1642,7 @@ function renderQuiz(box) {
     '<div class="quiz-h"><h4>' + ICON('pencil') + '개념 확인 퀴즈</h4><span class="lv">난이도 상</span><span class="sc" data-qsc></span></div>' +
     '<p class="quiz-sub">하나를 고르면 바로 채점되고 해설이 열립니다. 함정 선택지에 주의하세요.</p>' +
     qs.map((q, i) =>
-      '<div class="q" id="' + id + '-q' + (i + 1) + '" data-i="' + i + '"><div class="qn">Q' + (i + 1) + '</div><div class="qt">' + q.q + '</div>' +
+      '<div class="q" id="' + id + '-q' + (i + 1) + '" data-i="' + i + '"><div class="qn"><span>Q' + (i + 1) + '</span>' + starCtl(id + '-q' + (i + 1), 'Q' + (i + 1)) + '</div><div class="qt">' + q.q + '</div>' +
       '<ol class="opts">' + q.o.map((o, k) =>
         '<li><button class="opt" type="button" data-k="' + k + '"><span class="m">' + MARK[k] + '</span><span>' + o + '</span></button></li>').join('') +
       '</ol><div class="why" hidden aria-live="polite"></div></div>').join('') +
@@ -1658,7 +1718,7 @@ document.querySelectorAll('.quiz[data-quiz]').forEach(box => {
   renderQuiz(box);
   box.addEventListener('click', e => {
     const id = box.dataset.quiz;
-    if (e.target.closest('[data-retry]')) { delete state[id]; save(); renderQuiz(box); return; }
+    if (e.target.closest('[data-retry]')) { delete state[id]; save(); renderQuiz(box); refreshStars(); return; }
     const btn = e.target.closest('.opt');
     if (!btn || btn.disabled) return;
     const i = +btn.closest('.q').dataset.i, k = +btn.dataset.k;
@@ -1670,6 +1730,7 @@ document.getElementById('resetAll').addEventListener('click', () => {
   if (!confirm('모든 소단원의 퀴즈 기록을 지울까요?')) return;
   state = {}; save();
   document.querySelectorAll('.quiz[data-quiz]').forEach(renderQuiz);
+  refreshStars();
 });
 
 /* ---------- nav: scroll spy, mobile drawer, theme ---------- */
@@ -1691,6 +1752,85 @@ navBtn.addEventListener('click', () => setNav(!document.body.classList.contains(
 document.getElementById('scrim').addEventListener('click', () => setNav(false));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') setNav(false); });
 links.forEach(a => a.addEventListener('click', () => setNav(false)));
+
+document.querySelectorAll('.unit').forEach(sec => {
+  const ui = UNITS.findIndex(u => u.id === sec.id);
+  const box = document.createElement('div');
+  box.className = 'u-stars';
+  box.innerHTML = '<span>중요도</span>' + starCtl(sec.id, (ui + 1) + '단원');
+  sec.querySelector('.unit-head').appendChild(box);
+});
+document.querySelectorAll('.toc a[data-u^="u"]').forEach(a => {
+  const s = document.createElement('span');
+  s.className = 'stv';
+  s.setAttribute('aria-hidden', 'true');
+  a.querySelector('.sc').before(s);
+});
+const starOnlyBtn = document.getElementById('starOnly'), starBar = document.getElementById('starBar');
+
+function refreshStars() {
+  document.querySelectorAll('.stars[data-key]').forEach(el => {
+    const lv = stars[el.dataset.key] || 0;
+    el.querySelectorAll('.sb').forEach((b, j) => { b.classList.toggle('on', j < lv); b.setAttribute('aria-pressed', j < lv); });
+  });
+  let nQ = 0, nU = 0;
+  const items = [];
+  UNITS.forEach((u, ui) => {
+    const sec = document.getElementById(u.id), ulv = stars[u.id] || 0;
+    let any = !!ulv;
+    if (ulv) { nU++; items.push({ lv: ulv, ord: ui * 100, href: '#' + u.id, tag: '소단원 ' + (ui + 1), text: u.name }); }
+    QUIZ[u.id].forEach((q, i) => {
+      const key = u.id + '-q' + (i + 1), lv = stars[key] || 0, card = document.getElementById(key);
+      if (card) card.classList.toggle('q-star', !!lv);
+      if (!lv) return;
+      nQ++; any = true;
+      const plain = q.q.replace(/<\/?(ul|li)[^>]*>/g, ' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+      items.push({ lv, ord: ui * 100 + i + 1, href: '#' + key, tag: (ui + 1) + '단원 Q' + (i + 1), text: plain.length > 64 ? plain.slice(0, 64) + '…' : plain });
+    });
+    sec.classList.toggle('u-star', !!ulv);
+    sec.classList.toggle('has-star', any);
+    const stv = document.querySelector('.toc a[data-u="' + u.id + '"] .stv');
+    if (stv) stv.innerHTML = STAR_SVG.repeat(ulv);
+  });
+  document.getElementById('sQ').textContent = nQ;
+  document.getElementById('sU').textContent = nU;
+  starOnlyBtn.disabled = !(nQ + nU);
+  document.getElementById('starRetry').disabled = !nQ;
+  if (!(nQ + nU) && document.body.classList.contains('star-only')) setStarOnly(false);
+  document.getElementById('starBarTxt').textContent = '별표만 보는 중 · 문제 ' + nQ + '개 · 소단원 ' + nU + '개';
+  items.sort((a, b) => b.lv - a.lv || a.ord - b.ord);
+  document.getElementById('starList').innerHTML = items.length
+    ? items.map(it => '<a href="' + it.href + '"><b><span class="lvs">' + STAR_SVG.repeat(it.lv) + '</span>' + it.tag + '</b><span>' + it.text + '</span></a>').join('')
+    : '<p>소단원 제목이나 문제 옆의 별을 눌러 중요도(1~3개)를 매기면 여기에 별 많은 순으로 모입니다.</p>';
+}
+function setStarOnly(on) {
+  document.body.classList.toggle('star-only', on);
+  starOnlyBtn.setAttribute('aria-pressed', on);
+  starBar.hidden = !on;
+  if (on) window.scrollTo(0, 0);
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('.sb');
+  if (!b) return;
+  const key = b.closest('.stars').dataset.key, v = +b.dataset.v;
+  if ((stars[key] || 0) === v) delete stars[key]; else stars[key] = v;
+  saveStars();
+  refreshStars();
+});
+starOnlyBtn.addEventListener('click', () => { setStarOnly(!document.body.classList.contains('star-only')); setNav(false); });
+document.getElementById('starExit').addEventListener('click', () => setStarOnly(false));
+document.getElementById('starRetry').addEventListener('click', () => {
+  const touched = new Set();
+  Object.keys(stars).forEach(k => {
+    const m = k.match(/^(u\d+)-q(\d+)$/);
+    if (m && state[m[1]]) { delete state[m[1]][+m[2] - 1]; touched.add(m[1]); }
+  });
+  save();
+  touched.forEach(u => renderQuiz(document.querySelector('.quiz[data-quiz="' + u + '"]')));
+  refreshStars();
+  window.scrollTo(0, 0);
+});
+refreshStars();
 
 /* ---------- wide diagrams keep a readable size on phones (swipe sideways) ---------- */
 document.querySelectorAll('.fig svg[viewBox]').forEach(svg => {
