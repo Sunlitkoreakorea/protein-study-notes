@@ -422,6 +422,7 @@ body.star-only .unit:not(.u-star) .q:not(.q-star){display:none}
 .mm .br.shut>.kids{display:none}
 .mm .n0{flex:none;padding:16px 20px;border-radius:22px;background:var(--brand);color:var(--card);font-weight:820;font-size:17px;line-height:1.25;letter-spacing:-.03em;text-align:center;box-shadow:var(--shadow);z-index:1}
 .mm .n1{flex:none;display:flex;flex-direction:column;align-items:center;gap:1px;padding:8px 15px 9px;border-radius:15px;border:2px solid var(--c);background:var(--cs);color:var(--ink);font:inherit;font-size:15px;font-weight:780;letter-spacing:-.03em;cursor:pointer;line-height:1.25;white-space:nowrap}
+.mm .n1 .ct{display:block;max-width:122px;white-space:normal;text-align:center;text-wrap:balance}
 .mm .n1 small{font-size:11.5px;font-weight:700;color:var(--muted);letter-spacing:0;font-variant-numeric:tabular-nums}
 .mm .n2{flex:none;display:flex;align-items:center;gap:2px;border:1.5px solid var(--c);background:var(--card);border-radius:99px;padding:1px 3px 1px 2px}
 .mm .ls .n2{flex-direction:row-reverse}
@@ -433,7 +434,7 @@ body.star-only .unit:not(.u-star) .q:not(.q-star){display:none}
 .mm .ls .to .i{transform:scaleX(-1)}
 .mm .cnt{display:inline-block;margin-left:6px;font-size:11px;font-weight:750;line-height:1.5;padding:0 6px;border-radius:99px;background:var(--c);color:var(--card);vertical-align:1px}
 .mm .br:not(.shut)>.n1 .cnt,.mm .br:not(.shut)>.n2 .cnt{display:none}
-.mm .chips{display:flex;flex-wrap:wrap;gap:4px;max-width:clamp(168px,14.4vw,214px)}
+.mm .chips{display:flex;flex-wrap:wrap;gap:4px;max-width:clamp(150px,12.2vw,214px)}
 .mm .ls .chips{justify-content:flex-end}
 .mm .kw{font-size:12.2px;line-height:1.45;padding:3px 8px;border-radius:99px;background:var(--cs);color:var(--ink);white-space:nowrap}
 .mm .n1:focus-visible,.mm .tg:focus-visible,.mm .to:focus-visible{outline:2px solid var(--c);outline-offset:2px}
@@ -452,6 +453,7 @@ body.star-only .unit:not(.u-star) .q:not(.q-star){display:none}
   .mm .kids>.br::after,.mm .kids>.br:first-child::after{left:-16px!important;right:auto!important;top:-7px;bottom:-7px;border-right:0!important;border-left:1.6px solid var(--c)!important}
   .mm .kids>.br:last-child::after,.mm .kids>.br:only-child::after{display:block;bottom:auto;height:24px}
   .mm .n1{flex-direction:row;gap:8px;align-items:baseline}
+  .mm .n1 .ct{max-width:none;text-align:left}
   .mm .chips{max-width:calc(100vw - 132px)}
   .mm .kw{white-space:normal}
   .mm .tg{white-space:normal;text-align:left}
@@ -481,7 +483,8 @@ body.star-only .unit:not(.u-star) .q:not(.q-star){display:none}
   <p class="hub-foot">날짜 태그는 페이지를 만든 날 기준입니다. 퀴즈 기록과 별표는 이 브라우저에 저장됩니다.</p>
 </div>
 <script>
-const LESSONS = [{"id": "ch4", "date": "2026-11-03", "title": "단백질의 기능 조절과 연구방법", "meta": "4차시 ③ · CH4 단백질의 구조와 기능", "units": 11, "quizKey": "cellbio-ch4-3-quiz-v1", "starKey": "cellbio-ch4-3-stars-v1", "topics": ["항체", "다른자리 입체성·협동성", "되먹임 억제", "인산화", "GTP 스위치", "응축체", "크로마토그래피", "전기영동", "질량분석", "X선·Cryo-EM"], "dow": "화", "label": "11/3", "keys": {"u1": [1, 3, 2], "u2": [3, 0, 2, 4], "u3": [2, 1, 3], "u4": [3, 0, 2, 1], "u5": [3, 2, 4, 0], "u6": [4, 1, 2], "u7": [0, 2, 0], "u8": [1, 0, 3, 4], "u9": [2, 1, 4, 3], "u10": [2, 3, 1], "u11": [1, 3, 3, 4]}, "total": 39, "short": "단백질 조절·연구법", "mm": [{"t": "항체", "k": ["Y자 모양", "항원결합부위", "B 세포", "2차 항체", "신호 증폭"]}, {"t": "다른자리 입체성·협동성", "k": ["조절 부위", "활성자·저해제", "협동성", "헤모글로빈"]}, {"t": "되먹임 억제", "k": ["최종 산물", "조절 부위", "자원 절약"]}, {"t": "인산화", "k": ["인산기", "가역적", "신호"]}, {"t": "GTP 스위치·비가역성", "k": ["GTP = ON", "GDP = OFF", "운동단백질", "ATP 가수분해", "방향성"]}, {"t": "단백질 기구·지역화", "k": ["다효소 복합체", "구획화", "고정 위치", "입체 구조의 틀"]}, {"t": "세포 내 영역", "k": ["막 없는 구획", "약한 결합", "위상 분리", "응축체"]}, {"t": "관 크로마토그래피", "k": ["분리·정제", "빠져나오는 속도", "특이적 결합"]}, {"t": "젤 전기영동", "k": ["SDS-PAGE", "크기로만", "IEF", "등전점(pI)", "2D-PAGE"]}, {"t": "질량분석", "k": ["이온화", "m/z", "스펙트럼", "동정"]}, {"t": "X선 vs Cryo-EM", "k": ["X선 결정학", "회절 패턴", "Cryo-EM", "−160 ℃", "막단백질"]}], "href": "ch4.html"}, {"id": "ch5", "date": "2026-11-04", "title": "핵과 리보솜", "meta": "5차시 · 세포소기관 ① 핵 ② 라이보솜", "units": 8, "quizKey": "cellbio-ch5-quiz-v1", "starKey": "cellbio-ch5-stars-v1", "topics": ["구획화", "핵막·라미나", "핵공복합체", "NLS·Ran-GTP", "수입·수출", "인·rRNA", "상분리", "리보솜·A/P/E"], "dow": "수", "label": "11/4", "keys": {"u1": [3, 4, 2], "u2": [1, 4, 1, 2], "u3": [0, 1, 3, 2], "u4": [2, 4, 1, 3], "u5": [2, 0, 3, 1], "u6": [4, 2, 0, 3], "u7": [1, 4, 0, 2], "u8": [3, 1, 4, 0]}, "total": 31, "short": "핵과 리보솜", "mm": [{"t": "구획화", "k": ["막성 소기관", "세포내막계", "전문화"]}, {"t": "핵막·라미나", "k": ["외핵막", "내핵막", "핵 라미나", "라민", "전사·번역 분리"]}, {"t": "핵공복합체", "k": ["뉴클레오포린", "8중 대칭", "확산", "능동 수송"]}, {"t": "세 준비물", "k": ["NLS", "NES", "importin", "exportin", "Ran-GTP 구배"]}, {"t": "수입·수출 사이클", "k": ["후불(수입)", "선불(수출)", "Ran-GEF", "Ran-GAP", "위치 감지기"]}, {"t": "인·rRNA", "k": ["rRNA 합성", "47S 전구체", "18S·5.8S·28S", "5S", "조립·수출"]}, {"t": "상분리", "k": ["생체 응축물", "IDR", "LLPS", "정전기 인력"]}, {"t": "리보솜", "k": ["70S·80S", "침강계수", "16S·18S", "항생제", "A·P·E 자리"]}], "href": "ch5.html"}, {"id": "ch5b", "date": "2026-11-10", "title": "소포체 · 골지체 · 엔도솜 · 수송소낭", "meta": "5차시 이어서 · 세포소기관 ③~⑥", "units": 10, "quizKey": "cellbio-ch5b-quiz-v1", "starKey": "cellbio-ch5b-stars-v1", "topics": ["자유·부착 리보솜", "공동번역 전좌", "N/O-결합 당화", "UPR·ERAD", "SER·P450", "골지 시스/트랜스", "시스터나 성숙", "엔도솜 산성화", "M6P·I-세포병", "COPII·COPI·클라트린", "Rab·SNARE"], "dow": "화", "label": "11/10", "keys": {"u1": [3, 1, 4], "u2": [0, 2, 3], "u3": [2, 4, 1], "u4": [0, 3, 2], "u5": [4, 1, 0], "u6": [2, 0, 3], "u7": [1, 4, 2], "u8": [0, 3, 4], "u9": [1, 2, 0], "u10": [4, 3, 1]}, "total": 30, "short": "소포체~수송소낭", "mm": [{"t": "리보솜·소포체", "k": ["자유 리보솜", "부착 리보솜", "RER·시스터나", "SER·관상"]}, {"t": "공동번역 전좌", "k": ["신호 펩타이드", "SRP", "SRP 수용체", "트랜스로콘"]}, {"t": "당화·품질 관리", "k": ["N-결합 당화", "샤페론", "UPR", "ERAD", "CFTR"]}, {"t": "매끈면 소포체", "k": ["지질 합성", "스크램블레이스", "P450", "근소포체"]}, {"t": "골지체 가공", "k": ["O-결합 당화", "M6P", "전구체 절단", "인슐린"]}, {"t": "극성·성숙 모델", "k": ["시스(CGN)", "메디알", "트랜스(TGN)", "시스터나 성숙", "COPI 역행"]}, {"t": "엔도솜", "k": ["조기 엔도솜", "후기 엔도솜", "V-형 H⁺-ATPase", "엔도리소좀"]}, {"t": "M6P·I-세포병", "k": ["M6P 수용체", "클라트린 소낭", "I-세포병", "pH 안전장치"]}, {"t": "소낭 형성", "k": ["피복", "다이나민", "COPII 직진", "COPI 후진", "클라트린"]}, {"t": "Rab·SNARE", "k": ["Rab-GTP", "테더링", "v-SNARE", "t-SNARE"]}], "href": "ch5b.html"}, {"id": "ch6", "date": "2026-11-11", "title": "세포막의 지질", "meta": "6차시 · 막구조 ① 지질 (+ 5차시 정정)", "units": 9, "quizKey": "cellbio-ch6-quiz-v1", "starKey": "cellbio-ch6-stars-v1", "topics": ["리소좀 효소 정정", "소낭 수송 복습", "지방산 cis/trans", "글리세롤·스핑고신", "DAG·세라마이드", "원통·원뿔·역원뿔", "4대 인지질", "비대칭성·PS", "지질 뗏목", "마이셀·리포솜", "당지질·콜레스테롤"], "dow": "수", "label": "11/11", "keys": {"u1": [2, 4, 0], "u2": [1, 3, 2], "u3": [4, 0, 3], "u4": [1, 2, 4], "u5": [0, 3, 1], "u6": [3, 1, 4], "u7": [2, 0, 3], "u8": [4, 1, 0], "u9": [3, 2, 1]}, "total": 27, "short": "세포막의 지질", "mm": [{"t": "엔도솜·리소좀 정정", "k": ["효소 이미 활성", "활성 유지", "H⁺ 희석 X", "I-세포병"]}, {"t": "소낭·GTP 복습", "k": ["모터 단백질", "ATP → 방향성", "GTP = ON", "Ran·Rab"]}, {"t": "구성·지방산", "k": ["인지질", "콜레스테롤", "당지질", "cis 꺾임", "trans"]}, {"t": "글리세롤·스핑고신", "k": ["꼬리 2개", "에스터", "꼬리 1개", "아마이드", "세라마이드"]}, {"t": "합성 경로", "k": ["SER 세포질 쪽", "PA → DAG", "CDP-콜린", "세라마이드 → 골지"]}, {"t": "모양·곡률", "k": ["원통 PC·SM", "원뿔 PE", "극단적 원뿔 DAG", "역원뿔 PI·PS"]}, {"t": "4대 인지질·비대칭", "k": ["PC > PE > SM > PS", "외층 PC·SM", "내층 PS·PE", "PS eat-me", "지질 뗏목"]}, {"t": "양친매성", "k": ["마이셀", "리포솜", "이중층", "랑뮈에 수조"]}, {"t": "당지질·콜레스테롤", "k": ["세레브로사이드", "강글리오사이드", "당질층", "ABO", "유동성 완충"]}], "href": "ch6.html"}];
+const LESSONS = [{"id": "ch4", "date": "2026-11-03", "title": "단백질의 기능 조절과 연구방법", "meta": "4차시 ③ · CH4 단백질의 구조와 기능", "units": 11, "quizKey": "cellbio-ch4-3-quiz-v1", "starKey": "cellbio-ch4-3-stars-v1", "topics": ["항체", "다른자리 입체성·협동성", "되먹임 억제", "인산화", "GTP 스위치", "응축체", "크로마토그래피", "전기영동", "질량분석", "X선·Cryo-EM"], "dow": "화", "label": "11/3", "keys": {"u1": [1, 3, 2], "u2": [3, 0, 2, 4], "u3": [2, 1, 3], "u4": [3, 0, 2, 1], "u5": [3, 2, 4, 0], "u6": [4, 1, 2], "u7": [0, 2, 0], "u8": [1, 0, 3, 4], "u9": [2, 1, 4, 3], "u10": [2, 3, 1], "u11": [1, 3, 3, 4]}, "total": 39, "href": "ch4.html"}, {"id": "ch5", "date": "2026-11-04", "title": "핵과 리보솜", "meta": "5차시 · 세포소기관 ① 핵 ② 라이보솜", "units": 8, "quizKey": "cellbio-ch5-quiz-v1", "starKey": "cellbio-ch5-stars-v1", "topics": ["구획화", "핵막·라미나", "핵공복합체", "NLS·Ran-GTP", "수입·수출", "인·rRNA", "상분리", "리보솜·A/P/E"], "dow": "수", "label": "11/4", "keys": {"u1": [3, 4, 2], "u2": [1, 4, 1, 2], "u3": [0, 1, 3, 2], "u4": [2, 4, 1, 3], "u5": [2, 0, 3, 1], "u6": [4, 2, 0, 3], "u7": [1, 4, 0, 2], "u8": [3, 1, 4, 0]}, "total": 31, "href": "ch5.html"}, {"id": "ch5b", "date": "2026-11-10", "title": "소포체 · 골지체 · 엔도솜 · 수송소낭", "meta": "5차시 이어서 · 세포소기관 ③~⑥", "units": 10, "quizKey": "cellbio-ch5b-quiz-v1", "starKey": "cellbio-ch5b-stars-v1", "topics": ["자유·부착 리보솜", "공동번역 전좌", "N/O-결합 당화", "UPR·ERAD", "SER·P450", "골지 시스/트랜스", "시스터나 성숙", "엔도솜 산성화", "M6P·I-세포병", "COPII·COPI·클라트린", "Rab·SNARE"], "dow": "화", "label": "11/10", "keys": {"u1": [3, 1, 4], "u2": [0, 2, 3], "u3": [2, 4, 1], "u4": [0, 3, 2], "u5": [4, 1, 0], "u6": [2, 0, 3], "u7": [1, 4, 2], "u8": [0, 3, 4], "u9": [1, 2, 0], "u10": [4, 3, 1]}, "total": 30, "href": "ch5b.html"}, {"id": "ch6", "date": "2026-11-11", "title": "세포막의 지질", "meta": "6차시 · 막구조 ① 지질 (+ 5차시 정정)", "units": 9, "quizKey": "cellbio-ch6-quiz-v1", "starKey": "cellbio-ch6-stars-v1", "topics": ["리소좀 효소 정정", "소낭 수송 복습", "지방산 cis/trans", "글리세롤·스핑고신", "DAG·세라마이드", "원통·원뿔·역원뿔", "4대 인지질", "비대칭성·PS", "지질 뗏목", "마이셀·리포솜", "당지질·콜레스테롤"], "dow": "수", "label": "11/11", "keys": {"u1": [2, 4, 0], "u2": [1, 3, 2], "u3": [4, 0, 3], "u4": [1, 2, 4], "u5": [0, 3, 1], "u6": [3, 1, 4], "u7": [2, 0, 3], "u8": [4, 1, 0], "u9": [3, 2, 1]}, "total": 27, "href": "ch6.html"}];
+const CHAPTERS = [{"ch": "CH4", "t": "단백질의 구조와 기능", "u": [{"t": "항체", "k": ["Y자 모양", "항원결합부위", "B 세포", "2차 항체", "신호 증폭"], "l": "ch4", "n": 1}, {"t": "다른자리 입체성·협동성", "k": ["조절 부위", "활성자·저해제", "협동성", "헤모글로빈"], "l": "ch4", "n": 2}, {"t": "되먹임 억제", "k": ["최종 산물", "조절 부위", "자원 절약"], "l": "ch4", "n": 3}, {"t": "인산화", "k": ["인산기", "가역적", "신호"], "l": "ch4", "n": 4}, {"t": "GTP 스위치·비가역성", "k": ["GTP = ON", "GDP = OFF", "운동단백질", "ATP 가수분해", "방향성"], "l": "ch4", "n": 5}, {"t": "단백질 기구·지역화", "k": ["다효소 복합체", "구획화", "고정 위치", "입체 구조의 틀"], "l": "ch4", "n": 6}, {"t": "세포 내 영역", "k": ["막 없는 구획", "약한 결합", "위상 분리", "응축체"], "l": "ch4", "n": 7}, {"t": "관 크로마토그래피", "k": ["분리·정제", "빠져나오는 속도", "특이적 결합"], "l": "ch4", "n": 8}, {"t": "젤 전기영동", "k": ["SDS-PAGE", "크기로만", "IEF", "등전점(pI)", "2D-PAGE"], "l": "ch4", "n": 9}, {"t": "질량분석", "k": ["이온화", "m/z", "스펙트럼", "동정"], "l": "ch4", "n": 10}, {"t": "X선 vs Cryo-EM", "k": ["X선 결정학", "회절 패턴", "Cryo-EM", "−160 ℃", "막단백질"], "l": "ch4", "n": 11}]}, {"ch": "CH11", "t": "막 구조", "u": [{"t": "구성·지방산", "k": ["인지질", "콜레스테롤", "당지질", "cis 꺾임", "trans"], "l": "ch6", "n": 3}, {"t": "글리세롤·스핑고신", "k": ["꼬리 2개", "에스터", "꼬리 1개", "아마이드", "세라마이드"], "l": "ch6", "n": 4}, {"t": "합성 경로", "k": ["SER 세포질 쪽", "PA → DAG", "CDP-콜린", "세라마이드 → 골지"], "l": "ch6", "n": 5}, {"t": "모양·곡률", "k": ["원통 PC·SM", "원뿔 PE", "극단적 원뿔 DAG", "역원뿔 PI·PS"], "l": "ch6", "n": 6}, {"t": "4대 인지질·비대칭", "k": ["PC > PE > SM > PS", "외층 PC·SM", "내층 PS·PE", "PS eat-me", "지질 뗏목"], "l": "ch6", "n": 7}, {"t": "양친매성", "k": ["마이셀", "리포솜", "이중층", "랑뮈에 수조"], "l": "ch6", "n": 8}, {"t": "당지질·콜레스테롤", "k": ["세레브로사이드", "강글리오사이드", "당질층", "ABO", "유동성 완충"], "l": "ch6", "n": 9}]}, {"ch": "CH15", "t": "세포내 구획과 단백질 생산", "u": [{"t": "구획화", "k": ["막성 소기관", "세포내막계", "전문화"], "l": "ch5", "n": 1}, {"t": "핵막·라미나", "k": ["외핵막", "내핵막", "핵 라미나", "라민", "전사·번역 분리"], "l": "ch5", "n": 2}, {"t": "핵공복합체", "k": ["뉴클레오포린", "8중 대칭", "확산", "능동 수송"], "l": "ch5", "n": 3}, {"t": "세 준비물", "k": ["NLS", "NES", "importin", "exportin", "Ran-GTP 구배"], "l": "ch5", "n": 4}, {"t": "수입·수출 사이클", "k": ["후불(수입)", "선불(수출)", "Ran-GEF", "Ran-GAP", "위치 감지기"], "l": "ch5", "n": 5}, {"t": "인·rRNA", "k": ["rRNA 합성", "47S 전구체", "18S·5.8S·28S", "5S", "조립·수출"], "l": "ch5", "n": 6}, {"t": "상분리", "k": ["생체 응축물", "IDR", "LLPS", "정전기 인력"], "l": "ch5", "n": 7}, {"t": "리보솜", "k": ["70S·80S", "침강계수", "16S·18S", "항생제", "A·P·E 자리"], "l": "ch5", "n": 8}, {"t": "리보솜·소포체", "k": ["자유 리보솜", "부착 리보솜", "RER·시스터나", "SER·관상"], "l": "ch5b", "n": 1}, {"t": "공동번역 전좌", "k": ["신호 펩타이드", "SRP", "SRP 수용체", "트랜스로콘"], "l": "ch5b", "n": 2}, {"t": "당화·품질 관리", "k": ["N-결합 당화", "샤페론", "UPR", "ERAD", "CFTR"], "l": "ch5b", "n": 3}, {"t": "매끈면 소포체", "k": ["지질 합성", "스크램블레이스", "P450", "근소포체"], "l": "ch5b", "n": 4}, {"t": "골지체 가공", "k": ["O-결합 당화", "M6P", "전구체 절단", "인슐린"], "l": "ch5b", "n": 5}, {"t": "극성·성숙 모델", "k": ["시스(CGN)", "메디알", "트랜스(TGN)", "시스터나 성숙", "COPI 역행"], "l": "ch5b", "n": 6}, {"t": "엔도솜", "k": ["조기 엔도솜", "후기 엔도솜", "V-형 H⁺-ATPase", "엔도리소좀"], "l": "ch5b", "n": 7}, {"t": "M6P·I-세포병", "k": ["M6P 수용체", "클라트린 소낭", "I-세포병", "pH 안전장치"], "l": "ch5b", "n": 8}, {"t": "엔도솜·리소좀 정정", "k": ["효소 이미 활성", "활성 유지", "H⁺ 희석 X", "I-세포병"], "l": "ch6", "n": 1}, {"t": "소낭 형성", "k": ["피복", "다이나민", "COPII 직진", "COPI 후진", "클라트린"], "l": "ch5b", "n": 9}, {"t": "Rab·SNARE", "k": ["Rab-GTP", "테더링", "v-SNARE", "t-SNARE"], "l": "ch5b", "n": 10}, {"t": "소낭·GTP 복습", "k": ["모터 단백질", "ATP → 방향성", "GTP = ON", "Ran·Rab"], "l": "ch6", "n": 2}]}];
 const DOW = '월화수목금토일';
 const $ = id => document.getElementById(id);
 const read = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
@@ -541,21 +544,22 @@ window.addEventListener('pageshow', render);
 render();
 
 /* ---------- mind map: center → lesson → unit → keywords ---------- */
-const HUE = { ch4: ['--svg-c', '--warn-soft'], ch5: ['--svg-e', '--info-soft'], ch5b: ['--svg-b', '--brand-soft'], ch6: ['--svg-d', '--bad-soft'] };
-const PALETTE = Object.values(HUE);
+const HUE = { CH4: ['--svg-c', '--warn-soft'], CH11: ['--svg-d', '--bad-soft'], CH15: ['--svg-e', '--info-soft'] };
+const PALETTE = [['--svg-b', '--brand-soft'], ['--svg-c', '--warn-soft'], ['--svg-e', '--info-soft'], ['--svg-d', '--bad-soft']];
+const HREF = Object.fromEntries(LESSONS.map(L => [L.id, L.href]));
 const mm = $('mm'), mmAll = $('mmAll');
 const narrow = matchMedia('(max-width: 759px)');
 let mmPlayed = false;
 
-function mmUnit(L, u, i) {
+function mmUnit(u) {
   return '<div class="br l2 pop"><div class="n2"><button type="button" class="tg" aria-expanded="true">' + u.t +
-    '<span class="cnt">' + u.k.length + '</span></button><a class="to" href="' + L.href + '#u' + (i + 1) + '" aria-label="' + u.t + ' 학습 페이지로">' + ICON('arrow') + '</a></div>' +
+    '<span class="cnt">' + u.k.length + '</span></button><a class="to" href="' + HREF[u.l] + '#u' + u.n + '" aria-label="' + u.t + ' 학습 페이지로">' + ICON('arrow') + '</a></div>' +
     '<div class="kids"><div class="br lk"><div class="chips">' + u.k.map(k => '<span class="kw pop">' + k + '</span>').join('') + '</div></div></div></div>';
 }
-function mmLesson(L, idx) {
-  const [c, cs] = HUE[L.id] || PALETTE[idx % PALETTE.length];
-  return '<div class="br l1 pop" style="--c:var(' + c + ');--cs:var(' + cs + ')"><button type="button" class="n1" aria-expanded="true"><small>' + L.label + ' ' + L.dow + '</small>' + L.short +
-    '<span class="cnt">' + L.mm.length + '</span></button><div class="kids">' + L.mm.map((u, i) => mmUnit(L, u, i)).join('') + '</div></div>';
+function mmChapter(C, idx) {
+  const [c, cs] = HUE[C.ch] || PALETTE[idx % PALETTE.length];
+  return '<div class="br l1 pop" style="--c:var(' + c + ');--cs:var(' + cs + ')"><button type="button" class="n1" aria-expanded="true"><small>' + C.ch + '</small><span class="ct">' + C.t + '</span>' +
+    '<span class="cnt">' + C.u.length + '</span></button><div class="kids">' + C.u.map(mmUnit).join('') + '</div></div>';
 }
 function mmStagger(scope, base) {
   // lessons first, then units, then keywords: a wave spreading out from the center
@@ -568,12 +572,14 @@ function mmStagger(scope, base) {
 }
 function mmRender() {
   const one = narrow.matches;
-  const half = one ? LESSONS.length : Math.ceil(LESSONS.length / 2);
-  const left = LESSONS.slice(0, half), right = LESSONS.slice(half);
-  const side = (arr, cls, off) => arr.length ? '<div class="kids ' + cls + '">' + arr.map((L, i) => mmLesson(L, i + off)).join('') + '</div>' : '';
+  const sizes = CHAPTERS.map(C => C.u.length), total = sizes.reduce((a, b) => a + b, 0);
+  let cut = 1, best = Infinity, run = 0;
+  sizes.forEach((n, i) => { run += n; const gap = Math.abs(total - 2 * run); if (i < sizes.length - 1 && gap < best) { best = gap; cut = i + 1; } });
+  if (CHAPTERS.length < 2) cut = CHAPTERS.length;
+  const side = (arr, cls, off) => arr.length ? '<div class="kids ' + cls + '">' + arr.map((C, i) => mmChapter(C, i + off)).join('') + '</div>' : '';
   mm.innerHTML = one
-    ? '<div class="n0 pop">세포생물학 기말</div>' + side(LESSONS, 'rs', 0)
-    : side(left, 'ls', 0) + '<div class="n0 pop">세포생물학<br>기말</div>' + side(right, 'rs', half);
+    ? '<div class="n0 pop">세포생물학 기말</div>' + side(CHAPTERS, 'rs', 0)
+    : side(CHAPTERS.slice(0, cut), 'ls', 0) + '<div class="n0 pop">세포생물학<br>기말</div>' + side(CHAPTERS.slice(cut), 'rs', cut);
   if (one) mm.querySelectorAll('.l1').forEach(b => setOpen(b, false));
   mmStagger(mm, 120);
   syncAll();
