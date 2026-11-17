@@ -1,0 +1,1463 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>11/17(화) 막단백질과 세포막의 특성 · 세포생물학 기말 대비</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d7a5a'/%3E%3Ccircle cx='12.5' cy='13' r='4.5' fill='white'/%3E%3Ccircle cx='21' cy='20.5' r='5' fill='white' fill-opacity='.7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --bg:#f4f5f0; --card:#ffffff; --ink:#17201b; --muted:#56675d; --line:#dde3dc; --line-2:#e9ede7;
+  --brand:#1d7a5a; --brand-ink:#0f4d39; --brand-soft:#e1f2ea;
+  --star:#c8372d; --star-soft:#fde8e5;
+  --warn:#7a5200; --warn-soft:#fcf1d8; --warn-line:#eed592;
+  --info:#1f5f99; --info-soft:#e7f0fa; --info-line:#c3d9ef;
+  --note:#6b3fa0; --note-soft:#f2eafa; --note-line:#dac8ee;
+  --ok:#17703a; --ok-soft:#e2f4e8; --bad:#b3261e; --bad-soft:#fbe7e5;
+  --quiz-bg:#f7f9f4;
+  --gold:#b07c08; --gold-soft:#fcf3dc;
+  --svg-a:#a8d6c3; --svg-b:#5fa98a; --svg-c:#e9b44c; --svg-d:#d9695f; --svg-e:#6d9bd1; --svg-line:#6c7b72;
+  --shadow:0 1px 2px rgba(20,40,30,.05),0 20px 44px -26px rgba(20,40,30,.22);
+  --sel:rgba(29,122,90,.2);
+  --m-star:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E");
+  --m-check:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12.5 4.5 4.5L19 7.5'/%3E%3C/svg%3E");
+  --m-x:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M6.5 6.5l11 11M17.5 6.5l-11 11'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1412; --card:#171e1b; --ink:#e7ede9; --muted:#9fb2a7; --line:#29342f; --line-2:#212a26;
+    --brand:#52c79c; --brand-ink:#aeeed6; --brand-soft:#16302a;
+    --star:#ff8d7e; --star-soft:#3a1e1b;
+    --warn:#f0c76a; --warn-soft:#2f260f; --warn-line:#56461a;
+    --info:#8fc2f0; --info-soft:#13263a; --info-line:#24475f;
+    --note:#cbabf0; --note-soft:#251b36; --note-line:#44335f;
+    --ok:#72dd99; --ok-soft:#13301f; --bad:#ff968c; --bad-soft:#3a1d1a;
+    --quiz-bg:#131a17;
+    --gold:#f2c14e; --gold-soft:#2f2710;
+    --svg-a:#2f6b57; --svg-b:#52c79c; --svg-c:#d2a13c; --svg-d:#e0786d; --svg-e:#6aa0dc; --svg-line:#8fa398;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 20px 44px -26px rgba(0,0,0,.7);
+    --sel:rgba(82,199,156,.28);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1412; --card:#171e1b; --ink:#e7ede9; --muted:#9fb2a7; --line:#29342f; --line-2:#212a26;
+  --brand:#52c79c; --brand-ink:#aeeed6; --brand-soft:#16302a;
+  --star:#ff8d7e; --star-soft:#3a1e1b;
+  --warn:#f0c76a; --warn-soft:#2f260f; --warn-line:#56461a;
+  --info:#8fc2f0; --info-soft:#13263a; --info-line:#24475f;
+  --note:#cbabf0; --note-soft:#251b36; --note-line:#44335f;
+  --ok:#72dd99; --ok-soft:#13301f; --bad:#ff968c; --bad-soft:#3a1d1a;
+  --quiz-bg:#131a17;
+  --gold:#f2c14e; --gold-soft:#2f2710;
+  --svg-a:#2f6b57; --svg-b:#52c79c; --svg-c:#d2a13c; --svg-d:#e0786d; --svg-e:#6aa0dc; --svg-line:#8fa398;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 20px 44px -26px rgba(0,0,0,.7);
+  --sel:rgba(82,199,156,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:28px;scrollbar-color:var(--line) transparent;color-scheme:light dark}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16.5px/1.8 "Pretendard Variable",Pretendard,system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  letter-spacing:-.006em;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere;text-rendering:optimizeLegibility}
+::selection{background:var(--sel)}
+:focus-visible{outline:2.5px solid var(--brand);outline-offset:2px;border-radius:8px}
+a{color:var(--brand);text-decoration:none;text-underline-offset:3px}
+button{font:inherit;color:inherit}
+.i{width:1.12em;height:1.12em;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.18em}
+.i.fill{fill:currentColor;stroke:none}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- layout ---------- */
+.topbar{display:none}
+.layout{display:grid;grid-template-columns:292px minmax(0,1fr);max-width:1260px;margin:0 auto}
+.side{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;padding:30px 16px 28px 24px;border-right:1px solid var(--line);scrollbar-width:thin}
+.side .course{font-size:12.5px;font-weight:600;color:var(--muted);margin:0 0 3px}
+.side h1{font-size:17px;line-height:1.4;margin:0 0 18px;letter-spacing:-.025em;font-weight:750}
+.progress{margin:0 0 14px;padding:13px 14px 12px;border:1px solid var(--line);background:var(--card);border-radius:14px}
+.progress .row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;color:var(--muted)}
+.progress .row b{color:var(--ink);font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--line-2);border-radius:99px;overflow:hidden;margin-top:8px}
+.bar>i{display:block;height:100%;width:100%;background:var(--brand);transform-origin:left center;transform:scaleX(var(--p,0));transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.grp{font-size:12px;font-weight:700;color:var(--muted);margin:20px 0 6px 10px}
+.toc a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;color:var(--ink);font-size:14.3px;line-height:1.4;transition:background .15s}
+.toc a:hover{background:var(--line-2)}
+.toc a.on{background:var(--brand-soft);color:var(--brand-ink);font-weight:650}
+.toc .n{flex:none;width:23px;height:23px;border-radius:7px;background:var(--line-2);display:grid;place-items:center;font-size:11.5px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.toc a.on .n{background:var(--brand);color:#fff}
+.toc .t{flex:1}
+.toc .sc{flex:none;font-size:11.5px;font-weight:700;color:var(--muted);min-width:30px;text-align:right;font-variant-numeric:tabular-nums}
+.toc .sc.done{color:var(--ok)}
+.icon-btn{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 12px;cursor:pointer;color:var(--ink);transition:border-color .15s,color .15s}
+.icon-btn:hover{border-color:var(--brand);color:var(--brand)}
+.side .icon-btn{margin:22px 0 0 4px}
+main{padding:44px 40px 140px;min-width:0}
+.wrap{max-width:800px;margin:0 auto}
+
+/* ---------- hero ---------- */
+.hero{padding:10px 0 30px}
+.hero h2{font-size:clamp(32px,4.6vw,50px);line-height:1.16;margin:0 0 14px;letter-spacing:-.04em;font-weight:820;text-wrap:balance}
+.hero .meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--muted);margin:0 0 18px}
+.hero .meta span+span::before{content:"";display:inline-block;width:3px;height:3px;border-radius:50%;background:currentColor;vertical-align:middle;margin-right:14px;opacity:.6}
+.hero .intro{margin:0;color:var(--ink);opacity:.86;max-width:60ch;font-size:16.5px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:550;padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--muted)}
+.chip.gold{color:var(--ink);background:var(--gold-soft);border-color:transparent}
+.chip.gold .i{color:var(--gold)}
+.chip.red{color:var(--star);background:var(--star-soft);border-color:transparent}
+.chip.warn{color:var(--warn);background:var(--warn-soft);border-color:var(--warn-line)}
+.chip.note{color:var(--note);background:var(--note-soft);border-color:var(--note-line)}
+.chip.info{color:var(--info);background:var(--info-soft);border-color:var(--info-line)}
+
+details.scope{border:1px solid var(--line);border-radius:18px;background:var(--card);margin:0 0 40px}
+details.scope>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:15px 20px;font-weight:700;font-size:15.5px}
+details.scope>summary::-webkit-details-marker{display:none}
+details.scope>summary .i{color:var(--brand);transition:transform .25s cubic-bezier(.16,1,.3,1)}
+details.scope[open]>summary .i.chev{transform:rotate(90deg)}
+details.scope>summary small{margin-left:auto;font-weight:500;color:var(--muted);font-size:12.5px}
+details.scope>div{padding:0 22px 18px;font-size:15.3px}
+details.scope ul{margin:0;padding-left:20px}
+details.scope li{margin:6px 0}
+details.scope li::marker{color:var(--brand)}
+
+/* ---------- units ---------- */
+.unit{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);margin:0 0 44px;overflow:hidden}
+.unit-head{display:flex;gap:18px;align-items:flex-start;padding:32px 34px 8px}
+.unit-head .no{flex:none;width:44px;height:44px;border-radius:13px;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px;font-variant-numeric:tabular-nums;margin-top:2px}
+.unit-head h3{margin:0;font-size:clamp(22px,2.7vw,28px);line-height:1.3;letter-spacing:-.035em;font-weight:780;text-wrap:balance}
+.unit-head .lead{margin:8px 0 0;color:var(--muted);font-size:15.4px;line-height:1.7}
+.body{padding:4px 34px 28px}
+.body h4{font-size:17.5px;margin:34px 0 10px;display:flex;align-items:center;gap:9px;letter-spacing:-.025em;font-weight:720}
+.body h4::before{content:"";width:5px;height:17px;border-radius:3px;background:var(--brand);flex:none}
+.body p{margin:9px 0}
+.body ul,.body ol{margin:9px 0;padding-left:22px}
+.body li{margin:6px 0}
+.body li::marker{color:var(--brand)}
+.mk{font-style:normal;background:linear-gradient(transparent 60%,var(--star-soft) 60%);box-shadow:inset 0 -2px 0 var(--star);padding:0 1px}
+b.k{color:var(--brand-ink);font-weight:720}
+code{font:.92em ui-monospace,Menlo,Consolas,monospace;background:var(--brand-soft);padding:1px 6px;border-radius:6px}
+
+.co{border-radius:14px;padding:14px 18px;margin:20px 0;border:1px solid;font-size:15.3px;line-height:1.75}
+.co>b:first-child{display:flex;align-items:center;gap:7px;font-size:13.2px;font-weight:720;margin-bottom:4px;letter-spacing:0}
+.co.lecture{background:var(--info-soft);border-color:var(--info-line)}
+.co.lecture>b:first-child{color:var(--info)}
+.co.warn{background:var(--warn-soft);border-color:var(--warn-line)}
+.co.warn>b:first-child{color:var(--warn)}
+.co.note{background:var(--note-soft);border-color:var(--note-line)}
+.co.note>b:first-child{color:var(--note)}
+.co.core{background:var(--brand-soft);border-color:transparent}
+.co.core>b:first-child{color:var(--brand-ink)}
+.co p{margin:5px 0}.co ul{margin:5px 0}
+
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:14px;scrollbar-width:thin}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.62;min-width:560px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 14px;border-bottom:1px solid var(--line-2);text-align:left;vertical-align:top}
+thead th{background:var(--brand-soft);color:var(--brand-ink);font-weight:700;font-size:13.5px;white-space:nowrap;border-bottom-color:var(--line)}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,transparent);white-space:nowrap}
+
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px;margin:16px 0}
+.flow .st{flex:1 1 118px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.5}
+.flow .st b{display:block;font-size:12px;color:var(--brand);margin-bottom:2px}
+.flow .ar{align-self:center;color:var(--muted);font-weight:700}
+.map{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:9px;margin:16px 0}
+.map a{display:block;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 13px;color:var(--ink);font-size:14.2px;line-height:1.45;transition:border-color .15s,transform .2s cubic-bezier(.16,1,.3,1)}
+.map a:hover{border-color:var(--brand);transform:translateY(-1px)}
+.map a b{display:block;color:var(--brand);font-size:12px}
+.fig{margin:22px 0;padding:18px 12px 12px;text-align:center;background:var(--bg);border-radius:16px}
+.fig svg{max-width:100%;height:auto}
+.fig figcaption{font-size:13.2px;color:var(--muted);margin-top:8px;line-height:1.55}
+.svg-t{fill:var(--ink);font:600 13px "Pretendard Variable",Pretendard,system-ui,"Malgun Gothic",sans-serif}
+.svg-s{fill:var(--muted);font:500 11.5px "Pretendard Variable",Pretendard,system-ui,"Malgun Gothic",sans-serif}
+.svg-line{stroke:var(--svg-line);fill:none;stroke-width:1.6}
+.svg-a{fill:var(--svg-a)}.svg-b{fill:var(--svg-b)}.svg-c{fill:var(--svg-c)}.svg-d{fill:var(--svg-d)}.svg-e{fill:var(--svg-e)}
+.svg-bg{fill:var(--bg)}
+.sf-n{fill:var(--card);stroke:var(--svg-line);stroke-width:1.4}
+.sf-a{fill:var(--brand-soft);stroke:var(--svg-b);stroke-width:1.6}
+.sf-c{fill:var(--warn-soft);stroke:var(--svg-c);stroke-width:1.6}
+.sf-d{fill:var(--bad-soft);stroke:var(--svg-d);stroke-width:1.6}
+.sf-e{fill:var(--info-soft);stroke:var(--svg-e);stroke-width:1.4}
+.fig.overview{background:var(--card);border:1px solid var(--line);margin:0 0 44px;padding:22px 22px 14px}
+.ov{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;text-align:left}
+.ov-h{margin:0 0 12px;font-weight:760;font-size:15.5px;letter-spacing:-.025em}
+.ov-h small{display:block;font-weight:500;color:var(--muted);font-size:12.8px;letter-spacing:0;margin-top:1px}
+.ov-r{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:8px 10px;margin:0 0 8px}
+.ov-l{flex:0 0 122px;font-size:12.8px;font-weight:650;color:var(--muted)}
+.ov-s .ov-l{flex-basis:100%}
+.ov a{display:inline-flex;align-items:center;gap:7px;padding:4px 11px 4px 5px;border-radius:9px;background:var(--brand-soft);color:var(--brand-ink);font-size:13.6px;font-weight:620;line-height:1.5;transition:background .15s}
+.ov a:hover{background:color-mix(in srgb,var(--brand) 22%,var(--brand-soft))}
+.ov a b{display:grid;place-items:center;min-width:20px;height:20px;padding:0 4px;border-radius:6px;background:var(--brand);color:#fff;font-size:11px;font-weight:750;font-variant-numeric:tabular-nums}
+.ov-note{font-size:12.8px;color:var(--muted)}
+.ov-ar{position:relative;height:30px;margin:-4px 0 4px;padding-left:30px;display:flex;align-items:center;font-size:12.5px;color:var(--muted)}
+.ov-ar::before{content:"";position:absolute;left:19px;top:2px;width:2px;height:19px;background:var(--svg-line)}
+.ov-ar::after{content:"";position:absolute;left:15px;top:20px;border:5px solid transparent;border-top:7px solid var(--svg-line);border-bottom:0}
+.fig-scroll{overflow-x:auto;scrollbar-width:thin}
+
+details.slides{margin:0 34px 28px;border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+details.slides>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:9px;padding:12px 16px;font-weight:650;font-size:15px}
+details.slides>summary::-webkit-details-marker{display:none}
+details.slides>summary .i{color:var(--brand);transition:transform .25s cubic-bezier(.16,1,.3,1)}
+details.slides[open]>summary .i.chev{transform:rotate(90deg)}
+details.slides>summary small{margin-left:auto;font-weight:500;color:var(--muted);font-size:12.5px}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;padding:2px 14px 14px}
+.sthumb{position:relative;display:block;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;cursor:zoom-in;transition:border-color .15s,transform .2s cubic-bezier(.16,1,.3,1)}
+.sthumb:hover{border-color:var(--brand);transform:translateY(-1px)}
+.sthumb img{display:block;width:100%;height:auto}
+.sthumb span{position:absolute;left:6px;bottom:6px;font-size:11px;font-weight:700;background:rgba(0,0,0,.62);color:#fff;border-radius:6px;padding:1px 7px}
+dialog.lb{padding:0;border:0;background:transparent;max-width:96vw;max-height:96vh;overflow:visible}
+dialog.lb::backdrop{background:rgba(8,12,10,.84)}
+dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:auto;border-radius:10px;background:#fff;margin:0 auto}
+.lb-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin-top:12px;color:#fff;font-size:13.5px}
+.lb-bar button{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:10px;padding:6px 13px;cursor:pointer;font-size:13px}
+.lb-bar button:hover{background:rgba(255,255,255,.2)}
+
+/* ---------- quiz ---------- */
+.quiz{border-top:1px solid var(--line);background:var(--quiz-bg);padding:28px 34px 30px}
+.quiz-h{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:4px}
+.quiz-h h4{margin:0;font-size:18px;letter-spacing:-.025em;display:flex;align-items:center;gap:8px}
+.quiz-h h4 .i{color:var(--brand)}
+.lv{font-size:11.5px;font-weight:750;color:#fff;background:var(--star);border-radius:6px;padding:2px 8px}
+.quiz-h .sc{margin-left:auto;font-weight:750;color:var(--brand-ink);font-size:14.5px;font-variant-numeric:tabular-nums}
+.quiz-sub{font-size:13.6px;color:var(--muted);margin:0 0 16px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px 20px;margin:14px 0;transition:border-color .3s}
+.q.is-ok{border-color:color-mix(in srgb,var(--ok) 40%,var(--line))}
+.q.is-no{border-color:color-mix(in srgb,var(--bad) 40%,var(--line))}
+.q .qn{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:-6px -8px 2px 0;font-size:12.5px;font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums}
+.q .qt{font-weight:620;line-height:1.72;font-size:16.2px}
+.q .qt ul{font-weight:450;margin:10px 0 2px;padding:10px 14px;list-style:none;background:var(--bg);border-radius:12px;font-size:15.4px}
+.q .qt li{margin:3px 0}
+.opts{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+.opt{width:100%;min-height:48px;display:flex;align-items:flex-start;gap:10px;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;cursor:pointer;line-height:1.6;font-size:15.3px;transition:border-color .15s,background .15s,opacity .2s}
+.opt:hover:not(:disabled){border-color:var(--brand);background:color-mix(in srgb,var(--brand-soft) 45%,var(--card))}
+.opt:active:not(:disabled){transform:translateY(1px)}
+.opt .m{flex:none;font-weight:800;color:var(--muted);min-width:20px}
+.opt>span:last-child{flex:1}
+.opt:disabled{cursor:default}
+.opt.right,.opt.wrong{padding-right:12px}
+.opt.right::after,.opt.wrong::after{content:"";flex:none;width:18px;height:18px;margin-top:3px;-webkit-mask:center/contain no-repeat;mask:center/contain no-repeat}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.right .m{color:var(--ok)}
+.opt.right::after{background:var(--ok);-webkit-mask-image:var(--m-check);mask-image:var(--m-check)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .m{color:var(--bad)}
+.opt.wrong::after{background:var(--bad);-webkit-mask-image:var(--m-x);mask-image:var(--m-x)}
+.opt.dim{opacity:.55}
+.why{margin-top:14px;padding:13px 16px;border-radius:12px;font-size:15px;line-height:1.75;background:var(--bg)}
+.why.ok{background:var(--ok-soft)}.why.no{background:var(--bad-soft)}
+.why b.v{display:flex;align-items:center;gap:6px;font-size:13.6px;margin-bottom:3px}
+.why.ok b.v{color:var(--ok)}.why.no b.v{color:var(--bad)}
+@media (prefers-reduced-motion:no-preference){
+  .why.pop{animation:reveal .42s cubic-bezier(.16,1,.3,1)}
+  .opt.right.pop::after,.opt.wrong.pop::after{animation:stamp .36s cubic-bezier(.16,1,.3,1)}
+}
+@keyframes reveal{from{opacity:.25;transform:translateY(-6px);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
+@keyframes stamp{from{transform:scale(.4);opacity:0}to{transform:none;opacity:1}}
+.quiz-f{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:16px;font-size:14px;color:var(--muted)}
+.quiz-f .next{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-weight:650;font-size:14.2px;padding:8px 14px;border-radius:10px;background:var(--card);border:1px solid var(--line);color:var(--brand-ink)}
+.quiz-f .next:hover{border-color:var(--brand)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 13px;cursor:pointer;font-size:13.5px;font-weight:600}
+.btn:hover{border-color:var(--brand);color:var(--brand)}
+
+/* ---------- summary ---------- */
+.sum{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:30px 34px}
+.sum h3{margin:0 0 4px;font-size:26px;letter-spacing:-.035em}
+.big{font-size:52px;font-weight:820;color:var(--brand);letter-spacing:-.04em;line-height:1.05;margin:14px 0 4px;font-variant-numeric:tabular-nums}
+.srow{display:grid;grid-template-columns:30px 1fr 64px;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line-2);font-size:14.6px}
+.srow:last-child{border-bottom:0}
+.srow .bar{margin:5px 0 0}
+.wrongs{margin-top:28px}
+.wrongs h4{margin:0 0 8px;font-size:17px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.wrongs h4 .i{color:var(--bad)}
+.wrongs p{margin:0;color:var(--muted);font-size:14.5px}
+.wrongs a{display:flex;gap:12px;align-items:baseline;padding:10px 12px;margin:0 -12px;border-radius:10px;color:var(--ink);font-size:14.6px;line-height:1.55}
+.wrongs a:hover{background:var(--bg)}
+.wrongs a b{flex:none;color:var(--bad);font-size:12.5px;min-width:76px;font-variant-numeric:tabular-nums}
+
+/* ---------- personal star system ---------- */
+.stars{display:inline-flex;align-items:center}
+.sb{display:grid;place-items:center;width:28px;height:28px;padding:0;border:0;background:none;border-radius:8px;cursor:pointer;color:var(--muted);opacity:.5;transition:opacity .15s,color .15s,transform .18s cubic-bezier(.16,1,.3,1)}
+.sb .i{width:18px;height:18px;stroke-width:1.7}
+.sb:hover{opacity:1;color:var(--gold);transform:scale(1.14)}
+.sb.on{opacity:1;color:var(--gold)}
+.sb.on .i{fill:currentColor}
+.u-stars{margin-left:auto;flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:1px;padding-top:2px}
+.u-stars>span:first-child{font-size:11.5px;font-weight:650;color:var(--muted);padding-right:6px}
+.unit-head>div:not(.u-stars){flex:1;min-width:0}
+.starbox{margin:0 0 14px;padding:12px 14px;border:1px solid var(--line);background:var(--card);border-radius:14px}
+.starbox .row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;color:var(--muted)}
+.starbox .row b{color:var(--ink);font-variant-numeric:tabular-nums}
+.star-toggle{width:100%;justify-content:center;margin-top:9px}
+.star-toggle .i{color:var(--gold)}
+.star-toggle[aria-pressed="true"]{background:var(--gold-soft);border-color:var(--gold)}
+.star-toggle:disabled{opacity:.5;cursor:not-allowed}
+.star-toggle:disabled:hover{border-color:var(--line);color:var(--ink)}
+.toc .stv{flex:none;display:inline-flex;color:var(--gold)}
+.toc .stv .i{width:11px;height:11px}
+.star-bar{position:sticky;top:14px;z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:11px 14px;margin:0 0 26px;border-radius:14px;background:var(--gold-soft);border:1px solid var(--gold);box-shadow:var(--shadow);font-weight:650;font-size:14.5px}
+.star-bar[hidden]{display:none}
+.star-bar>.i{color:var(--gold)}
+.star-bar #starRetry{margin-left:auto}
+.star-bar .btn:disabled{opacity:.5;cursor:not-allowed}
+body.star-only .hero,body.star-only details.scope,body.star-only .fig.overview{display:none}
+body.star-only .unit:not(.has-star){display:none}
+body.star-only .unit:not(.u-star)>.body,body.star-only .unit:not(.u-star)>details.slides{display:none}
+body.star-only .unit:not(.u-star) .q:not(.q-star){display:none}
+.starlist h4 .i{color:var(--gold)}
+.starlist a b{color:var(--ink)}
+.starlist .lvs{display:inline-flex;color:var(--gold);margin-right:6px;vertical-align:-1px}
+.starlist .lvs .i{width:11px;height:11px}
+
+/* ---------- exam-prep hub link & date tag ---------- */
+.hub-link{display:inline-flex;align-items:center;gap:6px;margin:0 0 16px;padding:5px 11px 5px 7px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--brand-ink);font-size:12.8px;font-weight:650;transition:border-color .15s}
+.hub-link:hover{border-color:var(--brand)}
+.hub-link .i{transform:rotate(180deg);color:var(--brand)}
+.dtag{display:inline-flex;align-items:center;padding:1px 9px;border-radius:99px;background:var(--brand-soft);color:var(--brand-ink);font-weight:700}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  html{scroll-padding-top:72px}
+  .layout{display:block}
+  .topbar{display:flex;position:sticky;top:0;z-index:30;align-items:center;gap:12px;padding:10px 16px;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .topbar b{font-size:14.5px;flex:1;line-height:1.35;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.02em}
+  .topbar .tb-prog{font-size:12.5px;font-weight:700;color:var(--brand-ink);background:var(--brand-soft);border-radius:99px;padding:3px 10px;font-variant-numeric:tabular-nums}
+  .side{position:fixed;inset:0 auto 0 0;width:min(320px,86vw);z-index:40;height:auto;background:var(--card);transform:translateX(-102%);transition:transform .32s cubic-bezier(.16,1,.3,1);box-shadow:var(--shadow);border-right:1px solid var(--line)}
+  body.nav-open .side{transform:none}
+  .scrim{display:none}
+  body.nav-open .scrim{display:block;position:fixed;inset:0;z-index:35;background:rgba(0,0,0,.36)}
+  main{padding:26px 16px 100px}
+  .hero{padding-top:4px}
+  .unit{border-radius:18px;margin-bottom:30px}
+  .unit-head{padding:22px 18px 4px;gap:13px}
+  .unit-head .no{width:38px;height:38px;font-size:15px;border-radius:11px}
+  .body{padding:2px 18px 20px}
+  .quiz{padding:20px 14px 22px}
+  .q{padding:15px 14px 16px}
+  .fig{margin:18px -6px;padding:14px 6px 10px}
+  .sum{padding:24px 18px}
+  .quiz-f .next{margin-left:0}
+  details.slides{margin:0 18px 20px}
+  .sgrid{grid-template-columns:1fr 1fr;padding:2px 10px 10px;gap:8px}
+  .fig.overview{padding:16px 12px 10px}
+  .ov{grid-template-columns:1fr;gap:14px}
+  .unit-head{flex-wrap:wrap}
+  .u-stars{order:3;flex-basis:100%;flex-direction:row;align-items:center;gap:4px;padding:0 0 0 51px;margin-top:-6px}
+  .star-bar{position:static}
+}
+@media (max-width:640px){
+  .fig-scroll svg{min-width:var(--minw)}
+  .fig-scroll+figcaption::before{content:"좌우로 밀어 보기 · ";color:var(--brand);font-weight:650}
+}
+@media print{.side,.topbar,.quiz,.scope,.u-stars,.star-bar{display:none}.layout{display:block}.unit{box-shadow:none;break-inside:avoid-page}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8 8 0 0 1-11.7 7.1L3.5 20l1.2-4.7A8 8 0 1 1 20.5 11.5z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 4.2 2.6 17.6A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-2.9L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5v4.2"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.3-4.3"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20h4L19.2 8.8a2.3 2.3 0 0 0-3.2-3.2L4.8 16.8 4 20z"/><path d="m14.5 7 3 3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.6A8 8 0 0 1 9.4 4a8 8 0 1 0 10.6 10.6z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.8v1.9M12 19.3v1.9M5.5 5.5l1.3 1.3M17.2 17.2l1.3 1.3M2.8 12h1.9M19.3 12h1.9M5.5 18.5l1.3-1.3M17.2 6.8l1.3-1.3"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+  <symbol id="i-retry" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4.5 4.5v3.8h3.8"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4.5"/><path d="M5 4.5h11l-2 4 2 4H5"/></symbol>
+</svg>
+<div class="topbar"><button class="icon-btn" id="navBtn" aria-label="목차 열기" aria-expanded="false" aria-controls="side"><svg class="i"><use href="#i-menu"/></svg>목차</button><b id="curTitle">막단백질과 세포막의 특성</b><span class="tb-prog" id="tbProg">0/27</span></div>
+<div class="scrim" id="scrim"></div>
+<div class="layout">
+<aside class="side" id="side">
+  <a class="hub-link" href="index.html"><svg class="i" aria-hidden="true"><use href="#i-chev"/></svg>복습할 요일 고르기</a>
+  <p class="course">세포생물학 기말고사 대비 · <span class="dtag">11/17 화</span></p>
+  <h1>막구조 ② 막단백질 ③ 세포막의 특성</h1>
+  <div class="progress"><div class="row"><span>퀴즈 진행</span><span><b id="pDone">0</b> / <b id="pTotal">0</b>문항</span></div><div class="bar"><i id="pBar"></i></div><div class="row" style="margin-top:7px"><span>맞힌 문항</span><span><b id="pOk">0</b>문항</span></div></div>
+  <div class="starbox"><div class="row"><span>내 별표</span><span>문제 <b id="sQ">0</b> · 소단원 <b id="sU">0</b></span></div><button type="button" class="icon-btn star-toggle" id="starOnly" aria-pressed="false" disabled><svg class="i"><use href="#i-star"/></svg><span>별표만 보기</span></button></div>
+  <nav class="toc" id="toc" aria-label="소단원 목차">
+    <p class="grp">A · 막단백질</p>
+    <a href="#u1" data-u="u1"><span class="n">1</span><span class="t">막단백질의 기능과 분류</span><span class="sc" data-sc="u1"></span></a>
+    <a href="#u2" data-u="u2"><span class="n">2</span><span class="t">막관통 구조와 계면활성제</span><span class="sc" data-sc="u2"></span></a>
+    <p class="grp">B · 세포막의 특성</p>
+    <a href="#u3" data-u="u3"><span class="n">3</span><span class="t">7가지 특성과 선택적 장벽</span><span class="sc" data-sc="u3"></span></a>
+    <a href="#u4" data-u="u4"><span class="n">4</span><span class="t">유동 모자이크 모델과 FRAP</span><span class="sc" data-sc="u4"></span></a>
+    <a href="#u5" data-u="u5"><span class="n">5</span><span class="t">온도에 따른 상변이</span><span class="sc" data-sc="u5"></span></a>
+    <a href="#u6" data-u="u6"><span class="n">6</span><span class="t">선택적 투과성: 단순·촉진 확산</span><span class="sc" data-sc="u6"></span></a>
+    <p class="grp">C · 비대칭성</p>
+    <a href="#u7" data-u="u7"><span class="n">7</span><span class="t">비대칭성과 세포예정사</span><span class="sc" data-sc="u7"></span></a>
+    <a href="#u8" data-u="u8"><span class="n">8</span><span class="t">플리페이스·플로페이스·스크램블레이스</span><span class="sc" data-sc="u8"></span></a>
+    <a href="#u9" data-u="u9"><span class="n">9</span><span class="t">합성과 막 삽입: 방향 유지</span><span class="sc" data-sc="u9"></span></a>
+    <p class="grp">정리</p>
+    <a href="#summary" data-u="summary"><span class="n"><svg class="i" style="width:13px;height:13px"><use href="#i-flag"/></svg></span><span class="t">종합 점수 · 오답 노트</span><span class="sc"></span></a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" type="button"><svg class="i"><use href="#i-moon"/></svg><span>어두운 화면</span></button>
+</aside>
+<main>
+<div class="wrap">
+<div class="star-bar" id="starBar" hidden><svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg><span id="starBarTxt"></span><button type="button" class="btn" id="starRetry">별표 문제 답 지우고 다시 풀기</button><button type="button" class="btn" id="starExit">전체 보기</button></div>
+
+<section class="hero">
+  <h2>막단백질과 세포막의 특성</h2>
+  <p class="meta"><span class="dtag">11/17 화요일</span><span>세포생물학의 이해</span><span>막구조 ② 막단백질 ③ 세포막의 특성 (CH11 막 구조)</span><span>6차시 이어서</span></p>
+  <p class="intro">수업 PDF(필기본)와 강의 녹취록 두 개(막단백질·세포막 특성·비대칭성, 비대칭성 유지와 지질 운반)를 합쳐 9개 소단원으로 정리했습니다. 6차시 ① 지질(11/11)에서 배운 4대 인지질과 비대칭성이 여기서 "왜 그렇게 배치되고 어떻게 유지되나"로 이어집니다. 소단원마다 난이도 상 확인 퀴즈가 있고, 별을 눌러 중요도를 매기면 <b>별표만 보기</b>로 모아 복습할 수 있습니다.</p>
+  <div class="legend">
+    <span class="chip info"><svg class="i"><use href="#i-chat"/></svg>강의 중 강조</span>
+    <span class="chip warn"><svg class="i"><use href="#i-alert"/></svg>심화 · 시험 범위 밖</span>
+    <span class="chip note"><svg class="i"><use href="#i-search"/></svg>자료 표기 주의</span>
+    <span class="chip gold"><svg class="i fill"><use href="#i-star"/></svg>내 별표 1~3개</span>
+  </div>
+</section>
+
+<details class="scope" open>
+  <summary><svg class="i chev"><use href="#i-chev"/></svg>시험 범위 체크<small>강의 언급 + 필기 기준</small></summary>
+  <div>
+    <ul>
+      <li><b class="k">핵심</b>: 내재성 vs 표재성 · 막관통 α나선(바깥 소수성, 안쪽 친수성 막공)과 β원통 · 계면활성제로 막단백질 분리 · 유동 모자이크 모델(세포 융합 실험 → 열역학적 분석 → 단위막 모델 폐기) · FRAP · 온도와 SFA/MUFA/PUFA · 단순 확산 vs 촉진 확산(포화) · 비대칭성의 이유와 <b>세포예정사(Ca²⁺ → 스크램블레이스 → PS 노출)</b> · 플리페이스/플로페이스/스크램블레이스 표 · 장소별 비대칭 정도 · 당사슬과 막단백질이 바깥을 향하게 되는 <b>방향(위상)</b>.</li>
+      <li><b class="k">표현 정정</b>: 내층 지질을 "음전하를 띠거나 <b>친수성 머리가 작은</b> 지질"이라고 적은 곳을 "음전하를 띠거나 <b>곡률을 형성할 수 있는</b> 지질"로 고쳐 달라고 했습니다(13·16·23쪽, 11/11 페이지도 반영).</li>
+      <li><b class="k">지워도 됨</b>: 당지질의 당 결합 두 줄(글루코실세라마이드·복잡한 당지질 — "그냥 당이 결합한다"만) · 지질 전달 단백질(LTP) · 콜레스테롤 합성 과정의 회색 부분 · 막단백질 삽입의 회색 줄(정지-수송 신호, 신호-앵커) · 세포 연접(면접) 개념 — "물리적으로 막단백질의 구역을 제한할 수 있다" 정도만 · 표재성/지질 연결 분류 논쟁("그렇게 중요해 보이진 않죠").</li>
+      <li><b class="k">남은 시험 범위</b>: "여기에 추가로 <b>이온 통로</b>, <b>내포작용</b> 한 번 더 복습하면서 정교화, 마지막으로 <b>신호 전달</b> 나가고 끝." 선택적 투과성은 다음 시간에 더 자세히, Ca²⁺의 2차 전달자 역할은 신호 전달에서.</li>
+    </ul>
+    <p style="font-size:13.5px;color:var(--muted);margin:10px 0 0">녹취록이 자동 변환본이라 슬라이드·필기본과 대조해 보정했습니다. 강의와 슬라이드(또는 교과서)의 설명이 다른 곳은 "자료 표기 주의"로 따로 적었습니다.</p>
+  </div>
+</details>
+
+<figure class="fig overview">
+  <div class="ov">
+    <div>
+      <p class="ov-h">막단백질<small>무엇을 하고, 어떻게 박혀 있나</small></p>
+      <div class="ov-r"><span class="ov-l">기능 · 분류</span><a href="#u1"><b>1</b>내재성 · 표재성</a></div>
+      <div class="ov-r"><span class="ov-l">구조 · 연구</span><a href="#u2"><b>2</b>α나선 · β원통 · 세제</a></div>
+      <p class="ov-h" style="margin-top:16px">비대칭성<small>안과 밖이 다른 이유와 유지</small></p>
+      <div class="ov-r"><span class="ov-l">왜</span><a href="#u7"><b>7</b>배치 · 세포예정사</a></div>
+      <div class="ov-r"><span class="ov-l">어떻게</span><a href="#u8"><b>8</b>지질 운반 효소</a><a href="#u9"><b>9</b>합성 · 방향 유지</a></div>
+    </div>
+    <div>
+      <p class="ov-h">세포막의 특성<small>7가지로 정리</small></p>
+      <div class="ov-r ov-s"><span class="ov-l">정의와 기능</span><a href="#u3"><b>3</b>구성 · 이중층 · 구획화</a></div>
+      <div class="ov-r ov-s"><span class="ov-l">구조</span><a href="#u4"><b>4</b>유동 모자이크 · FRAP</a></div>
+      <div class="ov-r ov-s"><span class="ov-l">환경 변화</span><a href="#u5"><b>5</b>온도 · 상변이</a></div>
+      <div class="ov-r ov-s"><span class="ov-l">물질 교환</span><a href="#u6"><b>6</b>단순 · 촉진 확산</a></div>
+    </div>
+  </div>
+  <figcaption>한눈에 보는 11/17 페이지. 이름을 누르면 해당 소단원으로 이동합니다.</figcaption>
+</figure>
+
+<!-- ================= U1 막단백질 기능과 분류 ================= -->
+<section class="unit" id="u1">
+  <header class="unit-head"><span class="no">1</span><div>
+    <h3>막단백질의 기능과 분류 — 내재성과 표재성</h3>
+    <p class="lead">세포막의 일은 대부분 단백질이 한다. 무슨 일을 하는지(기능)와, 막에 얼마나 박혀 있는지(내재성·표재성)로 나눠 본다.</p>
+  </div></header>
+  <div class="body">
+    <h4>무슨 일을 하나</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>기능</th><th>예</th><th>하는 일</th></tr></thead>
+      <tbody>
+        <tr><th>수송체</th><td>Na⁺ 펌프</td><td>물질이 결합한 뒤 <b>구조가 바뀌며</b> 반대편으로 넘겨줌</td></tr>
+        <tr><th>통로 · 이온 통로</th><td>K⁺ 누출 통로</td><td>뚫린 통로로 물질(이온)을 통과시킴</td></tr>
+        <tr><th>연결체</th><td><b>인테그린</b></td><td>세포 밖의 기질이나 다른 부위와 연결</td></tr>
+        <tr><th>수용체</th><td>혈소판 유래 성장인자 수용체</td><td>리간드가 결합하면 안쪽으로 신호 전달 (신호 전달 단원에서 자세히)</td></tr>
+        <tr><th>효소</th><td>아데닐산 고리화효소</td><td>기질을 받아 생성물을 만듦</td></tr>
+      </tbody>
+    </table></div>
+    <h4>얼마나 박혀 있나</h4>
+    <ul>
+      <li><b class="k">내재성 단백질(integral)</b>: 막에 <b>일부라도 박혀 있는</b> 단백질. 세 가지 방식 — A. <b>막관통</b>(막을 완전히 꿰뚫음) · B. <b>단일층 결합</b>(지질 이중층의 한 층에만 박힘) · C. <b>지질과 연결</b>(지질 분자에 공유결합으로 매달림).</li>
+      <li><b class="k">표재성 단백질(peripheral)</b>: 막에 박히지 않고 <b>다른 막단백질에 붙어 있는</b> 단백질.</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 226" role="img" aria-label="막단백질이 막에 붙는 네 가지 방식: 내재성 단백질은 A 막을 관통하거나, B 이중층의 한 층에만 박히거나, C 지질에 매달린다. 표재성 단백질은 D 막에 박히지 않고 다른 막단백질에 붙어 있다">
+        <path d="M60 30H430M60 26V30M430 26V30" style="fill:none;stroke:var(--svg-line);stroke-width:1.2"/>
+        <text x="245" y="20" text-anchor="middle" class="svg-s">내재성 — 막에 일부라도 박힘</text>
+        <path d="M470 30H600M470 26V30M600 26V30" style="fill:none;stroke:var(--svg-line);stroke-width:1.2"/>
+        <text x="535" y="20" text-anchor="middle" class="svg-s">표재성 — 단백질에 붙음</text>
+        <rect x="0" y="92" width="640" height="46" style="fill:var(--line-2)"/>
+        <path d="M6 88H640M6 142H640" style="stroke:var(--svg-a);stroke-width:9;stroke-linecap:round;stroke-dasharray:0 12"/>
+        <text x="8" y="66" class="svg-s">세포 밖</text>
+        <text x="8" y="196" class="svg-s">세포질</text>
+        <rect x="104" y="54" width="28" height="122" rx="12" class="sf-a"/>
+        <path d="M108 70h20M108 86h20M108 102h20M108 118h20M108 134h20M108 150h20M108 166h20" style="stroke:var(--svg-b);stroke-width:1.2"/>
+        <text x="118" y="210" text-anchor="middle" class="svg-t" style="font-size:12px">A 막관통</text>
+        <rect x="214" y="133" width="72" height="22" rx="11" class="sf-a"/>
+        <path d="M226 136v16M238 136v16M250 136v16M262 136v16M274 136v16" style="stroke:var(--svg-b);stroke-width:1.2"/>
+        <text x="250" y="210" text-anchor="middle" class="svg-t" style="font-size:12px">B 단일층 결합</text>
+        <path d="M382 128V166" style="stroke:var(--svg-c);stroke-width:3;stroke-linecap:round"/>
+        <circle cx="382" cy="178" r="16" class="sf-c"/>
+        <text x="406" y="124" class="svg-s">지질</text>
+        <text x="382" y="210" text-anchor="middle" class="svg-t" style="font-size:12px">C 지질과 연결</text>
+        <rect x="508" y="54" width="28" height="122" rx="12" class="sf-a"/>
+        <path d="M512 70h20M512 86h20M512 102h20M512 118h20M512 134h20M512 150h20M512 166h20" style="stroke:var(--svg-b);stroke-width:1.2"/>
+        <circle cx="548" cy="186" r="17" class="sf-e"/>
+        <text x="535" y="216" text-anchor="middle" class="svg-t" style="font-size:12px">D 다른 단백질에 부착</text>
+      </svg>
+      <figcaption>판단 기준은 하나: 지질 이중층에 박혀 있으면 내재성, 박히지 않고 단백질에 기대 있으면 표재성.</figcaption>
+    </figure>
+    <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>분류 주의</b>"지질과 연결된 단백질을 표재성으로 보는 책도 있는데, 이 교재는 내재성으로 봤으니 그렇게 보겠습니다 — 그렇게 중요해 보이진 않죠." 시험은 수업 기준(C = 내재성)으로 보면 됩니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u1"></div>
+</section>
+
+<!-- ================= U2 막관통 구조와 계면활성제 ================= -->
+<section class="unit" id="u2">
+  <header class="unit-head"><span class="no">2</span><div>
+    <h3>막관통 구조 — α나선, β원통, 그리고 계면활성제</h3>
+    <p class="lead">극성인 단백질 사슬이 기름층을 어떻게 통과할까? 사슬끼리 수소 결합으로 극성을 가리고, 곁사슬을 바깥은 소수성, 안쪽은 친수성으로 배치한다.</p>
+  </div></header>
+  <div class="body">
+    <h4>폴리펩타이드 사슬은 대개 α나선으로 통과한다</h4>
+    <ul>
+      <li><b>펩타이드 결합은 극성</b>이다(전기음성도가 큰 N 쪽으로 전자가 쏠림) → 폴리펩타이드 골격 전체가 친수성.</li>
+      <li>골격의 원자들끼리 <b>수소 결합</b>을 하면 극성이 서로 가려진다. 이 수소 결합은 사슬이 <b>α나선</b>을 이룰 때 가장 많이 생긴다(4차시 2차 구조).</li>
+      <li>나선의 한쪽 면에는 친수성 곁사슬, 다른 쪽 면에는 소수성 곁사슬을 모을 수 있다 → 여러 나선을 모아 <b>지질과 닿는 바깥은 소수성, 안쪽은 친수성</b>으로 배치하면 물질이 지나가는 <b class="k">친수성 막공</b>이 생긴다(예: 물 통로 아쿠아포린).</li>
+      <li><b class="k">예외 — β원통(beta barrel)</b>: β병풍이 둥글게 말려 양 끝이 열린 원통을 만든다. 원통 안쪽은 친수성 곁사슬(수용성 통로), 지질과 닿는 바깥은 소수성 곁사슬. 구멍 뚫린 바구니 모양(예: 세균 외막의 포린).</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 236" role="img" aria-label="막공을 만드는 두 방식: 왼쪽은 위에서 본 α나선 다발로, 각 나선의 바깥 면은 소수성 곁사슬이 지질과 닿고 안쪽 면은 친수성 곁사슬이 가운데 물 통로를 둘러싼다. 오른쪽은 옆에서 본 β원통으로, 지질 이중층을 꿰뚫은 원통의 바깥은 소수성, 안쪽은 친수성이라 가운데로 물이 지나간다">
+        <rect x="6" y="6" width="306" height="224" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <rect x="328" y="6" width="306" height="224" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <text x="20" y="30" class="svg-t">α나선 다발 (위에서 본 모습)</text>
+        <text x="342" y="30" class="svg-t">β원통 (옆에서 자른 모습)</text>
+        <circle cx="140" cy="126" r="80" style="fill:none;stroke:var(--svg-a);stroke-width:8;stroke-linecap:round;stroke-dasharray:0 12"/>
+        <circle cx="140" cy="126" r="18" style="fill:var(--info-soft)"/>
+        <text x="140" y="130" text-anchor="middle" class="svg-s" style="fill:var(--ink)">물</text>
+        <g>
+          <g><circle cx="140" cy="82" r="17" class="sf-c"/><path d="M123 82A17 17 0 0 0 157 82Z" style="fill:var(--svg-d);opacity:.42;stroke:none"/><circle cx="140" cy="82" r="17" style="fill:none;stroke:var(--svg-line);stroke-width:1.2"/></g>
+          <g transform="rotate(60 140 126)"><circle cx="140" cy="82" r="17" class="sf-c"/><path d="M123 82A17 17 0 0 0 157 82Z" style="fill:var(--svg-d);opacity:.42;stroke:none"/><circle cx="140" cy="82" r="17" style="fill:none;stroke:var(--svg-line);stroke-width:1.2"/></g>
+          <g transform="rotate(120 140 126)"><circle cx="140" cy="82" r="17" class="sf-c"/><path d="M123 82A17 17 0 0 0 157 82Z" style="fill:var(--svg-d);opacity:.42;stroke:none"/><circle cx="140" cy="82" r="17" style="fill:none;stroke:var(--svg-line);stroke-width:1.2"/></g>
+          <g transform="rotate(180 140 126)"><circle cx="140" cy="82" r="17" class="sf-c"/><path d="M123 82A17 17 0 0 0 157 82Z" style="fill:var(--svg-d);opacity:.42;stroke:none"/><circle cx="140" cy="82" r="17" style="fill:none;stroke:var(--svg-line);stroke-width:1.2"/></g>
+          <g transform="rotate(240 140 126)"><circle cx="140" cy="82" r="17" class="sf-c"/><path d="M123 82A17 17 0 0 0 157 82Z" style="fill:var(--svg-d);opacity:.42;stroke:none"/><circle cx="140" cy="82" r="17" style="fill:none;stroke:var(--svg-line);stroke-width:1.2"/></g>
+          <g transform="rotate(300 140 126)"><circle cx="140" cy="82" r="17" class="sf-c"/><path d="M123 82A17 17 0 0 0 157 82Z" style="fill:var(--svg-d);opacity:.42;stroke:none"/><circle cx="140" cy="82" r="17" style="fill:none;stroke:var(--svg-line);stroke-width:1.2"/></g>
+        </g>
+        <rect x="236" y="176" width="10" height="10" rx="2" class="sf-c"/><text x="250" y="185" class="svg-s">소수성 면</text>
+        <rect x="236" y="196" width="10" height="10" rx="2" style="fill:var(--bad-soft);stroke:var(--svg-d)"/><text x="250" y="205" class="svg-s">친수성 면</text>
+        <text x="20" y="218" class="svg-s">점선 고리 = 둘러싼 지질</text>
+        <rect x="328" y="92" width="306" height="50" style="fill:var(--line-2)"/>
+        <path d="M334 88H632M334 146H632" style="stroke:var(--svg-a);stroke-width:9;stroke-linecap:round;stroke-dasharray:0 12"/>
+        <rect x="432" y="56" width="22" height="122" rx="8" class="sf-c"/>
+        <rect x="508" y="56" width="22" height="122" rx="8" class="sf-c"/>
+        <path d="M436 66l14 10M436 86l14 10M436 106l14 10M436 126l14 10M436 146l14 10M512 66l14 10M512 86l14 10M512 106l14 10M512 126l14 10M512 146l14 10" style="stroke:var(--svg-c);stroke-width:1.4"/>
+        <rect x="454" y="56" width="54" height="122" style="fill:var(--info-soft)"/>
+        <path d="M454 56V178M508 56V178" style="stroke:var(--svg-d);stroke-width:2.4"/>
+        <text x="481" y="122" text-anchor="middle" class="svg-s" style="fill:var(--ink)">물</text>
+        <path d="M481 62V100M481 134V172" style="stroke:var(--svg-e);stroke-width:1.4;stroke-dasharray:3 3"/>
+        <text x="346" y="72" class="svg-s">바깥: 소수성</text>
+        <text x="346" y="196" class="svg-s">안쪽(빨간 선): 친수성 → 수용성 통로</text>
+        <text x="346" y="216" class="svg-s">β병풍이 말린 바구니 모양</text>
+      </svg>
+      <figcaption>어느 쪽이든 원리는 같다: 지질과 닿는 면은 소수성, 물이 지나는 면은 친수성.</figcaption>
+    </figure>
+
+    <h4>계면활성제로 막단백질 분리하기</h4>
+    <ul>
+      <li>막단백질은 지질과 엉겨 있어서 그냥 뽑아낼 수 없다 → 양친매성인 <b>계면활성제(세제)</b>로 지질 이중층을 조각내 단백질만 떼어 낸다. 세제는 막 사이를 파고들어 지질과 단백질을 감싼 <b>마이셀</b>을 만든다(11/11 양친매성).</li>
+      <li><b class="k">SDS</b>(황산도데실나트륨): 긴 소수성 꼬리 + 음전하 머리. SDS-PAGE에서 쓰던 그 세제 — 단백질을 펼치고 음전하로 코팅해 크기로만 분리(4차시).</li>
+      <li><b class="k">트리톤 X-100</b>: 역시 양친매성 세제. 지질을 떼어 내 막단백질을 녹여 낸다.</li>
+      <li>너무 세게 처리하면 단백질까지 부서진다 → 요즘은 구조를 보존한 채 보는 <b>Cryo-EM</b>을 많이 쓴다(4차시 11번).</li>
+    </ul>
+    <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>자료 표기 주의</b>강의에서 "약한 계면활성제를 사용해야 합니다. 대표적으로 SDS"라고 했는데, 슬라이드 그림 설명(그림 11-26)대로라면 <b>SDS는 강한 이온성 세제</b>라 단백질을 변성시키고, <b>트리톤 X-100이 약한 비이온성 세제</b>라 단백질을 활성 상태로 녹여 낼 수 있습니다. "구조와 기능을 지키려면 약한 세제"라는 원칙만 기억하세요.</div>
+    <div class="co warn"><b><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>정도만</b>8쪽(상피세포의 막단백질 구역): 세포 연접은 "개념은 모르셔도 될 것 같고, <b>물리적으로 특정 막단백질들의 구역을 제한할 수 있다</b> 정도만" 알면 된다고 했습니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u2"></div>
+</section>
+
+<!-- ================= U3 7가지 특성 ================= -->
+<section class="unit" id="u3">
+  <header class="unit-head"><span class="no">3</span><div>
+    <h3>세포막의 특성 7가지와 선택적 장벽</h3>
+    <p class="lead">지금까지 배운 막의 성질을 일곱 개로 묶는다. 결국 세포막은 구획을 만들어 안을 일정하게 지키면서, 필요한 것만 드나들게 하는 경계다.</p>
+  </div></header>
+  <div class="body">
+    <ul>
+      <li><b class="k">세포막</b>: 세포 내부를 외부 환경과 분리해 독립된 공간을 만드는 얇은 막. 동그라미를 그으면 안과 밖이 생긴다 → 구획화 → 효율성·체계성·전문성(5차시 1번).</li>
+    </ul>
+    <div class="tbl"><table>
+      <thead><tr><th>묶음</th><th>특성</th><th>한 줄 요약</th></tr></thead>
+      <tbody>
+        <tr><th rowspan="2">정의와 성분</th><td>① 구성</td><td>지질(인지질 &gt; 콜레스테롤 &gt; 당지질) + 막단백질 + 당사슬</td></tr>
+        <tr><td>② 지질 이중층</td><td>단일층이 아니라 이중층 — 랑뮈에 수조 실험(면적이 적혈구 표면적의 2배)</td></tr>
+        <tr><th rowspan="2">구조적 특징</th><td>③ 비대칭성</td><td>안층과 바깥층의 화학적 구성이 다름 (7~9번 소단원)</td></tr>
+        <tr><td>④ 유동 모자이크 모델</td><td>지질과 단백질이 기름층처럼 섞이며 움직임 (4번)</td></tr>
+        <tr><th>환경 변화</th><td>⑤ 온도에 따른 상변이</td><td>온도에 따라 유동성이 바뀜 (5번)</td></tr>
+        <tr><th rowspan="2">생물학적 기능</th><td>⑥ 선택적 장벽 → 구획화</td><td>경계선이자 방어벽, 항상성 확보</td></tr>
+        <tr><td>⑦ 선택적 투과성</td><td>필요한 것만 들이고 내보냄 (6번)</td></tr>
+      </tbody>
+    </table></div>
+    <h4>⑥ 선택적 장벽 → 구획화</h4>
+    <ol>
+      <li>세포의 <b>경계선이자 방어벽</b> — 당사슬로 면역 작용에도 참여.</li>
+      <li>구획화로 작은 계 안을 일정하게 유지 → <b>항상성</b> 확보 → 생명 활동이 일정한 범위 안에서 활발히 일어나게 한다.</li>
+      <li><b>선택적 투과성</b> → 세포 안팎의 물질 교환 통로.</li>
+    </ol>
+    <ul>
+      <li>원핵세포는 세포막뿐이지만, <b>진핵세포의 막은 세포소기관도 구획화</b>한다(핵을 비롯한 막성 소기관 — 안에서 또 세부적으로 구획).</li>
+    </ul>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>①②는 11/11 수업 내용의 복습입니다(구성 비율, 고터와 그렌델의 랑뮈에 수조 실험 — 소기관이 없는 적혈구라서 막 면적을 정확히 계산할 수 있었다). 당사슬은 "당마다 구조가 굉장히 다르고 정교해서" 면역에 쓰인다고 덧붙였습니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u3"></div>
+</section>
+
+<!-- ================= U4 유동 모자이크 ================= -->
+<section class="unit" id="u4">
+  <header class="unit-head"><span class="no">4</span><div>
+    <h3>유동 모자이크 모델과 FRAP</h3>
+    <p class="lead">세포막은 단백질이 고정된 판이 아니라, 기름 같은 지질층 속에 단백질이 모자이크처럼 박혀 떠다니는 구조다. 이것을 보여 주고(증명), 모델로 세우고(정립), 숫자로 쟀다(정량).</p>
+  </div></header>
+  <div class="body">
+    <ul>
+      <li><b class="k">유동 모자이크 모델</b>: 인지질 이중층의 유동성 속에 단백질들이 모자이크(조각조각 섞인 모양)처럼 박혀 <b>자유롭게 움직이는 역동적 구조</b>.</li>
+    </ul>
+    <div class="flow">
+      <div class="st"><b>1. 증명 — 세포 융합 실험</b>사람과 생쥐 세포의 막단백질에 서로 다른 형광 물질을 표지하고 두 세포를 융합 → 금방 서로 섞임 → 막은 유동적 (1970 프라이 &amp; 에디딘)</div><span class="ar">→</span>
+      <div class="st"><b>2. 정립 — 유동 모자이크 모델</b>유동성 실험 결과 + <b>열역학적 분석</b>(단백질은 인지질에 파묻혀 있어야 안정) → 기존 <b>단위막 모델 폐기</b> (1972 싱어 &amp; 니콜슨)</div><span class="ar">→</span>
+      <div class="st"><b>3. 정량 — FRAP</b>형광 회복 속도로 유동성의 정도를 계산 (1976)</div>
+    </div>
+    <ul>
+      <li><b>단위막 모델</b>(1959): 지질층 위아래를 단백질이 덮어 하나의 단위를 이룬다고 봄 — 단백질이 막 위에 떠 있다는 생각. 열역학적으로 불안정해서 폐기.</li>
+      <li>[회색] 단, 인테그린처럼 세포 안쪽의 섬유에 붙잡혀 고정된 단백질은 떠다니지 못한다.</li>
+    </ul>
+    <h4>FRAP(Fluorescence Recovery After Photobleaching, 형광 회복 측정)</h4>
+    <ol>
+      <li>막의 지질이나 단백질을 <b>형광 표지</b>한다.</li>
+      <li>일부분에 레이저를 쏴서 형광을 없앤다(<b>광표백</b>).</li>
+      <li>기다리면 주변의 형광 분자들이 확산해 들어와 표백된 부분이 <b>회복</b>된다.</li>
+      <li><b>회복 속도</b>로 막의 유동성 정도를 계산 → 37 ℃에서는 빨리, 15 ℃에서는 더디게 회복 → <b>온도↑ → 유동성↑</b>.</li>
+    </ol>
+    <figure class="fig">
+      <svg viewBox="0 0 640 226" role="img" aria-label="FRAP: 형광 표지한 막의 일부를 레이저로 표백하면 그 부분이 어두워지고, 주변 분자가 확산해 들어와 다시 밝아진다. 오른쪽 그래프에서 형광 세기는 표백 순간 떨어졌다가 회복되는데, 37도에서는 빠르게, 15도에서는 느리게 회복된다">
+        <defs><marker id="mk-f3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker>
+          <pattern id="dots-f3" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="2.2" style="fill:var(--svg-b)"/></pattern></defs>
+        <rect x="16" y="44" width="76" height="76" rx="10" style="fill:url(#dots-f3);stroke:var(--line)"/>
+        <rect x="120" y="44" width="76" height="76" rx="10" style="fill:url(#dots-f3);stroke:var(--line)"/>
+        <circle cx="158" cy="82" r="18" style="fill:var(--card);stroke:var(--svg-d);stroke-dasharray:3 3"/>
+        <rect x="224" y="44" width="76" height="76" rx="10" style="fill:url(#dots-f3);stroke:var(--line)"/>
+        <circle cx="262" cy="82" r="18" style="fill:none;stroke:var(--svg-d);stroke-dasharray:3 3"/>
+        <path d="M94 82H118" class="svg-line" marker-end="url(#mk-f3)"/>
+        <path d="M198 82H222" class="svg-line" marker-end="url(#mk-f3)"/>
+        <g text-anchor="middle" class="svg-s"><text x="54" y="140">형광 표지</text><text x="158" y="140">레이저로 표백</text><text x="262" y="140">주변 분자가</text><text x="262" y="156">들어와 회복</text></g>
+        <text x="16" y="28" class="svg-t" style="font-size:12px">막을 위에서 본 모습</text>
+        <path d="M360 192H624M360 192V44" style="fill:none;stroke:var(--svg-line);stroke-width:1.4"/>
+        <text x="366" y="52" class="svg-s">형광 세기</text>
+        <text x="624" y="212" text-anchor="end" class="svg-s">시간 →</text>
+        <path d="M362 70H400V168" style="fill:none;stroke:var(--svg-line);stroke-width:2"/>
+        <path d="M400 168C420 100 450 84 612 78" style="fill:none;stroke:var(--svg-d);stroke-width:2.4"/>
+        <path d="M400 168C470 152 540 124 612 110" style="fill:none;stroke:var(--svg-e);stroke-width:2.4"/>
+        <text x="612" y="70" text-anchor="end" class="svg-s" style="fill:var(--bad)">37 ℃ — 빨리 회복</text>
+        <text x="612" y="102" text-anchor="end" class="svg-s" style="fill:var(--svg-e)">15 ℃ — 더디게 회복</text>
+        <text x="406" y="184" class="svg-s">← 표백 순간</text>
+      </svg>
+      <figcaption>빈자리가 다시 차오른다 = 막의 분자들이 옆으로 움직인다. 빨리 차오를수록 유동성이 크다.</figcaption>
+    </figure>
+    <ul>
+      <li>막 속 지질의 움직임: <b>측면 이동</b>(아주 자주) · <b>회전</b> · <b>플립플롭</b>(위층 ↔ 아래층, 측면 이동보다 훨씬 드묾 — 8번 소단원에서 이유).</li>
+    </ul>
+  </div>
+  <div class="quiz" data-quiz="u4"></div>
+</section>
+
+<!-- ================= U5 온도와 상변이 ================= -->
+<section class="unit" id="u5">
+  <header class="unit-head"><span class="no">5</span><div>
+    <h3>온도에 따른 상변이 — 지방산 꼬리와 콜레스테롤</h3>
+    <p class="lead">추우면 막이 결정처럼 굳고, 더우면 너무 묽어진다. 세포는 지방산 꼬리의 종류를 바꾸고, 콜레스테롤로 완충해 적당한 유동성을 지킨다.</p>
+  </div></header>
+  <div class="body">
+    <div class="tbl"><table>
+      <thead><tr><th>약자</th><th>이름</th><th>이중결합</th></tr></thead>
+      <tbody>
+        <tr><th>SFA</th><td>포화지방산 (saturated fatty acid)</td><td>없음 — 곧은 꼬리</td></tr>
+        <tr><th>MUFA</th><td>단일불포화지방산 (monounsaturated)</td><td>1개 — 한 번 꺾임</td></tr>
+        <tr><th>PUFA</th><td>다가불포화지방산 (polyunsaturated)</td><td>여러 개 — 여러 번 꺾임</td></tr>
+      </tbody>
+    </table></div>
+    <div class="flow">
+      <div class="st"><b>저온 → 결정화 위험</b>인지질 꼬리에서 <b>SFA 비율↓, MUFA·PUFA 비율↑</b>(불포화 효소 desaturase 활성화) → 부드러운 막 유지. 콜레스테롤이 결정화를 방해</div><span class="ar">↔</span>
+      <div class="st"><b>고온 → 유동성 과도화</b><b>SFA 비율↑</b> → 막을 단단하게. 콜레스테롤이 붙잡아(앵커링) 유동성을 줄임</div>
+    </div>
+    <ul>
+      <li>지방산 조성만으로는 조절에 한계가 있어서, <b>콜레스테롤</b>이 온도 변화를 완충(버퍼링)한다 — 11/11 페이지 9번 소단원 그래프(콜레스테롤이 있으면 곡선이 완만).</li>
+      <li>그래프 읽기: 온도가 <b>T<sub>m</sub></b>(상전이 온도) 근처를 지나면 막이 <b>고체 같은 상태</b>에서 <b>액체 같은 상태</b>로 바뀌며 유동성이 급격히 증가한다. 너무 춥거나 너무 더우면 막의 투과성이 커진다(18~19쪽 그래프).</li>
+    </ul>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"영어로 되어 있어서 낯설지만 사실 간단합니다." 이중결합이 하나면 모노(mono) → MUFA, 여러 개면 폴리(poly) → PUFA. 여러 번 꺾인 모양을 "나이키 모양"이라고 했습니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u5"></div>
+</section>
+
+<!-- ================= U6 선택적 투과성 ================= -->
+<section class="unit" id="u6">
+  <header class="unit-head"><span class="no">6</span><div>
+    <h3>선택적 투과성 — 단순 확산과 촉진 확산</h3>
+    <p class="lead">지질 이중층의 가운데는 기름층이라 작고 전하 없는 분자만 그냥 지나간다. 나머지는 단백질의 도움이 필요하고, 단백질은 수가 정해져 있어 언젠가 꽉 찬다.</p>
+  </div></header>
+  <div class="body">
+    <ul>
+      <li>인지질 이중층의 꼬리 부분은 소수성 → <b>소수성 장벽</b> → 친수성 물질은 통과하기 어렵다.</li>
+      <li><b class="k">단순 확산</b>: 세포막을 직접 통과(슬라이드는 통로 단백질을 이용한 확산도 여기 포함). 잘 되는 조건: <b>전하 X, 극성↓, 크기↓</b> → 소수성↑일수록 원활.</li>
+      <li><b class="k">촉진 확산</b>: <b>운반체 단백질</b>을 이용한 확산. 전하가 있거나(O), 극성이 크거나(↑), 크기가 커서(↑) 이중층을 바로 뚫을 수 없는 물질.</li>
+      <li>확산 속도: 단순 확산은 농도가 높아질수록 계속 증가하지만, 촉진 확산은 운반체 단백질이 모두 물질로 차면 더 빨라지지 않는다 → <b>포화(최대 속도)</b>. 효소의 기질 포화와 같은 원리.</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 222" role="img" aria-label="확산 속도와 농도: 단순 확산은 물질 농도가 높아질수록 속도가 계속 증가하는 직선이고, 촉진 확산은 처음엔 빠르게 증가하다가 운반체가 모두 차면 최대 속도에서 평평해진다. 오른쪽: 단순 확산은 전하가 없고 극성과 크기가 작은 물질, 촉진 확산은 전하가 있거나 극성이나 크기가 큰 물질이 운반체 단백질을 통해 이동한다">
+        <path d="M60 192H320M60 192V36" style="fill:none;stroke:var(--svg-line);stroke-width:1.4"/>
+        <text x="66" y="46" class="svg-s">확산 속도</text>
+        <text x="320" y="212" text-anchor="end" class="svg-s">물질 농도 →</text>
+        <path d="M60 192L310 52" style="fill:none;stroke:var(--svg-b);stroke-width:2.4"/>
+        <path d="M60 192C110 112 170 96 310 92" style="fill:none;stroke:var(--svg-d);stroke-width:2.4"/>
+        <path d="M60 89H316" style="stroke:var(--svg-d);stroke-width:1.2;stroke-dasharray:4 4"/>
+        <text x="300" y="44" text-anchor="end" class="svg-s" style="fill:var(--svg-b)">단순 확산 — 계속 증가</text>
+        <text x="314" y="126" text-anchor="end" class="svg-s" style="fill:var(--bad)">촉진 확산 — 포화</text>
+        <text x="70" y="82" class="svg-s" style="font-size:10.5px">최대 속도</text>
+        <rect x="346" y="26" width="284" height="80" rx="12" class="sf-a"/>
+        <text x="362" y="50" class="svg-t">단순 확산</text>
+        <text x="362" y="72" class="svg-s" style="fill:var(--ink)">전하 X · 극성↓ · 크기↓ (소수성↑)</text>
+        <text x="362" y="92" class="svg-s" style="fill:var(--ink)">인지질 이중층을 바로 통과</text>
+        <rect x="346" y="118" width="284" height="80" rx="12" class="sf-d"/>
+        <text x="362" y="142" class="svg-t">촉진 확산</text>
+        <text x="362" y="164" class="svg-s" style="fill:var(--ink)">전하 O · 극성↑ · 크기↑ (소수성↓)</text>
+        <text x="362" y="184" class="svg-s" style="fill:var(--ink)">운반체 단백질 필요 → 수가 한정돼 포화</text>
+      </svg>
+      <figcaption>하이패스 비유: 1·2·3번 차로가 있어도 추석처럼 차가 몰려 모든 차로가 차면, 그 이상은 빨리 지나갈 수 없다.</figcaption>
+    </figure>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>이 그래프는 "통합과학에도 자주 나왔고, 대학 기출(2023)에도 나왔던 것 같다"고 했습니다. 선택적 투과성은 다음 시간(세포막을 통과하는 수송)에 더 자세히 배웁니다.</div>
+    <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>자료 표기 주의</b>슬라이드는 <b>통로 단백질을 이용한 확산을 단순 확산</b>에, 운반체 단백질만 촉진 확산에 넣었습니다(국내 생명과학 교과 방식). 그런데 강의에서는 "촉진 확산은 운반체 <b>혹은 통로</b> 단백질을 이용"이라고 말했습니다(대학 교재 방식). 두 분류가 공존하니, 다음 시간 수송 단원에서 선생님이 어느 쪽으로 정리하는지 확인하세요. 포화 그래프는 운반체 기준이라 어느 분류에서도 같습니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u6"></div>
+</section>
+
+<!-- ================= U7 비대칭성과 세포예정사 ================= -->
+<section class="unit" id="u7">
+  <header class="unit-head"><span class="no">7</span><div>
+    <h3>세포막의 비대칭성 — 왜 그렇게 배치하나, 그리고 세포예정사</h3>
+    <p class="lead">지질도, 단백질도, 당사슬도 막의 안과 밖에 놓이는 자리가 정해져 있다. 하는 일에 맞춘 배치다. 이 배치가 무너지는 순간이 곧 "나를 치워 달라"는 신호가 된다.</p>
+  </div></header>
+  <div class="body">
+    <div class="tbl"><table>
+      <thead><tr><th>구성 요소</th><th>세포막 외층 (세포 밖 쪽)</th><th>세포막 내층 (세포질 쪽)</th></tr></thead>
+      <tbody>
+        <tr><th>지질</th><td>주로 <b>전하 중성 · 원통형</b> — PC, SM<br><b>당지질은 외층에만</b>: 세포 인식, 안테나</td><td>주로 <b>음전하 또는 곡률을 형성할 수 있는</b> 지질<br>PS·PI: 강한 음전하 → 세포 안의 <b>신호 전달 단백질을 막으로 끌어당김</b><br>PE: pH 7.4에서 중성이지만 머리가 작아 <b>곡률 형성</b>에 유리</td></tr>
+        <tr><th>막단백질</th><td><b>수용체</b>: 호르몬 등 외부 신호를 받는 부위</td><td><b>에너지 사용 부위</b>: ATP를 결합·분해하는 부위 (예: Na⁺-K⁺ 펌프) — ATP가 풍부한 안쪽</td></tr>
+        <tr><th>당사슬</th><td>당지질·당단백질의 탄수화물 사슬 100% → <b>당질층(glycocalyx)</b>: 면역세포의 자기/비자기 인식</td><td>없음</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li>비대칭성은 세포막의 곡률 형성, 내포작용, 소낭 형성에 필수적이다. 4대 인지질의 비율·분포는 <a href="ch6.html#u7">11/11 페이지 7번 소단원</a>.</li>
+    </ul>
+    <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>표현 정정</b>내층을 "음전하를 띠거나 <b>친수성 머리가 작은</b> 지질"로 적은 곳(13·16·23쪽)을 "음전하를 띠거나 <b>곡률을 형성할 수 있는</b> 지질"로 고쳐 달라고 했습니다. "그런 애들만 있는 건 아니고, 그런 애들이 많다." 왜 하필 내층에 곡률 지질이 많은지에 대해서는 선생님도 추측이라며 이유를 짐작만 해 보였습니다.</div>
+
+    <h4>비대칭성의 붕괴 = 세포예정사(apoptosis) 신호</h4>
+    <ul>
+      <li>평상시: 세포막의 비대칭성을 철저히 유지 — PS는 늘 내층에 격리.</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 224" role="img" aria-label="세포예정사 과정: 1 평소에는 포스파티딜세린이 막의 안쪽 층에만 있다. 2 세포 안으로 칼슘 이온이 들어온다. 3 칼슘이 스크램블레이스를 깨워 두 층의 지질이 뒤섞이고 포스파티딜세린이 바깥 층에 드러난다. 4 바깥에 드러난 포스파티딜세린을 보고 대식세포가 와서 세포를 먹어 치운다">
+        <defs><marker id="mk-f5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker></defs>
+        <g text-anchor="middle" class="svg-t" style="font-size:12px"><text x="85" y="22">① 평소: PS는 안쪽</text><text x="245" y="22">② Ca²⁺ 유입</text><text x="405" y="22">③ 스크램블레이스 각성</text><text x="565" y="22">④ 대식세포가 청소</text></g>
+        <path d="M150 112H176" class="svg-line" marker-end="url(#mk-f5)"/><path d="M310 112H336" class="svg-line" marker-end="url(#mk-f5)"/><path d="M470 112H496" class="svg-line" marker-end="url(#mk-f5)"/>
+        <g style="fill:var(--line-2)"><rect x="25" y="98" width="120" height="28"/><rect x="185" y="98" width="120" height="28"/><rect x="345" y="98" width="120" height="28"/><rect x="505" y="98" width="120" height="28"/></g>
+        <g style="stroke:var(--svg-a);stroke-width:9;stroke-linecap:round;stroke-dasharray:0 12"><path d="M30 94H142M190 94H302M350 94H462M510 94H622"/><path d="M30 130H142M190 130H302"/><path d="M350 130H462M510 130H622"/></g>
+        <g class="sf-d"><circle cx="54" cy="130" r="5"/><circle cx="90" cy="130" r="5"/><circle cx="126" cy="130" r="5"/><circle cx="214" cy="130" r="5"/><circle cx="250" cy="130" r="5"/><circle cx="286" cy="130" r="5"/>
+          <circle cx="374" cy="94" r="5"/><circle cx="410" cy="130" r="5"/><circle cx="446" cy="94" r="5"/><circle cx="534" cy="94" r="5"/><circle cx="570" cy="130" r="5"/><circle cx="606" cy="94" r="5"/></g>
+        <text x="16" y="74" class="svg-s">세포 밖</text>
+        <text x="16" y="160" class="svg-s">세포질</text>
+        <g class="svg-c"><circle cx="210" cy="156" r="4"/><circle cx="232" cy="170" r="4"/><circle cx="256" cy="152" r="4"/><circle cx="276" cy="168" r="4"/><circle cx="244" cy="184" r="4"/></g>
+        <text x="245" y="204" text-anchor="middle" class="svg-s">세포 안 Ca²⁺↑</text>
+        <rect x="396" y="88" width="18" height="48" rx="7" class="sf-e"/>
+        <path d="M388 84C372 100 372 122 388 140" class="svg-line" marker-end="url(#mk-f5)"/>
+        <path d="M424 140C440 124 440 102 424 86" class="svg-line" marker-end="url(#mk-f5)"/>
+        <text x="405" y="176" text-anchor="middle" class="svg-s">두 층이 뒤섞임</text>
+        <text x="405" y="192" text-anchor="middle" class="svg-s">→ PS가 바깥에 노출</text>
+        <path d="M528 40C540 24 590 24 600 40C616 44 616 64 600 70C580 80 548 80 532 70C516 62 516 46 528 40Z" class="sf-c"/>
+        <text x="566" y="58" text-anchor="middle" class="svg-s" style="fill:var(--ink)">대식세포</text>
+        <path d="M566 76V86" class="svg-line" marker-end="url(#mk-f5)"/>
+        <text x="565" y="176" text-anchor="middle" class="svg-s">PS = "나를 먹어 줘"</text>
+        <text x="565" y="192" text-anchor="middle" class="svg-s">(eat-me 신호)</text>
+        <circle cx="34" cy="210" r="5" class="sf-d"/><text x="44" y="214" class="svg-s">PS (포스파티딜세린)</text>
+      </svg>
+      <figcaption>세포를 정리해야 할 때 세포는 일부러 비대칭성을 깨뜨린다. 바깥에 드러난 PS가 청소 신호다.</figcaption>
+    </figure>
+    <ol>
+      <li><b>세포예정사의 시작</b>: 칼슘 이온(Ca²⁺)이 세포 안으로 유입.</li>
+      <li><b>스크램블레이스의 각성</b>과 비대칭성의 파괴 — 평소 억제되어 있던 스크램블레이스가 깨어나 두 층을 무작위로 섞는다.</li>
+      <li><b>PS가 세포 외층에 노출</b> → eat-me 신호 발송.</li>
+      <li>최종 결과: <b>대식세포</b>가 와서 먹어 소화한다.</li>
+    </ol>
+    <ul>
+      <li>Ca²⁺는 세포 안에서 중요한 <b>2차 전달자(second messenger)</b> 역할을 한다(근소포체에서도 나왔고, 신호 전달 단원에서 다시).</li>
+      <li>[참고] annexin-V 결합 분석: PS에 붙는 단백질로 바깥에 PS가 드러난(죽어 가는) 세포를 찾아내는 실험법.</li>
+    </ul>
+  </div>
+  <div class="quiz" data-quiz="u7"></div>
+</section>
+
+<!-- ================= U8 지질 운반 효소 ================= -->
+<section class="unit" id="u8">
+  <header class="unit-head"><span class="no">8</span><div>
+    <h3>비대칭성을 만드는 효소 — 플리페이스 · 플로페이스 · 스크램블레이스</h3>
+    <p class="lead">지질은 옆으로는 자유롭게 다니지만, 스스로 반대층으로 넘어가기는 매우 어렵다. 그래서 세포는 ATP를 써서 원하는 지질을 원하는 층으로 옮기고, 필요할 땐 일부러 섞는다.</p>
+  </div></header>
+  <div class="body">
+    <ul>
+      <li><b>플립플롭이 어려운 이유</b>: 친수성 머리가 소수성 꼬리층을 통과해야 하므로 열역학적으로 매우 어렵다 → 세포는 골지체와 세포막에서 특수 수송 효소로 에너지를 쓰며 비대칭성을 강제로 유지한다.</li>
+      <li>이름 외우기: <b>플립(flip) = 안으로</b>, <b>플롭(flop) = 밖으로</b>, <b>스크램블 = 마구 섞기</b>.</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 238" role="img" aria-label="세 효소의 작용: 플리페이스는 ATP를 써서 바깥층의 PS와 PE를 안쪽층으로 옮긴다. 플로페이스는 ATP를 써서 안쪽층의 PC와 스핑고지질을 바깥층으로 옮긴다. 스크램블레이스는 에너지 없이 두 층의 지질을 무작위로 섞는다. 아래 막대는 소포체는 대칭, 골지체는 중간, 세포막은 극도로 비대칭임을 보여 준다">
+        <defs><marker id="mk-f6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker>
+          <linearGradient id="gr-f6" x1="0" x2="1" y1="0" y2="0"><stop offset="0" style="stop-color:var(--line-2)"/><stop offset="1" style="stop-color:var(--svg-d)"/></linearGradient></defs>
+        <g text-anchor="middle" class="svg-t"><text x="110" y="22">플리페이스</text><text x="320" y="22">플로페이스</text><text x="530" y="22">스크램블레이스</text></g>
+        <g text-anchor="middle" class="svg-s"><text x="110" y="38">바깥 → 안 (PS, PE)</text><text x="320" y="38">안 → 바깥 (PC, 스핑고지질)</text><text x="530" y="38">양방향 무작위 (모든 지질)</text></g>
+        <g style="fill:var(--line-2)"><rect x="30" y="66" width="160" height="40"/><rect x="240" y="66" width="160" height="40"/><rect x="450" y="66" width="160" height="40"/></g>
+        <g style="stroke:var(--svg-a);stroke-width:9;stroke-linecap:round;stroke-dasharray:0 12"><path d="M36 62H186M246 62H396M456 62H606M36 110H186M246 110H396M456 110H606"/></g>
+        <rect x="100" y="56" width="20" height="60" rx="8" class="sf-e"/><rect x="310" y="56" width="20" height="60" rx="8" class="sf-c"/><rect x="520" y="56" width="20" height="60" rx="8" class="sf-n"/>
+        <path d="M86 56C70 72 70 98 86 114" class="svg-line" marker-end="url(#mk-f6)"/>
+        <path d="M296 114C280 98 280 72 296 56" class="svg-line" marker-end="url(#mk-f6)"/>
+        <path d="M506 56C490 72 490 98 506 114" class="svg-line" marker-end="url(#mk-f6)"/>
+        <path d="M554 114C570 98 570 72 554 56" class="svg-line" marker-end="url(#mk-f6)"/>
+        <text x="140" y="140" class="svg-s">ATP → ADP</text><text x="350" y="140" class="svg-s">ATP → ADP</text><text x="562" y="140" class="svg-s">ATP 없음</text>
+        <text x="16" y="56" class="svg-s" style="font-size:10.5px">밖</text><text x="16" y="122" class="svg-s" style="font-size:10.5px">안</text>
+        <rect x="60" y="170" width="520" height="16" rx="8" style="fill:url(#gr-f6)"/>
+        <g text-anchor="middle" class="svg-s"><text x="90" y="206">소포체</text><text x="90" y="222">대칭</text><text x="320" y="206">골지체</text><text x="320" y="222">중간 (트랜스로 갈수록)</text><text x="550" y="206">세포막</text><text x="550" y="222">극도로 비대칭</text></g>
+        <text x="320" y="162" text-anchor="middle" class="svg-s">비대칭 정도</text>
+      </svg>
+      <figcaption>선택적으로 골라 옮기려면 에너지가 든다(플리·플로페이스). 그냥 섞기만 하면 농도 차를 따라가므로 에너지가 필요 없다(스크램블레이스).</figcaption>
+    </figure>
+    <div class="tbl"><table>
+      <thead><tr><th>구분</th><th>플리페이스</th><th>플로페이스</th><th>스크램블레이스</th></tr></thead>
+      <tbody>
+        <tr><th>수송 방향</th><td>외층 → 내층</td><td>내층 → 외층</td><td>양방향 무작위</td></tr>
+        <tr><th>ATP</th><td>필요 (P형 ATPase 계열)</td><td>필요 (ABC 수송체 계열)</td><td><b>불필요</b> (농도 기울기 따라 수동)</td></tr>
+        <tr><th>막 비대칭성</th><td colspan="2">유지 및 형성</td><td><b>파괴</b> 및 평형화</td></tr>
+        <tr><th>기질 특이성</th><td>높음 (PS, PE 선호)</td><td>높음 (PC, 스핑고지질)</td><td>낮음 (모든 지질)</td></tr>
+        <tr><th>활성 조건</th><td colspan="2">정상 상태에서 상시 작용</td><td>소포체 막: <b>상시</b>(새 지질 균등 분배) · 세포막: <b>평소 불활성</b>, 세포 안 [Ca²⁺]↑ → 작동 → 아폽토시스</td></tr>
+      </tbody>
+    </table></div>
+    <h4>장소별로 보면</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>장소</th><th>주요 효소 작용</th><th>비대칭 상태</th><th>세포질 쪽 층</th><th>내강·세포 밖 쪽 층</th></tr></thead>
+      <tbody>
+        <tr><th>소포체</th><td>스크램블레이스 상시 · 플리/플로페이스 거의 X</td><td><b>대칭</b> (합성 후 즉시 섞임)</td><td colspan="2">PC, PE, PI, PS 등 거의 모든 지질 균등 분포 (SM은 뼈대인 세라마이드까지만)</td></tr>
+        <tr><th>골지체</th><td>플리페이스 본격 작동 → 비대칭 형성 시작</td><td>중간~비대칭 (트랜스로 갈수록 뚜렷)</td><td>PE, PS, PI (세포질 쪽으로 강제 압송)</td><td>PC (남아서 자연히 농축), SM (골지 내강에서 완성)</td></tr>
+        <tr><th>세포막</th><td>플리·플로페이스 상시 · 스크램블레이스 평소 억제(Ca²⁺ 유입 시 각성)</td><td><b>극도로 비대칭</b> (가장 정교)</td><td>PE, PS, PI(PIP₂) — 음전하·작은 머리</td><td>PC, SM, 당지질 — 중성·안테나</td></tr>
+        <tr><th>엔도솜</th><td>세포막 유래 → 플리페이스 잔류 작동</td><td>비대칭 (세포막보다는 덜)</td><td>PE, PS, PI</td><td>PC, SM</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li>세포막은 바깥에서 신호를 받아야 하므로 외층과 내층의 구분이 가장 중요 → 두 효소를 모두 가동해 가장 정교하게 유지.</li>
+      <li>소기관마다 막의 조성은 조금씩 다르지만 공통적으로 <b>PC가 가장 많고, 그다음이 PE</b>인 경향. 콜레스테롤은 소포체 → 골지체 → 세포막으로 갈수록 많아진다(33쪽 그림).</li>
+    </ul>
+  </div>
+  <div class="quiz" data-quiz="u8"></div>
+</section>
+
+<!-- ================= U9 합성과 막 삽입 ================= -->
+<section class="unit" id="u9">
+  <header class="unit-head"><span class="no">9</span><div>
+    <h3>막 구성 물질의 합성과 막 삽입 — 방향(위상)이 유지된다</h3>
+    <p class="lead">소포체·골지체의 내강 쪽에 있던 것은 소낭을 거쳐 세포막에 합쳐지면 세포 밖을 향한다. 그래서 당사슬과 막단백질의 바깥 부위는 처음부터 내강 쪽에서 만들어진다.</p>
+  </div></header>
+  <div class="body">
+    <h4>위상 규칙: 내강 쪽 = 세포 밖 쪽</h4>
+    <figure class="fig">
+      <svg viewBox="0 0 640 230" role="img" aria-label="방향 유지: 1 골지체 막에서 당사슬은 내강 쪽에 붙는다. 2 골지체에서 떨어져 나온 수송 소낭에서 당사슬은 소낭 안쪽을 향한다. 3 소낭이 세포막과 융합하면 소낭의 안쪽 면이 세포막의 바깥 면이 되어 당사슬이 세포 밖을 향한다">
+        <defs><marker id="mk-f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker>
+          <polygon id="hx-f7" points="5,0 2.5,4.3 -2.5,4.3 -5,0 -2.5,-4.3 2.5,-4.3"/></defs>
+        <g text-anchor="middle" class="svg-t" style="font-size:12px"><text x="110" y="22">① 골지체: 당은 내강 쪽</text><text x="320" y="22">② 소낭: 당은 소낭 안쪽</text><text x="530" y="22">③ 세포막과 융합: 당은 바깥</text></g>
+        <rect x="30" y="58" width="160" height="96" rx="40" style="fill:var(--info-soft);stroke:var(--svg-line);stroke-width:5"/>
+        <text x="110" y="110" text-anchor="middle" class="svg-s" style="fill:var(--ink)">골지 내강</text>
+        <text x="110" y="182" text-anchor="middle" class="svg-s">바깥 = 세포질</text>
+        <g class="sf-c"><use href="#hx-f7" x="60" y="72"/><use href="#hx-f7" x="96" y="68"/><use href="#hx-f7" x="132" y="68"/><use href="#hx-f7" x="164" y="76"/><use href="#hx-f7" x="70" y="138"/><use href="#hx-f7" x="110" y="142"/><use href="#hx-f7" x="150" y="138"/></g>
+        <path d="M200 106H254" class="svg-line" marker-end="url(#mk-f7)"/>
+        <circle cx="320" cy="106" r="44" style="fill:var(--info-soft);stroke:var(--svg-line);stroke-width:5"/>
+        <g class="sf-c"><use href="#hx-f7" x="320" y="72"/><use href="#hx-f7" x="350" y="88"/><use href="#hx-f7" x="352" y="122"/><use href="#hx-f7" x="320" y="140"/><use href="#hx-f7" x="288" y="122"/><use href="#hx-f7" x="290" y="88"/></g>
+        <text x="320" y="110" text-anchor="middle" class="svg-s" style="fill:var(--ink)">소낭 안</text>
+        <text x="320" y="182" text-anchor="middle" class="svg-s">출아해도 방향 그대로</text>
+        <path d="M386 106H440" class="svg-line" marker-end="url(#mk-f7)"/>
+        <path d="M446 96H500C504 96 504 124 530 124S556 96 560 96H630" style="fill:none;stroke:var(--svg-line);stroke-width:5"/>
+        <g class="sf-c"><use href="#hx-f7" x="462" y="84"/><use href="#hx-f7" x="486" y="84"/><use href="#hx-f7" x="516" y="108"/><use href="#hx-f7" x="544" y="108"/><use href="#hx-f7" x="576" y="84"/><use href="#hx-f7" x="604" y="84"/></g>
+        <text x="538" y="62" text-anchor="middle" class="svg-s">세포 밖</text>
+        <text x="538" y="156" text-anchor="middle" class="svg-s">세포질</text>
+        <text x="538" y="182" text-anchor="middle" class="svg-s">소낭 안쪽 면 = 세포막 바깥 면</text>
+        <polygon points="25,213 22.5,217.3 17.5,217.3 15,213 17.5,208.7 22.5,208.7" class="sf-c"/><text x="32" y="217" class="svg-s">당사슬 (막단백질의 바깥 부위도 같은 규칙)</text>
+      </svg>
+      <figcaption>선생님의 칠판 질문: 골지체에서 당을 A(내강 쪽)와 B(세포질 쪽) 중 어디에 붙여야 세포막 바깥에 당이 올까? → A. "어디에 넣었을 때 최종적으로 합쳐지면 어디로 가는가 — 이 방향성이 굉장히 중요합니다."</figcaption>
+    </figure>
+    <h4>구성 물질별 정리</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>구분</th><th>합성 장소</th><th>막 삽입과 배치</th><th>최종 세포막에서</th></tr></thead>
+      <tbody>
+        <tr><th>인지질</th><td>매끈면 소포체 막의 세포질 쪽 층 (G3P + 지방산 아실-CoA → PA, DAG)</td><td>스크램블레이스가 에너지 없이 반대층으로 무작위 이동 → 양쪽 대칭 확장 → 골지체에서 플리·플로페이스로 정렬</td><td>내층/외층 비대칭 분포</td></tr>
+        <tr><th>당지질</th><td>소포체(세라마이드: 스핑고신 아미노기 + 아실) → 골지체(당 결합)</td><td>골지체 <b>내강 쪽</b> 층에 당사슬이 오도록 조립 → 소낭 융합으로 이동</td><td><b>외층에만</b> 당사슬 노출</td></tr>
+        <tr><th>콜레스테롤</th><td>소포체 막</td><td>극성 머리(–OH)가 작고 비극성이 매우 강해 <b>효소 없이 스스로</b> 빠르게 뒤집히고 이동. 소낭으로 골지체·세포막으로</td><td>양쪽 층에 자유롭게 자리 잡고 유동성 조절</td></tr>
+        <tr><th>막단백질</th><td>거친면 소포체 표면의 리보솜</td><td>SRP 인식 → 소포체 막 수송체(트랜스로콘)로 → <b>번역과 동시에</b> 소포체 막 지질층에 옆으로 삽입 → 내강 쪽 부위에 N-결합 당화</td><td>소포체 내강 쪽 도메인이 <b>세포 밖</b>을 향함</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li><b>막단백질</b>: 원래 세포질에 떠다니던 자유 리보솜이 신호 서열을 가진 mRNA를 번역하기 시작하면 SRP가 인식해 거친면 소포체로 끌고 간다(11/10). 슬라이드의 "공번역 수송"은 앞에서 배운 <b>공동번역 전좌</b>와 같은 말. 막에 박힌 상태 그대로 소낭에 담겨 소포체 → 골지체 → 세포막으로.</li>
+      <li><b>당지질</b>: "당 결합" 부분은 <b>"그냥 당이 결합한다"</b>만 알면 된다(필기로 두 줄 삭제). 동물에서는 스핑고당지질이 대부분이라 당지질 = 스핑고당지질로 본다.</li>
+    </ul>
+    <div class="co warn"><b><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>범위 밖</b>지질 전달 단백질(LTP)은 "몰라도 됩니다 — 나중에 약학 할 때 보실 것." 콜레스테롤 합성 과정(세포질의 아세틸-CoA에서 여러 효소 반응)은 회색. 막단백질 삽입의 정지-수송 신호·신호-앵커 배열(회색 두 줄)도 넘어가도 됩니다.</div>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"다 이전 단원들이랑 이어져 있습니다. 그래서 처음부터 차근차근 다 공부를 하셔야 됩니다." 매끈면 소포체(11/10), 세라마이드·스크램블레이스(11/11), 공동번역 전좌·N-결합 당화(11/10)가 모두 여기서 다시 쓰입니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u9"></div>
+</section>
+<!-- ================= 종합 ================= -->
+<section class="sum" id="summary">
+  <h3>종합 점수</h3>
+  <p style="color:var(--muted);margin:0">푼 문항 기준 정답률입니다. 낮은 소단원부터 다시 보세요.</p>
+  <div class="big" id="sumBig">–</div>
+  <p id="sumSub" style="margin:0 0 14px;color:var(--muted)"></p>
+  <div id="sumRows"></div>
+  <div class="wrongs starlist">
+    <h4><svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg>별표 모아보기</h4>
+    <div id="starList"></div>
+  </div>
+  <div class="wrongs">
+    <h4><svg class="i" aria-hidden="true"><use href="#i-flag"/></svg>오답 노트</h4>
+    <div id="wrongList"><p>아직 틀린 문제가 없습니다.</p></div>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px">
+    <button class="btn" id="resetAll" type="button"><svg class="i" aria-hidden="true"><use href="#i-retry"/></svg>모든 퀴즈 기록 지우기</button>
+  </div>
+</section>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+<dialog class="lb" id="lb" aria-label="슬라이드 크게 보기"><img alt=""><div class="lb-bar"><button type="button" data-lb="-1">이전</button><span id="lbCap"></span><button type="button" data-lb="1">다음</button><button type="button" data-lb="x">닫기</button></div></dialog>
+
+<script>
+const UNITS = [
+  {id:'u1', name:'막단백질의 기능과 분류'},
+  {id:'u2', name:'막관통 구조와 계면활성제'},
+  {id:'u3', name:'7가지 특성과 선택적 장벽'},
+  {id:'u4', name:'유동 모자이크 모델과 FRAP'},
+  {id:'u5', name:'온도에 따른 상변이'},
+  {id:'u6', name:'선택적 투과성: 단순·촉진 확산'},
+  {id:'u7', name:'비대칭성과 세포예정사'},
+  {id:'u8', name:'플리페이스·플로페이스·스크램블레이스'},
+  {id:'u9', name:'합성과 막 삽입: 방향 유지'}
+];
+
+const L = s => '<ul>' + s.map(x => '<li>' + x + '</li>').join('') + '</ul>';
+
+const QUIZ = {
+u1: [
+  { q: '막단백질의 분류에 대한 설명으로 옳은 것은? (수업 교재 기준)',
+    o: ['막을 완전히 꿰뚫는 단백질만 내재성이고, 한 층에만 박힌 것은 표재성으로 분류한다.',
+        '지질 이중층에 일부라도 박혀 있으면 내재성, 다른 단백질에 붙어 있으면 표재성이다.',
+        '지질에 공유결합으로 매달린 단백질은 막에 박히지 않으므로 표재성으로 분류한다.',
+        '표재성 단백질은 지질 이중층의 소수성 부분을 직접 관통하여 단단히 고정되어 있다.',
+        '내재성과 표재성은 단백질이 맡은 기능(수송·수용체·효소)의 종류에 따라 나눈다.'],
+    a: 1,
+    w: '분류 기준은 기능이 아니라 막에 박힌 정도다. 일부라도 박히면 내재성(막관통·단일층 결합·지질과 연결), 박히지 않고 다른 막단백질에 붙어 있으면 표재성이다. 지질과 연결된 것을 표재성으로 보는 책도 있지만 수업 교재는 내재성으로 봤다.' },
+  { q: '막단백질의 기능에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 인테그린은 세포 밖 기질 등 다른 부위와 연결하는 연결체 역할을 한다.',
+          'ㄴ. 수송체는 물질이 결합한 뒤 구조가 바뀌면서 물질을 반대편으로 넘겨준다.',
+          'ㄷ. 수용체는 리간드가 결합하면 그 리간드를 효소처럼 분해해 생성물을 만든다.',
+          'ㄹ. 통로 단백질은 뚫린 통로를 통해 이온 같은 물질을 통과시킨다.']),
+    o: ['ㄱ, ㄷ', 'ㄴ, ㄹ', 'ㄱ, ㄴ, ㄷ', 'ㄱ, ㄴ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 3,
+    w: 'ㄷ: 수용체는 리간드가 결합하면 세포 안쪽으로 신호를 전달하는 단백질이다. 기질을 생성물로 바꾸는 것은 효소의 일이다.' },
+  { q: '다음 중 표재성 단백질에 해당하는 것은? (수업 교재 기준)',
+    o: ['막관통 단백질의 세포질 쪽에 붙어 있고, 이중층에는 박히지 않은 단백질',
+        'α나선 하나로 지질 이중층을 한 번 꿰뚫고 양쪽으로 튀어나와 있는 단백질',
+        '여러 개의 α나선이 모여 안쪽에 친수성 막공을 만든 물 통로 단백질',
+        '세포질 쪽 한 층의 지질 사이에만 일부가 얕게 파묻혀 있는 단백질',
+        '지질 분자에 공유결합으로 매달려 막 표면 가까이에 고정되어 있는 단백질'],
+    a: 0,
+    w: '표재성은 이중층에 박히지 않고 다른 막단백질에 붙어 있는 단백질이다. 막관통(한 번이든 여러 번이든), 한 층에만 박힌 것, 지질에 매달린 것은 모두 수업 기준으로 내재성이다.' }
+],
+u2: [
+  { q: '막관통 단백질의 구조에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 펩타이드 결합은 극성이어서 폴리펩타이드 골격 자체는 친수성이다.',
+          'ㄴ. 골격 원자들 사이의 수소 결합은 사슬이 α나선을 이룰 때 가장 많이 생긴다.',
+          'ㄷ. 막공을 만드는 α나선 다발은 지질과 닿는 바깥 면에 친수성 곁사슬을 둔다.',
+          'ㄹ. β원통은 β병풍이 말린 원통으로, 안쪽은 친수성, 바깥쪽은 소수성 곁사슬이 대부분이다.']),
+    o: ['ㄱ, ㄷ', 'ㄴ, ㄹ', 'ㄴ, ㄷ, ㄹ', 'ㄱ, ㄴ, ㄷ', 'ㄱ, ㄴ, ㄹ'],
+    a: 4,
+    w: 'ㄷ은 거꾸로다. 지질과 닿는 바깥 면에는 소수성 곁사슬을, 물이 지나는 안쪽 면에는 친수성 곁사슬을 배치해야 친수성 막공이 생긴다.' },
+  { q: '막을 관통하는 부위가 주로 α나선 구조인 이유로 가장 적절한 것은?',
+    o: ['α나선은 곁사슬이 모두 소수성이어서 골격의 극성과 상관없이 막에 쉽게 녹기 때문이다.',
+        'α나선이 되면 펩타이드 결합이 끊어져서 극성을 띤 골격이 사라지기 때문이다.',
+        '골격 원자끼리 수소 결합을 최대로 이뤄 극성인 골격이 기름층에서 가려지기 때문이다.',
+        'α나선은 이황화 결합으로만 유지되므로 기름층 안에서도 구조가 풀리지 않기 때문이다.',
+        'α나선은 β병풍보다 사슬 길이가 짧아 이중층을 통과할 때 에너지가 덜 들기 때문이다.'],
+    a: 2,
+    w: '펩타이드 결합은 극성이라 골격은 친수성이다. 기름층 안에서는 골격 원자끼리 수소 결합을 최대로 이루는 α나선이 되어야 극성이 서로 가려져 안정하다. 곁사슬은 소수성·친수성을 골라 배치할 수 있다.' },
+  { q: '계면활성제로 막단백질을 분리하는 원리와 주의점으로 가장 적절한 것은?',
+    o: ['계면활성제는 소수성만 띠므로 막단백질의 소수성 부위에만 붙고 지질은 그대로 둔다.',
+        '양친매성 세제가 이중층을 조각내 지질·단백질을 감싸므로, 너무 세면 단백질도 망가진다.',
+        '계면활성제는 친수성만 띠므로 수용액 속 막단백질을 응집시켜 침전으로 거두어들인다.',
+        'SDS는 단백질의 입체 구조를 그대로 지켜 주므로 막단백질의 기능 연구에 가장 알맞다.',
+        '계면활성제는 이황화 결합만 골라서 끊어 막단백질을 지질에서 떼어 내는 물질이다.'],
+    a: 1,
+    w: '계면활성제는 친수성 머리와 소수성 꼬리를 가진 양친매성 분자라 막 사이를 파고들어 지질을 조각내고 마이셀을 만들며 막단백질을 떼어 낸다. 너무 세게 처리하면 단백질도 부서지므로 기능을 보려면 약한 세제를 쓴다. SDS는 단백질을 펼쳐 음전하로 코팅하는 강한 세제다.' }
+],
+u3: [
+  { q: '세포막의 특성을 묶음별로 짝지은 것으로 옳은 것은?',
+    o: ['구조적 특징 — 비대칭성, 유동 모자이크 모델',
+        '생물학적 기능 — 지질 이중층, 온도에 따른 상변이',
+        '정의와 성분 — 선택적 장벽, 선택적 투과성',
+        '환경에 따른 변화 — 막의 구성, 막의 비대칭성',
+        '구조적 특징 — 막의 구성, 물질의 선택적 투과성'],
+    a: 0,
+    w: '정의와 성분: 구성·지질 이중층 / 구조적 특징: 비대칭성·유동 모자이크 모델 / 환경에 따른 변화: 온도에 따른 상변이 / 생물학적 기능: 선택적 장벽(구획화)·선택적 투과성.' },
+  { q: '세포막에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 세포막은 경계선이자 방어벽이며, 구획화를 통해 항상성을 확보한다.',
+          'ㄴ. 진핵세포의 막은 세포막뿐 아니라 세포소기관도 구획화한다.',
+          'ㄷ. 세포막을 이루는 지질 중에는 콜레스테롤이 가장 많고, 그다음이 인지질이다.',
+          'ㄹ. 랑뮈에 수조 실험에서 단일층 면적이 적혈구 표면적과 같게 나와 막이 단일층임을 알았다.']),
+    o: ['ㄱ, ㄹ', 'ㄴ, ㄷ', 'ㄷ, ㄹ', 'ㄱ, ㄴ', 'ㄱ, ㄴ, ㄹ'],
+    a: 3,
+    w: 'ㄷ: 인지질(약 75%) > 콜레스테롤(약 20%) > 당지질(약 5%). ㄹ: 단일층으로 펼친 면적이 적혈구 표면적의 2배였기 때문에 이중층임을 알았다.' },
+  { q: '세포막이 선택적 장벽으로서 구획을 만드는 것의 의의로 가장 적절한 것은?',
+    o: ['세포 안팎의 물질 농도를 늘 똑같이 맞춰 확산이 일어나지 않게 한다.',
+        '모든 물질의 출입을 막아 세포 안을 외부와 완전히 차단된 상태로 둔다.',
+        '세포 안 화학 반응의 속도를 외부 환경과 같은 수준으로 맞춰 준다.',
+        '막단백질이 막 위를 떠다니지 못하도록 위치를 하나하나 고정해 준다.',
+        '계 안을 일정하게 유지해 생명 활동이 일정한 범위에서 일어나게 한다.'],
+    a: 4,
+    w: '구획화로 안쪽을 일정하게 유지하는 것이 항상성이다. 막은 완전히 닫힌 벽이 아니라 필요한 물질은 들이고 내보내는 선택적 투과성을 가진다.' }
+],
+u4: [
+  { q: '유동 모자이크 모델이 받아들여지기까지의 과정을 순서대로 바르게 나열한 것은?' +
+       L(['ㄱ. 형광 표지한 막의 일부를 표백한 뒤 회복 속도로 유동성의 정도를 계산했다.',
+          'ㄴ. 사람과 생쥐 세포의 막단백질에 다른 형광을 표지하고 융합시키자 금방 섞였다.',
+          'ㄷ. 유동성 실험 결과와 열역학적 분석을 합쳐 모델을 발표하고 단위막 모델을 폐기했다.']),
+    o: ['ㄱ → ㄴ → ㄷ', 'ㄴ → ㄱ → ㄷ', 'ㄴ → ㄷ → ㄱ', 'ㄷ → ㄴ → ㄱ', 'ㄷ → ㄱ → ㄴ'],
+    a: 2,
+    w: '증명(세포 융합 실험, 1970) → 정립(싱어와 니콜슨의 유동 모자이크 모델 발표, 1972) → 정량(FRAP, 1976).' },
+  { q: 'FRAP 실험에서 37 ℃의 세포막은 표백된 부분이 빠르게 회복되었고, 15 ℃의 세포막은 더디게 회복되었다. 이 결과의 해석으로 가장 적절한 것은?',
+    o: ['온도가 높을수록 막의 분자들이 옆으로 빨리 움직여 유동성이 크다.',
+        '온도가 낮을수록 형광 물질이 새로 합성되는 속도가 빨라 회복이 늦다.',
+        '37 ℃에서는 레이저가 형광을 덜 없애서 처음부터 덜 어두워진다.',
+        '15 ℃에서는 지질의 플립플롭이 빨라져 표백 부위가 다른 층으로 숨는다.',
+        '회복 속도는 막의 유동성과 무관하고 레이저의 세기로만 정해진다.'],
+    a: 0,
+    w: '표백된 자리가 다시 밝아지는 것은 주변의 형광 표지된 지질·단백질이 옆으로 확산해 들어오기 때문이다. 37 ℃에서 빨리 회복된 것은 분자들이 더 빨리 움직인다는 뜻, 즉 유동성이 크다는 뜻이다.' },
+  { q: '세포막의 구조 모델과 지질의 움직임에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 단위막 모델은 단백질이 인지질 이중층 속에 깊이 박혀 떠다닌다고 보았다.',
+          'ㄴ. 열역학적 분석 결과, 단백질은 인지질 속에 파묻혀 있어야 안정하다고 보았다.',
+          'ㄷ. 막 속 지질의 플립플롭은 측면 이동보다 훨씬 자주 일어난다.',
+          'ㄹ. 세포 안쪽 섬유에 붙잡혀 고정된 막단백질은 자유롭게 떠다니지 못할 수 있다.']),
+    o: ['ㄱ, ㄴ', 'ㄴ, ㄷ', 'ㄱ, ㄹ', 'ㄴ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 3,
+    w: 'ㄱ: 단위막 모델은 지질층 위아래를 단백질이 덮는다고 보았고(그래서 폐기), 단백질이 박혀 떠다닌다는 것은 유동 모자이크 모델이다. ㄷ: 플립플롭은 친수성 머리가 소수성 층을 지나야 해서 측면 이동보다 훨씬 드물다.' }
+],
+u5: [
+  { q: '추운 환경으로 옮겨진 세포가 막의 유동성을 지키기 위해 보일 변화로 가장 적절한 것은?',
+    o: ['인지질 꼬리의 포화지방산(SFA) 비율을 높여 막을 더 촘촘하게 만든다.',
+        '불포화 효소를 활성화해 MUFA·PUFA는 늘리고 SFA는 줄인다.',
+        '콜레스테롤을 없애서 인지질끼리 더 단단히 붙도록 만든다.',
+        'trans 지방산의 비율을 높여 꼬리들이 곧게 뻗어 있도록 만든다.',
+        '인지질 이중층을 단일층으로 바꿔서 분자들이 움직일 공간을 넓힌다.'],
+    a: 1,
+    w: '저온에서는 막이 결정처럼 굳으려 하므로 desaturase를 활성화해 이중결합이 있는 MUFA·PUFA 비율을 높이고 SFA를 줄여 꼬리를 꺾는다. 콜레스테롤도 결정화를 방해해 유동성을 지킨다.' },
+  { q: '온도에 따른 막의 상변이에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. MUFA는 이중결합이 1개, PUFA는 이중결합이 여러 개인 불포화지방산이다.',
+          'ㄴ. 고온에서는 SFA 비율을 높여 막이 너무 묽어지는 것을 막는다.',
+          'ㄷ. 콜레스테롤은 고온에서 유동성을 줄이고 저온에서 결정화를 방해한다.',
+          'ㄹ. 상전이 온도(Tm)보다 온도가 크게 높아지면 막은 고체 같은 상태가 된다.']),
+    o: ['ㄱ, ㄴ', 'ㄴ, ㄹ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ', 'ㄱ, ㄴ, ㄷ'],
+    a: 4,
+    w: 'ㄹ: Tm보다 온도가 높아지면 막은 액체 같은 상태(유동적)가 되고, 낮아지면 고체 같은 상태가 된다.' },
+  { q: '지방산 조성 조절 외에 콜레스테롤이 따로 필요한 이유로 가장 적절한 것은?',
+    o: ['콜레스테롤은 이중결합을 새로 만들어 지방산을 불포화지방산으로 바꿔 주기 때문이다.',
+        '콜레스테롤은 막단백질을 막에서 떼어 내 유동성이 지나치게 커지는 것을 막기 때문이다.',
+        '지방산 조성만으로는 한계가 있어, 인지질 사이에 끼어 온도 변화를 완충하기 때문이다.',
+        '콜레스테롤은 인지질을 대신해 이중층의 뼈대를 이루므로 인지질이 필요 없기 때문이다.',
+        '콜레스테롤은 당사슬을 붙여 막 바깥에 당질층을 만들어서 열을 막아 주기 때문이다.'],
+    a: 2,
+    w: '포화·불포화지방산 비율로 유동성을 조절하는 데는 한계가 있어서, 인지질 사이에 박힌 콜레스테롤이 고온에서는 움직임을 붙잡고 저온에서는 결정화를 막아 유동성을 완충한다.' }
+],
+u6: [
+  { q: '인지질 이중층을 단순 확산으로 가장 잘 통과할 물질의 성질은?',
+    o: ['전하를 띠고, 크기가 크며, 극성이 큰 물질',
+        '전하를 띠지 않지만, 크기가 크고 극성이 큰 물질',
+        '전하를 띠고, 크기는 작지만 극성이 큰 물질',
+        '전하를 띠지 않고, 크기와 극성이 모두 작은 물질',
+        '전하를 띠지 않고, 크기가 크며, 극성이 작은 물질'],
+    a: 3,
+    w: '이중층의 가운데는 소수성 장벽이라 전하가 없고 극성과 크기가 작을수록(소수성↑) 단순 확산이 잘 된다.' },
+  { q: '농도를 높여 가며 물질 A와 B의 확산 속도를 쟀더니, A는 계속 비례해 빨라졌고 B는 어느 농도 이상에서 더 빨라지지 않았다. 이에 대한 설명으로 가장 적절한 것은?',
+    o: ['B는 운반체 단백질을 이용하는데, 운반체가 모두 물질로 차서 포화되었기 때문이다.',
+        'A는 운반체 단백질을 이용하는데, 운반체의 수가 무한해서 포화되지 않기 때문이다.',
+        'B는 인지질 이중층을 직접 통과하므로 이중층이 물질로 가득 차면 멈추기 때문이다.',
+        'A와 B 모두 단순 확산이지만, B는 농도가 높아지면 막이 단단해지기 때문이다.',
+        'B는 에너지를 써서 이동하므로 ATP가 떨어지면 더 빨라지지 않기 때문이다.'],
+    a: 0,
+    w: '단순 확산(A)은 농도에 비례해 계속 빨라지지만, 촉진 확산(B)은 운반체 단백질 수가 한정되어 있어 모두 차면 최대 속도에서 멈춘다. 촉진 확산은 에너지를 쓰지 않는다.' },
+  { q: '선택적 투과성에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 인지질 이중층의 꼬리 부분은 친수성 물질에 대한 장벽 역할을 한다.',
+          'ㄴ. 촉진 확산은 운반체 단백질을 이용하므로 ATP를 소비하는 능동 수송이다.',
+          'ㄷ. 전하를 띤 이온은 이중층을 바로 통과하기 어려워 단백질의 도움을 받는다.',
+          'ㄹ. 단순 확산 속도는 농도가 높아져도 일정한 값에서 더 증가하지 않는다.']),
+    o: ['ㄱ', 'ㄱ, ㄷ', 'ㄴ, ㄹ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 1,
+    w: 'ㄴ: 촉진 확산은 농도 기울기를 따라 이동하는 확산이라 에너지를 쓰지 않는다. ㄹ: 포화가 나타나는 것은 촉진 확산이고, 단순 확산은 농도에 따라 계속 증가한다.' }
+],
+u7: [
+  { q: '세포막의 비대칭성에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 당지질은 세포막의 외층에만 있어 세포 인식과 안테나 역할을 한다.',
+          'ㄴ. PS와 PI는 음전하를 띠어 세포 안의 신호 전달 단백질을 막으로 끌어당긴다.',
+          'ㄷ. Na⁺-K⁺ 펌프의 ATP 결합 부위는 ATP가 풍부한 세포 안쪽을 향한다.',
+          'ㄹ. 수용체가 외부 신호를 받는 부위는 세포질 쪽에 있어 신호를 바로 안으로 전한다.']),
+    o: ['ㄱ, ㄴ', 'ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ', 'ㄱ, ㄴ, ㄷ, ㄹ', 'ㄱ, ㄴ, ㄷ'],
+    a: 4,
+    w: 'ㄹ: 외부 신호(호르몬·리간드)를 받는 부위는 항상 바깥쪽에 있다. 비대칭성은 각 분자가 하는 일에 맞춘 배치다.' },
+  { q: '세포예정사가 일어날 때 세포막에서 일어나는 일을 순서대로 바르게 나열한 것은?' +
+       L(['ㄱ. 대식세포가 와서 세포를 먹어 치운다.',
+          'ㄴ. 세포 안으로 칼슘 이온이 들어온다.',
+          'ㄷ. PS가 세포 외층에 드러나 eat-me 신호가 된다.',
+          'ㄹ. 스크램블레이스가 깨어나 두 층의 지질을 섞는다.']),
+    o: ['ㄴ → ㄷ → ㄹ → ㄱ', 'ㄹ → ㄴ → ㄷ → ㄱ', 'ㄴ → ㄹ → ㄷ → ㄱ', 'ㄷ → ㄴ → ㄹ → ㄱ', 'ㄴ → ㄹ → ㄱ → ㄷ'],
+    a: 2,
+    w: 'Ca²⁺ 유입(ㄴ) → 스크램블레이스 각성·비대칭성 파괴(ㄹ) → PS 외층 노출, eat-me 신호(ㄷ) → 대식세포의 청소(ㄱ).' },
+  { q: '세포막의 스크램블레이스가 칼슘이 들어와도 작동하지 못하는 돌연변이 세포에서 예상되는 일로 가장 적절한 것은?',
+    o: ['세포예정사 신호가 와도 PS가 바깥에 드러나지 않아 청소 신호가 나가지 않는다.',
+        'PS가 평소에도 바깥층에 많이 드러나서 건강한 세포가 계속 대식세포에게 먹힌다.',
+        '소포체 막의 새 인지질이 한쪽 층에만 쌓이게 되어 세포막의 PS가 바깥에 몰린다.',
+        '플리페이스까지 함께 멈추어 세포막의 모든 지질이 양쪽에 똑같이 분포하게 된다.',
+        '당지질이 안쪽 층으로 옮겨져서 면역세포가 자기 세포를 남으로 여겨 공격한다.'],
+    a: 0,
+    w: 'PS를 바깥으로 드러내는 것은 Ca²⁺로 깨어난 세포막 스크램블레이스다. 이것이 작동하지 않으면 비대칭성이 깨지지 않아 eat-me 신호가 잘 나가지 않는다. 평소 PS를 안쪽에 두는 일은 플리페이스가 하므로 평소 상태는 정상이다.' }
+],
+u8: [
+  { q: '세포막 지질의 비대칭성에 관여하는 효소를 바르게 설명한 것은?',
+    o: ['플리페이스는 ATP를 써서 외층의 PS·PE를 안쪽 층으로 옮긴다.',
+        '플로페이스는 에너지 없이 내층의 PC를 외층으로 옮겨 비대칭성을 파괴한다.',
+        '스크램블레이스는 ATP를 써서 특정 지질만 골라 한쪽 층으로만 옮긴다.',
+        '플리페이스는 기질 특이성이 낮아서 모든 지질을 무작위로 섞어 놓는다.',
+        '스크램블레이스는 세포막에서 평소 항상 작동하며 비대칭성을 만든다.'],
+    a: 0,
+    w: '플리페이스(외→내, PS·PE)와 플로페이스(내→외, PC·스핑고지질)는 ATP를 쓰고 특이성이 높으며 비대칭성을 유지·형성한다. 스크램블레이스는 ATP 없이 모든 지질을 무작위로 섞어 비대칭성을 파괴하며, 세포막에서는 평소 억제되어 있다.' },
+  { q: '막의 장소별 비대칭성에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 소포체 막에서는 스크램블레이스가 상시 작동해 지질이 양쪽에 거의 고르게 분포한다.',
+          'ㄴ. 골지체에서는 스크램블레이스만 작동하므로 지질이 완전히 대칭적으로 분포한다.',
+          'ㄷ. 세포막은 소포체 막보다 비대칭성이 약하다.',
+          'ㄹ. 엔도솜은 세포막에서 유래해 비대칭성을 유지하지만, 세포막보다는 덜 비대칭적이다.']),
+    o: ['ㄱ, ㄴ', 'ㄷ, ㄹ', 'ㄴ, ㄷ', 'ㄱ, ㄹ', 'ㄱ, ㄷ, ㄹ'],
+    a: 3,
+    w: 'ㄴ: 골지체에서는 플리페이스가 본격 작동해 비대칭성이 만들어지기 시작한다(트랜스로 갈수록 뚜렷). ㄷ: 세포막이 가장 정교하게, 극도로 비대칭적이다.' },
+  { q: '지질이 막의 반대층으로 넘어가는 플립플롭에 효소가 필요한 이유로 가장 적절한 것은?',
+    o: ['지질의 꼬리가 너무 길어서 막의 옆 방향으로는 전혀 움직일 수 없기 때문이다.',
+        '지질이 막에 공유결합으로 단단히 고정되어 있어서 그 결합을 끊어야 하기 때문이다.',
+        '반대층으로 넘어가면 지질이 분해되므로 효소가 지질을 보호해야 하기 때문이다.',
+        '플립플롭이 측면 이동보다 빠르게 일어나서 효소가 그 속도를 늦춰야 하기 때문이다.',
+        '친수성 머리가 소수성 꼬리층을 통과해야 해서 스스로는 매우 어렵기 때문이다.'],
+    a: 4,
+    w: '지질은 옆으로는 자유롭게 움직이지만, 반대층으로 넘어가려면 친수성 머리가 가운데의 소수성 층을 지나야 해서 열역학적으로 매우 어렵다. 그래서 세포는 효소로 원하는 지질을 옮긴다(콜레스테롤은 머리가 작아 예외적으로 스스로 뒤집힌다).' }
+],
+u9: [
+  { q: '세포막 바깥면에 당사슬이 오도록 당지질을 만들려면, 골지체에서 당사슬을 어느 쪽에 붙여야 하는가?',
+    o: ['골지체 막의 세포질 쪽 층 — 세포질 쪽이 나중에 세포 밖이 되기 때문',
+        '골지체 막의 세포질 쪽 층 — 소낭이 융합할 때 막이 뒤집히기 때문',
+        '골지체 막의 내강 쪽 층 — 소낭이 융합하면 막이 한 번 더 뒤집히기 때문',
+        '골지체 막의 내강 쪽 층 — 소낭의 안쪽 면이 세포막의 바깥 면이 되기 때문',
+        '어느 쪽이든 상관없음 — 당사슬은 세포막에서 스스로 바깥으로 옮겨 가기 때문'],
+    a: 3,
+    w: '골지체 내강 쪽에 붙은 당사슬은 출아한 소낭의 안쪽을 향하고, 소낭이 세포막과 융합하면 소낭의 안쪽 면이 세포막의 바깥 면이 된다. 막은 뒤집히지 않고 방향이 그대로 유지된다.' },
+  { q: '세포막 구성 물질의 합성과 막 삽입에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 콜레스테롤은 극성 머리가 작고 비극성이 강해 효소 없이도 두 층 사이를 빠르게 옮겨 다닌다.',
+          'ㄴ. 막단백질은 매끈면 소포체에서 번역된 뒤 완성된 채로 세포막에 직접 끼워진다.',
+          'ㄷ. 소포체 내강 쪽에 있던 막단백질 부위는 최종적으로 세포 밖을 향한다.',
+          'ㄹ. 인지질은 매끈면 소포체 막의 내강 쪽 층에서 처음 만들어진다.']),
+    o: ['ㄱ', 'ㄱ, ㄷ', 'ㄴ, ㄷ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 1,
+    w: 'ㄴ: 막단백질은 거친면 소포체의 리보솜에서 번역되면서 동시에 소포체 막에 삽입되고, 박힌 채로 소낭에 실려 골지체를 거쳐 세포막으로 간다. ㄹ: 인지질은 매끈면 소포체 막의 세포질 쪽 층에서 만들어지고 스크램블레이스가 반대층으로 넘긴다.' },
+  { q: '세포 밖의 호르몬과 결합하는 수용체 단백질을 만들 때, 그 호르몬 결합 부위는 소포체에서 어느 쪽에 있어야 하는가?',
+    o: ['세포질 쪽 — 세포질에 있는 호르몬과 먼저 만나 미리 결합해 두어야 하기 때문',
+        '세포질 쪽 — 소낭 융합 때 막이 뒤집혀서 세포질 쪽이 바깥이 되기 때문',
+        '소포체 내강 쪽 — 내강 쪽 도메인이 세포막에 합쳐지면 세포 밖을 향하기 때문',
+        '소포체 내강 쪽 — 내강 쪽 도메인은 융합 후 세포질 쪽에서 신호를 받기 때문',
+        '상관없음 — 세포막에 도착한 뒤 스크램블레이스가 방향을 정해 주기 때문'],
+    a: 2,
+    w: '막단백질은 거친면 소포체에서 번역과 동시에 막에 삽입되고, 그 방향 그대로 소낭에 실려 이동한다. 소포체 내강 쪽 도메인은 세포막에 합쳐지면 세포 밖을 향하므로, 바깥 신호를 받는 부위는 내강 쪽에 만들어져야 한다. N-결합 당화도 이 내강 쪽 부위에 일어난다.' }
+]
+};
+
+/* ---------- state ---------- */
+const KEY = 'cellbio-ch6b-quiz-v1';
+let state = {};
+try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { state = {}; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+
+/* ---------- personal star system: rate units & questions 1–3 ---------- */
+const STAR_KEY = 'cellbio-ch6b-stars-v1';
+let stars = {};
+try { stars = JSON.parse(localStorage.getItem(STAR_KEY)) || {}; } catch (e) { stars = {}; }
+const saveStars = () => { try { localStorage.setItem(STAR_KEY, JSON.stringify(stars)); } catch (e) {} };
+const STAR_SVG = '<svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg>';
+const starCtl = (key, label) =>
+  '<span class="stars" data-key="' + key + '" role="group" aria-label="' + label + ' 별표">' +
+  [1, 2, 3].map(v => '<button type="button" class="sb" data-v="' + v + '" title="별 ' + v + '개" aria-label="' + label + ' 별 ' + v + '개">' +
+    '<svg class="i" aria-hidden="true"><use href="#i-star"/></svg></button>').join('') +
+  '</span>';
+const MARK = ['①', '②', '③', '④', '⑤'];
+const TOTAL = UNITS.reduce((n, u) => n + QUIZ[u.id].length, 0);
+
+function stats(id) {
+  const st = state[id] || {}, qs = QUIZ[id];
+  let done = 0, ok = 0;
+  qs.forEach((q, i) => { if (st[i] != null) { done++; if (st[i] === q.a) ok++; } });
+  return { done, ok, n: qs.length };
+}
+
+const ICON = name => '<svg class="i" aria-hidden="true"><use href="#i-' + name + '"/></svg>';
+
+function renderQuiz(box) {
+  const id = box.dataset.quiz, qs = QUIZ[id];
+  const ui = UNITS.findIndex(u => u.id === id), nx = UNITS[ui + 1];
+  const next = nx
+    ? '<a class="next" href="#' + nx.id + '">다음 · ' + (ui + 2) + '. ' + nx.name + ICON('arrow') + '</a>'
+    : '<a class="next" href="#summary">종합 점수 · 오답 노트' + ICON('arrow') + '</a>';
+  box.innerHTML =
+    '<div class="quiz-h"><h4>' + ICON('pencil') + '개념 확인 퀴즈</h4><span class="lv">난이도 상</span><span class="sc" data-qsc></span></div>' +
+    '<p class="quiz-sub">하나를 고르면 바로 채점되고 해설이 열립니다. 함정 선택지에 주의하세요.</p>' +
+    qs.map((q, i) =>
+      '<div class="q" id="' + id + '-q' + (i + 1) + '" data-i="' + i + '"><div class="qn"><span>Q' + (i + 1) + '</span>' + starCtl(id + '-q' + (i + 1), 'Q' + (i + 1)) + '</div><div class="qt">' + q.q + '</div>' +
+      '<ol class="opts">' + q.o.map((o, k) =>
+        '<li><button class="opt" type="button" data-k="' + k + '"><span class="m">' + MARK[k] + '</span><span>' + o + '</span></button></li>').join('') +
+      '</ol><div class="why" hidden aria-live="polite"></div></div>').join('') +
+    '<div class="quiz-f"><span data-qmsg></span><button class="btn" type="button" data-retry hidden>' + ICON('retry') + '다시 풀기</button>' + next + '</div>';
+  const st = state[id] || {};
+  qs.forEach((q, i) => { if (st[i] != null) mark(box, id, i, st[i], false); });
+  refresh(id);
+}
+
+function mark(box, id, i, k, animate) {
+  const q = QUIZ[id][i], card = box.querySelector('.q[data-i="' + i + '"]');
+  const ok = k === q.a;
+  card.classList.add(ok ? 'is-ok' : 'is-no');
+  card.querySelectorAll('.opt').forEach((b, j) => {
+    b.disabled = true;
+    if (j === q.a) b.classList.add('right');
+    else if (j === k) b.classList.add('wrong');
+    else b.classList.add('dim');
+    if (animate && (j === q.a || j === k)) b.classList.add('pop');
+  });
+  const why = card.querySelector('.why');
+  why.className = 'why ' + (ok ? 'ok' : 'no') + (animate ? ' pop' : '');
+  why.innerHTML = '<b class="v">' + (ok ? '정답' : '오답 · 정답은 ' + MARK[q.a]) + '</b>' + q.w;
+  why.hidden = false;
+}
+
+function refresh(id) {
+  const s = stats(id);
+  const box = document.querySelector('.quiz[data-quiz="' + id + '"]');
+  if (box) {
+    box.querySelector('[data-qsc]').textContent = s.done ? s.ok + ' / ' + s.n + ' 정답' : s.n + '문항';
+    box.querySelector('[data-qmsg]').textContent =
+      s.done === s.n ? (s.ok === s.n ? '완벽합니다. 다음 소단원으로!' : '틀린 문제의 해설을 읽고 본문의 해당 부분을 다시 확인하세요.') : (s.done ? (s.n - s.done) + '문항 남음' : '');
+    box.querySelector('[data-retry]').hidden = !s.done;
+  }
+  const badge = document.querySelector('.toc .sc[data-sc="' + id + '"]');
+  if (badge) { badge.textContent = s.done ? s.ok + '/' + s.n : ''; badge.classList.toggle('done', s.done === s.n); }
+  refreshGlobal();
+}
+
+function refreshGlobal() {
+  let done = 0, ok = 0;
+  const wrong = [];
+  const rows = UNITS.map((u, idx) => {
+    const s = stats(u.id); done += s.done; ok += s.ok;
+    const st = state[u.id] || {};
+    QUIZ[u.id].forEach((q, i) => {
+      if (st[i] != null && st[i] !== q.a) {
+        const plain = q.q.replace(/<\/?(ul|li)[^>]*>/g, ' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+        wrong.push('<a href="#' + u.id + '-q' + (i + 1) + '"><b>' + (idx + 1) + '단원 Q' + (i + 1) + '</b><span>' +
+          (plain.length > 70 ? plain.slice(0, 70) + '…' : plain) + '</span></a>');
+      }
+    });
+    const pct = s.n ? Math.round(100 * s.ok / s.n) : 0;
+    return '<div class="srow"><span style="color:var(--muted);font-weight:700">' + (idx + 1) + '</span>' +
+      '<div><a href="#' + u.id + '" style="color:var(--ink)">' + u.name + '</a><div class="bar"><i style="--p:' + (pct / 100) + '"></i></div></div>' +
+      '<span style="text-align:right;font-weight:700">' + (s.done ? s.ok + ' / ' + s.n : '–') + '</span></div>';
+  }).join('');
+  document.getElementById('pDone').textContent = done;
+  document.getElementById('pTotal').textContent = TOTAL;
+  document.getElementById('pOk').textContent = ok;
+  document.getElementById('pBar').style.setProperty('--p', done / TOTAL);
+  document.getElementById('sumRows').innerHTML = rows;
+  document.getElementById('sumBig').textContent = done ? Math.round(100 * ok / done) + '%' : '–';
+  document.getElementById('sumSub').textContent = '전체 ' + TOTAL + '문항 중 ' + done + '문항 풀이 · ' + ok + '문항 정답';
+  document.getElementById('tbProg').textContent = done + '/' + TOTAL;
+  document.getElementById('wrongList').innerHTML = wrong.length
+    ? wrong.join('')
+    : '<p>' + (done ? '틀린 문제가 없습니다.' : '퀴즈를 풀면 틀린 문제가 여기에 모입니다. 누르면 그 문제로 이동합니다.') + '</p>';
+}
+
+document.querySelectorAll('.quiz[data-quiz]').forEach(box => {
+  renderQuiz(box);
+  box.addEventListener('click', e => {
+    const id = box.dataset.quiz;
+    if (e.target.closest('[data-retry]')) { delete state[id]; save(); renderQuiz(box); refreshStars(); return; }
+    const btn = e.target.closest('.opt');
+    if (!btn || btn.disabled) return;
+    const i = +btn.closest('.q').dataset.i, k = +btn.dataset.k;
+    (state[id] = state[id] || {})[i] = k;
+    save(); mark(box, id, i, k, true); refresh(id);
+  });
+});
+document.getElementById('resetAll').addEventListener('click', () => {
+  if (!confirm('모든 소단원의 퀴즈 기록을 지울까요?')) return;
+  state = {}; save();
+  document.querySelectorAll('.quiz[data-quiz]').forEach(renderQuiz);
+  refreshStars();
+});
+
+/* ---------- nav: scroll spy, mobile drawer, theme ---------- */
+const links = [...document.querySelectorAll('.toc a')];
+const curTitle = document.getElementById('curTitle');
+const TITLE = curTitle.textContent;
+const io = new IntersectionObserver(es => {
+  es.forEach(en => {
+    if (!en.isIntersecting) return;
+    links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id));
+    const ui = UNITS.findIndex(u => u.id === en.target.id);
+    curTitle.textContent = ui >= 0 ? (ui + 1) + '. ' + UNITS[ui].name : (en.target.id === 'summary' ? '종합 점수 · 오답 노트' : TITLE);
+  });
+}, { rootMargin: '-35% 0px -60% 0px' });
+document.querySelectorAll('.unit, #summary').forEach(s => io.observe(s));
+const navBtn = document.getElementById('navBtn');
+const setNav = open => { document.body.classList.toggle('nav-open', open); navBtn.setAttribute('aria-expanded', open); };
+navBtn.addEventListener('click', () => setNav(!document.body.classList.contains('nav-open')));
+document.getElementById('scrim').addEventListener('click', () => setNav(false));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') setNav(false); });
+links.forEach(a => a.addEventListener('click', () => setNav(false)));
+
+document.querySelectorAll('.unit').forEach(sec => {
+  const ui = UNITS.findIndex(u => u.id === sec.id);
+  const box = document.createElement('div');
+  box.className = 'u-stars';
+  box.innerHTML = '<span>중요도</span>' + starCtl(sec.id, (ui + 1) + '단원');
+  sec.querySelector('.unit-head').appendChild(box);
+});
+document.querySelectorAll('.toc a[data-u^="u"]').forEach(a => {
+  const s = document.createElement('span');
+  s.className = 'stv';
+  s.setAttribute('aria-hidden', 'true');
+  a.querySelector('.sc').before(s);
+});
+const starOnlyBtn = document.getElementById('starOnly'), starBar = document.getElementById('starBar');
+
+function refreshStars() {
+  document.querySelectorAll('.stars[data-key]').forEach(el => {
+    const lv = stars[el.dataset.key] || 0;
+    el.querySelectorAll('.sb').forEach((b, j) => { b.classList.toggle('on', j < lv); b.setAttribute('aria-pressed', j < lv); });
+  });
+  let nQ = 0, nU = 0;
+  const items = [];
+  UNITS.forEach((u, ui) => {
+    const sec = document.getElementById(u.id), ulv = stars[u.id] || 0;
+    let any = !!ulv;
+    if (ulv) { nU++; items.push({ lv: ulv, ord: ui * 100, href: '#' + u.id, tag: '소단원 ' + (ui + 1), text: u.name }); }
+    QUIZ[u.id].forEach((q, i) => {
+      const key = u.id + '-q' + (i + 1), lv = stars[key] || 0, card = document.getElementById(key);
+      if (card) card.classList.toggle('q-star', !!lv);
+      if (!lv) return;
+      nQ++; any = true;
+      const plain = q.q.replace(/<\/?(ul|li)[^>]*>/g, ' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+      items.push({ lv, ord: ui * 100 + i + 1, href: '#' + key, tag: (ui + 1) + '단원 Q' + (i + 1), text: plain.length > 64 ? plain.slice(0, 64) + '…' : plain });
+    });
+    sec.classList.toggle('u-star', !!ulv);
+    sec.classList.toggle('has-star', any);
+    const stv = document.querySelector('.toc a[data-u="' + u.id + '"] .stv');
+    if (stv) stv.innerHTML = STAR_SVG.repeat(ulv);
+  });
+  document.getElementById('sQ').textContent = nQ;
+  document.getElementById('sU').textContent = nU;
+  starOnlyBtn.disabled = !(nQ + nU);
+  document.getElementById('starRetry').disabled = !nQ;
+  if (!(nQ + nU) && document.body.classList.contains('star-only')) setStarOnly(false);
+  document.getElementById('starBarTxt').textContent = '별표만 보는 중 · 문제 ' + nQ + '개 · 소단원 ' + nU + '개';
+  items.sort((a, b) => b.lv - a.lv || a.ord - b.ord);
+  document.getElementById('starList').innerHTML = items.length
+    ? items.map(it => '<a href="' + it.href + '"><b><span class="lvs">' + STAR_SVG.repeat(it.lv) + '</span>' + it.tag + '</b><span>' + it.text + '</span></a>').join('')
+    : '<p>소단원 제목이나 문제 옆의 별을 눌러 중요도(1~3개)를 매기면 여기에 별 많은 순으로 모입니다.</p>';
+}
+function setStarOnly(on) {
+  document.body.classList.toggle('star-only', on);
+  starOnlyBtn.setAttribute('aria-pressed', on);
+  starBar.hidden = !on;
+  if (on) window.scrollTo(0, 0);
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('.sb');
+  if (!b) return;
+  const key = b.closest('.stars').dataset.key, v = +b.dataset.v;
+  if ((stars[key] || 0) === v) delete stars[key]; else stars[key] = v;
+  saveStars();
+  refreshStars();
+});
+starOnlyBtn.addEventListener('click', () => { setStarOnly(!document.body.classList.contains('star-only')); setNav(false); });
+document.getElementById('starExit').addEventListener('click', () => setStarOnly(false));
+document.getElementById('starRetry').addEventListener('click', () => {
+  const touched = new Set();
+  Object.keys(stars).forEach(k => {
+    const m = k.match(/^(u\d+)-q(\d+)$/);
+    if (m && state[m[1]]) { delete state[m[1]][+m[2] - 1]; touched.add(m[1]); }
+  });
+  save();
+  touched.forEach(u => renderQuiz(document.querySelector('.quiz[data-quiz="' + u + '"]')));
+  refreshStars();
+  window.scrollTo(0, 0);
+});
+refreshStars();
+
+/* ---------- wide diagrams keep a readable size on phones (swipe sideways) ---------- */
+document.querySelectorAll('.fig svg[viewBox]').forEach(svg => {
+  const w = svg.viewBox.baseVal.width;
+  if (w < 500) return;
+  const box = document.createElement('div');
+  box.className = 'fig-scroll';
+  svg.style.setProperty('--minw', Math.round(w * 0.9) + 'px');
+  svg.before(box);
+  box.appendChild(svg);
+});
+
+/* ---------- slide lightbox (local build only has thumbnails) ---------- */
+const lb = document.getElementById('lb');
+if (document.querySelector('.sthumb')) {
+  const lbImg = lb.querySelector('img'), lbCap = document.getElementById('lbCap');
+  let list = [], idx = 0;
+  const show = () => { lbImg.src = list[idx].src; lbImg.alt = list[idx].alt; lbCap.textContent = list[idx].alt + ' · ' + (idx + 1) + '/' + list.length; };
+  const step = d => { idx = (idx + d + list.length) % list.length; show(); };
+  document.addEventListener('click', e => {
+    const t = e.target.closest('.sthumb');
+    if (!t) return;
+    list = [...t.closest('.sgrid').querySelectorAll('img')];
+    idx = list.indexOf(t.querySelector('img'));
+    show(); lb.showModal();
+  });
+  lb.addEventListener('click', e => {
+    const b = e.target.closest('[data-lb]');
+    if (b) { b.dataset.lb === 'x' ? lb.close() : step(+b.dataset.lb); return; }
+    if (e.target === lb) lb.close();
+  });
+  lb.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') step(1);
+    if (e.key === 'ArrowLeft') step(-1);
+  });
+} else {
+  lb.remove();
+}
+
+const root = document.documentElement, themeBtn = document.getElementById('themeBtn');
+const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+const paintThemeBtn = () => {
+  const d = isDark();
+  themeBtn.innerHTML = ICON(d ? 'sun' : 'moon') + '<span>' + (d ? '밝은 화면' : '어두운 화면') + '</span>';
+};
+try { const t = localStorage.getItem('cellbio-theme'); if (t) root.dataset.theme = t; } catch (e) {}
+paintThemeBtn();
+themeBtn.addEventListener('click', () => {
+  root.dataset.theme = isDark() ? 'light' : 'dark';
+  try { localStorage.setItem('cellbio-theme', root.dataset.theme); } catch (e) {}
+  paintThemeBtn();
+});
+</script>
+</body>
+</html>
