@@ -1,0 +1,1920 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow">
+<title>11/24(화) 세포막을 통과하는 수송 · 세포생물학 기말 대비</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d7a5a'/%3E%3Ccircle cx='12.5' cy='13' r='4.5' fill='white'/%3E%3Ccircle cx='21' cy='20.5' r='5' fill='white' fill-opacity='.7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --bg:#f4f5f0; --card:#ffffff; --ink:#17201b; --muted:#56675d; --line:#dde3dc; --line-2:#e9ede7;
+  --brand:#1d7a5a; --brand-ink:#0f4d39; --brand-soft:#e1f2ea;
+  --star:#c8372d; --star-soft:#fde8e5;
+  --warn:#7a5200; --warn-soft:#fcf1d8; --warn-line:#eed592;
+  --info:#1f5f99; --info-soft:#e7f0fa; --info-line:#c3d9ef;
+  --note:#6b3fa0; --note-soft:#f2eafa; --note-line:#dac8ee;
+  --ok:#17703a; --ok-soft:#e2f4e8; --bad:#b3261e; --bad-soft:#fbe7e5;
+  --quiz-bg:#f7f9f4;
+  --gold:#b07c08; --gold-soft:#fcf3dc;
+  --svg-a:#a8d6c3; --svg-b:#5fa98a; --svg-c:#e9b44c; --svg-d:#d9695f; --svg-e:#6d9bd1; --svg-line:#6c7b72;
+  --shadow:0 1px 2px rgba(20,40,30,.05),0 20px 44px -26px rgba(20,40,30,.22);
+  --sel:rgba(29,122,90,.2);
+  --m-star:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z'/%3E%3C/svg%3E");
+  --m-check:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12.5 4.5 4.5L19 7.5'/%3E%3C/svg%3E");
+  --m-x:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M6.5 6.5l11 11M17.5 6.5l-11 11'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1412; --card:#171e1b; --ink:#e7ede9; --muted:#9fb2a7; --line:#29342f; --line-2:#212a26;
+    --brand:#52c79c; --brand-ink:#aeeed6; --brand-soft:#16302a;
+    --star:#ff8d7e; --star-soft:#3a1e1b;
+    --warn:#f0c76a; --warn-soft:#2f260f; --warn-line:#56461a;
+    --info:#8fc2f0; --info-soft:#13263a; --info-line:#24475f;
+    --note:#cbabf0; --note-soft:#251b36; --note-line:#44335f;
+    --ok:#72dd99; --ok-soft:#13301f; --bad:#ff968c; --bad-soft:#3a1d1a;
+    --quiz-bg:#131a17;
+    --gold:#f2c14e; --gold-soft:#2f2710;
+    --svg-a:#2f6b57; --svg-b:#52c79c; --svg-c:#d2a13c; --svg-d:#e0786d; --svg-e:#6aa0dc; --svg-line:#8fa398;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 20px 44px -26px rgba(0,0,0,.7);
+    --sel:rgba(82,199,156,.28);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1412; --card:#171e1b; --ink:#e7ede9; --muted:#9fb2a7; --line:#29342f; --line-2:#212a26;
+  --brand:#52c79c; --brand-ink:#aeeed6; --brand-soft:#16302a;
+  --star:#ff8d7e; --star-soft:#3a1e1b;
+  --warn:#f0c76a; --warn-soft:#2f260f; --warn-line:#56461a;
+  --info:#8fc2f0; --info-soft:#13263a; --info-line:#24475f;
+  --note:#cbabf0; --note-soft:#251b36; --note-line:#44335f;
+  --ok:#72dd99; --ok-soft:#13301f; --bad:#ff968c; --bad-soft:#3a1d1a;
+  --quiz-bg:#131a17;
+  --gold:#f2c14e; --gold-soft:#2f2710;
+  --svg-a:#2f6b57; --svg-b:#52c79c; --svg-c:#d2a13c; --svg-d:#e0786d; --svg-e:#6aa0dc; --svg-line:#8fa398;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 20px 44px -26px rgba(0,0,0,.7);
+  --sel:rgba(82,199,156,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:28px;scrollbar-color:var(--line) transparent;color-scheme:light dark}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16.5px/1.8 "Pretendard Variable",Pretendard,system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  letter-spacing:-.006em;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere;text-rendering:optimizeLegibility}
+::selection{background:var(--sel)}
+:focus-visible{outline:2.5px solid var(--brand);outline-offset:2px;border-radius:8px}
+a{color:var(--brand);text-decoration:none;text-underline-offset:3px}
+button{font:inherit;color:inherit}
+.i{width:1.12em;height:1.12em;flex:none;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.18em}
+.i.fill{fill:currentColor;stroke:none}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- layout ---------- */
+.topbar{display:none}
+.layout{display:grid;grid-template-columns:292px minmax(0,1fr);max-width:1260px;margin:0 auto}
+.side{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;padding:30px 16px 28px 24px;border-right:1px solid var(--line);scrollbar-width:thin}
+.side .course{font-size:12.5px;font-weight:600;color:var(--muted);margin:0 0 3px}
+.side h1{font-size:17px;line-height:1.4;margin:0 0 18px;letter-spacing:-.025em;font-weight:750}
+.progress{margin:0 0 14px;padding:13px 14px 12px;border:1px solid var(--line);background:var(--card);border-radius:14px}
+.progress .row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;color:var(--muted)}
+.progress .row b{color:var(--ink);font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--line-2);border-radius:99px;overflow:hidden;margin-top:8px}
+.bar>i{display:block;height:100%;width:100%;background:var(--brand);transform-origin:left center;transform:scaleX(var(--p,0));transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.grp{font-size:12px;font-weight:700;color:var(--muted);margin:20px 0 6px 10px}
+.toc a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:10px;color:var(--ink);font-size:14.3px;line-height:1.4;transition:background .15s}
+.toc a:hover{background:var(--line-2)}
+.toc a.on{background:var(--brand-soft);color:var(--brand-ink);font-weight:650}
+.toc .n{flex:none;width:23px;height:23px;border-radius:7px;background:var(--line-2);display:grid;place-items:center;font-size:11.5px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.toc a.on .n{background:var(--brand);color:#fff}
+.toc .t{flex:1}
+.toc .sc{flex:none;font-size:11.5px;font-weight:700;color:var(--muted);min-width:30px;text-align:right;font-variant-numeric:tabular-nums}
+.toc .sc.done{color:var(--ok)}
+.icon-btn{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 12px;cursor:pointer;color:var(--ink);transition:border-color .15s,color .15s}
+.icon-btn:hover{border-color:var(--brand);color:var(--brand)}
+.side .icon-btn{margin:22px 0 0 4px}
+main{padding:44px 40px 140px;min-width:0}
+.wrap{max-width:800px;margin:0 auto}
+
+/* ---------- hero ---------- */
+.hero{padding:10px 0 30px}
+.hero h2{font-size:clamp(32px,4.6vw,50px);line-height:1.16;margin:0 0 14px;letter-spacing:-.04em;font-weight:820;text-wrap:balance}
+.hero .meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--muted);margin:0 0 18px}
+.hero .meta span+span::before{content:"";display:inline-block;width:3px;height:3px;border-radius:50%;background:currentColor;vertical-align:middle;margin-right:14px;opacity:.6}
+.hero .intro{margin:0;color:var(--ink);opacity:.86;max-width:60ch;font-size:16.5px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:550;padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--muted)}
+.chip.gold{color:var(--ink);background:var(--gold-soft);border-color:transparent}
+.chip.gold .i{color:var(--gold)}
+.chip.red{color:var(--star);background:var(--star-soft);border-color:transparent}
+.chip.warn{color:var(--warn);background:var(--warn-soft);border-color:var(--warn-line)}
+.chip.note{color:var(--note);background:var(--note-soft);border-color:var(--note-line)}
+.chip.info{color:var(--info);background:var(--info-soft);border-color:var(--info-line)}
+
+details.scope{border:1px solid var(--line);border-radius:18px;background:var(--card);margin:0 0 40px}
+details.scope>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:15px 20px;font-weight:700;font-size:15.5px}
+details.scope>summary::-webkit-details-marker{display:none}
+details.scope>summary .i{color:var(--brand);transition:transform .25s cubic-bezier(.16,1,.3,1)}
+details.scope[open]>summary .i.chev{transform:rotate(90deg)}
+details.scope>summary small{margin-left:auto;font-weight:500;color:var(--muted);font-size:12.5px}
+details.scope>div{padding:0 22px 18px;font-size:15.3px}
+details.scope ul{margin:0;padding-left:20px}
+details.scope li{margin:6px 0}
+details.scope li::marker{color:var(--brand)}
+
+/* ---------- units ---------- */
+.unit{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);margin:0 0 44px;overflow:hidden}
+.unit-head{display:flex;gap:18px;align-items:flex-start;padding:32px 34px 8px}
+.unit-head .no{flex:none;width:44px;height:44px;border-radius:13px;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:800;font-size:17px;font-variant-numeric:tabular-nums;margin-top:2px}
+.unit-head h3{margin:0;font-size:clamp(22px,2.7vw,28px);line-height:1.3;letter-spacing:-.035em;font-weight:780;text-wrap:balance}
+.unit-head .lead{margin:8px 0 0;color:var(--muted);font-size:15.4px;line-height:1.7}
+.body{padding:4px 34px 28px}
+.body h4{font-size:17.5px;margin:34px 0 10px;display:flex;align-items:center;gap:9px;letter-spacing:-.025em;font-weight:720}
+.body h4::before{content:"";width:5px;height:17px;border-radius:3px;background:var(--brand);flex:none}
+.body p{margin:9px 0}
+.body ul,.body ol{margin:9px 0;padding-left:22px}
+.body li{margin:6px 0}
+.body li::marker{color:var(--brand)}
+.mk{font-style:normal;background:linear-gradient(transparent 60%,var(--star-soft) 60%);box-shadow:inset 0 -2px 0 var(--star);padding:0 1px}
+b.k{color:var(--brand-ink);font-weight:720}
+code{font:.92em ui-monospace,Menlo,Consolas,monospace;background:var(--brand-soft);padding:1px 6px;border-radius:6px}
+
+.co{border-radius:14px;padding:14px 18px;margin:20px 0;border:1px solid;font-size:15.3px;line-height:1.75}
+.co>b:first-child{display:flex;align-items:center;gap:7px;font-size:13.2px;font-weight:720;margin-bottom:4px;letter-spacing:0}
+.co.lecture{background:var(--info-soft);border-color:var(--info-line)}
+.co.lecture>b:first-child{color:var(--info)}
+.co.warn{background:var(--warn-soft);border-color:var(--warn-line)}
+.co.warn>b:first-child{color:var(--warn)}
+.co.note{background:var(--note-soft);border-color:var(--note-line)}
+.co.note>b:first-child{color:var(--note)}
+.co.core{background:var(--brand-soft);border-color:transparent}
+.co.core>b:first-child{color:var(--brand-ink)}
+.co p{margin:5px 0}.co ul{margin:5px 0}
+
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:14px;scrollbar-width:thin}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.62;min-width:560px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 14px;border-bottom:1px solid var(--line-2);text-align:left;vertical-align:top}
+thead th{background:var(--brand-soft);color:var(--brand-ink);font-weight:700;font-size:13.5px;white-space:nowrap;border-bottom-color:var(--line)}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+tbody th{font-weight:650;background:color-mix(in srgb,var(--brand-soft) 40%,transparent);white-space:nowrap}
+
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px;margin:16px 0}
+.flow .st{flex:1 1 118px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.5}
+.flow .st b{display:block;font-size:12px;color:var(--brand);margin-bottom:2px}
+.flow .ar{align-self:center;color:var(--muted);font-weight:700}
+.map{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:9px;margin:16px 0}
+.map a{display:block;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 13px;color:var(--ink);font-size:14.2px;line-height:1.45;transition:border-color .15s,transform .2s cubic-bezier(.16,1,.3,1)}
+.map a:hover{border-color:var(--brand);transform:translateY(-1px)}
+.map a b{display:block;color:var(--brand);font-size:12px}
+.fig{margin:22px 0;padding:18px 12px 12px;text-align:center;background:var(--bg);border-radius:16px}
+.fig svg{max-width:100%;height:auto}
+.fig figcaption{font-size:13.2px;color:var(--muted);margin-top:8px;line-height:1.55}
+.svg-t{fill:var(--ink);font:600 13px "Pretendard Variable",Pretendard,system-ui,"Malgun Gothic",sans-serif}
+.svg-s{fill:var(--muted);font:500 11.5px "Pretendard Variable",Pretendard,system-ui,"Malgun Gothic",sans-serif}
+.svg-line{stroke:var(--svg-line);fill:none;stroke-width:1.6}
+.svg-a{fill:var(--svg-a)}.svg-b{fill:var(--svg-b)}.svg-c{fill:var(--svg-c)}.svg-d{fill:var(--svg-d)}.svg-e{fill:var(--svg-e)}
+.svg-bg{fill:var(--bg)}
+.sf-n{fill:var(--card);stroke:var(--svg-line);stroke-width:1.4}
+.sf-a{fill:var(--brand-soft);stroke:var(--svg-b);stroke-width:1.6}
+.sf-c{fill:var(--warn-soft);stroke:var(--svg-c);stroke-width:1.6}
+.sf-d{fill:var(--bad-soft);stroke:var(--svg-d);stroke-width:1.6}
+.sf-e{fill:var(--info-soft);stroke:var(--svg-e);stroke-width:1.4}
+.fig.overview{background:var(--card);border:1px solid var(--line);margin:0 0 44px;padding:22px 22px 14px}
+.ov{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;text-align:left}
+.ov-h{margin:0 0 12px;font-weight:760;font-size:15.5px;letter-spacing:-.025em}
+.ov-h small{display:block;font-weight:500;color:var(--muted);font-size:12.8px;letter-spacing:0;margin-top:1px}
+.ov-r{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:8px 10px;margin:0 0 8px}
+.ov-l{flex:0 0 122px;font-size:12.8px;font-weight:650;color:var(--muted)}
+.ov-s .ov-l{flex-basis:100%}
+.ov a{display:inline-flex;align-items:center;gap:7px;padding:4px 11px 4px 5px;border-radius:9px;background:var(--brand-soft);color:var(--brand-ink);font-size:13.6px;font-weight:620;line-height:1.5;transition:background .15s}
+.ov a:hover{background:color-mix(in srgb,var(--brand) 22%,var(--brand-soft))}
+.ov a b{display:grid;place-items:center;min-width:20px;height:20px;padding:0 4px;border-radius:6px;background:var(--brand);color:#fff;font-size:11px;font-weight:750;font-variant-numeric:tabular-nums}
+.ov-note{font-size:12.8px;color:var(--muted)}
+.ov-ar{position:relative;height:30px;margin:-4px 0 4px;padding-left:30px;display:flex;align-items:center;font-size:12.5px;color:var(--muted)}
+.ov-ar::before{content:"";position:absolute;left:19px;top:2px;width:2px;height:19px;background:var(--svg-line)}
+.ov-ar::after{content:"";position:absolute;left:15px;top:20px;border:5px solid transparent;border-top:7px solid var(--svg-line);border-bottom:0}
+.fig-scroll{overflow-x:auto;scrollbar-width:thin}
+
+details.slides{margin:0 34px 28px;border:1px solid var(--line);border-radius:14px;background:var(--bg)}
+details.slides>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:9px;padding:12px 16px;font-weight:650;font-size:15px}
+details.slides>summary::-webkit-details-marker{display:none}
+details.slides>summary .i{color:var(--brand);transition:transform .25s cubic-bezier(.16,1,.3,1)}
+details.slides[open]>summary .i.chev{transform:rotate(90deg)}
+details.slides>summary small{margin-left:auto;font-weight:500;color:var(--muted);font-size:12.5px}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;padding:2px 14px 14px}
+.sthumb{position:relative;display:block;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;cursor:zoom-in;transition:border-color .15s,transform .2s cubic-bezier(.16,1,.3,1)}
+.sthumb:hover{border-color:var(--brand);transform:translateY(-1px)}
+.sthumb img{display:block;width:100%;height:auto}
+.sthumb span{position:absolute;left:6px;bottom:6px;font-size:11px;font-weight:700;background:rgba(0,0,0,.62);color:#fff;border-radius:6px;padding:1px 7px}
+dialog.lb{padding:0;border:0;background:transparent;max-width:96vw;max-height:96vh;overflow:visible}
+dialog.lb::backdrop{background:rgba(8,12,10,.84)}
+dialog.lb img{display:block;max-width:96vw;max-height:84vh;width:auto;height:auto;border-radius:10px;background:#fff;margin:0 auto}
+.lb-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin-top:12px;color:#fff;font-size:13.5px}
+.lb-bar button{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff;border-radius:10px;padding:6px 13px;cursor:pointer;font-size:13px}
+.lb-bar button:hover{background:rgba(255,255,255,.2)}
+
+/* ---------- quiz ---------- */
+.quiz{border-top:1px solid var(--line);background:var(--quiz-bg);padding:28px 34px 30px}
+.quiz-h{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:4px}
+.quiz-h h4{margin:0;font-size:18px;letter-spacing:-.025em;display:flex;align-items:center;gap:8px}
+.quiz-h h4 .i{color:var(--brand)}
+.lv{font-size:11.5px;font-weight:750;color:#fff;background:var(--star);border-radius:6px;padding:2px 8px}
+.quiz-h .sc{margin-left:auto;font-weight:750;color:var(--brand-ink);font-size:14.5px;font-variant-numeric:tabular-nums}
+.quiz-sub{font-size:13.6px;color:var(--muted);margin:0 0 16px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px 20px;margin:14px 0;transition:border-color .3s}
+.q.is-ok{border-color:color-mix(in srgb,var(--ok) 40%,var(--line))}
+.q.is-no{border-color:color-mix(in srgb,var(--bad) 40%,var(--line))}
+.q .qn{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:-6px -8px 2px 0;font-size:12.5px;font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums}
+.q .qt{font-weight:620;line-height:1.72;font-size:16.2px}
+.q .qt ul{font-weight:450;margin:10px 0 2px;padding:10px 14px;list-style:none;background:var(--bg);border-radius:12px;font-size:15.4px}
+.q .qt li{margin:3px 0}
+.opts{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
+.opt{width:100%;min-height:48px;display:flex;align-items:flex-start;gap:10px;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;cursor:pointer;line-height:1.6;font-size:15.3px;transition:border-color .15s,background .15s,opacity .2s}
+.opt:hover:not(:disabled){border-color:var(--brand);background:color-mix(in srgb,var(--brand-soft) 45%,var(--card))}
+.opt:active:not(:disabled){transform:translateY(1px)}
+.opt .m{flex:none;font-weight:800;color:var(--muted);min-width:20px}
+.opt>span:last-child{flex:1}
+.opt:disabled{cursor:default}
+.opt.right,.opt.wrong{padding-right:12px}
+.opt.right::after,.opt.wrong::after{content:"";flex:none;width:18px;height:18px;margin-top:3px;-webkit-mask:center/contain no-repeat;mask:center/contain no-repeat}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.right .m{color:var(--ok)}
+.opt.right::after{background:var(--ok);-webkit-mask-image:var(--m-check);mask-image:var(--m-check)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .m{color:var(--bad)}
+.opt.wrong::after{background:var(--bad);-webkit-mask-image:var(--m-x);mask-image:var(--m-x)}
+.opt.dim{opacity:.55}
+.why{margin-top:14px;padding:13px 16px;border-radius:12px;font-size:15px;line-height:1.75;background:var(--bg)}
+.why.ok{background:var(--ok-soft)}.why.no{background:var(--bad-soft)}
+.why b.v{display:flex;align-items:center;gap:6px;font-size:13.6px;margin-bottom:3px}
+.why.ok b.v{color:var(--ok)}.why.no b.v{color:var(--bad)}
+@media (prefers-reduced-motion:no-preference){
+  .why.pop{animation:reveal .42s cubic-bezier(.16,1,.3,1)}
+  .opt.right.pop::after,.opt.wrong.pop::after{animation:stamp .36s cubic-bezier(.16,1,.3,1)}
+}
+@keyframes reveal{from{opacity:.25;transform:translateY(-6px);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
+@keyframes stamp{from{transform:scale(.4);opacity:0}to{transform:none;opacity:1}}
+.quiz-f{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:16px;font-size:14px;color:var(--muted)}
+.quiz-f .next{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-weight:650;font-size:14.2px;padding:8px 14px;border-radius:10px;background:var(--card);border:1px solid var(--line);color:var(--brand-ink)}
+.quiz-f .next:hover{border-color:var(--brand)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 13px;cursor:pointer;font-size:13.5px;font-weight:600}
+.btn:hover{border-color:var(--brand);color:var(--brand)}
+
+/* ---------- summary ---------- */
+.sum{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:30px 34px}
+.sum h3{margin:0 0 4px;font-size:26px;letter-spacing:-.035em}
+.big{font-size:52px;font-weight:820;color:var(--brand);letter-spacing:-.04em;line-height:1.05;margin:14px 0 4px;font-variant-numeric:tabular-nums}
+.srow{display:grid;grid-template-columns:30px 1fr 64px;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line-2);font-size:14.6px}
+.srow:last-child{border-bottom:0}
+.srow .bar{margin:5px 0 0}
+.wrongs{margin-top:28px}
+.wrongs h4{margin:0 0 8px;font-size:17px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.wrongs h4 .i{color:var(--bad)}
+.wrongs p{margin:0;color:var(--muted);font-size:14.5px}
+.wrongs a{display:flex;gap:12px;align-items:baseline;padding:10px 12px;margin:0 -12px;border-radius:10px;color:var(--ink);font-size:14.6px;line-height:1.55}
+.wrongs a:hover{background:var(--bg)}
+.wrongs a b{flex:none;color:var(--bad);font-size:12.5px;min-width:76px;font-variant-numeric:tabular-nums}
+
+/* ---------- personal star system ---------- */
+.stars{display:inline-flex;align-items:center}
+.sb{display:grid;place-items:center;width:28px;height:28px;padding:0;border:0;background:none;border-radius:8px;cursor:pointer;color:var(--muted);opacity:.5;transition:opacity .15s,color .15s,transform .18s cubic-bezier(.16,1,.3,1)}
+.sb .i{width:18px;height:18px;stroke-width:1.7}
+.sb:hover{opacity:1;color:var(--gold);transform:scale(1.14)}
+.sb.on{opacity:1;color:var(--gold)}
+.sb.on .i{fill:currentColor}
+.u-stars{margin-left:auto;flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:1px;padding-top:2px}
+.u-stars>span:first-child{font-size:11.5px;font-weight:650;color:var(--muted);padding-right:6px}
+.unit-head>div:not(.u-stars){flex:1;min-width:0}
+.starbox{margin:0 0 14px;padding:12px 14px;border:1px solid var(--line);background:var(--card);border-radius:14px}
+.starbox .row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;color:var(--muted)}
+.starbox .row b{color:var(--ink);font-variant-numeric:tabular-nums}
+.star-toggle{width:100%;justify-content:center;margin-top:9px}
+.star-toggle .i{color:var(--gold)}
+.star-toggle[aria-pressed="true"]{background:var(--gold-soft);border-color:var(--gold)}
+.star-toggle:disabled{opacity:.5;cursor:not-allowed}
+.star-toggle:disabled:hover{border-color:var(--line);color:var(--ink)}
+.toc .stv{flex:none;display:inline-flex;color:var(--gold)}
+.toc .stv .i{width:11px;height:11px}
+.star-bar{position:sticky;top:14px;z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:11px 14px;margin:0 0 26px;border-radius:14px;background:var(--gold-soft);border:1px solid var(--gold);box-shadow:var(--shadow);font-weight:650;font-size:14.5px}
+.star-bar[hidden]{display:none}
+.star-bar>.i{color:var(--gold)}
+.star-bar #starRetry{margin-left:auto}
+.star-bar .btn:disabled{opacity:.5;cursor:not-allowed}
+body.star-only .hero,body.star-only details.scope,body.star-only .fig.overview{display:none}
+body.star-only .unit:not(.has-star){display:none}
+body.star-only .unit:not(.u-star)>.body,body.star-only .unit:not(.u-star)>details.slides{display:none}
+body.star-only .unit:not(.u-star) .q:not(.q-star){display:none}
+.starlist h4 .i{color:var(--gold)}
+.starlist a b{color:var(--ink)}
+.starlist .lvs{display:inline-flex;color:var(--gold);margin-right:6px;vertical-align:-1px}
+.starlist .lvs .i{width:11px;height:11px}
+
+/* ---------- exam-prep hub link & date tag ---------- */
+.hub-link{display:inline-flex;align-items:center;gap:6px;margin:0 0 16px;padding:5px 11px 5px 7px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--brand-ink);font-size:12.8px;font-weight:650;transition:border-color .15s}
+.hub-link:hover{border-color:var(--brand)}
+.hub-link .i{transform:rotate(180deg);color:var(--brand)}
+.dtag{display:inline-flex;align-items:center;padding:1px 9px;border-radius:99px;background:var(--brand-soft);color:var(--brand-ink);font-weight:700}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  html{scroll-padding-top:72px}
+  .layout{display:block}
+  .topbar{display:flex;position:sticky;top:0;z-index:30;align-items:center;gap:12px;padding:10px 16px;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .topbar b{font-size:14.5px;flex:1;line-height:1.35;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.02em}
+  .topbar .tb-prog{font-size:12.5px;font-weight:700;color:var(--brand-ink);background:var(--brand-soft);border-radius:99px;padding:3px 10px;font-variant-numeric:tabular-nums}
+  .side{position:fixed;inset:0 auto 0 0;width:min(320px,86vw);z-index:40;height:auto;background:var(--card);transform:translateX(-102%);transition:transform .32s cubic-bezier(.16,1,.3,1);box-shadow:var(--shadow);border-right:1px solid var(--line)}
+  body.nav-open .side{transform:none}
+  .scrim{display:none}
+  body.nav-open .scrim{display:block;position:fixed;inset:0;z-index:35;background:rgba(0,0,0,.36)}
+  main{padding:26px 16px 100px}
+  .hero{padding-top:4px}
+  .unit{border-radius:18px;margin-bottom:30px}
+  .unit-head{padding:22px 18px 4px;gap:13px}
+  .unit-head .no{width:38px;height:38px;font-size:15px;border-radius:11px}
+  .body{padding:2px 18px 20px}
+  .quiz{padding:20px 14px 22px}
+  .q{padding:15px 14px 16px}
+  .fig{margin:18px -6px;padding:14px 6px 10px}
+  .sum{padding:24px 18px}
+  .quiz-f .next{margin-left:0}
+  details.slides{margin:0 18px 20px}
+  .sgrid{grid-template-columns:1fr 1fr;padding:2px 10px 10px;gap:8px}
+  .fig.overview{padding:16px 12px 10px}
+  .ov{grid-template-columns:1fr;gap:14px}
+  .unit-head{flex-wrap:wrap}
+  .u-stars{order:3;flex-basis:100%;flex-direction:row;align-items:center;gap:4px;padding:0 0 0 51px;margin-top:-6px}
+  .star-bar{position:static}
+}
+@media (max-width:640px){
+  .fig-scroll svg{min-width:var(--minw)}
+  .fig-scroll+figcaption::before{content:"좌우로 밀어 보기 · ";color:var(--brand);font-weight:650}
+}
+@media print{.side,.topbar,.quiz,.scope,.u-stars,.star-bar{display:none}.layout{display:block}.unit{box-shadow:none;break-inside:avoid-page}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8 8 0 0 1-11.7 7.1L3.5 20l1.2-4.7A8 8 0 1 1 20.5 11.5z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 4.2 2.6 17.6A2 2 0 0 0 4.3 20.5h15.4a2 2 0 0 0 1.7-2.9L13.7 4.2a2 2 0 0 0-3.4 0z"/><path d="M12 9.5v4.2"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.3-4.3"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20h4L19.2 8.8a2.3 2.3 0 0 0-3.2-3.2L4.8 16.8 4 20z"/><path d="m14.5 7 3 3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.6A8 8 0 0 1 9.4 4a8 8 0 1 0 10.6 10.6z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.8v1.9M12 19.3v1.9M5.5 5.5l1.3 1.3M17.2 17.2l1.3 1.3M2.8 12h1.9M19.3 12h1.9M5.5 18.5l1.3-1.3M17.2 6.8l1.3-1.3"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+  <symbol id="i-retry" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3"/><path d="M4.5 4.5v3.8h3.8"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4.5"/><path d="M5 4.5h11l-2 4 2 4H5"/></symbol>
+</svg>
+<div class="topbar"><button class="icon-btn" id="navBtn" aria-label="목차 열기" aria-expanded="false" aria-controls="side"><svg class="i"><use href="#i-menu"/></svg>목차</button><b id="curTitle">세포막을 통과하는 수송</b><span class="tb-prog" id="tbProg">0/33</span></div>
+<div class="scrim" id="scrim"></div>
+<div class="layout">
+<aside class="side" id="side">
+  <a class="hub-link" href="index.html"><svg class="i" aria-hidden="true"><use href="#i-chev"/></svg>복습할 요일 고르기</a>
+  <p class="course">세포생물학 기말고사 대비 · <span class="dtag">11/24 화</span></p>
+  <h1>7차시 세포막을 통과하는 수송</h1>
+  <div class="progress"><div class="row"><span>퀴즈 진행</span><span><b id="pDone">0</b> / <b id="pTotal">0</b>문항</span></div><div class="bar"><i id="pBar"></i></div><div class="row" style="margin-top:7px"><span>맞힌 문항</span><span><b id="pOk">0</b>문항</span></div></div>
+  <div class="starbox"><div class="row"><span>내 별표</span><span>문제 <b id="sQ">0</b> · 소단원 <b id="sU">0</b></span></div><button type="button" class="icon-btn star-toggle" id="starOnly" aria-pressed="false" disabled><svg class="i"><use href="#i-star"/></svg><span>별표만 보기</span></button></div>
+  <nav class="toc" id="toc" aria-label="소단원 목차">
+    <p class="grp">A · 막을 통과하는 수송의 원리</p>
+    <a href="#u1" data-u="u1"><span class="n">1</span><span class="t">무엇이 막을 통과하나</span><span class="sc" data-sc="u1"></span></a>
+    <a href="#u2" data-u="u2"><span class="n">2</span><span class="t">이온 분포와 막전위</span><span class="sc" data-sc="u2"></span></a>
+    <a href="#u3" data-u="u3"><span class="n">3</span><span class="t">전기화학적 구배</span><span class="sc" data-sc="u3"></span></a>
+    <p class="grp">B · 수송체와 그 기능</p>
+    <a href="#u4" data-u="u4"><span class="n">4</span><span class="t">수동 수송체</span><span class="sc" data-sc="u4"></span></a>
+    <a href="#u5" data-u="u5"><span class="n">5</span><span class="t">ATP 구동 펌프: Na⁺-K⁺ · Ca²⁺</span><span class="sc" data-sc="u5"></span></a>
+    <a href="#u6" data-u="u6"><span class="n">6</span><span class="t">구배 구동 펌프와 H⁺ 펌프</span><span class="sc" data-sc="u6"></span></a>
+    <p class="grp">C · 이온 통로와 막전위</p>
+    <a href="#u7" data-u="u7"><span class="n">7</span><span class="t">이온 통로: 선택성과 개폐</span><span class="sc" data-sc="u7"></span></a>
+    <a href="#u8" data-u="u8"><span class="n">8</span><span class="t">K⁺ 누출 통로와 네른스트 식</span><span class="sc" data-sc="u8"></span></a>
+    <a href="#u9" data-u="u9"><span class="n">9</span><span class="t">패치클램프 기록</span><span class="sc" data-sc="u9"></span></a>
+    <p class="grp">D · 신경세포의 신호 전달</p>
+    <a href="#u10" data-u="u10"><span class="n">10</span><span class="t">뉴런과 활동전위</span><span class="sc" data-sc="u10"></span></a>
+    <a href="#u11" data-u="u11"><span class="n">11</span><span class="t">시냅스와 광유전학</span><span class="sc" data-sc="u11"></span></a>
+    <p class="grp">정리</p>
+    <a href="#summary" data-u="summary"><span class="n"><svg class="i" style="width:13px;height:13px"><use href="#i-flag"/></svg></span><span class="t">종합 점수 · 오답 노트</span><span class="sc"></span></a>
+  </nav>
+  <button class="icon-btn" id="themeBtn" type="button"><svg class="i"><use href="#i-moon"/></svg><span>어두운 화면</span></button>
+</aside>
+<main>
+<div class="wrap">
+<div class="star-bar" id="starBar" hidden><svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg><span id="starBarTxt"></span><button type="button" class="btn" id="starRetry">별표 문제 답 지우고 다시 풀기</button><button type="button" class="btn" id="starExit">전체 보기</button></div>
+
+<section class="hero">
+  <h2>세포막을 통과하는 수송</h2>
+  <p class="meta"><span class="dtag">11/24 화요일</span><span>세포생물학의 이해</span><span>7차시 세포막을 통과하는 수송 (CH12)</span><span>부교재 캠벨 5단원</span></p>
+  <p class="intro">수업 PDF(필기본)와 강의 녹취록을 합쳐 11개 소단원으로 정리했습니다. 11/17에 배운 세포막(지질 이중층 + 막단백질)을 이제 "무엇이, 어떤 단백질을 통해, 어느 방향으로 지나가나"로 봅니다. 앞부분(수송체·펌프)은 에너지와 방향, 뒷부분(이온 통로)은 막전위와 신경 신호로 이어집니다. 소단원마다 난이도 상 확인 퀴즈가 있고, 별을 눌러 중요도를 매기면 <b>별표만 보기</b>로 모아 복습할 수 있습니다.</p>
+  <div class="legend">
+    <span class="chip info"><svg class="i"><use href="#i-chat"/></svg>강의 중 강조</span>
+    <span class="chip warn"><svg class="i"><use href="#i-alert"/></svg>심화 · 시험 범위 밖</span>
+    <span class="chip note"><svg class="i"><use href="#i-search"/></svg>자료 표기 주의</span>
+    <span class="chip gold"><svg class="i fill"><use href="#i-star"/></svg>내 별표 1~3개</span>
+  </div>
+</section>
+
+<details class="scope" open>
+  <summary><svg class="i chev"><use href="#i-chev"/></svg>시험 범위 체크<small>강의 언급 + 필기 기준</small></summary>
+  <div>
+    <ul>
+      <li><b class="k">핵심</b>: 수동 수송 vs 능동 수송 · 이온이 세포 안팎 <b>어느 쪽에 더 많은지</b>(Na⁺·Cl⁻·Ca²⁺는 밖, K⁺는 안) · 휴지막전위는 <b>안쪽이 음(−)</b> · 전기화학적 구배(K⁺는 통로가 열려도 순이동이 거의 없음) · 수동 수송체는 방향은 못 정하고 물질만 고른다(D형 포도당) · 펌프 3종 · Na⁺-K⁺ 펌프(3 Na⁺ 밖, 2 K⁺ 안, 인산화 → 탈인산화 회로) · Ca²⁺ 펌프 · 동방향·역방향·단일 수송체와 장 상피세포의 포도당 흡수 · 이온 통로의 두 성질(선택성·개폐)과 수송체와의 차이 · K⁺ 누출 통로 · <b>네른스트 식</b> 계산 · 패치클램프와 all-or-none · 관문 3종 · 활동전위(Na⁺ 통로 폐쇄–개방–불활성, 느린 K⁺ 통로) · 신경말단의 <b>전기 → 화학 신호 전환</b> · 흥분성 vs 억제성 신경전달물질 · 화학적 시냅스의 의의.</li>
+      <li><b class="k">강조한 것</b>: 이온 농도는 "숫자는 외우실 필요 없는데요. <b>어디가 더 많은지는 반드시</b> 알고 계셔야 됩니다"(04:39) — "특히 나트륨, 칼륨, 칼슘, 염소 이온은 아셔야 됩니다. 동그라미 쳐 놓으시고요"(05:39) · 휴지막전위 "안쪽이 마이너스다. 그게 중요합니다"(28:55) · K⁺ 누출 통로 "제일 중요한 통로 중에 하나"(28:55) · 네른스트 식 "잘 알아두십시오"(30:56) · 흥분성(아세틸콜린·글루탐산)과 억제성(GABA·글라이신) "이거 외우셔야 됩니다"(1:07:28), "여기 있는 것들은 여러분들이 다 알고 계셔야 됩니다"(1:08:24) · 화학적 시냅스의 의의 "놔두시고요"(1:09:21).</li>
+      <li><b class="k">몰라도 됨</b>: 이온 농도의 <b>숫자</b>(04:39, 26:56) · <b>삼투</b> — 필기 "시험에 나오지 않는다"(8쪽), 강의 "알고만 계세요"(10:30) · Na⁺-K⁺ 펌프의 여러 이름은 다 같은 말이라 "단답형 주관식 같은 걸로 안 되겠죠"(15:22) · 뉴런의 구조는 "이 정도만 알고 계시면"(42:38) · H⁺ 펌프 표(20쪽)는 "한 번만 읽어보세요"(23:02).</li>
+      <li><b class="k">같은 말</b>: 원형질막 = 세포막("책이 오래돼서", 16:18) · 세포기질 = 세포질(19:18) · 유리(free) Ca²⁺ = 다른 분자에 붙지 않고 그냥 녹아 있는 Ca²⁺ · Na⁺ 펌프 = Na⁺-K⁺ ATP 가수분해효소 = Na⁺-K⁺ 펌프.</li>
+      <li><b class="k">남은 시험 범위</b>: 다음 PPT는 소낭을 통한 수송, 마지막으로 신호 전달(02:00). "범위가 생각보다 적더라고요"(02:49).</li>
+    </ul>
+    <p style="font-size:13.5px;color:var(--muted);margin:10px 0 0">녹취록이 자동 변환본이라 슬라이드·필기본과 대조해 보정했습니다(예: 녹취의 "칼슘은 안쪽이 많다"는 칼륨). 강의와 슬라이드(또는 교과서)의 설명이 다른 곳은 "자료 표기 주의"로 따로 적었습니다.</p>
+  </div>
+</details>
+
+<figure class="fig overview">
+  <div class="ov">
+    <div>
+      <p class="ov-h">수송의 원리<small>무엇이, 어느 방향으로</small></p>
+      <div class="ov-r"><span class="ov-l">기본</span><a href="#u1"><b>1</b>투과성 · 수동 vs 능동</a></div>
+      <div class="ov-r"><span class="ov-l">이온</span><a href="#u2"><b>2</b>분포 · 막전위</a><a href="#u3"><b>3</b>전기화학적 구배</a></div>
+      <p class="ov-h" style="margin-top:16px">수송체<small>결합하고, 모양을 바꿔 넘긴다</small></p>
+      <div class="ov-r"><span class="ov-l">순행</span><a href="#u4"><b>4</b>수동 수송체</a></div>
+      <div class="ov-r"><span class="ov-l">역행</span><a href="#u5"><b>5</b>ATP 구동</a><a href="#u6"><b>6</b>구배 구동 · H⁺</a></div>
+    </div>
+    <div>
+      <p class="ov-h">이온 통로<small>열리면 순식간에, 순행으로만</small></p>
+      <div class="ov-r ov-s"><span class="ov-l">성질</span><a href="#u7"><b>7</b>선택성 · 개폐 · 관문</a></div>
+      <div class="ov-r ov-s"><span class="ov-l">막전위</span><a href="#u8"><b>8</b>K⁺ 누출 · 네른스트</a></div>
+      <div class="ov-r ov-s"><span class="ov-l">측정</span><a href="#u9"><b>9</b>패치클램프</a></div>
+      <p class="ov-h" style="margin-top:16px">신경 신호<small>전기 → 화학 → 전기</small></p>
+      <div class="ov-r ov-s"><span class="ov-l">축삭</span><a href="#u10"><b>10</b>활동전위</a></div>
+      <div class="ov-r ov-s"><span class="ov-l">시냅스</span><a href="#u11"><b>11</b>신경전달물질 · 광유전학</a></div>
+    </div>
+  </div>
+  <figcaption>한눈에 보는 11/24 페이지. 이름을 누르면 해당 소단원으로 이동합니다.</figcaption>
+</figure>
+
+<!-- ================= U1 무엇이 막을 통과하나 ================= -->
+<section class="unit" id="u1">
+  <header class="unit-head"><span class="no">1</span><div>
+    <h3>무엇이 막을 통과하나 — 지질 이중층과 막수송 단백질</h3>
+    <p class="lead">지질 이중층은 기름막이라 작고 비극성인 분자만 쉽게 지나간다. 나머지는 막수송 단백질이 골라서 통과시키고, 에너지를 쓰면 농도 구배를 거슬러 보낼 수도 있다.</p>
+  </div></header>
+  <div class="body">
+    <h4>지질 이중층만 있을 때 — 단순 확산</h4>
+    <ul>
+      <li><b>작은 비극성 분자</b>(O₂ · CO₂ · N₂ · 스테로이드 호르몬)는 이중층을 바로 통과한다 = <b class="k">단순 확산</b>.</li>
+      <li><b>작고 극성인 분자</b>(H₂O · 에탄올 · 글리세롤)는 조금, 천천히 통과한다. <b>크고 극성인 분자</b>(포도당 · 아미노산 · 뉴클레오타이드)는 거의 못 지나간다.</li>
+      <li><b>이온</b>(Na⁺ · K⁺ · Ca²⁺ · Cl⁻ · H⁺ …)은 아무리 작아도 <b>전하</b> 때문에 이중층을 통과할 수 없다(03:42).</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 240" role="img" aria-label="왼쪽: 지질 이중층만으로는 작은 비극성 분자(O2, CO2)는 잘 통과하고, 작은 극성 분자(물)는 조금 통과하며, 큰 극성 분자(포도당)는 거의 못 지나가고, 이온은 작아도 전하 때문에 튕겨 나간다. 오른쪽: 막수송 단백질 세 가지. 통로는 열리면 농도 구배를 따라 이온을 통과시키고, 수동 수송체는 물질과 결합한 뒤 구조를 바꿔 넘기며, 펌프는 ATP 같은 에너지를 써서 농도 구배를 거슬러 보낸다">
+        <defs>
+          <marker id="m71g" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-b)"/></marker>
+          <marker id="m71r" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-d)"/></marker>
+          <marker id="m71b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-e)"/></marker>
+          <marker id="m71y" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-c)"/></marker>
+        </defs>
+        <rect x="0" y="106" width="640" height="44" style="fill:var(--line-2)"/>
+        <path d="M6 102H640M6 154H640" style="stroke:var(--svg-a);stroke-width:9;stroke-linecap:round;stroke-dasharray:0 12"/>
+        <path d="M396 12V234" style="stroke:var(--line);stroke-dasharray:5 5"/>
+        <g text-anchor="middle">
+          <text x="80" y="26" class="svg-t" style="font-size:12px">작은 비극성</text><text x="80" y="42" class="svg-s">O₂ · CO₂</text>
+          <text x="170" y="26" class="svg-t" style="font-size:12px">작은 극성</text><text x="170" y="42" class="svg-s">H₂O</text>
+          <text x="260" y="26" class="svg-t" style="font-size:12px">큰 극성</text><text x="260" y="42" class="svg-s">포도당</text>
+          <text x="350" y="26" class="svg-t" style="font-size:12px">이온</text><text x="350" y="42" class="svg-s">Na⁺ · K⁺ · Cl⁻</text>
+          <text x="520" y="26" class="svg-t" style="font-size:12px">막수송 단백질</text><text x="520" y="42" class="svg-s">골라서 통과</text>
+        </g>
+        <path d="M80 54V192" style="fill:none;stroke:var(--svg-b);stroke-width:3" marker-end="url(#m71g)"/>
+        <path d="M170 54V192" style="fill:none;stroke:var(--svg-b);stroke-width:1.6;stroke-dasharray:4 4" marker-end="url(#m71g)"/>
+        <path d="M254 54V96Q260 106 266 96V62" style="fill:none;stroke:var(--svg-d);stroke-width:1.8" marker-end="url(#m71r)"/>
+        <path d="M344 54V96Q350 106 356 96V62" style="fill:none;stroke:var(--svg-d);stroke-width:1.8" marker-end="url(#m71r)"/>
+        <rect x="422" y="94" width="12" height="68" rx="5" class="sf-e"/>
+        <rect x="446" y="94" width="12" height="68" rx="5" class="sf-e"/>
+        <path d="M440 54V192" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m71b)"/>
+        <path d="M522 54V92" style="fill:none;stroke:var(--svg-b);stroke-width:2"/>
+        <path d="M522 164V192" style="fill:none;stroke:var(--svg-b);stroke-width:2" marker-end="url(#m71g)"/>
+        <rect x="505" y="94" width="34" height="68" rx="14" class="sf-a"/>
+        <circle cx="522" cy="128" r="6" style="fill:var(--svg-c)"/>
+        <path d="M600 192V164" style="fill:none;stroke:var(--svg-c);stroke-width:2"/>
+        <path d="M600 92V54" style="fill:none;stroke:var(--svg-c);stroke-width:2" marker-end="url(#m71y)"/>
+        <rect x="583" y="94" width="34" height="68" rx="10" class="sf-c"/>
+        <text x="578" y="186" text-anchor="end" class="svg-s">ATP</text>
+        <g text-anchor="middle">
+          <text x="80" y="212" class="svg-t" style="font-size:12px">잘 통과</text><text x="80" y="228" class="svg-s">단순 확산</text>
+          <text x="170" y="212" class="svg-t" style="font-size:12px">조금 통과</text><text x="170" y="228" class="svg-s">느리게</text>
+          <text x="260" y="212" class="svg-t" style="font-size:12px">거의 못 함</text><text x="260" y="228" class="svg-s">크고 극성</text>
+          <text x="350" y="212" class="svg-t" style="font-size:12px">못 함</text><text x="350" y="228" class="svg-s">작아도 전하</text>
+          <text x="440" y="212" class="svg-t" style="font-size:12px">통로</text><text x="440" y="228" class="svg-s">열리면 순행</text>
+          <text x="522" y="212" class="svg-t" style="font-size:12px">수동 수송체</text><text x="522" y="228" class="svg-s">구조 바꿔 넘김</text>
+          <text x="600" y="212" class="svg-t" style="font-size:12px">펌프</text><text x="600" y="228" class="svg-s">역행·에너지</text>
+        </g>
+      </svg>
+      <figcaption>위쪽 농도가 더 높다고 할 때: 통로와 수동 수송체는 구배를 따라(위 → 아래), 펌프는 에너지를 써서 구배를 거슬러(아래 → 위) 보낸다.</figcaption>
+    </figure>
+
+    <h4>막수송 단백질 — 선택적 수송</h4>
+    <ul>
+      <li>이중층을 못 지나가는 물질은 <b class="k">막수송 단백질</b>이 통과시킨다. 각각 <b>선택성이 매우 높다</b> — 정해진 물질만 나른다("굉장히 선택성이 높다, 이런 거 알아두시고요" 04:39).</li>
+      <li><b>통로(channel)</b>: 막을 꿰뚫는 구멍. 열리면 크기와 전하가 맞는 물질이 지나간다. <b>수송체(transporter)</b>: 물질이 결합 부위에 붙으면 <b>구조를 바꿔</b> 반대편으로 넘긴다.</li>
+    </ul>
+    <div class="tbl"><table>
+      <thead><tr><th></th><th>수동 수송</th><th>능동 수송</th></tr></thead>
+      <tbody>
+        <tr><th>방향</th><td>농도 구배를 <b>따라</b>(순행)</td><td>농도 구배를 <b>거슬러</b>(역행)</td></tr>
+        <tr><th>에너지</th><td>필요 없음</td><td>필요 — <b>ATP</b> · <b>빛</b> · <b>다른 물질의 농도 구배</b></td></tr>
+        <tr><th>담당</th><td>단순 확산 · 통로 · 수동 수송체</td><td>펌프(능동 수송체)만</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li>여러 막수송 단백질이 조합되면 한쪽에 용질이 <b>쌓여 퍼텐셜(위치 에너지)</b>을 만든다. 펌프가 미리 구배를 만들어 두면, 나중에 통로나 다른 수송체가 그 구배를 써서 일을 한다(5·6·8·10번 소단원).</li>
+    </ul>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"수동수송은 농도구배를 따르는 것이고요. 능동수송은 농도구배를 거슬러 간다."(07:33) 이 구분이 이번 단원 전체의 뼈대입니다. "이번 단원도 어려운 내용 없습니다. 다음 단원도 어려운 내용 없습니다."(12:28)</div>
+    <div class="co warn"><b><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>시험 범위 아님</b><b>삼투(osmosis)</b>: 용질 농도가 낮은(물이 많은) 쪽에서 용질 농도가 높은(물이 적은) 쪽으로 물이 이동하는 것. 아쿠아포린이 물의 이동을 빠르게 한다(8쪽). 필기에 "시험에 나오지 않는다", 강의도 "알고만 계세요"(10:30).</div>
+  </div>
+  <div class="quiz" data-quiz="u1"></div>
+</section>
+
+<!-- ================= U2 이온 분포와 막전위 ================= -->
+<section class="unit" id="u2">
+  <header class="unit-head"><span class="no">2</span><div>
+    <h3>이온 분포와 막전위 — 어느 쪽에 더 많은가</h3>
+    <p class="lead">세포 안과 밖은 이온 조성이 크게 다르다. 숫자는 외우지 않아도 되지만, 어느 쪽에 더 많은지는 반드시 알아야 한다. 이 불균형이 막전위를 만든다.</p>
+  </div></header>
+  <div class="body">
+    <h4>세포 안팎의 이온 농도 (표 12-1)</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>이온</th><th>세포 안 (mM)</th><th>세포 밖 (mM)</th><th>더 많은 쪽</th></tr></thead>
+      <tbody>
+        <tr><th>Na⁺</th><td>5~15</td><td>145</td><td><b>밖</b> — Na⁺-K⁺ 펌프가 퍼내기 때문</td></tr>
+        <tr><th>K⁺</th><td>140</td><td>5</td><td><b>안</b> — 펌프가 들여오기 때문</td></tr>
+        <tr><th>Ca²⁺</th><td>10⁻⁴</td><td>1~2</td><td><b>밖</b> — 안쪽은 극도로 낮음(약 1만 배 차이)</td></tr>
+        <tr><th>Cl⁻</th><td>5~15</td><td>110</td><td><b>밖</b></td></tr>
+        <tr><th>Mg²⁺</th><td>0.5</td><td>1~2</td><td>밖 (Mg²⁺·Ca²⁺의 세포 안 값은 결합하지 않은 '유리' 이온 기준)</td></tr>
+        <tr><th>H⁺</th><td>pH 7.2</td><td>pH 7.4</td><td>거의 비슷</td></tr>
+      </tbody>
+    </table></div>
+    <figure class="fig">
+      <svg viewBox="0 0 640 228" role="img" aria-label="세포막을 사이에 둔 네 이온의 분포. Na+는 세포 안에 적고 밖에 많다. K+는 안에 많고 밖에 적다. Ca2+는 안에 극히 적고 밖이 안의 약 1만 배다. Cl-는 안에 적고 밖에 많다. 휴지 상태에서 세포 안쪽은 음의 전위를 띤다">
+        <rect x="300" y="38" width="40" height="168" style="fill:var(--line-2)"/>
+        <path d="M296 44V202M344 44V202" style="stroke:var(--svg-a);stroke-width:9;stroke-linecap:round;stroke-dasharray:0 12"/>
+        <text x="150" y="24" text-anchor="middle" class="svg-t">세포 안 (세포질)</text>
+        <text x="490" y="24" text-anchor="middle" class="svg-t">세포 밖</text>
+        <rect x="262" y="57" width="34" height="18" rx="4" class="sf-n"/>
+        <rect x="344" y="57" width="200" height="18" rx="4" class="sf-a"/>
+        <text x="256" y="70" text-anchor="end" class="svg-s">적음</text>
+        <text x="550" y="70" class="svg-s">많음</text>
+        <rect x="96" y="97" width="200" height="18" rx="4" class="sf-a"/>
+        <rect x="344" y="97" width="34" height="18" rx="4" class="sf-n"/>
+        <text x="90" y="110" text-anchor="end" class="svg-s">많음</text>
+        <text x="384" y="110" class="svg-s">적음</text>
+        <rect x="292" y="137" width="4" height="18" class="sf-n"/>
+        <rect x="344" y="137" width="110" height="18" rx="4" class="sf-a"/>
+        <text x="284" y="150" text-anchor="end" class="svg-s">극히 적음</text>
+        <text x="460" y="150" class="svg-s">많음 — 안의 약 1만 배</text>
+        <rect x="262" y="177" width="34" height="18" rx="4" class="sf-n"/>
+        <rect x="344" y="177" width="170" height="18" rx="4" class="sf-a"/>
+        <text x="256" y="190" text-anchor="end" class="svg-s">적음</text>
+        <text x="520" y="190" class="svg-s">많음</text>
+        <g text-anchor="middle">
+          <rect x="302" y="55" width="36" height="22" rx="11" style="fill:var(--card);stroke:var(--line)"/><text x="320" y="70" class="svg-t" style="font-size:12px">Na⁺</text>
+          <rect x="302" y="95" width="36" height="22" rx="11" style="fill:var(--card);stroke:var(--line)"/><text x="320" y="110" class="svg-t" style="font-size:12px">K⁺</text>
+          <rect x="302" y="135" width="36" height="22" rx="11" style="fill:var(--card);stroke:var(--line)"/><text x="320" y="150" class="svg-t" style="font-size:12px">Ca²⁺</text>
+          <rect x="302" y="175" width="36" height="22" rx="11" style="fill:var(--card);stroke:var(--line)"/><text x="320" y="190" class="svg-t" style="font-size:12px">Cl⁻</text>
+          <text x="320" y="224" class="svg-s">휴지 상태: 세포 안쪽이 음(−), 동물세포 약 −20 ~ −200 mV</text>
+        </g>
+      </svg>
+      <figcaption>숫자 대신 '어느 쪽이 많은가'만: Na⁺ · Cl⁻ · Ca²⁺는 밖, K⁺는 안. Ca²⁺는 세포질에 거의 없어서 조금만 들어와도 신호가 된다.</figcaption>
+    </figure>
+    <ul>
+      <li><b class="k">Ca²⁺가 중요한 이유</b>: 바깥에 많고 안쪽에는 거의 없다 → 안쪽으로 조금만 들어와도 그 자체가 <b>신호</b>가 된다. 세포예정사(11/17: Ca²⁺ 유입 → 스크램블레이스 → PS 노출)와 신경말단의 신경전달물질 분비(11번 소단원)가 모두 이 원리(05:39).</li>
+    </ul>
+    <h4>막전위와 휴지막전위</h4>
+    <ul>
+      <li><b class="k">막전위(membrane potential)</b>: 막을 경계로 한 <b>전압 차이</b>. 원형질막 바로 주변에서 소량의 양이온·음이온이 불균형하게 분포해서 생긴다. 세포는 이것을 대사물을 수송하는 동력으로 쓰고, 흥분성 세포(신경·근육)는 주변과 소통하는 데 쓴다. 막전위를 만들고 유지하는 것은 이중층에 박힌 <b>막수송 단백질</b>의 활성이다.</li>
+      <li><b class="k">휴지막전위(resting membrane potential)</b>: 자극을 받지 않은 상태의 막전위. 양이온과 음이온이 계속 오가지만 <b>전하의 순이동이 없는</b> 정류(정상) 상태다. 동물세포는 −20 ~ −200 mV로 <b>안쪽이 음(−)</b>.</li>
+      <li>막 양쪽의 아주 적은 수의 이온만 넘어가도 막전위가 생긴다. 세포 전체로 보면 거의 전기적으로 중성이다(그림 12-22).</li>
+    </ul>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"이거 숫자는 외우실 필요 없는데요. <b>어디가 더 많은지는 반드시</b> 알고 계셔야 됩니다."(04:39) "특히 나트륨, 칼륨, 칼슘, 염소 이온은 아셔야 됩니다. 동그라미 쳐 놓으시고요."(05:39) 이온 표는 이온 통로 부분에서 한 번 더 나옵니다 — "칼슘 이온은 안쪽이 극도로 낮다 정도면 알겠죠?"(26:56)</div>
+    <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>자료 표기 주의</b>강의는 휴지막전위를 "순이동이 없는 평형"이라고 설명했고(06:40), 슬라이드는 "정류 상태"라고 적었습니다. 정확히는 펌프가 계속 일하면서 유지되는 <b>정상 상태(steady state)</b>로, 막을 가로지르는 <b>전하의 순이동이 0</b>이라는 뜻입니다. K⁺는 평형에 가깝지만(8번 소단원), 모든 이온이 각자 평형에 있는 것은 아닙니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u2"></div>
+</section>
+
+<!-- ================= U3 전기화학적 구배 ================= -->
+<section class="unit" id="u3">
+  <header class="unit-head"><span class="no">3</span><div>
+    <h3>전기화학적 구배 — 농도와 전압, 두 힘의 합</h3>
+    <p class="lead">이온은 화학적인 알갱이이면서 전하를 띤다. 그래서 농도 구배만이 아니라 막전위도 이온을 밀고 당긴다. 두 힘이 같은 방향이면 강해지고, 반대면 약해진다.</p>
+  </div></header>
+  <div class="body">
+    <ul>
+      <li><b class="k">전기화학적 구배(electrochemical gradient)</b>: 전하를 띤 용질이 막을 통과하도록 하는 <b>순 추진력</b>. <b>농도 구배</b>(화학적 힘)와 <b>막전위</b>(전기적 힘)가 합쳐진 결과다. 이 구배가 이온의 <b>수동 수송 방향</b>을 정한다.</li>
+      <li>전하가 없는 용질은 농도 구배만 보면 되지만, 이온은 "입자 수준에서 나아가서 전하적인 측면까지 봐 줘야" 한다(07:33).</li>
+      <li><b>두 힘이 같은 방향 → 추진력이 커진다</b>. 예: <b>Na⁺</b> — 밖에 많고(농도: 안으로), 양이온인데 안쪽이 음(전기: 안으로) → 강하게 들어오려 한다.</li>
+      <li><b>두 힘이 반대 방향 → 추진력이 작아진다</b>. 예: <b>K⁺</b> — 안에 많아 밖으로 나가려 하지만(농도: 밖으로), 음(−)인 안쪽이 양이온을 끌어당긴다(전기: 안으로) → 휴지 원형질막에서 K⁺의 전기화학적 구배는 작다.</li>
+      <li>그래서 <b>K⁺ 통로가 열려 있어도 막을 가로지르는 K⁺의 순이동은 거의 일어나지 않는다</b>(10:30). "전기적으로는 얘가 안쪽에 머무는 게 좀 더 유리하기 때문에 생각보다 많은 것들이 누출되진 않습니다."(09:32)</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 250" role="img" aria-label="왼쪽 Na+: 세포 밖에 많고 안쪽이 음전하라서, 농도 구배와 전기적 힘이 모두 안쪽을 향해 순 추진력이 큰 굵은 화살표가 된다. 오른쪽 K+: 세포 안에 많아 농도 구배는 밖을 향하지만, 음전하인 안쪽이 끌어당기는 전기적 힘은 안쪽을 향해 두 힘이 거의 상쇄되고, 순 추진력은 밖으로 향하는 가는 화살표로 작다">
+        <defs>
+          <marker id="m73y" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-c)"/></marker>
+          <marker id="m73b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-e)"/></marker>
+          <marker id="m73r" viewBox="0 0 10 10" refX="7" refY="5" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-d)"/></marker>
+          <marker id="m73s" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-d)"/></marker>
+        </defs>
+        <rect x="6" y="6" width="306" height="238" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <rect x="328" y="6" width="306" height="238" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <text x="20" y="30" class="svg-t">Na⁺ — 두 힘이 같은 방향</text>
+        <text x="20" y="48" class="svg-s">농도도, 전기도 안쪽으로 → 강하게 유입</text>
+        <text x="342" y="30" class="svg-t">K⁺ — 두 힘이 반대 방향</text>
+        <text x="342" y="48" class="svg-s">농도는 밖으로, 전기는 안으로 → 순이동 작음</text>
+        <rect x="6" y="122" width="306" height="28" style="fill:var(--line-2)"/>
+        <rect x="328" y="122" width="306" height="28" style="fill:var(--line-2)"/>
+        <path d="M12 119H306M12 153H306M334 119H628M334 153H628" style="stroke:var(--svg-a);stroke-width:7;stroke-linecap:round;stroke-dasharray:0 10"/>
+        <text x="20" y="70" class="svg-s">세포 밖</text><text x="20" y="232" class="svg-s">세포 안</text>
+        <text x="342" y="70" class="svg-s">세포 밖</text><text x="342" y="232" class="svg-s">세포 안</text>
+        <text x="96" y="112" class="svg-s" style="fill:var(--bad)">+ + + + + +</text>
+        <text x="96" y="172" class="svg-s" style="fill:var(--info)">− − − − − −</text>
+        <text x="418" y="112" class="svg-s" style="fill:var(--bad)">+ + + + + +</text>
+        <text x="418" y="172" class="svg-s" style="fill:var(--info)">− − − − − −</text>
+        <g class="sf-e">
+          <circle cx="34" cy="88" r="5"/><circle cx="52" cy="98" r="5"/><circle cx="70" cy="84" r="5"/><circle cx="88" cy="96" r="5"/><circle cx="106" cy="86" r="5"/>
+          <circle cx="124" cy="98" r="5"/><circle cx="142" cy="84" r="5"/><circle cx="160" cy="94" r="5"/><circle cx="62" cy="76" r="5"/><circle cx="132" cy="74" r="5"/>
+          <circle cx="70" cy="196" r="5"/><circle cx="130" cy="206" r="5"/>
+          <circle cx="380" cy="90" r="5"/><circle cx="450" cy="98" r="5"/>
+          <circle cx="356" cy="190" r="5"/><circle cx="374" cy="202" r="5"/><circle cx="392" cy="186" r="5"/><circle cx="410" cy="198" r="5"/><circle cx="428" cy="188" r="5"/>
+          <circle cx="446" cy="204" r="5"/><circle cx="464" cy="190" r="5"/><circle cx="482" cy="202" r="5"/><circle cx="398" cy="210" r="5"/><circle cx="470" cy="212" r="5"/>
+        </g>
+        <g text-anchor="middle" class="svg-s">
+          <text x="200" y="78">농도</text><text x="236" y="78">전기</text><text x="282" y="78">순 추진력</text>
+          <text x="522" y="78">농도</text><text x="558" y="78">전기</text><text x="602" y="78">순 추진력</text>
+        </g>
+        <path d="M200 86V196" style="fill:none;stroke:var(--svg-c);stroke-width:2" marker-end="url(#m73y)"/>
+        <path d="M236 86V196" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m73b)"/>
+        <path d="M282 86V184" style="fill:none;stroke:var(--svg-d);stroke-width:7" marker-end="url(#m73r)"/>
+        <path d="M522 196V86" style="fill:none;stroke:var(--svg-c);stroke-width:2" marker-end="url(#m73y)"/>
+        <path d="M558 86V196" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m73b)"/>
+        <path d="M602 160V116" style="fill:none;stroke:var(--svg-d);stroke-width:1.6" marker-end="url(#m73s)"/>
+      </svg>
+      <figcaption>K⁺는 안에 많아 나가려 하지만, 음(−)인 안쪽이 끌어당겨 통로가 열려도 순이동이 거의 없다. Na⁺는 두 힘이 겹쳐 통로만 열리면 쏟아져 들어온다(10번 소단원).</figcaption>
+    </figure>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"지금 얘는 전압과 농도 구배가 서로 반대 방향이지. 그래서 지금 화살표가 얇게 그려졌죠. 추진력이 훨씬 약합니다."(09:32) 이 'K⁺는 열려 있어도 별로 안 나간다'는 내용이 8번 소단원의 K⁺ 누출 통로와 휴지막전위로 그대로 이어집니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u3"></div>
+</section>
+
+<!-- ================= U4 수동 수송체 ================= -->
+<section class="unit" id="u4">
+  <header class="unit-head"><span class="no">4</span><div>
+    <h3>수송체와 수동 수송체 — 방향은 못 정하고, 물질만 고른다</h3>
+    <p class="lead">수송체는 대개 한 종류의 용질만 나른다. 그중 수동 수송체는 전기화학적 구배를 따라서만 움직이므로 방향을 바꾸지 못하고, 이동을 빠르게 할 뿐이다.</p>
+  </div></header>
+  <div class="body">
+    <h4>수송체(transporter)</h4>
+    <ul>
+      <li><b>선택성이 뛰어나 대개 한 종류의 용질만</b> 전달한다. 막마다 고유한 수송체 세트를 가진다 — 뉴클레오타이드만, 당만, 아미노산만, Na⁺·K⁺만 나르는 식(그림 12-8, 10:30).</li>
+      <li>예를 들어 당을 더 많이 들여보내고 싶으면 당 수송체를 <b>더 많이 발현</b>시키면 된다(11:29).</li>
+      <li>두 종류: ① <b>수동 수송체</b> ② <b>능동 수송체 = 펌프</b>(5·6번 소단원).</li>
+    </ul>
+    <h4>수동 수송체</h4>
+    <ul>
+      <li>전기화학적 구배에 <b>순행</b>하여 용질을 옮긴다.</li>
+      <li><b class="k">수송 방향을 결정하는 데는 관여하지 못한다</b> — 방향은 이미 만들어진 구배가 정한다. 대신 <b class="k">어떤 용질을 수송할지는 매우 선택적</b>이다. "얘는 그냥 빠를 뿐이에요."(11:29)</li>
+      <li><b>포도당 수송체(glucose transporter)</b>: 자연계의 포도당인 <b>D형 포도당만</b> 결합할 수 있고, 해당과정에 쓸 수 없는 <b>L형 포도당은 결합하지 못한다</b>. 효소의 기질 특이성처럼 결합 부위의 <b>입체 구조</b>가 거울상까지 구분한다(12:28, 4차시).</li>
+      <li>작동 방식(그림 12-9): 바깥쪽 열림 ⇄ 닫힘(점유) ⇄ 안쪽 열림 상태를 <b>무작위로, 가역적으로</b> 오간다. 포도당이 많은 쪽에서 더 자주 결합하므로 순이동은 농도 구배 방향이 된다.</li>
+      <li>11/17에 배운 <b>촉진 확산</b>이 바로 이것 — 수송체가 포화되면 속도가 더 오르지 않는다(11/17 페이지 6번 소단원).</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 236" role="img" aria-label="왼쪽: 수동 수송체의 세 상태. 바깥쪽으로 열린 상태에서 포도당이 결합하고, 양쪽이 닫힌 상태를 거쳐, 안쪽으로 열린 상태에서 포도당이 세포질로 풀려난다. 세 상태는 양방향으로 오간다. 오른쪽: 입체 특이성. 결합 부위의 모양에 D형 포도당은 꼭 맞지만, 거울상인 L형 포도당은 맞지 않아 결합하지 못한다">
+        <defs><marker id="m74" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker></defs>
+        <rect x="0" y="86" width="420" height="64" style="fill:var(--line-2)"/>
+        <path d="M6 82H420M6 154H420" style="stroke:var(--svg-a);stroke-width:9;stroke-linecap:round;stroke-dasharray:0 12"/>
+        <text x="8" y="22" class="svg-s">세포 밖 (포도당 많음)</text>
+        <text x="8" y="228" class="svg-s">세포질 (포도당 적음)</text>
+        <g text-anchor="middle" class="svg-t" style="font-size:12px">
+          <text x="70" y="44">바깥쪽 열림</text><text x="210" y="44">닫힘 · 결합</text><text x="350" y="44">안쪽 열림</text>
+        </g>
+        <polygon points="44,72 60,72 68,164 56,164" class="sf-a"/>
+        <polygon points="80,72 96,72 84,164 72,164" class="sf-a"/>
+        <polygon points="70,54 77,58 77,66 70,70 63,66 63,58" class="sf-c"/>
+        <polygon points="188,72 210,72 202,96 202,140 210,164 188,164" class="sf-a"/>
+        <polygon points="232,72 210,72 218,96 218,140 210,164 232,164" class="sf-a"/>
+        <polygon points="210,110 217,114 217,122 210,126 203,122 203,114" class="sf-c"/>
+        <polygon points="332,72 348,72 340,164 324,164" class="sf-a"/>
+        <polygon points="352,72 368,72 376,164 360,164" class="sf-a"/>
+        <polygon points="350,174 357,178 357,186 350,190 343,186 343,178" class="sf-c"/>
+        <path d="M120 118H158" class="svg-line" marker-start="url(#m74)" marker-end="url(#m74)"/>
+        <path d="M262 118H300" class="svg-line" marker-start="url(#m74)" marker-end="url(#m74)"/>
+        <rect x="436" y="10" width="198" height="216" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <text x="450" y="34" class="svg-t">입체 특이성</text>
+        <text x="450" y="52" class="svg-s">결합 부위의 모양이 맞아야 붙는다</text>
+        <rect x="456" y="70" width="70" height="46" rx="6" class="sf-a"/>
+        <path d="M472 70V86H490V96H510V70" style="fill:var(--card);stroke:var(--svg-b);stroke-width:1.6"/>
+        <path d="M472 70V86H490V96H510V70Z" class="sf-c"/>
+        <text x="538" y="90" class="svg-t" style="font-size:12px">D-포도당</text>
+        <text x="538" y="106" class="svg-s" style="fill:var(--ok)">✓ 결합</text>
+        <rect x="456" y="140" width="70" height="46" rx="6" class="sf-a"/>
+        <path d="M472 140V156H490V166H510V140" style="fill:var(--card);stroke:var(--svg-b);stroke-width:1.6"/>
+        <path d="M472 140V166H492V156H510V140Z" style="fill:var(--warn-soft);fill-opacity:.8;stroke:var(--svg-d);stroke-width:1.6;stroke-dasharray:4 3"/>
+        <text x="538" y="160" class="svg-t" style="font-size:12px">L-포도당</text>
+        <text x="538" y="176" class="svg-s" style="fill:var(--bad)">✗ 결합 불가</text>
+        <text x="450" y="210" class="svg-s">거울상이면 홈에 맞지 않는다</text>
+      </svg>
+      <figcaption>수동 수송체는 세 상태를 무작위로 오간다. 포도당이 많은 쪽에서 더 자주 붙으니 순이동은 구배 방향이고, 수송체는 방향을 정하지 못하고 속도만 높인다.</figcaption>
+    </figure>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"수동 수송체는요. 이 수송 방향을 결정하지는 못합니다. 얘는 그냥 빠를 뿐이에요. 하지만 어떤 물질을 수송할지는 결정되어 있습니다."(11:29) "효소에서도 수송체에서도 마찬가지입니다. 입체적으로 얘네가 특이적으로 특정 물질과만 작동할 수 있다."(12:28)</div>
+  </div>
+  <div class="quiz" data-quiz="u4"></div>
+</section>
+
+<!-- ================= U5 ATP 구동 펌프 ================= -->
+<section class="unit" id="u5">
+  <header class="unit-head"><span class="no">5</span><div>
+    <h3>펌프의 세 종류와 ATP 구동 펌프 — Na⁺-K⁺ 펌프 · Ca²⁺ 펌프</h3>
+    <p class="lead">펌프는 에너지를 투입해 농도 구배를 거슬러 나른다. 에너지원에 따라 세 종류다. 가장 대표적인 Na⁺-K⁺ 펌프는 ATP로 자기 자신을 인산화했다가 떼어 내며 한 바퀴를 돈다.</p>
+  </div></header>
+  <div class="body">
+    <h4>펌프(pump) — 능동 수송 막관통 단백질</h4>
+    <div class="tbl"><table>
+      <thead><tr><th>종류</th><th>에너지원</th><th>방식</th></tr></thead>
+      <tbody>
+        <tr><th>① 구배 구동 펌프</th><td>다른 용질의 농도 구배</td><td>한 용질의 구배 <b>순행</b> 수송을 다른 용질의 구배 <b>역행</b> 수송과 연계 (6번 소단원)</td></tr>
+        <tr><th>② ATP 구동 펌프</th><td>ATP 가수분해</td><td>방출된 에너지로 구배 역행 수송 — 예: Na⁺-K⁺ 펌프, Ca²⁺ 펌프</td></tr>
+        <tr><th>③ 광 구동 펌프</th><td>빛</td><td>빛 에너지로 구배 역행 수송 — 예: 일부 세균의 박테리오로돕신(H⁺ 방출)</td></tr>
+      </tbody>
+    </table></div>
+    <h4>ATP 구동 Na⁺ 펌프 = Na⁺-K⁺ ATP 가수분해효소 = Na⁺-K⁺ 펌프</h4>
+    <ul>
+      <li>세 이름은 모두 같은 단백질이다. 이름을 풀면 "ATP로 구동되는, Na⁺와 K⁺를 나르는, ATP를 가수분해하는 효소"(15:22).</li>
+      <li><b>동물세포의 에너지 사용에서 중심적 역할</b>을 한다.</li>
+      <li>ATP 가수분해 에너지가 펌프의 <b>단백질 구조 변화</b>를 차례로 유도해 Na⁺와 K⁺를 교환한다 — <b>Na⁺ 3개를 밖으로, K⁺ 2개를 안으로</b>.</li>
+      <li>원형질막을 경계로 <b>가파른 Na⁺ 농도 구배</b>가 생기고(밖에 많음), K⁺는 안에 쌓인다 → 전기화학적 구배. 이 구배가 나중에 신경 신호(10번 소단원)와 구배 구동 펌프(6번 소단원)의 동력이 된다. "평소에 퍼텐셜을 형성해 놓는 거죠."(15:22)</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 232" role="img" aria-label="Na+-K+ 펌프의 한 바퀴: 1 세포질 쪽에서 Na+ 3개가 결합한다. 2 펌프가 ATP를 가수분해해 스스로 인산화된다. 3 구조가 바뀌어 바깥쪽으로 열리며 Na+을 내보낸다. 4 바깥의 K+ 2개가 결합한다. 5 펌프가 스스로 탈인산화된다. 6 원래 구조로 돌아가 세포질 쪽으로 K+을 내놓는다. 각 단계는 앞 단계에 의존하므로 한 단계라도 멈추면 전체 회로가 멈춘다">
+        <defs><marker id="m75" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker></defs>
+        <text x="320" y="22" text-anchor="middle" class="svg-t">ATP 1개 → Na⁺ 3개 밖으로, K⁺ 2개 안으로</text>
+        <rect x="14" y="40" width="180" height="54" rx="12" class="sf-e"/>
+        <rect x="230" y="40" width="180" height="54" rx="12" class="sf-e"/>
+        <rect x="446" y="40" width="180" height="54" rx="12" class="sf-e"/>
+        <rect x="446" y="160" width="180" height="54" rx="12" class="sf-c"/>
+        <rect x="230" y="160" width="180" height="54" rx="12" class="sf-c"/>
+        <rect x="14" y="160" width="180" height="54" rx="12" class="sf-c"/>
+        <g text-anchor="middle">
+          <text x="104" y="63" class="svg-t" style="font-size:12px">① Na⁺ 3개 결합</text><text x="104" y="81" class="svg-s">세포질 쪽으로 열린 상태</text>
+          <text x="320" y="63" class="svg-t" style="font-size:12px">② ATP로 자기 인산화</text><text x="320" y="81" class="svg-s">ATP → ADP, 인산이 펌프에</text>
+          <text x="536" y="63" class="svg-t" style="font-size:12px">③ 구조 변화 → Na⁺ 방출</text><text x="536" y="81" class="svg-s">바깥쪽으로 열림</text>
+          <text x="536" y="183" class="svg-t" style="font-size:12px">④ K⁺ 2개 결합</text><text x="536" y="201" class="svg-s">바깥쪽에서 붙음</text>
+          <text x="320" y="183" class="svg-t" style="font-size:12px">⑤ 탈인산화</text><text x="320" y="201" class="svg-s">인산이 떨어짐</text>
+          <text x="104" y="183" class="svg-t" style="font-size:12px">⑥ 원래 구조 → K⁺ 방출</text><text x="104" y="201" class="svg-s">세포질 쪽으로 열림</text>
+          <text x="320" y="124" class="svg-s">각 단계가 앞 단계에 의존 —</text>
+          <text x="320" y="140" class="svg-s" style="fill:var(--bad)">한 단계라도 멈추면 전체 회로가 멈춤</text>
+        </g>
+        <path d="M196 67H226" class="svg-line" marker-end="url(#m75)"/>
+        <path d="M412 67H442" class="svg-line" marker-end="url(#m75)"/>
+        <path d="M536 96V156" class="svg-line" marker-end="url(#m75)"/>
+        <path d="M444 187H414" class="svg-line" marker-end="url(#m75)"/>
+        <path d="M228 187H198" class="svg-line" marker-end="url(#m75)"/>
+        <path d="M104 158V98" class="svg-line" marker-end="url(#m75)"/>
+      </svg>
+      <figcaption>인산이 붙으면 구조가 바뀌어 Na⁺에 대한 친화도가 떨어지고(방출), K⁺에 대한 친화도가 올라간다. 인산이 떨어지면 그 반대. 파란 칸은 Na⁺ 쪽, 노란 칸은 K⁺ 쪽 절반.</figcaption>
+    </figure>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"나트륨이 결합하면요. 이 펌프 자신이요. 여기에다가 자기가 ATP를 써서 인산화가 됩니다. 스스로 인산화가 돼요… 일련의 굉장히 연속적인 이 아름다운 과정을 통해서 펌핑이 되고요. 이 중에서 한 단계라도 멈추면요. 여기에서 더 이상 반응이 일어나지 않습니다."(17:18) 이름이 여러 개인 것은 "단답형 주관식 같은 걸로 안 되겠죠"(15:22) — 이름보다 원리를 보세요.</div>
+
+    <h4>ATP 구동 Ca²⁺ 펌프</h4>
+    <ul>
+      <li>Ca²⁺는 세포 안의 여러 분자와 결합해 그 활성을 바꾼다. 세포는 세포기질의 <b>유리(free) Ca²⁺ 농도가 낮을수록</b> Ca²⁺ 농도가 오를 때 <b>더 민감하게 반응</b>한다.</li>
+      <li>그래서 대부분의 진핵세포는 바깥 Ca²⁺ 농도가 훨씬 높아도 세포기질의 유리 Ca²⁺를 <b>매우 낮게 유지</b>한다 — Ca²⁺ 펌프가 ATP로 Ca²⁺를 세포질 밖으로 퍼낸다(한 번에 2개).</li>
+      <li>Na⁺ 펌프와 <b>거의 같은 방식</b>(ATP로 자기 인산화 → 구조 변화)으로 작동한다. 주요 차이: <b>두 번째 이온과 결합해 수송하지 않고도</b> 처음 구조로 돌아갈 수 있다 — Na⁺-K⁺ 펌프는 두 종류를 반대 방향으로, Ca²⁺ 펌프는 한 종류만 나른다(18:20).</li>
+      <li>둘이 닮았다는 것은 <b>공통된 진화 기원</b>을 암시한다. 진핵생물에 잘 보존되어 있다 → "예전부터 굉장히 중요했구나"(18:20).</li>
+    </ul>
+    <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>자료 표기 주의</b>강의는 Ca²⁺ 펌프가 Ca²⁺를 "바깥쪽으로 퍼낸다"고 했고(18:20), 15쪽 그림은 <b>근소포체</b>의 Ca²⁺ 펌프로 세포질의 Ca²⁺를 <b>근소포체 내강</b>으로 넣는 모습입니다. 표 12-2에 둘 다 있습니다 — 원형질막 Ca²⁺ 펌프(세포 밖으로)와 근소포체·소포체 Ca²⁺ 펌프(소기관 안으로). 어느 쪽이든 핵심은 "세포기질의 Ca²⁺를 낮게 유지"입니다(11/10 근소포체 Ca²⁺ 저장과 연결).</div>
+  </div>
+  <div class="quiz" data-quiz="u5"></div>
+</section>
+
+<!-- ================= U6 구배 구동 펌프와 H⁺ 펌프 ================= -->
+<section class="unit" id="u6">
+  <header class="unit-head"><span class="no">6</span><div>
+    <h3>구배 구동 펌프와 H⁺ 펌프 — 남의 구배를 빌려 쓰기</h3>
+    <p class="lead">한 물질이 구배를 따라 흘러내려가는 힘으로 다른 물질을 구배 거꾸로 끌어올린다. 동물은 주로 Na⁺ 구배를, 식물·균류·세균은 H⁺ 구배를 빌려 쓴다.</p>
+  </div></header>
+  <div class="body">
+    <h4>구배 구동 펌프(gradient-driven pump)</h4>
+    <ul>
+      <li>첫 번째 용질이 농도 구배를 <b>따라</b> 이동하는 에너지로 두 번째 용질을 농도 구배 <b>거슬러</b> 수송하는 능동 수송체.</li>
+      <li>① <b class="k">동방향 수송체(symporter)</b>: 두 용질을 <b>같은 방향</b>으로. ② <b class="k">역방향 수송체(antiporter)</b>: 두 용질을 <b>반대 방향</b>으로.</li>
+      <li>참고 — <b>단일 수송체(uniporter)</b>: 한 용질만 구배를 따라 나르는 수동 수송체(4번 소단원)라 펌프가 아니다.</li>
+    </ul>
+    <h4>포도당-Na⁺ 동방향 수송체</h4>
+    <ul>
+      <li>포도당을 능동적으로 들여오는 추진력으로 <b>Na⁺의 전기화학적 구배</b>를 쓴다. Na⁺은 밖에 많고 안쪽이 음이라 강하게 들어오려 한다 → 이 힘에 포도당을 함께 실어 들여온다(21:08).</li>
+      <li>바깥쪽 열림 → 닫힘 → 안쪽 열림으로 바뀌는데, <b>Na⁺과 포도당이 둘 다 결합했을 때만</b> 상태가 바뀐다(그림 12-16). 그래서 Na⁺만 새어 들어오거나 포도당만 넘어가지 않는다.</li>
+    </ul>
+    <h4>장 상피세포의 포도당 흡수 — 세 단백질의 연계</h4>
+    <div class="flow">
+      <div class="st"><b>① 장 내강 쪽 (정단면)</b>Na⁺ 구동 포도당 동방향 수송체가 포도당을 구배 <b>거슬러</b> 세포 안으로</div><span class="ar">→</span>
+      <div class="st"><b>② 세포 안</b>포도당 농도가 높아짐</div><span class="ar">→</span>
+      <div class="st"><b>③ 기저·측면 쪽</b>수동 포도당 단일 수송체로 구배 <b>따라</b> 세포외액(혈액)으로 → 다른 조직이 사용</div>
+    </div>
+    <ul>
+      <li>함께 들어온 Na⁺은 기저·측면 막의 <b>Na⁺ 펌프</b>가 계속 퍼낸다 → 세포 안 Na⁺이 낮게 유지되어 Na⁺ 구배가 무너지지 않는다. "하나의 세포에서도 굉장히 여러 가지의 단백질들이 서로 연계되어서 수송에 관여하고 있다."(21:08)</li>
+      <li>정단면과 기저면 사이의 <b>밀착 연접</b>이 두 면의 수송체가 섞이지 않게 막는다(11/17: 세포 연접이 막단백질의 구역을 제한).</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 286" role="img" aria-label="왼쪽: 수송체 세 종류. 단일 수송체는 한 물질만 구배를 따라 나르고, 동방향 수송체는 두 물질을 같은 방향으로, 역방향 수송체는 두 물질을 반대 방향으로 나른다. 오른쪽: 장 상피세포. 장 내강 쪽 막의 Na+ 구동 포도당 동방향 수송체가 Na+과 함께 포도당을 세포 안으로 들여와 세포 안 포도당 농도가 높아지고, 기저면의 수동 포도당 단일 수송체가 포도당을 혈액 쪽으로 내보낸다. 기저면의 Na+-K+ 펌프는 ATP를 써서 Na+을 밖으로 퍼내고 K+을 들여온다. 위쪽 양 끝의 밀착 연접이 두 면을 나눈다">
+        <defs>
+          <marker id="m76r" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-d)"/></marker>
+          <marker id="m76b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-e)"/></marker>
+          <marker id="m76y" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-c)"/></marker>
+        </defs>
+        <rect x="6" y="6" width="240" height="274" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <text x="20" y="30" class="svg-t">수송체의 종류</text>
+        <rect x="6" y="116" width="240" height="40" style="fill:var(--line-2)"/>
+        <rect x="38" y="102" width="26" height="68" rx="9" class="sf-a"/>
+        <rect x="112" y="102" width="26" height="68" rx="9" class="sf-a"/>
+        <rect x="186" y="102" width="26" height="68" rx="9" class="sf-a"/>
+        <path d="M51 64V204" style="fill:none;stroke:var(--svg-d);stroke-width:2" marker-end="url(#m76r)"/>
+        <path d="M119 64V204" style="fill:none;stroke:var(--svg-d);stroke-width:2" marker-end="url(#m76r)"/>
+        <path d="M131 64V204" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m76b)"/>
+        <path d="M193 64V204" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m76b)"/>
+        <path d="M205 204V64" style="fill:none;stroke:var(--svg-d);stroke-width:2" marker-end="url(#m76r)"/>
+        <g text-anchor="middle">
+          <text x="51" y="228" class="svg-t" style="font-size:12px">단일</text><text x="51" y="244" class="svg-s">수동 · 1종</text>
+          <text x="125" y="228" class="svg-t" style="font-size:12px">동방향</text><text x="125" y="244" class="svg-s">같은 쪽</text>
+          <text x="199" y="228" class="svg-t" style="font-size:12px">역방향</text><text x="199" y="244" class="svg-s">반대 쪽</text>
+        </g>
+        <circle cx="30" cy="266" r="5" style="fill:var(--svg-d)"/><text x="40" y="270" class="svg-s">옮길 물질</text>
+        <circle cx="118" cy="266" r="5" style="fill:var(--svg-e)"/><text x="128" y="270" class="svg-s">함께 가는 이온</text>
+        <text x="262" y="30" class="svg-t">장 상피세포</text>
+        <text x="530" y="30" text-anchor="middle" class="svg-s">장 내강 — 포도당 낮음</text>
+        <path d="M330 62V250H570V62" style="fill:var(--bg);stroke:var(--svg-line);stroke-width:1.6"/>
+        <path d="M330 62L342 46L354 62L366 46L378 62L390 46L402 62L414 46L426 62L438 46L450 62L462 46L474 62L486 46L498 62L510 46L522 62L534 46L546 62L558 46L570 62" style="fill:var(--bg);stroke:var(--svg-line);stroke-width:1.6"/>
+        <rect x="324" y="62" width="12" height="20" style="fill:var(--svg-line)"/>
+        <rect x="564" y="62" width="12" height="20" style="fill:var(--svg-line)"/>
+        <text x="318" y="78" text-anchor="end" class="svg-s">밀착 연접</text>
+        <text x="450" y="150" text-anchor="middle" class="svg-t" style="font-size:12px">세포 안 — 포도당 높음</text>
+        <text x="450" y="166" text-anchor="middle" class="svg-s">Na⁺은 낮게 유지</text>
+        <rect x="400" y="44" width="22" height="40" rx="8" class="sf-a"/>
+        <path d="M405 20V104" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m76b)"/>
+        <path d="M417 20V104" style="fill:none;stroke:var(--svg-d);stroke-width:2" marker-end="url(#m76r)"/>
+        <text x="430" y="104" class="svg-s">Na⁺ + 포도당 (동방향)</text>
+        <rect x="370" y="232" width="22" height="36" rx="8" class="sf-e"/>
+        <path d="M381 196V280" style="fill:none;stroke:var(--svg-d);stroke-width:2" marker-end="url(#m76r)"/>
+        <text x="372" y="190" text-anchor="middle" class="svg-s">포도당 (단일·수동)</text>
+        <rect x="500" y="232" width="24" height="36" rx="8" class="sf-c"/>
+        <path d="M506 196V280" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m76b)"/>
+        <path d="M518 280V196" style="fill:none;stroke:var(--svg-c);stroke-width:2" marker-end="url(#m76y)"/>
+        <text x="512" y="190" text-anchor="middle" class="svg-s">Na⁺ 밖 · K⁺ 안</text>
+        <text x="532" y="262" class="svg-s">ATP</text>
+        <text x="450" y="282" text-anchor="middle" class="svg-s">세포외액 · 혈액</text>
+      </svg>
+      <figcaption>Na⁺ 펌프가 만든 Na⁺ 구배를 동방향 수송체가 빌려 포도당을 끌어올리고, 쌓인 포도당은 반대쪽에서 단일 수송체로 흘러 나간다.</figcaption>
+    </figure>
+    <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>자료 표기 주의</b>18쪽 세 번째 항목 "Na⁺ 구배-구동 포도당 동방향수송체"는 첫 항목과 같은 이름이 반복된 것입니다. 그림대로 <b>기저면의 수동 포도당 단일 수송체</b>로 읽으세요(강의도 "포도당은 이제 여기 단일 수송체를 통해서" 22:07).</div>
+
+    <h4>H⁺ 펌프 — 식물 · 진균 · 박테리아의 방식</h4>
+    <ul>
+      <li>식물 · 진균 · 박테리아는 용질을 수송할 때 Na⁺ 대신 <b>H⁺</b> 구배를 쓴다. 평소에 ATP로 <b>H⁺를 세포 밖으로 퍼내</b> 두면 세포 주변이 <b>산성</b>이 되고, 이 H⁺의 전기화학적 구배로 여러 <b>H⁺ 동방향 수송체</b>를 구동한다 — "나중에 쓰려고 퍼텐셜 에너지를 형성해 놓는 것"(23:02).</li>
+      <li>동물세포의 원형질막에는 많지 않다(필기 "동물에는 많지 X"). 동물에서는 세포소기관에 있다 — <b>리소좀·엔도솜 막의 H⁺ 펌프</b>가 내부를 산성으로 유지한다. 가수분해효소는 산성에서만 활성이 있어서 리소좀이 터져 중성인 세포질로 나와도 일을 못 한다(24:03, 11/10 · 11/11 페이지).</li>
+    </ul>
+    <div class="tbl"><table>
+      <thead><tr><th>펌프 (표 12-2)</th><th>위치</th><th>에너지원</th><th>기능</th></tr></thead>
+      <tbody>
+        <tr><th>Na⁺ 구동 포도당 펌프</th><td>소장 · 신장 상피세포 정단면</td><td>Na⁺ 구배</td><td>포도당 능동 유입</td></tr>
+        <tr><th>Na⁺-H⁺ 교환체</th><td>동물세포 원형질막</td><td>Na⁺ 구배</td><td>H⁺ 방출, pH 조절</td></tr>
+        <tr><th>Na⁺ 펌프 (Na⁺-K⁺ ATP 가수분해효소)</th><td>대부분 동물세포 원형질막</td><td>ATP</td><td>Na⁺ 방출 · K⁺ 유입</td></tr>
+        <tr><th>Ca²⁺ 펌프</th><td>진핵세포 원형질막</td><td>ATP</td><td>Ca²⁺ 방출</td></tr>
+        <tr><th>Ca²⁺ 펌프</th><td>근소포체 · 소포체 막</td><td>ATP</td><td>소기관 안으로 Ca²⁺ 수송</td></tr>
+        <tr><th>H⁺ 펌프</th><td>식물 · 진균 · 일부 세균 원형질막</td><td>ATP</td><td>H⁺ 방출</td></tr>
+        <tr><th>H⁺ 펌프</th><td>동물 리소좀막, 식물 · 진균 액포막</td><td>ATP</td><td>세포질 → 리소좀 · 액포 안으로 H⁺</td></tr>
+        <tr><th>박테리오로돕신</th><td>일부 세균 원형질막</td><td>빛</td><td>H⁺ 방출</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:13.5px;color:var(--muted);margin:-6px 0 0">표는 "이것들 한번 읽어보시고요. 한 번만 읽어보세요"(23:02) 정도로 넘어갔습니다. Na⁺-H⁺ 교환체는 역방향 수송체의 예입니다.</p>
+  </div>
+  <div class="quiz" data-quiz="u6"></div>
+</section>
+
+<!-- ================= U7 이온 통로: 선택성과 개폐 ================= -->
+<section class="unit" id="u7">
+  <header class="unit-head"><span class="no">7</span><div>
+    <h3>이온 통로 — 고르고, 열고 닫는다</h3>
+    <p class="lead">이온 통로는 특정 이온만 골라 통과시키고, 자극에 따라 열렸다 닫혔다를 반복한다. 열리면 수송체보다 훨씬 빠르지만, 언제나 구배를 따라서만 흐른다.</p>
+  </div></header>
+  <div class="body">
+    <ul>
+      <li><b class="k">통로(channel)</b>: 세포나 세포소기관의 안팎으로 작은 수용성 분자가 <b>수동적으로</b> 이동할 수 있게 하는 막관통 막공. <b class="k">이온 통로</b>는 그중 이온을 통과시키는 것으로, 개폐를 반복한다(필기).</li>
+    </ul>
+    <h4>이온 통로의 두 가지 성질</h4>
+    <ul>
+      <li><b>① 이온 선택성(ion selectivity)</b>: 특정 무기 이온만 통과시킨다 — Na⁺ 통로는 Na⁺만, K⁺ 통로는 K⁺만. 통로의 <b>지름 · 형태</b>, 그리고 통로가 살짝 좁아지는 부분(<b>선택성 필터</b>) 표면에 있는 <b>전하성 아미노산의 분포</b>가 결정한다. 그 잔기들이 지나가는 이온을 "검사"한다(25:02).</li>
+      <li><b>② 선택적 개방성(개폐)</b>: 대부분의 이온 통로는 관문처럼 열리고 닫힌다. <b>특이적 자극</b>에 의해 구조 변화가 촉발되어 개폐 상태가 바뀐다. 이때의 구조 변화는 "열림/닫힘"뿐이다.</li>
+    </ul>
+    <div class="tbl"><table>
+      <thead><tr><th></th><th>이온 통로</th><th>수송체 (수동 수송체 · 펌프)</th></tr></thead>
+      <tbody>
+        <tr><th>구조 변화</th><td>열고 닫을 때만 — 이온이 지날 때마다 바뀌지 않음</td><td>용질이 결합할 때마다 구조가 바뀜</td></tr>
+        <tr><th>속도</th><td><b>장점</b>: 최대 수송 속도에서 유리 — 열려 있는 동안 계속 흘려보냄</td><td>한 번에 하나씩 넘기므로 상대적으로 느림</td></tr>
+        <tr><th>방향</th><td><b>단점</b>: 에너지원과 연계한 능동 수송 불가 — 막 투과성을 순간적으로 높일 뿐, <b>무조건 순행</b></td><td>수동 수송체는 순행, 펌프는 역행 가능</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li>예: Ca²⁺ 펌프로 Ca²⁺를 퍼내 둔 뒤 Ca²⁺ 통로가 열리면, Ca²⁺가 구배를 따라 순식간에 들어온다. 그래서 통로가 일을 하려면 "평소에 퍼텐셜 에너지를 잘 형성해 놔야" 한다(26:56).</li>
+    </ul>
+    <h4>무엇이 통로를 여나 — 관문의 세 종류</h4>
+    <ul>
+      <li><b>① 전위 의존적 통로(voltage-gated)</b>: <b>막전위</b>가 개방 확률을 조절한다. <b>전압 감지기</b>가 막전위에 민감하게 반응하다가, 막전위 변화가 <b>역치 이상</b>이 되면 통로의 입체 구조를 바꿔 개방 확률을 바꾼다. 신경세포 · 근육세포 · 난자 · 원생동물 · 식물세포에 있다.</li>
+      <li><b>② 리간드 의존적 통로(ligand-gated)</b>: 통로 단백질에 <b>리간드</b>(입체적으로 꼭 맞게 결합하는 분자)가 붙으면 열린다. 리간드는 세포 밖(예: 신경전달물질) 또는 세포 안에서 올 수 있다.</li>
+      <li><b>③ 기계적 자극 의존적 통로(mechanically-gated)</b>: 통로에 가해지는 <b>물리적 힘</b>이 개폐를 조절한다. 예: <b>청각 털세포</b> — 음파에 부동섬모가 기울면 섬모를 잇는 연결 필라멘트가 통로를 당겨 열고, 양이온이 들어와 소리 신호가 전달된다(41:41). 건드리면 잎을 접는 <b>미모사</b>도 기계적 자극 의존 통로가 시작점이다.</li>
+      <li>그 밖에 빛으로 열리는 <b>광 의존적 통로</b>도 있다(11번 소단원 광유전학).</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 242" role="img" aria-label="관문의 세 종류. 위는 닫힌 상태, 아래는 열린 상태. 첫째 전위 의존적 통로는 휴지 상태(바깥 양, 안쪽 음)에서 닫혀 있다가 막이 탈분극되어 전하가 바뀌면 열린다. 둘째 리간드 의존적 통로는 리간드가 통로에 결합하면 열린다. 셋째 기계적 자극 의존적 통로는 느슨하던 연결 필라멘트가 물리적 힘으로 당겨지면 열린다. 열린 통로로는 이온이 구배를 따라 통과한다">
+        <defs><marker id="m77" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-e)"/></marker>
+        <marker id="m77y" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-c)"/></marker></defs>
+        <rect x="0" y="66" width="640" height="36" style="fill:var(--line-2)"/>
+        <rect x="0" y="168" width="640" height="36" style="fill:var(--line-2)"/>
+        <path d="M6 62H640M6 106H640M6 164H640M6 208H640" style="stroke:var(--svg-a);stroke-width:8;stroke-linecap:round;stroke-dasharray:0 12"/>
+        <path d="M214 8V236M426 8V236" style="stroke:var(--line);stroke-dasharray:5 5"/>
+        <g text-anchor="middle">
+          <text x="110" y="22" class="svg-t" style="font-size:12px">① 전위 의존적</text><text x="110" y="40" class="svg-s">막전위 변화 (역치 이상)</text>
+          <text x="320" y="22" class="svg-t" style="font-size:12px">② 리간드 의존적</text><text x="320" y="40" class="svg-s">리간드가 결합</text>
+          <text x="530" y="22" class="svg-t" style="font-size:12px">③ 기계적 자극 의존적</text><text x="530" y="40" class="svg-s">물리적 힘 (청각 털세포)</text>
+        </g>
+        <text x="12" y="90" class="svg-s" style="fill:var(--ink)">닫힘</text>
+        <text x="12" y="192" class="svg-s" style="fill:var(--ink)">열림</text>
+        <rect x="90" y="56" width="18" height="56" rx="6" class="sf-e"/><rect x="112" y="56" width="18" height="56" rx="6" class="sf-e"/>
+        <rect x="300" y="56" width="18" height="56" rx="6" class="sf-e"/><rect x="322" y="56" width="18" height="56" rx="6" class="sf-e"/>
+        <rect x="510" y="56" width="18" height="56" rx="6" class="sf-e"/><rect x="532" y="56" width="18" height="56" rx="6" class="sf-e"/>
+        <rect x="84" y="158" width="18" height="56" rx="6" class="sf-e"/><rect x="118" y="158" width="18" height="56" rx="6" class="sf-e"/>
+        <rect x="294" y="158" width="18" height="56" rx="6" class="sf-e"/><rect x="328" y="158" width="18" height="56" rx="6" class="sf-e"/>
+        <rect x="504" y="158" width="18" height="56" rx="6" class="sf-e"/><rect x="538" y="158" width="18" height="56" rx="6" class="sf-e"/>
+        <path d="M110 140V230" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m77)"/>
+        <path d="M320 140V230" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m77)"/>
+        <path d="M530 140V230" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m77)"/>
+        <text x="142" y="58" class="svg-s" style="fill:var(--bad)">+ + +</text>
+        <text x="142" y="122" class="svg-s" style="fill:var(--info)">− − −</text>
+        <text x="146" y="160" class="svg-s" style="fill:var(--info)">− − −</text>
+        <text x="146" y="224" class="svg-s" style="fill:var(--bad)">+ + +</text>
+        <text x="146" y="194" class="svg-s">탈분극</text>
+        <polygon points="352,58 366,58 359,46" class="sf-c"/>
+        <polygon points="330,156 344,156 337,144" class="sf-c"/>
+        <path d="M548 58Q568 38 592 50" style="fill:none;stroke:var(--svg-c);stroke-width:2"/>
+        <path d="M556 160L596 136" style="fill:none;stroke:var(--svg-c);stroke-width:2"/>
+        <path d="M600 134L616 124" style="fill:none;stroke:var(--svg-c);stroke-width:1.6" marker-end="url(#m77y)"/>
+        <text x="560" y="194" class="svg-s">당겨짐</text>
+      </svg>
+      <figcaption>"의존적" = 그 자극이 있어야 통로가 열린다는 뜻. 어떤 자극으로 열리든, 열린 뒤에는 이온이 전기화학적 구배를 따라 흐른다.</figcaption>
+    </figure>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"그 잔기들이 얘네를 검사를 합니다… 그렇기 때문에 우리가 아미노산을 열심히 봤던 겁니다. 결국 다 우리가 아미노산을 이해해야지 조금 더 자세히 알 수 있다."(25:02) "농도 gradient에는 역행할 수 없지만, 막 투과성을 순간적으로 굉장히 빠르게 높여 줄 수 있습니다." — "그러면 무조건 순행인가요?" "순행입니다."(26:56)</div>
+  </div>
+  <div class="quiz" data-quiz="u7"></div>
+</section>
+
+<!-- ================= U8 K⁺ 누출 통로와 네른스트 식 ================= -->
+<section class="unit" id="u8">
+  <header class="unit-head"><span class="no">8</span><div>
+    <h3>K⁺ 누출 통로와 네른스트 식 — 휴지막전위는 어떻게 생기나</h3>
+    <p class="lead">휴지 상태의 막은 주로 K⁺만 통과시킨다. K⁺가 조금 빠져나가면 안쪽이 음이 되고, 그 음전하가 더 이상의 유출을 막아 평형에 이른다. 그 평형 전위를 계산하는 식이 네른스트 식이다.</p>
+  </div></header>
+  <div class="body">
+    <h4>휴지막전위는 K⁺의 전기화학적 구배를 반영한다</h4>
+    <ul>
+      <li>동물세포의 휴지막전위(−20 ~ −200 mV)는 원형질막의 <b>K⁺에 대한 전기화학적 구배</b>를 반영한다. 이유 두 가지: ① 휴지 상태의 원형질막은 <b>주로 K⁺에 대한 투과성</b>을 가진다. ② K⁺가 세포 안의 <b>주된 양이온</b>이다.</li>
+      <li>안쪽이 음인 이유: Na⁺-K⁺ 펌프가 Na⁺를 퍼내고, 안에 쌓인 K⁺는 더 이상 크게 유출되지 않기 때문 — "안쪽이 마이너스다. 그게 중요합니다."(28:55)</li>
+    </ul>
+    <h4>K⁺ 누출 통로(K⁺ leak channel)</h4>
+    <ul>
+      <li>세포 안팎의 조건과 <b>상관없이 무작위로</b> 열리고 닫힌다 → 특별한 신호가 없어도 항상 작동한다. 열린 상태에서는 K⁺가 자유롭게 막을 가로지른다.</li>
+      <li>휴지 상태에서 주로 <b>열려 있는</b> 통로다 → 휴지 세포의 원형질막은 다른 이온보다 <b>K⁺ 투과성이 높다</b>.</li>
+      <li>나가는 양이 다른 통로에 비하면 많지 않아 '새어 나간다(leak)'는 이름이 붙었다(29:54).</li>
+    </ul>
+    <div class="flow">
+      <div class="st"><b>1 펌프</b>Na⁺-K⁺ 펌프가 K⁺를 안에 쌓아 큰 농도 구배를 만듦</div><span class="ar">→</span>
+      <div class="st"><b>2 유출</b>누출 통로가 열리면 K⁺가 구배를 따라 조금 빠져나감</div><span class="ar">→</span>
+      <div class="st"><b>3 막전위</b>남겨진 음전하 때문에 안쪽이 음(−)이 됨</div><span class="ar">→</span>
+      <div class="st"><b>4 평형</b>K⁺를 안에 붙잡는 전기적 힘 = 밖으로 나가려는 힘 → 순이동 0</div>
+    </div>
+    <ul>
+      <li>평형에서는 K⁺의 세포 안 농도가 밖보다 <b>훨씬 높은데도</b> K⁺의 전기화학적 구배가 <b>0</b>이다(25쪽). 농도가 같아지는 것이 아니라, 두 힘이 같아지는 것이다.</li>
+    </ul>
+    <h4>네른스트 식(Nernst equation)</h4>
+    <ul>
+      <li>막 양쪽의 이온 농도를 알 때 막전위를 이론적으로 계산하는 식. 엄밀히는 그 이온의 <b>평형 전위</b>를 구하는 식이다(30:56).</li>
+      <li><b>V = 62 log₁₀ (Cₒ / Cᵢ)</b> mV — Cₒ: 바깥 농도, Cᵢ: 안 농도, V: 안쪽의 전위. 37 °C, 단일 양전하(+1) 이온을 가정했다.</li>
+      <li>원래 식에는 이온의 전하수(z)가 분모에 들어가고(2가 이온이면 2로 나눔) 상수도 더 복잡하지만, 교과서가 단순화했다 — 필기 "단순화 → 막전위 구할 수 있게 처리를 해 놓음"(26쪽). <b>주어진 농도로 막전위를 구할 수 있어야</b> 한다(31:53).</li>
+      <li>요령: 농도비가 <b>10배</b>마다 <b>62 mV</b>. 바깥이 더 진하면 +, 안이 더 진하면 −.</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 250" role="img" aria-label="왼쪽: K+ 누출 통로를 통해 안에 많은 K+가 밖으로 나가려는 농도의 힘과, 음전하를 띤 안쪽이 K+를 붙잡는 전기적 힘이 같아져 순이동이 0인 평형. 오른쪽: 네른스트 식 V = 62 log10(Co/Ci) mV. 농도비가 10배이면 62 mV이고, K+ (밖 5, 안 140 mM)는 약 -90 mV, Na+ (밖 145, 안 14.5 mM)는 +62 mV다. 실제 휴지막전위는 다른 이온도 조금 새기 때문에 약 -60 ~ -70 mV다">
+        <defs>
+          <marker id="m78y" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-c)"/></marker>
+          <marker id="m78b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-e)"/></marker>
+        </defs>
+        <rect x="6" y="6" width="306" height="238" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <rect x="328" y="6" width="306" height="238" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <text x="20" y="30" class="svg-t">K⁺ 누출 통로 → 평형</text>
+        <text x="20" y="48" class="svg-s">나가려는 힘 = 붙잡는 힘 → 순이동 0</text>
+        <rect x="6" y="118" width="306" height="30" style="fill:var(--line-2)"/>
+        <path d="M12 115H306M12 151H306" style="stroke:var(--svg-a);stroke-width:7;stroke-linecap:round;stroke-dasharray:0 10"/>
+        <text x="20" y="70" class="svg-s">세포 밖</text><text x="20" y="236" class="svg-s">세포 안</text>
+        <rect x="110" y="108" width="16" height="50" rx="6" class="sf-e"/>
+        <rect x="134" y="108" width="16" height="50" rx="6" class="sf-e"/>
+        <path d="M130 176V96" style="fill:none;stroke:var(--svg-c);stroke-width:1.6" marker-end="url(#m78y)"/>
+        <text x="160" y="110" class="svg-s" style="fill:var(--bad)">+ + + +</text>
+        <text x="160" y="168" class="svg-s" style="fill:var(--info)">− − − −</text>
+        <g class="sf-c">
+          <circle cx="66" cy="92" r="5"/><circle cx="182" cy="86" r="5"/>
+          <circle cx="40" cy="186" r="5"/><circle cx="58" cy="200" r="5"/><circle cx="76" cy="184" r="5"/><circle cx="94" cy="202" r="5"/>
+          <circle cx="164" cy="190" r="5"/><circle cx="182" cy="206" r="5"/><circle cx="48" cy="214" r="5"/><circle cx="196" cy="186" r="5"/>
+        </g>
+        <g text-anchor="middle" class="svg-s"><text x="234" y="78">농도</text><text x="272" y="78">전기</text><text x="253" y="224">두 힘이 같음</text></g>
+        <path d="M234 196V88" style="fill:none;stroke:var(--svg-c);stroke-width:2" marker-end="url(#m78y)"/>
+        <path d="M272 88V196" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m78b)"/>
+        <text x="342" y="30" class="svg-t">네른스트 식</text>
+        <text x="342" y="48" class="svg-s">막 양쪽 농도로 평형 전위를 계산</text>
+        <text x="481" y="88" text-anchor="middle" class="svg-t" style="font-size:17px">V = 62 log₁₀ (Cₒ / Cᵢ) mV</text>
+        <text x="342" y="116" class="svg-s">Cₒ 바깥 농도 · Cᵢ 안 농도 · V 안쪽의 전위</text>
+        <text x="342" y="134" class="svg-s">37 °C · 전하 +1인 이온으로 단순화한 식</text>
+        <text x="342" y="164" class="svg-t" style="font-size:12px">농도비 10배 → 62 mV</text>
+        <text x="342" y="186" class="svg-s">K⁺ (밖 5, 안 140): 62 × log(5/140) ≈ −90 mV</text>
+        <text x="342" y="206" class="svg-s">Na⁺ (밖 145, 안 14.5): 62 × log 10 = +62 mV</text>
+        <text x="342" y="228" class="svg-s">실제 휴지막전위는 약 −60 ~ −70 mV</text>
+      </svg>
+      <figcaption>K⁺만 통과시키는 막이라면 막전위는 K⁺의 평형 전위(약 −90 mV)가 된다. 실제 휴지막전위가 그보다 덜 음인 것은 Na⁺ 같은 다른 이온도 조금씩 새기 때문(참고).</figcaption>
+    </figure>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"제일 중요한 통로 중에 하나가 바로 요놈입니다. 칼륨 이온 누출 통로라는 건데요."(28:55) 네른스트 식은 "이 교과서에서는 굉장히 간단하게 이렇게 정리를 해 놨습니다. 잘 알아두십시오… 예를 들어서 이 농도를 줬어. 이 농도를 줬어. 막전위는 얼마일까? 하면 구하실 수 있겠죠."(30:56~31:53) 로그 계산이 나올 수 있습니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u8"></div>
+</section>
+
+<!-- ================= U9 패치클램프 기록 ================= -->
+<section class="unit" id="u9">
+  <header class="unit-head"><span class="no">9</span><div>
+    <h3>패치클램프 기록 — 통로 하나의 열림과 닫힘을 본다</h3>
+    <p class="lead">아주 가는 유리관으로 막의 작은 조각을 잡아, 그 안의 이온 통로 하나로 흐르는 전류를 잰다. 통로는 반쯤 열리는 법 없이, 완전히 열리거나 완전히 닫힌다.</p>
+  </div></header>
+  <div class="body">
+    <ul>
+      <li><b class="k">패치클램프 기록(patch-clamp recording)</b>: 이온 통로 분자를 통한 <b>전류의 흐름</b>을 탐지하고 측정하는 방법. 미세한 유리관을 <b>미세전극</b>으로 써서 세포 표면의 작은 조각을 분리해 전기적으로 접촉한다.</li>
+      <li>유리관 끝을 막에 대고 살짝 빨아들이면 유리관과 막 사이가 매우 단단히 밀착되어 그 틈으로 이온이 새지 않는다 → 통로 하나가 열릴 때 흐르는 이온이 모두 유리관으로 들어와 측정된다(강의 영상).</li>
+      <li><b>세포에 붙인 채</b> 기록할 수도 있고, 막 조각을 <b>떼어 내</b> 기록할 수도 있다. 떼어 내면 그 조각을 그대로 <b>다른 조성의 용액에 담가</b>, 원래 세포와 다른 이온 환경이나 약물에서 통로가 어떻게 반응하는지 볼 수 있다(32:49). 떼어 낸 조각의 세포질 쪽 면을 바깥으로 노출시키는 방식(inside-out)이면 세포 안쪽 환경을 바꿔 가며 볼 수 있다(37:40).</li>
+    </ul>
+    <h4>기록에서 알 수 있는 것</h4>
+    <ul>
+      <li>외부 조건을 일정하게 유지해도, 스위치를 껐다 켰다 하듯 전류가 <b>갑자기 나타났다가 갑자기 사라지는</b> 상태를 반복한다.</li>
+      <li><b class="k">All-or-none</b>: 이온 통로는 열리면 <b>완전히</b> 열리고, 닫히면 <b>완전히</b> 닫힌다 — "제로 혹은 1입니다. 그래서 이진법처럼"(33:46).</li>
+      <li>조건(막전위, 리간드, 약물)이 바뀌면 무작위적인 개폐는 계속되지만, <b>개폐의 성향(얼마나 자주 · 오래 열리나)</b>이 크게 달라진다. 예: 아세틸콜린을 처리했을 때 개방이 길어지는지 짧아지는지 패턴을 분석한다(33:46).</li>
+      <li>통로 하나의 전류(미시적 전류)와 넓은 막의 많은 통로를 합친 전류(거시적 전류)는 구분한다. 전위 의존 Na⁺ 통로를 기록하면 탈분극 직후 1~2 ms 안에 대부분 열렸다가 곧 <b>불활성화</b>되는 것이 보인다(강의 영상 → 10번 소단원).</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 240" role="img" aria-label="왼쪽: 패치클램프. 끝이 아주 가는 유리 미세전극을 막 조각에 밀착시켜 그 안의 통로 하나로 흐르는 전류를 잰다. 세포에 붙인 채 기록하거나, 조각을 떼어 내 다른 용액에 담가 비교할 수 있다. 오른쪽: 단일 통로 전류 기록. 위 기록은 평소 상태로, 전류가 0인 닫힘과 일정한 크기의 열림을 무작위로 오간다. 아래 기록은 약물 처리 후로, 열렸을 때의 전류 크기는 같지만 더 오래 열려 있다">
+        <rect x="6" y="6" width="246" height="228" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <rect x="264" y="6" width="370" height="228" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <text x="20" y="30" class="svg-t">패치클램프</text>
+        <polygon points="100,44 160,44 140,118 120,118" style="fill:var(--info-soft);stroke:var(--svg-e);stroke-width:1.6"/>
+        <path d="M130 52V110" style="stroke:var(--svg-line);stroke-width:1.2"/>
+        <rect x="20" y="120" width="218" height="26" style="fill:var(--line-2)"/>
+        <path d="M24 117H236M24 149H236" style="stroke:var(--svg-a);stroke-width:7;stroke-linecap:round;stroke-dasharray:0 10"/>
+        <rect x="124" y="114" width="12" height="38" rx="4" class="sf-c"/>
+        <text x="166" y="70" class="svg-s">유리 미세전극</text>
+        <text x="130" y="172" text-anchor="middle" class="svg-s">막 조각 속 통로 하나</text>
+        <text x="20" y="200" class="svg-s">세포에 붙인 채 기록하거나</text>
+        <text x="20" y="218" class="svg-s">떼어 내 다른 용액에 담가 비교</text>
+        <text x="278" y="30" class="svg-t">단일 통로 전류</text>
+        <text x="300" y="48" class="svg-s">열리면 완전히, 닫히면 완전히 (all-or-none)</text>
+        <path d="M300 96H330V68H352V96H392V68H446V96H486V68H498V96H544V68H586V96H620" style="fill:none;stroke:var(--svg-e);stroke-width:2"/>
+        <text x="294" y="100" text-anchor="end" class="svg-s">0</text>
+        <text x="294" y="72" text-anchor="end" class="svg-s">열림</text>
+        <text x="300" y="120" class="svg-s">평소: 무작위로 열고 닫힘</text>
+        <path d="M300 186H312V158H380V186H396V158H496V186H512V158H600V186H620" style="fill:none;stroke:var(--svg-d);stroke-width:2"/>
+        <text x="294" y="190" text-anchor="end" class="svg-s">0</text>
+        <text x="294" y="162" text-anchor="end" class="svg-s">열림</text>
+        <text x="300" y="210" class="svg-s">약물 처리: 크기는 같고, 더 오래 열림</text>
+        <text x="620" y="228" text-anchor="end" class="svg-s">시간 →</text>
+      </svg>
+      <figcaption>약물이나 막전위가 바꾸는 것은 '열렸을 때의 전류 크기'가 아니라 '얼마나 자주, 오래 열리나(개방 확률)'다.</figcaption>
+    </figure>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"이온 통로는 한 번 열리면요. 완전히 열리고요. 한 번 닫히면 완전히 닫힙니다. 그래서 제로 혹은 1입니다."(33:46) 선생님도 직접 해 봤다고 했습니다 — 아프리카발톱개구리(<i>Xenopus</i>)의 알(난모세포)에 통로를 발현시켜 기록하는 실험(38:15).</div>
+  </div>
+  <div class="quiz" data-quiz="u9"></div>
+</section>
+
+<!-- ================= U10 뉴런과 활동전위 ================= -->
+<section class="unit" id="u10">
+  <header class="unit-head"><span class="no">10</span><div>
+    <h3>뉴런과 활동전위 — Na⁺ 통로가 열고, K⁺ 통로가 닫는다</h3>
+    <p class="lead">역치 이상의 자극이 오면 전위 의존 Na⁺ 통로가 열려 막전위가 순식간에 양으로 치솟는다. Na⁺ 통로가 불활성화되고 느린 K⁺ 통로가 열리면서 막은 다시 휴지 상태로 돌아온다.</p>
+  </div></header>
+  <div class="body">
+    <h4>뉴런의 구조 — "이 정도만"(42:38)</h4>
+    <ul>
+      <li><b>뉴런(neuron)</b>: 신경세포. 신호를 <b>수용 · 통합 · 전달</b>한다.</li>
+      <li><b>수상돌기(dendrite)</b>: 세포체에서 안테나처럼 뻗은 짧고 분지된 돌기 여러 개. 넓은 표면적으로 다른 뉴런의 축삭돌기에서 오는 신호를 받는다.</li>
+      <li><b>축삭돌기(axon)</b>: 세포체에서 멀리 있는 표적세포로 <b>전기적 신호</b>를 전달한다(사람은 1 mm ~ 1 m 이상).</li>
+      <li><b>신경말단(nerve terminal)</b>: 축삭돌기 끝에서 여러 갈래로 갈라진 말단. 한꺼번에 많은 표적세포로 신호를 보낸다.</li>
+    </ul>
+    <h4>활동전위(action potential)</h4>
+    <ul>
+      <li><b class="k">탈분극(depolarization)</b>: 막전위가 <b>보다 작은 음의 값</b>으로 변하는 것 — 절댓값이 작아진다(예: −60 → −40 mV). <b>역치</b> 이상으로 탈분극될 때만 활동전위가 일어난다(43:37).</li>
+      <li><b class="k">전위 의존적 Na⁺ 채널</b>: 탈분극에 반응해 열린다 → 바깥에 많고 안쪽이 음이라 Na⁺가 쏟아져 들어온다 → 막전위가 −60에서 <b>+40 mV</b>까지 치솟는다. +40 mV는 Na⁺를 안으로 미는 <b>전기화학적 추진력이 거의 0</b>에 가까워지는 막전위다.</li>
+      <li>Na⁺ 통로는 <b>폐쇄 → 개방 → 불활성</b>을 거친다. <b>불활성</b> 구조는 막이 탈분극된 상태에서도 통로가 <b>다시 열리지 못하게</b> 한다. 막이 재분극되면 다시 폐쇄 상태로 돌아가 다음 자극을 받을 수 있다(45:35).</li>
+      <li><b>폐쇄 vs 불활성</b>: 폐쇄는 관문이 닫혀 있지만 자극이 오면 열릴 수 있는 상태, 불활성은 열려 있던 통로를 다른 부분이 막아 자극이 와도 열리지 못하는 상태(불응기)다(1:03:35).</li>
+      <li><b class="k">전위 의존적 K⁺ 통로</b>: 탈분극에 반응해 열리지만 <b>열리는 속도가 느리고</b>, 막이 탈분극되어 있는 한 <b>계속 열려</b> 있다(Na⁺ 통로와 달리 불활성으로 방해받지 않음). 휴지 상태에서는 음의 막전위가 개방을 억제한다.</li>
+      <li>열린 K⁺ 통로로 K⁺가 빠르게 유출 → K⁺ 누출 통로만 있을 때보다 <b>훨씬 빨리 휴지 상태로 복귀</b>한다. K⁺ 통로가 닫히는 데도 지연이 있어 잠깐 휴지막전위보다 더 음이 된다(과분극, 48:30 · 1:04:30).</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 250" role="img" aria-label="왼쪽: 활동전위 그래프. 휴지막전위 -60 mV에서 탈분극되어 역치 -40 mV를 넘으면 Na+ 유입으로 +40 mV까지 치솟고, K+ 유출로 하강해 잠깐 휴지막전위보다 더 음이 되는 과분극을 거친 뒤 휴지 상태로 돌아온다. 오른쪽: 전위 의존 Na+ 통로의 세 상태. 폐쇄 상태는 자극이 오면 열릴 수 있고, 개방 상태에서는 Na+가 유입되며, 불활성 상태에서는 다른 부분이 통로를 막아 다시 열리지 못한다. 재분극되면 다시 폐쇄 상태가 된다">
+        <defs>
+          <marker id="m710" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-line)"/></marker>
+          <marker id="m710b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-e)"/></marker>
+        </defs>
+        <text x="20" y="22" class="svg-s">막전위 (mV)</text>
+        <path d="M70 30V214H420" class="svg-line"/>
+        <path d="M70 140H420" style="stroke:var(--line);stroke-dasharray:4 4"/>
+        <g text-anchor="end" class="svg-s">
+          <text x="64" y="46">+40</text><text x="64" y="104">0</text><text x="64" y="144">−40</text><text x="64" y="164">−60</text>
+          <text x="416" y="134">역치</text><text x="416" y="232">시간 (ms)</text>
+        </g>
+        <path d="M80 160H140C155 160 162 152 170 140C178 120 188 50 200 42C212 50 225 120 238 160C244 172 252 176 262 174C285 170 300 163 330 160H410" style="fill:none;stroke:var(--svg-d);stroke-width:2.4"/>
+        <g class="svg-s">
+          <text x="84" y="182">① 휴지</text>
+          <text x="96" y="128">② 탈분극</text>
+          <text x="214" y="40">③ 상승 — Na⁺ 유입</text>
+          <text x="242" y="104">④ 하강 — K⁺ 유출</text>
+          <text x="266" y="198">⑤ 과분극</text>
+        </g>
+        <rect x="436" y="10" width="198" height="230" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <text x="450" y="34" class="svg-t">전위 의존 Na⁺ 통로</text>
+        <rect x="437" y="78" width="196" height="40" style="fill:var(--line-2)"/>
+        <rect x="456" y="70" width="10" height="56" rx="4" class="sf-e"/><rect x="474" y="70" width="10" height="56" rx="4" class="sf-e"/>
+        <rect x="521" y="70" width="10" height="56" rx="4" class="sf-e"/><rect x="539" y="70" width="10" height="56" rx="4" class="sf-e"/>
+        <rect x="586" y="70" width="10" height="56" rx="4" class="sf-e"/><rect x="604" y="70" width="10" height="56" rx="4" class="sf-e"/>
+        <path d="M458 68H482" style="stroke:var(--svg-d);stroke-width:4;stroke-linecap:round"/>
+        <path d="M523 66L515 54" style="stroke:var(--svg-d);stroke-width:4;stroke-linecap:round"/>
+        <path d="M588 66L580 54" style="stroke:var(--svg-d);stroke-width:4;stroke-linecap:round"/>
+        <path d="M535 50V140" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m710b)"/>
+        <circle cx="600" cy="126" r="6" style="fill:var(--svg-c)"/>
+        <path d="M605 123L611 118" style="stroke:var(--svg-c);stroke-width:1.6"/>
+        <path d="M488 98H517" class="svg-line" marker-end="url(#m710)"/>
+        <path d="M553 98H582" class="svg-line" marker-end="url(#m710)"/>
+        <g text-anchor="middle">
+          <text x="470" y="152" class="svg-t" style="font-size:12px">폐쇄</text><text x="535" y="152" class="svg-t" style="font-size:12px">개방</text><text x="600" y="152" class="svg-t" style="font-size:12px">불활성</text>
+          <text x="470" y="168" class="svg-s">열릴 수 있음</text><text x="535" y="168" class="svg-s">Na⁺ 유입</text><text x="600" y="168" class="svg-s">다시 못 엶</text>
+          <text x="535" y="226" class="svg-s">재분극되면 다시 폐쇄</text>
+        </g>
+        <path d="M600 182Q535 210 474 184" class="svg-line" marker-end="url(#m710)"/>
+      </svg>
+      <figcaption>불활성은 '닫힘'과 다르다. 열린 통로를 다른 부분이 틀어막은 상태라 자극이 와도 열리지 않고, 재분극되어야 다시 폐쇄(열릴 준비) 상태가 된다.</figcaption>
+    </figure>
+    <div class="tbl"><table>
+      <thead><tr><th>단계 (그림 12-38)</th><th>전위 의존 Na⁺ 통로</th><th>전위 의존 K⁺ 통로</th><th>막전위</th></tr></thead>
+      <tbody>
+        <tr><th>① 휴지</th><td>폐쇄</td><td>폐쇄 (K⁺ 누출 통로만 열림)</td><td>−60 ~ −70 mV 유지 (Na⁺-K⁺ 펌프)</td></tr>
+        <tr><th>② 탈분극</th><td>일부 개방 → 역치를 넘으면 더 많이</td><td>폐쇄</td><td>역치까지 상승</td></tr>
+        <tr><th>③ 상승</th><td>대부분 개방 — Na⁺ 유입</td><td>서서히 열리기 시작</td><td>+40 mV까지</td></tr>
+        <tr><th>④ 하강</th><td><b>불활성</b></td><td>개방 — K⁺ 유출</td><td>재분극</td></tr>
+        <tr><th>⑤ 과분극</th><td>폐쇄로 돌아감</td><td>아직 열려 있다가 늦게 닫힘</td><td>잠깐 휴지막전위보다 더 음 → 복귀</td></tr>
+      </tbody>
+    </table></div>
+    <h4>축삭을 따라 전달되기</h4>
+    <ul>
+      <li>한 부위에서 활동전위가 생기면 들어온 Na⁺가 <b>바로 옆 부위를 탈분극</b>시켜 그곳의 Na⁺ 통로를 연다 → 탈분극과 재분극을 반복하며 축삭을 따라 앞으로 이어진다(1:01:38).</li>
+      <li>방금 지나온 부위는 Na⁺ 통로가 <b>불활성</b> 상태라 다시 흥분하지 못한다 → 활동전위는 <b>한 방향으로만</b> 진행한다(그림 12-35).</li>
+    </ul>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"닫혀 있다가 열렸다가 불활성 됐다가 이 세 단계를 반복을 합니다."(45:35) "불응기랑 폐쇄는 뭐가 다르냐면요. 폐쇄는 아예 여기부터 막힌 거고요…"(1:03:35) 뉴런의 구조는 "기본적인 것만 알고 계시면 됩니다. 너무 깊이 안 들어갑니다. 우리는 그 기작만 알고 있으면 돼요."(42:38)</div>
+  </div>
+  <div class="quiz" data-quiz="u10"></div>
+</section>
+
+<!-- ================= U11 시냅스와 광유전학 ================= -->
+<section class="unit" id="u11">
+  <header class="unit-head"><span class="no">11</span><div>
+    <h3>시냅스와 광유전학 — 전기를 화학으로, 다시 전기로</h3>
+    <p class="lead">신경말단에 도착한 전기 신호는 Ca²⁺ 유입을 거쳐 신경전달물질이라는 화학 신호로 바뀐다. 시냅스 후 세포의 리간드 의존 통로가 이것을 다시 전기 신호로 바꾼다.</p>
+  </div></header>
+  <div class="body">
+    <ul>
+      <li><b class="k">신경전달물질(neurotransmitter)</b>: 신호 전달 분자 형태의 화학적 신호. <b class="k">시냅스 소낭(synaptic vesicle)</b>: 신경말단에 있는 막 소낭으로, 신경전달물질을 저장한다. 두 세포 사이의 틈은 <b>시냅스 간극</b>.</li>
+    </ul>
+    <h4>신경말단 — 전기 신호를 화학 신호로</h4>
+    <div class="flow">
+      <div class="st"><b>1</b>활동전위가 신경말단에 도달</div><span class="ar">→</span>
+      <div class="st"><b>2</b><b style="display:inline;color:inherit;font-size:inherit">전위 의존적 Ca²⁺ 통로</b>가 열림</div><span class="ar">→</span>
+      <div class="st"><b>3</b>Ca²⁺가 신경말단 안으로 빠르게 유입</div><span class="ar">→</span>
+      <div class="st"><b>4</b>시냅스 소낭이 원형질막과 융합 → 신경전달물질을 시냅스 간극으로 방출</div>
+    </div>
+    <ul>
+      <li>신경말단 바깥의 Ca²⁺ 농도는 세포기질의 유리 Ca²⁺보다 <b>1천 배 이상</b> 높다 → 통로만 열리면 Ca²⁺가 재빨리 들어오고, 늘어난 Ca²⁺가 소낭과 원형질막의 융합을 신속하게 일으킨다. 전위 의존 Ca²⁺ 통로가 <b>활동전위의 도달과 신경전달물질의 분비를 연결</b>한다.</li>
+    </ul>
+    <h4>시냅스 후 세포 — 화학 신호를 다시 전기 신호로</h4>
+    <ul>
+      <li><b class="k">전달물질 의존적 이온 통로(transmitter-gated ion channel)</b>: 신경전달물질 수용체 중 <b>빠른 반응</b>을 매개하는 막단백질로, <b>리간드 의존적 이온 통로</b>의 일종이다.</li>
+      <li>신경전달물질이 결합하면 통로가 순간적으로 열려 시냅스 후 막의 이온 투과성이 바뀌고 → 막전위가 변한다 → 변화가 충분히 크면 시냅스 후 막이 탈분극되어 시냅스 후 세포의 활동전위를 촉발한다.</li>
+    </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 640 276" role="img" aria-label="왼쪽: 화학적 시냅스. 1 활동전위가 시냅스 전 신경말단에 도달하면 2 전위 의존적 Ca2+ 통로가 열려 Ca2+가 유입되고, 3 시냅스 소낭이 막과 융합해 신경전달물질을 시냅스 간극으로 방출한다. 4 시냅스 후 세포의 리간드 의존 통로에 신경전달물질이 결합하면 통로가 열려 이온이 들어오고 막전위가 바뀌어 다시 전기 신호가 된다. 오른쪽: 흥분성 신경전달물질(아세틸콜린, 글루탐산)은 양이온 통로를 열어 Na+ 유입과 탈분극을 일으키고, 억제성 신경전달물질(GABA, 글라이신)은 Cl- 통로를 열어 Cl- 유입으로 탈분극을 어렵게 해 시냅스 후 세포를 억제한다">
+        <defs>
+          <marker id="m711r" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-d)"/></marker>
+          <marker id="m711b" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-e)"/></marker>
+          <marker id="m711y" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--svg-c)"/></marker>
+        </defs>
+        <path d="M60 14V118Q60 150 92 150H268Q300 150 300 118V14" style="fill:var(--bg);stroke:var(--svg-line);stroke-width:1.6"/>
+        <path d="M180 2V34" style="fill:none;stroke:var(--svg-d);stroke-width:2" marker-end="url(#m711r)"/>
+        <text x="190" y="24" class="svg-s">① 활동전위 도달</text>
+        <text x="68" y="64" class="svg-t" style="font-size:12px">시냅스 전 신경말단</text>
+        <g class="sf-c"><circle cx="140" cy="104" r="12"/><circle cx="196" cy="90" r="12"/><circle cx="236" cy="112" r="12"/></g>
+        <g style="fill:var(--svg-d)">
+          <circle cx="136" cy="100" r="2"/><circle cx="144" cy="106" r="2"/><circle cx="138" cy="110" r="2"/>
+          <circle cx="192" cy="86" r="2"/><circle cx="200" cy="92" r="2"/><circle cx="194" cy="96" r="2"/>
+          <circle cx="232" cy="108" r="2"/><circle cx="240" cy="114" r="2"/><circle cx="234" cy="118" r="2"/>
+          <circle cx="152" cy="164" r="2.6"/><circle cx="162" cy="172" r="2.6"/><circle cx="172" cy="164" r="2.6"/><circle cx="158" cy="182" r="2.6"/><circle cx="170" cy="184" r="2.6"/>
+        </g>
+        <path d="M148 150A12 12 0 0 1 172 150" style="fill:var(--warn-soft);stroke:var(--svg-c);stroke-width:1.6"/>
+        <text x="66" y="130" class="svg-s">③ 소낭 융합 → 방출</text>
+        <rect x="251" y="140" width="14" height="20" rx="4" class="sf-e"/>
+        <path d="M258 188V122" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m711b)"/>
+        <text x="270" y="194" class="svg-s">② Ca²⁺ 유입</text>
+        <text x="278" y="172" class="svg-s">시냅스 간극</text>
+        <rect x="40" y="198" width="300" height="72" rx="10" style="fill:var(--bg);stroke:var(--svg-line);stroke-width:1.6"/>
+        <rect x="144" y="190" width="12" height="18" rx="3" class="sf-a"/>
+        <rect x="170" y="190" width="12" height="18" rx="3" class="sf-a"/>
+        <path d="M150 186V226" style="fill:none;stroke:var(--svg-e);stroke-width:1.8" marker-end="url(#m711b)"/>
+        <path d="M176 186V226" style="fill:none;stroke:var(--svg-e);stroke-width:1.8" marker-end="url(#m711b)"/>
+        <text x="52" y="222" class="svg-t" style="font-size:12px">시냅스 후 세포</text>
+        <text x="52" y="244" class="svg-s">④ 리간드 의존 통로가 열려 이온 유입</text>
+        <text x="52" y="262" class="svg-s">→ 막전위 변화: 다시 전기 신호로</text>
+        <rect x="398" y="10" width="236" height="124" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <rect x="398" y="146" width="236" height="124" rx="14" style="fill:var(--card);stroke:var(--line)"/>
+        <text x="412" y="34" class="svg-t" style="fill:var(--ok)">흥분성</text>
+        <text x="412" y="54" class="svg-t" style="font-size:12px">아세틸콜린 · 글루탐산</text>
+        <text x="412" y="76" class="svg-s">리간드 의존 양이온 통로</text>
+        <text x="412" y="94" class="svg-s">Na⁺ 유입 → 탈분극</text>
+        <text x="412" y="112" class="svg-s">→ 활동전위가 잘 생김</text>
+        <text x="412" y="170" class="svg-t" style="fill:var(--bad)">억제성</text>
+        <text x="412" y="190" class="svg-t" style="font-size:12px">GABA · 글라이신</text>
+        <text x="412" y="212" class="svg-s">리간드 의존 Cl⁻ 통로</text>
+        <text x="412" y="230" class="svg-s">Cl⁻ 유입 → 탈분극이 어려움</text>
+        <text x="412" y="248" class="svg-s">→ 시냅스 후 세포 억제</text>
+        <rect x="588" y="62" width="8" height="34" rx="3" class="sf-a"/><rect x="604" y="62" width="8" height="34" rx="3" class="sf-a"/>
+        <path d="M600 52V110" style="fill:none;stroke:var(--svg-e);stroke-width:2" marker-end="url(#m711b)"/>
+        <text x="600" y="46" text-anchor="middle" class="svg-s">Na⁺</text>
+        <rect x="588" y="198" width="8" height="34" rx="3" class="sf-a"/><rect x="604" y="198" width="8" height="34" rx="3" class="sf-a"/>
+        <path d="M600 188V246" style="fill:none;stroke:var(--svg-c);stroke-width:2" marker-end="url(#m711y)"/>
+        <text x="600" y="182" text-anchor="middle" class="svg-s">Cl⁻</text>
+      </svg>
+      <figcaption>같은 '리간드 의존 통로'라도 무엇을 통과시키느냐로 결과가 갈린다: 양이온이면 흥분, Cl⁻면 억제.</figcaption>
+    </figure>
+    <h4>흥분성과 억제성 — "이거 외우셔야 됩니다"(1:07:28)</h4>
+    <div class="tbl"><table>
+      <thead><tr><th></th><th>리간드 의존 양이온 통로</th><th>리간드 의존 Cl⁻ 통로</th></tr></thead>
+      <tbody>
+        <tr><th>결합하는 신경전달물질</th><td><b>흥분성</b> — <b>아세틸콜린, 글루탐산</b></td><td><b>억제성</b> — <b>GABA, 글라이신</b></td></tr>
+        <tr><th>통로가 열리면</th><td>Na⁺ 유입 → 원형질막 탈분극</td><td>Cl⁻(음이온) 유입</td></tr>
+        <tr><th>결과</th><td>시냅스 후 세포가 활성화되어 활동전위 발생 경향</td><td>탈분극이 일어나기 어려워짐 → 시냅스 후 세포 억제</td></tr>
+      </tbody>
+    </table></div>
+    <ul>
+      <li>근육세포의 <b>아세틸콜린 수용체</b>: 다섯 개의 소단위체가 통로를 이루고, 아세틸콜린 두 분자가 모두 결합해야 열린다(그림 12-42).</li>
+    </ul>
+    <div class="tbl"><table>
+      <thead><tr><th>이온 통로 (표 12-3)</th><th>대표적 위치</th><th>기능</th></tr></thead>
+      <tbody>
+        <tr><th>K⁺ 누출 통로</th><td>대부분 동물세포 원형질막</td><td>휴지막전위 유지</td></tr>
+        <tr><th>전위 의존 Na⁺ 통로</th><td>신경세포 축삭 원형질막</td><td>활동전위 생성</td></tr>
+        <tr><th>전위 의존 K⁺ 통로</th><td>신경세포 축삭 원형질막</td><td>활동전위 후 휴지막전위로 복귀</td></tr>
+        <tr><th>전위 의존 Ca²⁺ 통로</th><td>신경말단 원형질막</td><td>신경전달물질 방출 자극</td></tr>
+        <tr><th>아세틸콜린 수용체 (양이온 통로)</th><td>신경근 접합부의 근육세포 원형질막</td><td>흥분성 시냅스 신호 전달</td></tr>
+        <tr><th>글루탐산 수용체 (양이온 통로)</th><td>시냅스의 많은 뉴런 원형질막</td><td>흥분성 시냅스 신호 전달</td></tr>
+        <tr><th>GABA 수용체 (Cl⁻ 통로)</th><td>시냅스의 많은 뉴런 원형질막</td><td>억제성 시냅스 신호 전달</td></tr>
+        <tr><th>글라이신 수용체 (Cl⁻ 통로)</th><td>시냅스의 많은 뉴런 원형질막</td><td>억제성 시냅스 신호 전달</td></tr>
+        <tr><th>기계적 자극 의존 양이온 통로</th><td>속귀의 청각 털세포</td><td>소리 진동 감지</td></tr>
+      </tbody>
+    </table></div>
+    <h4>왜 화학적 시냅스인가</h4>
+    <ul>
+      <li>뉴런 → 뉴런: 시냅스 전 세포가 전기 신호를 분비성 화학물질로 바꾸고, 그것이 간극을 건너 확산해야 시냅스 후 세포가 다시 전기 신호로 바꾼다. 그냥 두 세포를 전기로 직접 잇거나 하나의 세포로 만들면 더 간단할 텐데, 왜 그러지 않을까?</li>
+      <li>전기 신호는 한 번 생기면 그대로 끝까지 이어져서 조절하기 어렵다. 화학 신호로 릴레이하면 <b class="k">신호를 결합 · 해석 · 기록</b>할 수 있다 — 여러 뉴런의 신호 중 어떤 것은 더 전달하고 어떤 것은 억제할지 화학물질로 조절된다. 다양한 이온 통로의 상호작용이 수많은 신호를 처리해 <b>사고 · 행동 · 학습 · 기억</b>을 가능하게 한다(1:08:24~1:09:21).</li>
+    </ul>
+    <div class="co lecture"><b><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>강의 포인트</b>"이 신경전달 물질이라는 것은 지금까지 전기적으로 전달되었던 신호를 화학적으로 바꿔 줬다, 전환해 줬다라는 것이 중요합니다."(1:06:29) "여기 있는 것들은 여러분들이 다 알고 계셔야 됩니다."(1:08:24) 화학적 시냅스의 의의(결합 · 해석 · 기록)는 "놔두시고요"(1:09:21).</div>
+
+    <h4>광의존적 이온 통로와 광유전학</h4>
+    <ul>
+      <li><b>통로로돕신(channelrhodopsin)</b>: 단세포 녹조류 클라미도모나스의 <b>안점</b>에 있는, <b>빛을 받으면 열리는 양이온 통로</b>. 이 녹조류는 빛을 감지해 헤엄치는 방향을 바꾼다.</li>
+      <li>통로로돕신 유전자를 <b>원하는 뉴런에만</b> 넣고 빛을 비추면 → 통로가 열려 양이온이 들어오고 → 그 뉴런만 탈분극된다. 원래 빛에 반응하지 않던 뉴런을 빛으로 켤 수 있다.</li>
+      <li>43쪽: 생쥐 시상하부 일부 뉴런에 통로로돕신 → 광섬유로 청색광을 비추면 즉시 공격 행동, 빛을 끄면 정상 행동으로 돌아온다. 강의 영상: 오른쪽 운동 피질을 자극하면 생쥐가 한쪽으로 빙글빙글 돌고(2007), 억제용 도구를 넣은 예쁜꼬마선충에 노란빛을 주면 움직임이 멈춘다 → 켜기뿐 아니라 <b>끄기</b>도 가능하다.</li>
+      <li>특정 세포를 켜고 꺼 보면서 그 신경 회로가 무슨 일을 하는지 알아내는 <b>역공학</b>식 뇌 연구가 가능해졌다. 강의에서는 광유전학이 "2026 노벨 생리의학상"을 받았다고 소개했다(1:10:37).</li>
+    </ul>
+    <div class="co note"><b><svg class="i" aria-hidden="true"><use href="#i-search"/></svg>자료 표기 주의</b>강의는 5번 소단원의 <b>광 구동 펌프</b>를 설명하면서 광유전학을 함께 언급했지만(14:23), 43쪽의 통로로돕신은 <b>통로</b>라서 빛으로 열릴 뿐 이온은 구배를 따라 흐릅니다(수동). 빛 에너지로 구배를 거슬러 나르는 것은 박테리오로돕신 같은 <b>펌프</b>입니다. 참고로, 억제용 도구로 많이 쓰이는 할로로돕신은 노란빛으로 Cl⁻를 세포 안으로 퍼 넣는 광 구동 펌프입니다.</div>
+  </div>
+  <div class="quiz" data-quiz="u11"></div>
+</section>
+<!-- ================= 종합 ================= -->
+<section class="sum" id="summary">
+  <h3>종합 점수</h3>
+  <p style="color:var(--muted);margin:0">푼 문항 기준 정답률입니다. 낮은 소단원부터 다시 보세요.</p>
+  <div class="big" id="sumBig">–</div>
+  <p id="sumSub" style="margin:0 0 14px;color:var(--muted)"></p>
+  <div id="sumRows"></div>
+  <div class="wrongs starlist">
+    <h4><svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg>별표 모아보기</h4>
+    <div id="starList"></div>
+  </div>
+  <div class="wrongs">
+    <h4><svg class="i" aria-hidden="true"><use href="#i-flag"/></svg>오답 노트</h4>
+    <div id="wrongList"><p>아직 틀린 문제가 없습니다.</p></div>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px">
+    <button class="btn" id="resetAll" type="button"><svg class="i" aria-hidden="true"><use href="#i-retry"/></svg>모든 퀴즈 기록 지우기</button>
+  </div>
+</section>
+
+</div><!-- /wrap -->
+</main>
+</div><!-- /layout -->
+<dialog class="lb" id="lb" aria-label="슬라이드 크게 보기"><img alt=""><div class="lb-bar"><button type="button" data-lb="-1">이전</button><span id="lbCap"></span><button type="button" data-lb="1">다음</button><button type="button" data-lb="x">닫기</button></div></dialog>
+
+<script>
+const UNITS = [
+  {id:'u1', name:'무엇이 막을 통과하나'},
+  {id:'u2', name:'이온 분포와 막전위'},
+  {id:'u3', name:'전기화학적 구배'},
+  {id:'u4', name:'수동 수송체'},
+  {id:'u5', name:'ATP 구동 펌프: Na⁺-K⁺ · Ca²⁺'},
+  {id:'u6', name:'구배 구동 펌프와 H⁺ 펌프'},
+  {id:'u7', name:'이온 통로: 선택성과 개폐'},
+  {id:'u8', name:'K⁺ 누출 통로와 네른스트 식'},
+  {id:'u9', name:'패치클램프 기록'},
+  {id:'u10', name:'뉴런과 활동전위'},
+  {id:'u11', name:'시냅스와 광유전학'}
+];
+
+const L = s => '<ul>' + s.map(x => '<li>' + x + '</li>').join('') + '</ul>';
+
+const QUIZ = {
+u1: [
+  { q: '단백질이 없는 인공 지질 이중층을 통과하는 물질에 대한 설명으로 옳은 것은?',
+    o: ['Na⁺은 크기가 아주 작아서 물 분자보다도 더 빠르게 인공 이중층을 통과한다.',
+        'O₂와 CO₂는 작고 비극성이어서 단순 확산으로 인공 이중층을 쉽게 통과한다.',
+        '포도당은 극성이지만 크기가 커서 소수성 꼬리 사이로 끼어들어 쉽게 통과한다.',
+        '물은 극성 분자라서 인공 이중층을 하나도 통과하지 못하고 완전히 막혀 버린다.',
+        '이온은 전하를 띠어도 크기만 충분히 작으면 인공 이중층을 자유롭게 통과한다.'],
+    a: 1,
+    w: 'O₂ · CO₂ 같은 작은 비극성 분자는 단순 확산으로 쉽게 통과한다. 물(작은 극성)은 느리지만 조금은 통과하고, 포도당(큰 극성)은 거의 못 지나간다. 이온은 아무리 작아도 전하 때문에 통과하지 못한다.' },
+  { q: '수동 수송과 능동 수송에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 열린 통로를 통한 이온의 이동은 전기화학적 구배를 따르는 수동 수송이다.',
+          'ㄴ. 능동 수송의 에너지원으로는 ATP뿐 아니라 빛이나 다른 물질의 농도 구배도 쓰인다.',
+          'ㄷ. 수동 수송체는 용질과 결합하므로 그 용질을 농도 구배 거슬러 옮길 수 있다.',
+          'ㄹ. 단순 확산은 막수송 단백질 없이 지질 이중층을 직접 통과하는 이동이다.']),
+    o: ['ㄱ, ㄴ', 'ㄴ, ㄷ', 'ㄷ, ㄹ', 'ㄱ, ㄴ, ㄹ', 'ㄱ, ㄷ, ㄹ'],
+    a: 3,
+    w: 'ㄷ: 수동 수송체는 용질과 결합하더라도 구배를 따라서만 옮긴다(방향은 구배가 정함). 구배를 거스르는 것은 에너지를 쓰는 펌프뿐이다.' },
+  { q: '어떤 세포의 원형질막에서 막수송 단백질만 모두 없앴다고 가정하자. 예상되는 결과로 가장 적절한 것은?',
+    o: ['CO₂의 출입은 거의 그대로이고, 포도당과 이온의 출입은 크게 줄어든다.',
+        '단백질이 없으면 물질 출입이 함께 멈추므로 O₂도 세포 안으로 들어오지 못한다.',
+        '이온은 전하 덕분에 막 표면에 끌려 들어가므로 출입이 오히려 크게 늘어난다.',
+        '포도당의 출입은 그대로이고, 크기가 작은 이온의 출입만 크게 줄어든다.',
+        '단순 확산도 불가능해져서 스테로이드 호르몬이 막을 통과하지 못한다.'],
+    a: 0,
+    w: '단순 확산은 단백질 없이 이중층을 직접 통과하므로 CO₂ · O₂ · 스테로이드 호르몬은 그대로 드나든다. 포도당(큰 극성)과 이온(전하)은 막수송 단백질이 있어야 통과하므로 출입이 크게 줄어든다.' }
+],
+u2: [
+  { q: '세포 안팎의 이온 분포와 막전위에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. Na⁺과 Cl⁻은 세포 밖의 농도가 세포 안보다 높다.',
+          'ㄴ. K⁺은 세포 안의 농도가 세포 밖보다 높다.',
+          'ㄷ. 세포기질의 유리 Ca²⁺ 농도는 세포 밖보다 약 1만 배 높다.',
+          'ㄹ. 휴지 상태의 동물세포는 세포 안쪽이 음(−)의 전위를 띤다.']),
+    o: ['ㄱ, ㄷ', 'ㄴ, ㄹ', 'ㄱ, ㄴ, ㄷ', 'ㄴ, ㄷ, ㄹ', 'ㄱ, ㄴ, ㄹ'],
+    a: 4,
+    w: 'ㄷ: Ca²⁺은 반대로 세포 밖이 세포기질의 약 1만 배다. 숫자는 몰라도 되지만 Na⁺ · Cl⁻ · Ca²⁺는 밖, K⁺는 안이라는 방향은 반드시 알아야 한다.' },
+  { q: '대부분의 진핵세포는 세포기질의 유리 Ca²⁺ 농도를 매우 낮게 유지한다. 그 의미로 가장 적절한 것은?',
+    o: ['Ca²⁺이 휴지막전위의 주된 원인이라서, 농도를 낮춰 막전위를 양(+)으로 만든다.',
+        'Ca²⁺이 세포 안에 거의 없어서, Ca²⁺ 통로가 열리면 Ca²⁺은 밖으로만 이동한다.',
+        'Ca²⁺이 조금만 유입되어도 농도가 크게 변하므로, 그 변화가 신호로 쓰일 수 있다.',
+        'Ca²⁺은 세포 안 분자와 결합하지 않으므로, 농도가 낮아도 세포에 영향이 없다.',
+        'Ca²⁺ 농도가 낮을수록 세포는 Ca²⁺ 농도 증가에 둔감해져 신호를 무시하게 된다.'],
+    a: 2,
+    w: 'Ca²⁺은 여러 분자와 결합해 활성을 바꾼다. 세포기질의 유리 Ca²⁺가 낮을수록 작은 유입에도 농도가 크게 변해 더 민감하게 반응한다 — 세포예정사와 신경전달물질 분비가 이 원리다. 통로가 열리면 Ca²⁺은 구배를 따라 안으로 들어온다.' },
+  { q: '막전위와 휴지막전위에 대한 설명으로 옳지 않은 것은?',
+    o: ['막전위는 원형질막 주위의 소량의 양이온과 음이온이 불균형해서 생긴다.',
+        '휴지막전위는 자극이 없을 때 막을 가로지르는 전하의 순이동이 0인 상태다.',
+        '막전위를 만들고 유지하는 것은 이중층에 박힌 막수송 단백질의 활성이다.',
+        '막전위가 생기려면 세포 안 이온 대부분이 막을 건너 반대편으로 가야 한다.',
+        '흥분성 세포는 막전위의 변화를 이용해 주변 세포와 신호를 빠르게 주고받는다.'],
+    a: 3,
+    w: '막 바로 주변의 아주 적은 수의 이온만 불균형하게 분포해도 막전위가 생긴다. 세포 전체로 보면 거의 전기적으로 중성이다.' }
+],
+u3: [
+  { q: '휴지 상태의 세포에서 K⁺ 통로가 열려 있어도 K⁺의 순이동이 거의 없는 이유로 가장 적절한 것은?',
+    o: ['K⁺은 세포 밖 농도가 훨씬 더 높아서, 농도 구배가 K⁺을 안쪽으로 밀어 넣기 때문',
+        'K⁺ 통로는 열려 있어도 K⁺보다 Na⁺을 훨씬 더 잘 통과시키도록 만들어져 있기 때문',
+        'K⁺은 막을 지날 때마다 통로의 구조 변화가 한 번씩 필요해서 매우 느리기 때문',
+        '열린 K⁺ 통로가 ATP를 써서 빠져나간 K⁺을 곧바로 세포 안으로 되돌려 놓기 때문',
+        '안에 많은 K⁺이 나가려는 힘을, 음(−)인 안쪽이 끌어당기는 힘이 상쇄하기 때문'],
+    a: 4,
+    w: 'K⁺은 안에 많아 농도 구배로는 밖으로 나가려 하지만, 양이온이라 음(−)인 안쪽에 끌린다. 두 힘이 반대 방향이라 전기화학적 구배가 작아 순이동이 거의 없다. 통로는 이온마다 구조 변화를 거치지 않는다.' },
+  { q: '휴지 상태의 신경세포에서 Na⁺에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 농도 구배와 막전위가 모두 Na⁺을 세포 안쪽으로 이동시키는 방향이다.',
+          'ㄴ. Na⁺ 통로가 열리면 Na⁺은 세포 안으로 빠르게 유입된다.',
+          'ㄷ. Na⁺의 전기화학적 구배는 K⁺보다 작아서, 통로가 열려도 거의 이동하지 않는다.']),
+    o: ['ㄱ', 'ㄴ', 'ㄷ', 'ㄱ, ㄴ', 'ㄴ, ㄷ'],
+    a: 3,
+    w: 'Na⁺은 밖에 많고(농도: 안으로) 안쪽이 음(전기: 안으로)이라 두 힘이 겹쳐 추진력이 크다. 그래서 통로만 열리면 쏟아져 들어온다. ㄷ은 K⁺에 해당하는 설명이다.' },
+  { q: 'Cl⁻은 세포 밖에 훨씬 많다. 휴지 상태(안쪽이 음)에서 Cl⁻에 작용하는 두 힘에 대한 설명으로 옳은 것은?',
+    o: ['농도 구배는 Cl⁻을 안으로 밀고, 음(−)인 안쪽은 Cl⁻을 밀어내 두 힘이 반대다.',
+        '농도 구배와 막전위가 모두 Cl⁻을 안으로 밀어서 Na⁺처럼 강하게 들어온다.',
+        '농도 구배와 막전위가 모두 Cl⁻을 밖으로 밀어서 Cl⁻이 계속 빠져나간다.',
+        '농도 구배는 Cl⁻을 밖으로 밀고, 음(−)인 안쪽은 Cl⁻을 끌어당겨 두 힘이 반대다.',
+        'Cl⁻은 음이온이라서 막전위의 영향만 받고, 농도 구배의 영향은 받지 않는다.'],
+    a: 0,
+    w: 'Cl⁻은 밖에 많으므로 농도 구배는 안쪽을 향한다. 하지만 음이온이라 음(−)인 안쪽이 밀어낸다(전기: 밖으로). K⁺처럼 두 힘이 반대인 경우다. 이온은 두 힘을 함께 본다.' }
+],
+u4: [
+  { q: '수동 수송체에 대한 설명으로 옳은 것은?',
+    o: ['전기화학적 구배가 정한 방향으로만 옮기며, 어떤 용질을 옮길지는 매우 선택적이다.',
+        '용질을 가리지 않고 아무것이나 옮기지만, 수송 방향만큼은 수송체가 스스로 결정한다.',
+        'ATP를 가수분해해 얻은 에너지로 결합한 용질을 농도 구배 반대 방향으로 옮긴다.',
+        '한 번 열리면 계속 열린 채로 있어서, 용질과 결합하지 않고 그대로 통과시킨다.',
+        '농도 구배와 상관없이 세포 안쪽으로만 옮기므로, 용질을 세포 안에 쌓을 수 있다.'],
+    a: 0,
+    w: '수동 수송체는 전기화학적 구배를 따라서만 옮기므로 방향을 정하지 못하고 속도만 높인다. 대신 무엇을 옮길지는 매우 선택적이다(D형 포도당만). ATP를 쓰는 것은 펌프, 결합 없이 열린 채 통과시키는 것은 통로다.' },
+  { q: '포도당 수송체에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. D형 포도당과는 결합하지만, 거울상인 L형 포도당과는 결합하지 못한다.',
+          'ㄴ. D형과 L형을 구분할 수 있는 것은 결합 부위의 입체 구조 때문이다.',
+          'ㄷ. 세포 밖 포도당 농도가 안보다 낮아도 포도당을 계속 세포 안으로 들여온다.',
+          'ㄹ. 세포가 포도당을 더 많이 들여오려면 포도당 수송체를 더 많이 발현하면 된다.']),
+    o: ['ㄱ, ㄹ', 'ㄴ, ㄷ', 'ㄱ, ㄴ, ㄹ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 2,
+    w: 'ㄷ: 포도당 수송체는 수동 수송체라 구배를 따라서만 옮긴다. 밖이 더 낮으면 오히려 포도당이 밖으로 나간다. 입체 특이성은 효소와 같은 원리다.' },
+  { q: '세포 밖 포도당 농도를 점점 높이면서 수동 수송체를 통한 포도당 유입 속도를 측정했다(세포 안 농도는 낮게 유지). 예상되는 결과로 가장 적절한 것은?',
+    o: ['농도에 비례해 끝없이 빨라지므로, 단순 확산과 그래프가 똑같아진다.',
+        '처음에는 빨라지다가 수송체가 모두 차면 더 빨라지지 않고 일정해진다.',
+        '농도가 높아질수록 수송체가 방향을 바꿔 포도당을 밖으로 내보낸다.',
+        '농도와 관계없이 세포의 ATP 공급량에 따라서만 유입 속도가 정해진다.',
+        '바깥 농도가 일정 값을 넘으면 수송체가 닫혀서 유입이 완전히 멈춘다.'],
+    a: 1,
+    w: '수동 수송체는 결합 부위가 있어서 모두 차면(포화) 속도가 더 오르지 않는다 — 11/17의 촉진 확산 그래프. 단순 확산은 농도에 비례해 계속 증가한다. 수동 수송체는 ATP를 쓰지 않는다.' }
+],
+u5: [
+  { q: 'Na⁺-K⁺ 펌프가 한 바퀴 도는 순서로 옳은 것은?' +
+       L(['ㄱ. Na⁺ 3개가 세포질 쪽에서 결합한다.',
+          'ㄴ. ATP를 가수분해해 펌프 스스로 인산화된다.',
+          'ㄷ. 구조가 바뀌어 Na⁺을 세포 밖으로 내보낸다.',
+          'ㄹ. 바깥의 K⁺ 2개가 결합한다.',
+          'ㅁ. 탈인산화되어 원래 구조로 돌아가며 K⁺을 안으로 내놓는다.']),
+    o: ['ㄴ → ㄱ → ㄷ → ㄹ → ㅁ', 'ㄱ → ㄷ → ㄴ → ㄹ → ㅁ', 'ㄹ → ㄴ → ㄷ → ㄱ → ㅁ', 'ㄱ → ㄴ → ㄷ → ㄹ → ㅁ', 'ㄱ → ㄴ → ㄹ → ㄷ → ㅁ'],
+    a: 3,
+    w: 'Na⁺ 결합 → 자기 인산화 → 구조 변화로 Na⁺ 방출 → K⁺ 결합 → 탈인산화로 K⁺ 방출. 각 단계가 앞 단계에 의존하는 회로라서, Na⁺이 붙기 전에는 인산화가 일어나지 않고 한 단계라도 멈추면 전체가 멈춘다.' },
+  { q: 'Na⁺-K⁺ 펌프의 인산화 단계만 막는 약물을 동물세포에 처리했다. 시간이 지나며 나타날 변화로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. Na⁺이 밖으로 방출되지 못해 세포 안 Na⁺ 농도가 점점 높아진다.',
+          'ㄴ. 인산화 뒤의 단계는 정상이므로 K⁺은 계속 세포 안으로 들어온다.',
+          'ㄷ. Na⁺ 구배가 약해져 Na⁺ 구동 포도당 동방향 수송체의 포도당 흡수도 줄어든다.',
+          'ㄹ. 같은 ATP 구동 펌프이므로 Ca²⁺ 펌프도 함께 작동을 멈춘다.']),
+    o: ['ㄱ, ㄴ', 'ㄱ, ㄷ', 'ㄴ, ㄹ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 1,
+    w: 'ㄴ: 회로의 한 단계가 막히면 전체가 멈추므로 K⁺ 유입도 멈춘다. ㄹ: 약물은 Na⁺-K⁺ 펌프의 인산화만 막으므로 Ca²⁺ 펌프와는 무관하다. ㄷ: Na⁺ 구배를 빌려 쓰는 구배 구동 펌프도 동력을 잃는다.' },
+  { q: 'Ca²⁺ 펌프와 Na⁺-K⁺ 펌프를 비교한 설명으로 옳은 것은?',
+    o: ['Ca²⁺ 펌프는 Ca²⁺을 세포기질 안으로 모으고, Na⁺-K⁺ 펌프는 Na⁺을 세포 안으로 모은다.',
+        '두 펌프 모두 두 종류의 이온을 반대 방향으로 교환해야만 한 바퀴를 끝까지 돌 수 있다.',
+        'Ca²⁺ 펌프는 빛 에너지로, Na⁺-K⁺ 펌프는 ATP 에너지로 농도 구배를 거슬러 이온을 나른다.',
+        '두 펌프는 구조와 작동 방식이 서로 완전히 달라서, 진화 기원도 서로 다르다고 본다.',
+        '둘 다 ATP로 자기 인산화되지만, Ca²⁺ 펌프는 두 번째 이온 없이 처음 구조로 돌아간다.'],
+    a: 4,
+    w: 'Ca²⁺ 펌프는 Na⁺ 펌프와 거의 같은 방식(ATP로 자기 인산화 → 구조 변화)으로 Ca²⁺을 세포기질 밖으로 퍼낸다. 차이는 두 번째 이온 없이도 처음 구조로 돌아간다는 점이고, 닮은 방식은 공통된 진화 기원을 암시한다.' }
+],
+u6: [
+  { q: '장 상피세포의 포도당 흡수에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 장 내강 쪽 막의 동방향 수송체는 Na⁺과 포도당을 함께 세포 안으로 들여온다.',
+          'ㄴ. 기저면의 단일 수송체는 포도당을 농도 구배를 따라 세포외액 쪽으로 내보낸다.',
+          'ㄷ. 기저면의 Na⁺ 펌프가 멈추면 장 내강 쪽의 포도당 흡수가 오히려 빨라진다.',
+          'ㄹ. 동방향 수송체는 ATP를 직접 가수분해해 포도당을 구배 거슬러 들여온다.']),
+    o: ['ㄱ', 'ㄱ, ㄴ', 'ㄴ, ㄷ', 'ㄱ, ㄴ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 1,
+    w: 'ㄷ: Na⁺ 펌프가 멈추면 세포 안 Na⁺이 쌓여 Na⁺ 구배가 약해지고, 그 구배를 빌려 쓰는 동방향 수송체의 포도당 흡수가 줄어든다. ㄹ: 동방향 수송체의 에너지원은 ATP가 아니라 Na⁺의 전기화학적 구배다.' },
+  { q: '다음 중 역방향 수송체(antiporter)의 예로 가장 적절한 것은?',
+    o: ['Na⁺과 포도당을 함께 세포 안으로 들여오는 장 상피세포의 수송체',
+        '포도당 하나만 농도 구배를 따라 옮기는 기저면의 포도당 수송체',
+        '빛을 받아 H⁺을 세포 밖으로 퍼내는 일부 세균의 박테리오로돕신',
+        'Na⁺이 들어오는 힘으로 H⁺을 내보내 pH를 조절하는 교환체',
+        'H⁺과 함께 용질을 세포 안으로 들여오는 식물세포의 H⁺ 수송체'],
+    a: 3,
+    w: '역방향 수송체는 두 용질을 반대 방향으로 옮긴다 — Na⁺-H⁺ 교환체는 Na⁺이 구배를 따라 들어오는 힘으로 H⁺을 밖으로 내보낸다. 장의 Na⁺-포도당 수송체와 식물의 H⁺ 수송체는 동방향, 기저면 포도당 수송체는 단일 수송체, 박테리오로돕신은 광 구동 펌프다.' },
+  { q: '식물세포가 원형질막의 H⁺ 펌프로 H⁺을 세포 밖으로 퍼내 두는 주된 이유로 가장 적절한 것은?',
+    o: ['세포 밖을 염기성으로 만들어 주변 미생물이 들어오지 못하게 하기 위해',
+        '세포 안 H⁺을 늘려서 세포질을 리소좀처럼 산성으로 유지하기 위해',
+        'H⁺의 전기화학적 구배를 만들어 H⁺ 동방향 수송체로 용질을 들여오기 위해',
+        '퍼낸 H⁺이 지질 이중층을 직접 통과해 다시 돌아오며 용질을 끌고 오기 때문에',
+        'K⁺ 대신 H⁺을 세포 안의 주된 양이온으로 삼아 휴지막전위를 없애기 위해'],
+    a: 2,
+    w: '식물 · 진균 · 세균은 평소 H⁺을 퍼내 퍼텐셜을 만들어 두었다가, H⁺이 구배를 따라 돌아오는 힘으로 용질을 함께 들여온다(동방향 수송). H⁺은 이온이라 이중층을 직접 통과하지 못하고, 퍼내면 세포 밖은 산성이 된다.' }
+],
+u7: [
+  { q: '이온 통로와 수송체를 비교한 설명으로 옳은 것은?',
+    o: ['이온 통로는 이온이 하나씩 지날 때마다 구조가 바뀌어서 수송체보다 훨씬 느리다.',
+        '이온 통로도 ATP 같은 에너지원과 연계하면 농도 구배를 거슬러 이온을 보낼 수 있다.',
+        '이온 통로는 개폐 때만 구조가 바뀌어, 최대 수송 속도에서 수송체보다 유리하다.',
+        '수송체는 결합 부위 없이 크기와 전하만으로 용질을 골라서 통과시킨다.',
+        '이온 통로는 이온을 가리지 않아서 크기만 맞으면 어떤 이온이든 통과시킨다.'],
+    a: 2,
+    w: '이온 통로는 열고 닫을 때만 구조가 바뀌고 이온마다 바뀌지 않아 매우 빠르다(장점). 대신 에너지원과 연계할 수 없어 구배를 따라서만 흐른다(단점). 선택성 필터 때문에 특정 이온만 통과시킨다.' },
+  { q: '이온 통로에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 이온 선택성은 통로의 지름 · 형태와 좁은 부분의 전하성 아미노산 분포로 정해진다.',
+          'ㄴ. 대부분의 이온 통로는 특이적 자극에 의해 구조가 바뀌며 열리고 닫힌다.',
+          'ㄷ. 이온 통로가 열리면 이온의 종류와 상관없이 언제나 세포 안으로 들어온다.',
+          'ㄹ. 열린 이온 통로는 특정 이온에 대한 막 투과성을 순간적으로 크게 높인다.']),
+    o: ['ㄱ, ㄹ', 'ㄴ, ㄷ', 'ㄱ, ㄴ, ㄷ', 'ㄴ, ㄷ, ㄹ', 'ㄱ, ㄴ, ㄹ'],
+    a: 4,
+    w: 'ㄷ: 열린 통로에서 이온은 전기화학적 구배를 따라 흐른다. K⁺처럼 밖으로 나가는 경우도 있다.' },
+  { q: '상황과 관문(통로를 여는 자극)의 종류를 짝지은 것으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 음파에 청각 털세포의 부동섬모가 기울면 통로가 열린다 — 기계적 자극 의존적',
+          'ㄴ. 신경전달물질이 결합하면 시냅스 후 막의 통로가 열린다 — 리간드 의존적',
+          'ㄷ. 막전위 변화가 역치를 넘으면 전압 감지기가 통로 구조를 바꾼다 — 전위 의존적',
+          'ㄹ. 조건과 상관없이 무작위로 열리고 닫히는 K⁺ 누출 통로 — 리간드 의존적']),
+    o: ['ㄱ, ㄴ, ㄷ', 'ㄱ, ㄴ', 'ㄴ, ㄹ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 0,
+    w: 'ㄹ: K⁺ 누출 통로는 리간드 없이, 안팎 조건과 상관없이 무작위로 열리고 닫힌다. 나머지는 각각 물리적 힘 · 리간드 · 막전위가 여는 통로다.' }
+],
+u8: [
+  { q: '37 °C에서 1가 양이온 X⁺의 농도가 세포 밖 10 mM, 세포 안 100 mM이다. 막이 X⁺만 통과시킨다면 평형에서 세포 안쪽의 막전위는? (V = 62 log₁₀(Cₒ/Cᵢ) mV)',
+    o: ['+124 mV', '+62 mV', '0 mV', '−62 mV', '−124 mV'],
+    a: 3,
+    w: 'Cₒ/Cᵢ = 10/100 = 0.1 → log₁₀ 0.1 = −1 → V = 62 × (−1) = −62 mV. 안이 더 진한 양이온이므로 안쪽이 음이 된다. 농도비 10배마다 62 mV.' },
+  { q: 'K⁺ 누출 통로와 휴지막전위에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. K⁺ 누출 통로는 세포 안팎의 조건과 상관없이 무작위로 열리고 닫힌다.',
+          'ㄴ. 휴지 상태의 원형질막은 다른 이온보다 K⁺에 대한 투과성이 높다.',
+          'ㄷ. K⁺이 평형에 이르면 K⁺의 세포 안 농도와 바깥 농도가 같아진다.',
+          'ㄹ. 평형에서는 K⁺을 안에 붙잡는 전기적 힘과 밖으로 내보내는 농도 구배의 힘이 같다.']),
+    o: ['ㄱ, ㄷ', 'ㄱ, ㄴ, ㄹ', 'ㄱ, ㄴ, ㄷ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 1,
+    w: 'ㄷ: 평형은 농도가 같아지는 것이 아니라 두 힘이 같아지는 것이다. K⁺의 안 농도가 훨씬 높은 채로 전기화학적 구배가 0이 된다.' },
+  { q: '세포 밖 K⁺ 농도를 5 mM에서 50 mM로 높였다(세포 안 140 mM). 휴지막전위가 K⁺의 평형 전위를 따른다고 할 때 예상되는 변화로 가장 적절한 것은?',
+    o: ['바깥 K⁺이 10배가 되어, 막전위가 약 62 mV 덜 음(탈분극 쪽)이 된다.',
+        'K⁺이 더 많이 빠져나가서, 막전위가 약 62 mV 더 음(과분극 쪽)이 된다.',
+        '바깥 농도만 바뀌었고 안쪽 농도는 그대로이므로 막전위는 변하지 않고 유지된다.',
+        '막전위의 부호가 뒤집혀서 세포 안쪽이 약 +90 mV의 양전위가 된다.',
+        'K⁺이 세포 안으로 쏟아져 들어와 안팎의 K⁺ 농도가 같아지게 된다.'],
+    a: 0,
+    w: 'Cₒ/Cᵢ가 10배 커지면 V는 62 mV 커진다: 약 −90 mV → 약 −28 mV(62 × log(50/140)). 막전위가 덜 음이 되는 탈분극이다. 바깥 농도도 식에 들어가므로 막전위가 변한다.' }
+],
+u9: [
+  { q: '패치클램프로 단일 이온 통로의 전류를 기록했을 때 나타나는 특징으로 옳은 것은?',
+    o: ['열린 정도에 따라 전류가 연속적으로 조금씩 커졌다 작아졌다 한다.',
+        '전류가 갑자기 나타났다 사라지며, 열렸을 때의 전류 크기는 거의 일정하다.',
+        '외부 조건이 일정하면 통로는 한 번 열린 뒤 다시는 닫히지 않는다.',
+        '외부 조건이 일정하면 정해진 시간 간격에 맞춰 규칙적으로 열리고 닫히기를 반복한다.',
+        '여러 통로의 전류를 합친 값이라서 통로 하나하나의 개폐는 알아낼 수 없다.'],
+    a: 1,
+    w: '이온 통로는 all-or-none — 열리면 완전히, 닫히면 완전히. 조건이 일정해도 무작위로 열고 닫기를 반복하므로 전류가 갑자기 나타났다 사라진다. 패치클램프는 통로 하나의 전류를 잴 수 있다.' },
+  { q: '패치클램프 기록 방법에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 미세한 유리관을 미세전극으로 써서 막의 작은 조각과 전기적으로 접촉한다.',
+          'ㄴ. 막 조각을 떼어 내면 그 조각을 원하는 조성의 용액에 담가 통로의 반응을 볼 수 있다.',
+          'ㄷ. 유리관과 막 사이가 느슨해 이온이 새어 나갈수록 통로 전류를 더 정확히 잴 수 있다.']),
+    o: ['ㄱ', 'ㄷ', 'ㄱ, ㄴ', 'ㄴ, ㄷ', 'ㄱ, ㄴ, ㄷ'],
+    a: 2,
+    w: 'ㄷ: 유리관과 막 사이가 단단히 밀착되어 이온이 새지 않아야, 통로 하나로 흐르는 이온이 모두 유리관으로 들어와 측정된다.' },
+  { q: '아세틸콜린 수용체 통로를 기록하다가 약물 X를 처리했더니, 열렸을 때의 전류 크기는 그대로인데 열려 있는 시간의 비율이 늘었다. 해석으로 가장 적절한 것은?',
+    o: ['X는 통로 하나의 전류를 키워서 통로가 반쯤만 열린 상태로 머물게 만든다.',
+        'X는 통로를 수송체로 바꾸어서 이온마다 구조 변화를 거치도록 만든다.',
+        'X는 통로의 이온 선택성을 없애서 여러 이온을 가리지 않고 통과시키게 만든다.',
+        'X는 막전위를 없애서 통로를 통한 이온의 이동이 아예 멈추도록 만든다.',
+        'X는 통로가 열릴 확률을 높였고, 통로는 여전히 완전히 열리고 닫힌다.'],
+    a: 4,
+    w: '열렸을 때의 전류 크기는 그대로이고 열린 시간 비율만 늘었으므로, X는 개방 확률(개폐 성향)을 바꾼 것이다. 통로는 여전히 all-or-none이다.' }
+],
+u10: [
+  { q: '전위 의존적 Na⁺ 통로에 대한 설명으로 옳은 것은?',
+    o: ['폐쇄 → 개방 → 불활성을 거치며, 불활성일 때는 탈분극돼도 다시 열리지 못한다.',
+        '한 번 열리면 막이 탈분극되어 있는 동안에는 계속 열린 상태로 유지된다.',
+        '탈분극에 반응해 천천히 열리고, K⁺이 빠져나가 막을 휴지 상태로 되돌린다.',
+        '불활성 상태와 폐쇄 상태는 같은 것이라서, 둘 다 자극이 오면 바로 열린다.',
+        '휴지 상태에서 주로 열려 있어서 Na⁺이 조금씩 새어 들어와 휴지막전위를 만든다.'],
+    a: 0,
+    w: 'Na⁺ 통로는 열린 뒤 곧 불활성화되어, 탈분극이 계속돼도 다시 열리지 못한다(불응기). 재분극되어야 폐쇄 상태로 돌아가 다시 열릴 수 있다. 천천히 열리고 계속 열려 있는 것은 전위 의존 K⁺ 통로, 휴지 상태에 열려 있는 것은 K⁺ 누출 통로다.' },
+  { q: '활동전위에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 전위 의존적 K⁺ 통로는 탈분극에 반응해 열리지만 열리는 속도가 느리다.',
+          'ㄴ. 전위 의존적 K⁺ 통로 덕분에 누출 통로만 있을 때보다 막이 빨리 휴지 상태로 돌아온다.',
+          'ㄷ. 막전위가 +40 mV 근처에 이르면 Na⁺을 안으로 미는 전기화학적 추진력이 거의 0이 된다.',
+          'ㄹ. 탈분극이란 막전위가 더 큰 음의 값(예: −60 → −90 mV)으로 변하는 것이다.']),
+    o: ['ㄱ, ㄹ', 'ㄴ, ㄷ', 'ㄱ, ㄴ, ㄷ', 'ㄱ, ㄷ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 2,
+    w: 'ㄹ: 탈분극은 막전위가 보다 작은 음의 값(절댓값이 작아짐, 예: −60 → −40 mV)으로 변하는 것이다. −90 mV처럼 더 음이 되는 것은 과분극이다.' },
+  { q: '활동전위가 축삭을 따라 한 방향으로만 전달되는 이유로 가장 적절한 것은?',
+    o: ['Na⁺-K⁺ 펌프가 축삭의 앞쪽에만 몰려 있어서, 앞쪽에서만 Na⁺이 들어오기 때문',
+        '축삭의 뒤쪽에는 K⁺ 누출 통로가 없어서, 그곳에는 막전위가 형성되지 않기 때문',
+        'Na⁺이 들어오고 나면 지나온 부위는 영구적으로 탈분극된 채 남아 있기 때문',
+        '활동전위는 세포체에서 멀어질수록 점점 커지면서 앞쪽으로 끌려가기 때문',
+        '지나온 부위의 Na⁺ 통로가 불활성 상태라서, 뒤쪽은 다시 흥분하지 못하기 때문'],
+    a: 4,
+    w: '활동전위가 생긴 부위로 들어온 Na⁺이 옆 부위를 탈분극시켜 앞으로 이어진다. 방금 지나온 부위는 Na⁺ 통로가 불활성(불응기)이라 다시 흥분하지 못해 거꾸로 돌아가지 않는다.' }
+],
+u11: [
+  { q: '신경말단에서 시냅스 후 세포로 신호가 전달되는 순서로 옳은 것은?' +
+       L(['ㄱ. 전위 의존적 Ca²⁺ 통로가 열린다.',
+          'ㄴ. 활동전위가 신경말단에 도달한다.',
+          'ㄷ. 시냅스 소낭이 원형질막과 융합해 신경전달물질을 방출한다.',
+          'ㄹ. 신경전달물질이 시냅스 후 막의 리간드 의존 통로에 결합한다.',
+          'ㅁ. 시냅스 후 막의 이온 투과성이 바뀌어 막전위가 변한다.']),
+    o: ['ㄴ → ㄱ → ㄷ → ㄹ → ㅁ', 'ㄱ → ㄴ → ㄷ → ㄹ → ㅁ', 'ㄴ → ㄷ → ㄱ → ㄹ → ㅁ', 'ㄴ → ㄱ → ㄹ → ㄷ → ㅁ', 'ㄷ → ㄴ → ㄱ → ㄹ → ㅁ'],
+    a: 0,
+    w: '활동전위 도달 → 전위 의존 Ca²⁺ 통로 개방(Ca²⁺ 유입) → 소낭 융합 · 방출 → 리간드 의존 통로에 결합 → 시냅스 후 막의 막전위 변화. Ca²⁺ 유입이 소낭 융합의 방아쇠다.' },
+  { q: '시냅스 신호 전달에 대한 설명으로 옳은 것만 모두 고르면?' +
+       L(['ㄱ. 아세틸콜린과 글루탐산은 리간드 의존 양이온 통로를 열어 시냅스 후 막을 탈분극시킨다.',
+          'ㄴ. GABA와 글라이신은 리간드 의존 Cl⁻ 통로를 열어 시냅스 후 세포를 억제한다.',
+          'ㄷ. Cl⁻이 세포 안으로 들어오면 시냅스 후 막이 탈분극되어 활동전위가 쉽게 생긴다.',
+          'ㄹ. 화학적 시냅스는 전기 신호를 그대로 복사해 넘길 뿐, 신호를 조절하지는 못한다.']),
+    o: ['ㄴ', 'ㄷ', 'ㄱ, ㄴ', 'ㄱ, ㄹ', 'ㄴ, ㄷ, ㄹ'],
+    a: 2,
+    w: 'ㄷ: 음이온인 Cl⁻이 들어오면 탈분극이 어려워져 억제된다. ㄹ: 화학적 시냅스 덕분에 신호를 결합 · 해석 · 기록할 수 있다 — 어떤 신호를 더 전달하고 어떤 신호를 억제할지 조절된다.' },
+  { q: '통로로돕신 유전자를 특정 뉴런에만 발현시킨 생쥐의 뇌에 광섬유로 청색광을 비췄다. 이 실험에 대한 설명으로 옳은 것은?',
+    o: ['통로로돕신은 ATP로 이온을 퍼내는 펌프라서, 빛이 없어도 계속 작동한다.',
+        '빛을 받은 통로로돕신이 열려 양이온이 들어오고, 그 뉴런만 골라 탈분극된다.',
+        '청색광은 뉴런 전체를 똑같이 흥분시키므로, 특정 회로를 골라 볼 수 없다.',
+        '빛을 받으면 통로가 닫혀 Na⁺이 못 들어오므로, 그 뉴런의 활동이 멈춘다.',
+        '빛이 신경전달물질을 직접 분해해서, 시냅스 전달을 끊는 원리를 이용한다.'],
+    a: 1,
+    w: '통로로돕신은 빛을 받으면 열리는 양이온 통로다. 유전자를 넣은 뉴런만 빛에 반응해 탈분극되므로, 원하는 회로만 골라 켤 수 있다(43쪽: 시상하부 뉴런 → 공격 행동).' }
+]
+};
+
+/* ---------- state ---------- */
+const KEY = 'cellbio-ch7-quiz-v1';
+let state = {};
+try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { state = {}; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+
+/* ---------- personal star system: rate units & questions 1–3 ---------- */
+const STAR_KEY = 'cellbio-ch7-stars-v1';
+let stars = {};
+try { stars = JSON.parse(localStorage.getItem(STAR_KEY)) || {}; } catch (e) { stars = {}; }
+const saveStars = () => { try { localStorage.setItem(STAR_KEY, JSON.stringify(stars)); } catch (e) {} };
+const STAR_SVG = '<svg class="i fill" aria-hidden="true"><use href="#i-star"/></svg>';
+const starCtl = (key, label) =>
+  '<span class="stars" data-key="' + key + '" role="group" aria-label="' + label + ' 별표">' +
+  [1, 2, 3].map(v => '<button type="button" class="sb" data-v="' + v + '" title="별 ' + v + '개" aria-label="' + label + ' 별 ' + v + '개">' +
+    '<svg class="i" aria-hidden="true"><use href="#i-star"/></svg></button>').join('') +
+  '</span>';
+const MARK = ['①', '②', '③', '④', '⑤'];
+const TOTAL = UNITS.reduce((n, u) => n + QUIZ[u.id].length, 0);
+
+function stats(id) {
+  const st = state[id] || {}, qs = QUIZ[id];
+  let done = 0, ok = 0;
+  qs.forEach((q, i) => { if (st[i] != null) { done++; if (st[i] === q.a) ok++; } });
+  return { done, ok, n: qs.length };
+}
+
+const ICON = name => '<svg class="i" aria-hidden="true"><use href="#i-' + name + '"/></svg>';
+
+function renderQuiz(box) {
+  const id = box.dataset.quiz, qs = QUIZ[id];
+  const ui = UNITS.findIndex(u => u.id === id), nx = UNITS[ui + 1];
+  const next = nx
+    ? '<a class="next" href="#' + nx.id + '">다음 · ' + (ui + 2) + '. ' + nx.name + ICON('arrow') + '</a>'
+    : '<a class="next" href="#summary">종합 점수 · 오답 노트' + ICON('arrow') + '</a>';
+  box.innerHTML =
+    '<div class="quiz-h"><h4>' + ICON('pencil') + '개념 확인 퀴즈</h4><span class="lv">난이도 상</span><span class="sc" data-qsc></span></div>' +
+    '<p class="quiz-sub">하나를 고르면 바로 채점되고 해설이 열립니다. 함정 선택지에 주의하세요.</p>' +
+    qs.map((q, i) =>
+      '<div class="q" id="' + id + '-q' + (i + 1) + '" data-i="' + i + '"><div class="qn"><span>Q' + (i + 1) + '</span>' + starCtl(id + '-q' + (i + 1), 'Q' + (i + 1)) + '</div><div class="qt">' + q.q + '</div>' +
+      '<ol class="opts">' + q.o.map((o, k) =>
+        '<li><button class="opt" type="button" data-k="' + k + '"><span class="m">' + MARK[k] + '</span><span>' + o + '</span></button></li>').join('') +
+      '</ol><div class="why" hidden aria-live="polite"></div></div>').join('') +
+    '<div class="quiz-f"><span data-qmsg></span><button class="btn" type="button" data-retry hidden>' + ICON('retry') + '다시 풀기</button>' + next + '</div>';
+  const st = state[id] || {};
+  qs.forEach((q, i) => { if (st[i] != null) mark(box, id, i, st[i], false); });
+  refresh(id);
+}
+
+function mark(box, id, i, k, animate) {
+  const q = QUIZ[id][i], card = box.querySelector('.q[data-i="' + i + '"]');
+  const ok = k === q.a;
+  card.classList.add(ok ? 'is-ok' : 'is-no');
+  card.querySelectorAll('.opt').forEach((b, j) => {
+    b.disabled = true;
+    if (j === q.a) b.classList.add('right');
+    else if (j === k) b.classList.add('wrong');
+    else b.classList.add('dim');
+    if (animate && (j === q.a || j === k)) b.classList.add('pop');
+  });
+  const why = card.querySelector('.why');
+  why.className = 'why ' + (ok ? 'ok' : 'no') + (animate ? ' pop' : '');
+  why.innerHTML = '<b class="v">' + (ok ? '정답' : '오답 · 정답은 ' + MARK[q.a]) + '</b>' + q.w;
+  why.hidden = false;
+}
+
+function refresh(id) {
+  const s = stats(id);
+  const box = document.querySelector('.quiz[data-quiz="' + id + '"]');
+  if (box) {
+    box.querySelector('[data-qsc]').textContent = s.done ? s.ok + ' / ' + s.n + ' 정답' : s.n + '문항';
+    box.querySelector('[data-qmsg]').textContent =
+      s.done === s.n ? (s.ok === s.n ? '완벽합니다. 다음 소단원으로!' : '틀린 문제의 해설을 읽고 본문의 해당 부분을 다시 확인하세요.') : (s.done ? (s.n - s.done) + '문항 남음' : '');
+    box.querySelector('[data-retry]').hidden = !s.done;
+  }
+  const badge = document.querySelector('.toc .sc[data-sc="' + id + '"]');
+  if (badge) { badge.textContent = s.done ? s.ok + '/' + s.n : ''; badge.classList.toggle('done', s.done === s.n); }
+  refreshGlobal();
+}
+
+function refreshGlobal() {
+  let done = 0, ok = 0;
+  const wrong = [];
+  const rows = UNITS.map((u, idx) => {
+    const s = stats(u.id); done += s.done; ok += s.ok;
+    const st = state[u.id] || {};
+    QUIZ[u.id].forEach((q, i) => {
+      if (st[i] != null && st[i] !== q.a) {
+        const plain = q.q.replace(/<\/?(ul|li)[^>]*>/g, ' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+        wrong.push('<a href="#' + u.id + '-q' + (i + 1) + '"><b>' + (idx + 1) + '단원 Q' + (i + 1) + '</b><span>' +
+          (plain.length > 70 ? plain.slice(0, 70) + '…' : plain) + '</span></a>');
+      }
+    });
+    const pct = s.n ? Math.round(100 * s.ok / s.n) : 0;
+    return '<div class="srow"><span style="color:var(--muted);font-weight:700">' + (idx + 1) + '</span>' +
+      '<div><a href="#' + u.id + '" style="color:var(--ink)">' + u.name + '</a><div class="bar"><i style="--p:' + (pct / 100) + '"></i></div></div>' +
+      '<span style="text-align:right;font-weight:700">' + (s.done ? s.ok + ' / ' + s.n : '–') + '</span></div>';
+  }).join('');
+  document.getElementById('pDone').textContent = done;
+  document.getElementById('pTotal').textContent = TOTAL;
+  document.getElementById('pOk').textContent = ok;
+  document.getElementById('pBar').style.setProperty('--p', done / TOTAL);
+  document.getElementById('sumRows').innerHTML = rows;
+  document.getElementById('sumBig').textContent = done ? Math.round(100 * ok / done) + '%' : '–';
+  document.getElementById('sumSub').textContent = '전체 ' + TOTAL + '문항 중 ' + done + '문항 풀이 · ' + ok + '문항 정답';
+  document.getElementById('tbProg').textContent = done + '/' + TOTAL;
+  document.getElementById('wrongList').innerHTML = wrong.length
+    ? wrong.join('')
+    : '<p>' + (done ? '틀린 문제가 없습니다.' : '퀴즈를 풀면 틀린 문제가 여기에 모입니다. 누르면 그 문제로 이동합니다.') + '</p>';
+}
+
+document.querySelectorAll('.quiz[data-quiz]').forEach(box => {
+  renderQuiz(box);
+  box.addEventListener('click', e => {
+    const id = box.dataset.quiz;
+    if (e.target.closest('[data-retry]')) { delete state[id]; save(); renderQuiz(box); refreshStars(); return; }
+    const btn = e.target.closest('.opt');
+    if (!btn || btn.disabled) return;
+    const i = +btn.closest('.q').dataset.i, k = +btn.dataset.k;
+    (state[id] = state[id] || {})[i] = k;
+    save(); mark(box, id, i, k, true); refresh(id);
+  });
+});
+document.getElementById('resetAll').addEventListener('click', () => {
+  if (!confirm('모든 소단원의 퀴즈 기록을 지울까요?')) return;
+  state = {}; save();
+  document.querySelectorAll('.quiz[data-quiz]').forEach(renderQuiz);
+  refreshStars();
+});
+
+/* ---------- nav: scroll spy, mobile drawer, theme ---------- */
+const links = [...document.querySelectorAll('.toc a')];
+const curTitle = document.getElementById('curTitle');
+const TITLE = curTitle.textContent;
+const io = new IntersectionObserver(es => {
+  es.forEach(en => {
+    if (!en.isIntersecting) return;
+    links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id));
+    const ui = UNITS.findIndex(u => u.id === en.target.id);
+    curTitle.textContent = ui >= 0 ? (ui + 1) + '. ' + UNITS[ui].name : (en.target.id === 'summary' ? '종합 점수 · 오답 노트' : TITLE);
+  });
+}, { rootMargin: '-35% 0px -60% 0px' });
+document.querySelectorAll('.unit, #summary').forEach(s => io.observe(s));
+const navBtn = document.getElementById('navBtn');
+const setNav = open => { document.body.classList.toggle('nav-open', open); navBtn.setAttribute('aria-expanded', open); };
+navBtn.addEventListener('click', () => setNav(!document.body.classList.contains('nav-open')));
+document.getElementById('scrim').addEventListener('click', () => setNav(false));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') setNav(false); });
+links.forEach(a => a.addEventListener('click', () => setNav(false)));
+
+document.querySelectorAll('.unit').forEach(sec => {
+  const ui = UNITS.findIndex(u => u.id === sec.id);
+  const box = document.createElement('div');
+  box.className = 'u-stars';
+  box.innerHTML = '<span>중요도</span>' + starCtl(sec.id, (ui + 1) + '단원');
+  sec.querySelector('.unit-head').appendChild(box);
+});
+document.querySelectorAll('.toc a[data-u^="u"]').forEach(a => {
+  const s = document.createElement('span');
+  s.className = 'stv';
+  s.setAttribute('aria-hidden', 'true');
+  a.querySelector('.sc').before(s);
+});
+const starOnlyBtn = document.getElementById('starOnly'), starBar = document.getElementById('starBar');
+
+function refreshStars() {
+  document.querySelectorAll('.stars[data-key]').forEach(el => {
+    const lv = stars[el.dataset.key] || 0;
+    el.querySelectorAll('.sb').forEach((b, j) => { b.classList.toggle('on', j < lv); b.setAttribute('aria-pressed', j < lv); });
+  });
+  let nQ = 0, nU = 0;
+  const items = [];
+  UNITS.forEach((u, ui) => {
+    const sec = document.getElementById(u.id), ulv = stars[u.id] || 0;
+    let any = !!ulv;
+    if (ulv) { nU++; items.push({ lv: ulv, ord: ui * 100, href: '#' + u.id, tag: '소단원 ' + (ui + 1), text: u.name }); }
+    QUIZ[u.id].forEach((q, i) => {
+      const key = u.id + '-q' + (i + 1), lv = stars[key] || 0, card = document.getElementById(key);
+      if (card) card.classList.toggle('q-star', !!lv);
+      if (!lv) return;
+      nQ++; any = true;
+      const plain = q.q.replace(/<\/?(ul|li)[^>]*>/g, ' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+      items.push({ lv, ord: ui * 100 + i + 1, href: '#' + key, tag: (ui + 1) + '단원 Q' + (i + 1), text: plain.length > 64 ? plain.slice(0, 64) + '…' : plain });
+    });
+    sec.classList.toggle('u-star', !!ulv);
+    sec.classList.toggle('has-star', any);
+    const stv = document.querySelector('.toc a[data-u="' + u.id + '"] .stv');
+    if (stv) stv.innerHTML = STAR_SVG.repeat(ulv);
+  });
+  document.getElementById('sQ').textContent = nQ;
+  document.getElementById('sU').textContent = nU;
+  starOnlyBtn.disabled = !(nQ + nU);
+  document.getElementById('starRetry').disabled = !nQ;
+  if (!(nQ + nU) && document.body.classList.contains('star-only')) setStarOnly(false);
+  document.getElementById('starBarTxt').textContent = '별표만 보는 중 · 문제 ' + nQ + '개 · 소단원 ' + nU + '개';
+  items.sort((a, b) => b.lv - a.lv || a.ord - b.ord);
+  document.getElementById('starList').innerHTML = items.length
+    ? items.map(it => '<a href="' + it.href + '"><b><span class="lvs">' + STAR_SVG.repeat(it.lv) + '</span>' + it.tag + '</b><span>' + it.text + '</span></a>').join('')
+    : '<p>소단원 제목이나 문제 옆의 별을 눌러 중요도(1~3개)를 매기면 여기에 별 많은 순으로 모입니다.</p>';
+}
+function setStarOnly(on) {
+  document.body.classList.toggle('star-only', on);
+  starOnlyBtn.setAttribute('aria-pressed', on);
+  starBar.hidden = !on;
+  if (on) window.scrollTo(0, 0);
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('.sb');
+  if (!b) return;
+  const key = b.closest('.stars').dataset.key, v = +b.dataset.v;
+  if ((stars[key] || 0) === v) delete stars[key]; else stars[key] = v;
+  saveStars();
+  refreshStars();
+});
+starOnlyBtn.addEventListener('click', () => { setStarOnly(!document.body.classList.contains('star-only')); setNav(false); });
+document.getElementById('starExit').addEventListener('click', () => setStarOnly(false));
+document.getElementById('starRetry').addEventListener('click', () => {
+  const touched = new Set();
+  Object.keys(stars).forEach(k => {
+    const m = k.match(/^(u\d+)-q(\d+)$/);
+    if (m && state[m[1]]) { delete state[m[1]][+m[2] - 1]; touched.add(m[1]); }
+  });
+  save();
+  touched.forEach(u => renderQuiz(document.querySelector('.quiz[data-quiz="' + u + '"]')));
+  refreshStars();
+  window.scrollTo(0, 0);
+});
+refreshStars();
+
+/* ---------- wide diagrams keep a readable size on phones (swipe sideways) ---------- */
+document.querySelectorAll('.fig svg[viewBox]').forEach(svg => {
+  const w = svg.viewBox.baseVal.width;
+  if (w < 500) return;
+  const box = document.createElement('div');
+  box.className = 'fig-scroll';
+  svg.style.setProperty('--minw', Math.round(w * 0.9) + 'px');
+  svg.before(box);
+  box.appendChild(svg);
+});
+
+/* ---------- slide lightbox (local build only has thumbnails) ---------- */
+const lb = document.getElementById('lb');
+if (document.querySelector('.sthumb')) {
+  const lbImg = lb.querySelector('img'), lbCap = document.getElementById('lbCap');
+  let list = [], idx = 0;
+  const show = () => { lbImg.src = list[idx].src; lbImg.alt = list[idx].alt; lbCap.textContent = list[idx].alt + ' · ' + (idx + 1) + '/' + list.length; };
+  const step = d => { idx = (idx + d + list.length) % list.length; show(); };
+  document.addEventListener('click', e => {
+    const t = e.target.closest('.sthumb');
+    if (!t) return;
+    list = [...t.closest('.sgrid').querySelectorAll('img')];
+    idx = list.indexOf(t.querySelector('img'));
+    show(); lb.showModal();
+  });
+  lb.addEventListener('click', e => {
+    const b = e.target.closest('[data-lb]');
+    if (b) { b.dataset.lb === 'x' ? lb.close() : step(+b.dataset.lb); return; }
+    if (e.target === lb) lb.close();
+  });
+  lb.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') step(1);
+    if (e.key === 'ArrowLeft') step(-1);
+  });
+} else {
+  lb.remove();
+}
+
+const root = document.documentElement, themeBtn = document.getElementById('themeBtn');
+const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+const paintThemeBtn = () => {
+  const d = isDark();
+  themeBtn.innerHTML = ICON(d ? 'sun' : 'moon') + '<span>' + (d ? '밝은 화면' : '어두운 화면') + '</span>';
+};
+try { const t = localStorage.getItem('cellbio-theme'); if (t) root.dataset.theme = t; } catch (e) {}
+paintThemeBtn();
+themeBtn.addEventListener('click', () => {
+  root.dataset.theme = isDark() ? 'light' : 'dark';
+  try { localStorage.setItem('cellbio-theme', root.dataset.theme); } catch (e) {}
+  paintThemeBtn();
+});
+</script>
+</body>
+</html>
